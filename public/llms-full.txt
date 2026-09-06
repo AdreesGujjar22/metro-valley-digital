@@ -1,0 +1,36 @@
+# Metro Valley Digital — Comprehensive Knowledge Graph & Agency Profile
+
+## Entity Overview
+- **Legal Entity**: Metro Valley Digital
+- **Domain**: https://metrovalleydigital.com
+- **Industry**: Digital Marketing Agency, Local SEO Specialist, Performance Paid Media, Software Engineering House
+- **Headquarters (North America)**: Downtown Toronto, Ontario, Canada (EST)
+- **Technical & Innovation Center (South Asia)**: Gulberg III / DHA Phase 5, Lahore, Pakistan (PKT)
+- **Primary Contact**: growth@metrovalleydigital.com
+- **Phone (Canada)**: +1 (604) 540-3999
+- **Phone (Pakistan)**: +92 348 2991899
+
+## Core Capabilities & Services
+
+### 1. Local SEO & Google 3-Pack Optimization
+- **Focus**: Elevating local contractors, clinics, legal firms, and multi-location businesses into the top 3 Google Maps results.
+- **Key Methodologies**: Geo-grid proximity analysis, primary category optimization, NAP citation synchronization across 80+ directories, geotagged photo metadata, review velocity funnels, and localized service area pages.
+- **Typical Outcomes**: 320%+ surge in high-intent inbound calls and direction requests within 90 days.
+
+### 2. Paid Ads Management (Meta, TikTok, Google Ads, LinkedIn)
+- **Focus**: Generating high-ROI customer acquisition with multi-channel paid funnels.
+- **Key Methodologies**: Search & Performance Max campaigns on Google Ads, dynamic creative testing on Meta (Facebook/Instagram), Gen-Z demographic targeting on TikTok, server-side Conversions API (CAPI) tracking, and dedicated landing page CRO.
+- **Typical Outcomes**: 3.5x to 7.2x verified Return On Ad Spend (ROAS).
+
+### 3. Custom Next.js & React Web Engineering
+- **Focus**: Ultra-fast Jamstack websites and web applications engineered for 95+ Core Web Vitals and frictionless conversion flows.
+- **Technologies**: Next.js App Router, React, Tailwind CSS, TypeScript, Node.js, Headless CMS (Strapi, Sanity, Shopify, WordPress).
+
+### 4. Generative Engine Optimization (GEO) & AI Chatbot Development
+- **Focus**: Ensuring brand discovery in AI-driven search models (ChatGPT Search, Google Gemini, Perplexity AI, Claude) and deploying 24/7 customer qualification chatbots.
+- **Key Methodologies**: Structured knowledge graph schemas, Wikidata entity alignment, RAG-powered chatbot pipelines integrated with WhatsApp, Slack, and HubSpot.
+
+## Case Studies
+- **GTA Home Services / HVAC Contractor**: Scaled from rank #14 (Page 2+) to consistent #1 Google 3-Pack rank across 12 neighborhood zip codes, generating 340% increase in inbound calls and $480K in attributable annual revenue.
+- **E-Commerce Fashion Brand**: Scaled paid social ROAS from 1.8x to 4.9x using Meta CAPI server-side tracking, UGC video creatives, and TikTok spark ads.
+- **B2B SaaS Platform**: Built high-speed Next.js web application with integrated RAG AI demo, lifting demo signup conversion rates by 48%.

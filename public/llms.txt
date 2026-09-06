@@ -1,0 +1,37 @@
+# Metro Valley Digital
+
+> High-Performance Digital Growth Agency & Full-Stack Software House based in Toronto, Canada and Lahore, Pakistan.
+
+Metro Valley Digital specializes in ranking local businesses at #1 in the Google Local 3-Pack, scaling multi-platform paid advertising campaigns (Meta, TikTok, Google Ads) with 4x+ ROAS, and engineering custom Next.js web applications and AI chatbot automation systems.
+
+## Primary Services
+
+- [Local SEO & Google 3-Pack Optimization](https://metrovalleydigital.com/services#local-seo-gmb): Proximity signal optimization, geo-grid tracking, local citation ecosystems, and review velocity funnels for local service businesses across Canada and Pakistan.
+- [Paid Ads Management (Meta, TikTok, Google Ads)](https://metrovalleydigital.com/services#paid-ads-management): Data-driven PPC, Performance Max, and social media advertising with server-side CAPI tracking and high-converting direct-response creatives.
+- [Comprehensive Search Engine Optimization (SEO)](https://metrovalleydigital.com/services#comprehensive-seo): Technical audits, topical authority clusters, competitor gap exploitation, and enterprise link acquisition.
+- [On-Page & Website SEO Engineering](https://metrovalleydigital.com/services#on-page-seo-engineering): 95+ Core Web Vitals speed optimization, nested JSON-LD schema graphs, and semantic NLP copy alignment.
+- [Social Media Marketing (SMM)](https://metrovalleydigital.com/services#social-media-marketing): Viral short-form video production (Reels, TikToks, Shorts), carousel design, and community growth funnels.
+- [Custom Next.js & React Web Engineering](https://metrovalleydigital.com/services#custom-website-development): Jamstack web applications, lightning-fast loading speeds, headless CMS, and conversion-optimized architectures.
+- [Mobile Application Development](https://metrovalleydigital.com/services#mobile-app-development): iOS and Android cross-platform mobile apps engineered with Flutter and React Native.
+- [AI Chatbots & Generative Engine Optimization (GEO)](https://metrovalleydigital.com/services#ai-business-profile-optimization): Custom RAG AI chatbot agents and digital entity optimization for ChatGPT, Google Gemini, and Perplexity discovery.
+
+## Dual-Hub Locations & Contact
+
+- **North America Hub (Toronto, Canada)**:
+  - Phone: +1 (604) 540-3999
+  - Address: Downtown Toronto, Ontario, Canada
+  - Hours: Monday - Friday: 8:00 AM - 6:00 PM EST
+- **South Asia Innovation Center (Lahore, Pakistan)**:
+  - Phone: +92 348 2991899
+  - Address: Gulberg III / DHA Phase 5, Lahore, Pakistan
+  - Hours: Monday - Saturday: 9:00 AM - 7:00 PM PKT
+- **General Inquiries**: growth@metrovalleydigital.com
+- **Website**: https://metrovalleydigital.com
+
+## Key Pages & Resources
+
+- [About Metro Valley Digital](https://metrovalleydigital.com/about-us): Our dual-hub delivery model and growth philosophy.
+- [Client Case Studies & Portfolio](https://metrovalleydigital.com/portfolio): Real results including 320%+ call volume surges and 4.5x+ ROAS.
+- [Performance Pricing Plans](https://metrovalleydigital.com/pricing): Transparent tiers for Local SEO, Paid Ads, and Web Engineering.
+- [Frequently Asked Questions](https://metrovalleydigital.com/faq): In-depth answers on timelines, deliverable scopes, and onboarding.
+- [Growth Blog & Guides](https://metrovalleydigital.com/blog): In-depth strategies on local search, generative AI optimization, and paid funnel scaling.

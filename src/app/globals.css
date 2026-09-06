@@ -1,0 +1,164 @@
+@import "./styles/reset.module.css";
+@import "./styles/style.module.css";
+@import "./styles/responsive.module.css";
+
+:root {
+  --primary-color: #28b463;
+  --bs-primary: #28b463;
+  --bs-primary-rgb: 40, 180, 99;
+  --bs-link-color: #28b463;
+  --bs-link-hover-color: #1e8449;
+}
+
+/* Global Typography & Link Resets */
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none !important;
+}
+
+/* Mobile Header & Breadcrumb Spacing Fix */
+.mobile-menu-offcanvas-toggler {
+  display: none !important;
+}
+
+@media (max-width: 991px) {
+  .header-wrapper {
+    position: relative !important;
+    background: #0f172a;
+  }
+  .header.header-transparent {
+    background: #0f172a !important;
+  }
+  .header.header-transparent .logo a {
+    color: #ffffff !important;
+  }
+  .breadcrumbs {
+    padding: 70px 0 50px !important;
+  }
+  .mobile-menu-offcanvas-toggler {
+    display: inline-flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    border-radius: 8px !important;
+    width: 42px !important;
+    height: 42px !important;
+    padding: 0 !important;
+    z-index: 999 !important;
+  }
+  .topbar {
+    padding: 6px 0 !important;
+    background: #0b1120 !important;
+  }
+  .topbar .topbar-address ul li a {
+    font-size: 11.5px !important;
+  }
+}
+
+/* Brand Color Overrides */
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.bg-primary-subtle {
+  background-color: rgba(40, 180, 99, 0.12) !important;
+  color: var(--primary-color) !important;
+}
+
+.border-primary {
+  border-color: var(--primary-color) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: #ffffff !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #239b56 !important;
+  border-color: #239b56 !important;
+  color: #ffffff !important;
+}
+
+/* Smooth Interactive & Animation Utilities */
+.wow {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.wow.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.wow.animate__fadeInLeft {
+  transform: translateX(-30px);
+}
+
+.wow.animate__fadeInLeft.animated {
+  transform: translateX(0);
+}
+
+.wow.animate__fadeInRight {
+  transform: translateX(30px);
+}
+
+.wow.animate__fadeInRight.animated {
+  transform: translateX(0);
+}
+
+.wow.animate__zoomIn {
+  transform: scale(0.92);
+}
+
+.wow.animate__zoomIn.animated {
+  transform: scale(1);
+}
+
+/* Hover lift animations for cards */
+.single-service,
+.single-team,
+.single-blog,
+.single-pf,
+.single-pricing,
+.single-f-box {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.single-service:hover,
+.single-team:hover,
+.single-blog:hover,
+.single-pf:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.1) !important;
+}
+
+/* Hero Section Spacing Optimization */
+.hero-area {
+  height: auto !important;
+}
+.hero-slider .single-slider {
+  height: auto !important;
+}
+.hero-area .hero-content {
+  margin: 0 !important;
+}
+
+@media (max-width: 991px) {
+  .hero-area .hero-content {
+    margin: 0 !important;
+  }
+}
+
+
