@@ -1,7 +1,19 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import {
+  MessageCircle,
+  X,
+  Target,
+  TrendingUp,
+  Sparkles,
+  Code2,
+  MapPin,
+  Phone,
+  Send,
+  Check,
+} from "lucide-react";
 
 export default function WhatsAppFloating() {
   const pathname = usePathname();
@@ -9,19 +21,18 @@ export default function WhatsAppFloating() {
   const [hasPrompted, setHasPrompted] = useState(false);
   const [selectedTopic, setSelectedTopic] = useState(null);
   const [customMsg, setCustomMsg] = useState("");
-  const chatEndRef = useRef(null);
 
-  // Auto-open chat bot after 2 seconds on home page (user can close or keep open)
+  // Auto-open chat bot after 2 seconds on home page once
   useEffect(() => {
-    // Only auto-open if on home page
     if (pathname === "/") {
-      const isDismissed = typeof window !== "undefined" && sessionStorage.getItem("mv_wa_dismissed") === "true";
+      const isDismissed =
+        typeof window !== "undefined" &&
+        sessionStorage.getItem("mv_wa_dismissed") === "true";
       if (!isDismissed) {
         const timer = setTimeout(() => {
           setIsOpen(true);
           setHasPrompted(true);
-        }, 2000); // exactly 2 seconds as requested
-
+        }, 2000);
         return () => clearTimeout(timer);
       }
     }
@@ -42,444 +53,478 @@ export default function WhatsAppFloating() {
     }
   };
 
-  const phoneNumber = "16045403999"; // Vancouver Canadian HQ (+1 604-540-3999)
+  const phoneNumber = "17786080909"; // Vancouver Canadian HQ (+1 778-608-0909)
 
   const quickOptions = [
     {
-      label: "🎯 Local SEO & Google 3-Pack",
-      text: "Hi Metro Valley! I'd like to rank #1 on Google Maps and Local SEO for my business.",
-      reply: "Great choice! We specialize in proprietary geo-grid proximity ranking and citation authority to put you in the Google 3-Pack.",
+      id: "seo",
+      title: "Local SEO & 3-Pack",
+      icon: Target,
+      text: "Hi Metro Valley! I'd like to rank #1 on Google Maps for my business in Vancouver.",
     },
     {
-      label: "📈 Meta, TikTok & Google Ads",
-      text: "Hi Metro Valley! I want to scale my paid advertising with your 4.5x+ ROAS framework.",
-      reply: "Awesome! Our performance paid media team handles creative testing, audience hooks, and full-funnel conversion tracking.",
+      id: "ads",
+      title: "Meta & Google Ads",
+      icon: TrendingUp,
+      text: "Hi Metro Valley! I want to scale my paid advertising with your 4x+ ROAS framework.",
     },
     {
-      label: "🤖 AI Search & GEO (AEO)",
-      text: "Hi Metro Valley! I'm looking for AI Search Engine Optimization (ChatGPT, Perplexity, Gemini).",
-      reply: "Exciting! Generative Engine Optimization (GEO) ensures your brand is recommended directly by conversational AI engines.",
+      id: "geo",
+      title: "AI Search & GEO",
+      icon: Sparkles,
+      text: "Hi Metro Valley! I'm looking for AI Search Optimization (ChatGPT, Perplexity, Gemini).",
     },
     {
-      label: "💻 High-Converting Next.js Web",
-      text: "Hi Metro Valley! I need a fast, custom Next.js web application built for maximum conversions.",
-      reply: "Perfect! Our software engineering team builds ultra-fast App Router applications with 100/100 Core Web Vitals.",
+      id: "web",
+      title: "Next.js Web & Apps",
+      icon: Code2,
+      text: "Hi Metro Valley! I need a fast, custom Next.js web application built.",
     },
   ];
 
   const handleSelectOption = (opt) => {
-    setSelectedTopic(opt);
-    setCustomMsg(opt.text);
+    if (selectedTopic?.id === opt.id) {
+      setSelectedTopic(null);
+      setCustomMsg("");
+    } else {
+      setSelectedTopic(opt);
+      setCustomMsg(opt.text);
+    }
   };
 
-  const activeMessage = customMsg.trim() !== "" 
-    ? customMsg 
-    : "Hi Metro Valley Digital! I'm interested in scaling my business with your SEO, Paid Ads, and Web Development services.";
+  const activeMessage =
+    customMsg.trim() !== ""
+      ? customMsg
+      : "Hi Metro Valley Digital! I'm interested in scaling my business with your SEO, Paid Ads, and Web Engineering services.";
 
-  const waUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(activeMessage)}`;
+  const waUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    activeMessage
+  )}`;
 
   return (
-    <div
-      style={{
-        position: "fixed",
-        bottom: "24px",
-        right: "24px",
-        zIndex: 99999,
-        fontFamily: "inherit",
-      }}
-    >
-      {/* WhatsApp Chat Card Modal */}
-      {isOpen && (
-        <div
-          style={{
-            position: "absolute",
-            bottom: "74px",
-            right: "0",
-            width: "350px",
-            maxWidth: "calc(100vw - 32px)",
-            backgroundColor: "#ffffff",
-            borderRadius: "18px",
-            boxShadow: "0 20px 50px -10px rgba(0, 0, 0, 0.32), 0 0 0 1px rgba(0, 0, 0, 0.06)",
-            overflow: "hidden",
-            animation: "fadeInUp 0.25s ease-out",
-            zIndex: 100000,
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
-          {/* Card Header (WhatsApp Dark Teal) */}
+    <>
+      <style>{`
+        .wa-no-scrollbar::-webkit-scrollbar {
+          display: none !important;
+          width: 0 !important;
+          height: 0 !important;
+        }
+        .wa-no-scrollbar {
+          -ms-overflow-style: none !important;
+          scrollbar-width: none !important;
+        }
+        .wa-topic-btn {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          padding: 8px 10px;
+          border-radius: 9px;
+          font-size: 11.5px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 0.15s ease;
+          border: 1px solid #e2e8f0;
+          background: #ffffff;
+          color: #334155;
+          text-align: left;
+          width: 100%;
+          line-height: 1.25;
+        }
+        .wa-topic-btn:hover {
+          background: #f8fafc;
+          border-color: #cbd5e1;
+          color: #0f172a;
+        }
+        .wa-topic-btn.selected {
+          background: #ecfdf5;
+          border-color: #10b981;
+          color: #065f46;
+          box-shadow: 0 1px 3px rgba(16, 185, 129, 0.15);
+        }
+      `}</style>
+
+      <div
+        style={{
+          position: "fixed",
+          bottom: "20px",
+          right: "20px",
+          zIndex: 99999,
+          fontFamily: "inherit",
+        }}
+      >
+        {/* Compact WhatsApp Chat Card Modal */}
+        {isOpen && (
           <div
+            className="wa-no-scrollbar"
             style={{
-              backgroundColor: "#075e54",
-              padding: "16px 18px",
-              color: "#ffffff",
+              position: "absolute",
+              bottom: "66px",
+              right: "0",
+              width: "330px",
+              maxWidth: "calc(100vw - 28px)",
+              backgroundColor: "#ffffff",
+              borderRadius: "16px",
+              boxShadow:
+                "0 16px 40px -10px rgba(15, 23, 42, 0.28), 0 0 0 1px rgba(15, 23, 42, 0.08)",
+              overflow: "hidden",
+              animation: "fadeInUp 0.2s ease-out",
+              zIndex: 100000,
               display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
+              flexDirection: "column",
             }}
           >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <div
+            {/* Header */}
+            <div
+              style={{
+                backgroundColor: "#075e54",
+                padding: "12px 14px",
+                color: "#ffffff",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+              }}
+            >
+              <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                <div
+                  style={{
+                    width: "34px",
+                    height: "34px",
+                    borderRadius: "50%",
+                    backgroundColor: "rgba(255, 255, 255, 0.18)",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    flexShrink: 0,
+                    position: "relative",
+                  }}
+                >
+                  <MessageCircle size={18} color="#ffffff" strokeWidth={2.4} />
+                  <span
+                    style={{
+                      position: "absolute",
+                      bottom: "0px",
+                      right: "0px",
+                      width: "9px",
+                      height: "9px",
+                      borderRadius: "50%",
+                      backgroundColor: "#22c55e",
+                      border: "2px solid #075e54",
+                    }}
+                  />
+                </div>
+                <div>
+                  <h4
+                    style={{
+                      margin: 0,
+                      fontSize: "14px",
+                      fontWeight: "700",
+                      color: "#ffffff",
+                      lineHeight: "1.2",
+                    }}
+                  >
+                    Metro Valley Digital
+                  </h4>
+                  <p
+                    style={{
+                      margin: "2px 0 0",
+                      fontSize: "11px",
+                      color: "#a7f3d0",
+                      lineHeight: "1",
+                    }}
+                  >
+                    Online • Vancouver HQ
+                  </p>
+                </div>
+              </div>
+
+              {/* Close Button */}
+              <button
+                type="button"
+                onClick={handleClose}
+                aria-label="Close chat modal"
                 style={{
-                  width: "42px",
-                  height: "42px",
+                  background: "rgba(255, 255, 255, 0.15)",
+                  border: "none",
+                  color: "#ffffff",
+                  cursor: "pointer",
+                  width: "26px",
+                  height: "26px",
                   borderRadius: "50%",
-                  backgroundColor: "rgba(255, 255, 255, 0.18)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  flexShrink: 0,
-                  position: "relative",
+                  padding: 0,
+                  transition: "background 0.15s ease",
+                }}
+                onMouseEnter={(e) =>
+                  (e.currentTarget.style.background = "rgba(255, 255, 255, 0.28)")
+                }
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.background = "rgba(255, 255, 255, 0.15)")
+                }
+              >
+                <X size={15} strokeWidth={2.5} />
+              </button>
+            </div>
+
+            {/* Content Body - Compact & No Scroll Bar */}
+            <div
+              className="wa-no-scrollbar"
+              style={{
+                backgroundColor: "#f8fafc",
+                padding: "12px 12px 8px",
+                display: "flex",
+                flexDirection: "column",
+                gap: "8px",
+              }}
+            >
+              {/* Short Greeting */}
+              <div
+                style={{
+                  backgroundColor: "#ffffff",
+                  borderRadius: "10px",
+                  borderTopLeftRadius: "2px",
+                  padding: "8px 10px",
+                  boxShadow: "0 1px 3px rgba(0, 0, 0, 0.04)",
+                  border: "1px solid #e2e8f0",
                 }}
               >
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  style={{ color: "#ffffff" }}
-                >
-                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
-                </svg>
-                {/* Active pulse dot */}
-                <span
-                  style={{
-                    position: "absolute",
-                    bottom: "1px",
-                    right: "1px",
-                    width: "11px",
-                    height: "11px",
-                    borderRadius: "50%",
-                    backgroundColor: "#22c55e",
-                    border: "2px solid #075e54",
-                  }}
-                ></span>
-              </div>
-              <div>
-                <h4
-                  style={{
-                    margin: 0,
-                    fontSize: "15px",
-                    fontWeight: "800",
-                    color: "#ffffff",
-                    letterSpacing: "-0.2px",
-                  }}
-                >
-                  Metro Valley AI Bot
-                </h4>
                 <p
                   style={{
                     margin: 0,
                     fontSize: "12px",
-                    color: "#a7f3d0",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "5px",
-                    marginTop: "2px",
+                    lineHeight: "1.4",
+                    color: "#1e293b",
                   }}
                 >
-                  Online • Replies instantly
+                  👋 Hi! How can our Vancouver growth team assist you today?
                 </p>
+              </div>
+
+              {/* Topic Options (2x2 Compact Grid) */}
+              <div>
+                <span
+                  style={{
+                    fontSize: "10.5px",
+                    fontWeight: "700",
+                    color: "#64748b",
+                    textTransform: "uppercase",
+                    letterSpacing: "0.4px",
+                    display: "block",
+                    marginBottom: "5px",
+                  }}
+                >
+                  Select a topic:
+                </span>
+                <div
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: "1fr 1fr",
+                    gap: "6px",
+                  }}
+                >
+                  {quickOptions.map((opt) => {
+                    const IconComponent = opt.icon;
+                    const isSelected = selectedTopic?.id === opt.id;
+                    return (
+                      <button
+                        key={opt.id}
+                        type="button"
+                        onClick={() => handleSelectOption(opt)}
+                        className={`wa-topic-btn ${isSelected ? "selected" : ""}`}
+                      >
+                        <span
+                          style={{
+                            color: isSelected ? "#059669" : "#475569",
+                            display: "inline-flex",
+                            flexShrink: 0,
+                          }}
+                        >
+                          {isSelected ? (
+                            <Check size={13} strokeWidth={2.6} />
+                          ) : (
+                            <IconComponent size={13} strokeWidth={2.2} />
+                          )}
+                        </span>
+                        <span
+                          style={{
+                            overflow: "hidden",
+                            textOverflow: "ellipsis",
+                            whiteSpace: "nowrap",
+                          }}
+                        >
+                          {opt.title}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
             </div>
 
-            {/* Close Button ("then user can close or not") */}
-            <button
-              type="button"
-              onClick={handleClose}
-              aria-label="Close WhatsApp chat"
-              style={{
-                background: "rgba(255, 255, 255, 0.15)",
-                border: "none",
-                color: "#ffffff",
-                fontSize: "16px",
-                fontWeight: "700",
-                cursor: "pointer",
-                width: "30px",
-                height: "30px",
-                borderRadius: "50%",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                lineHeight: 1,
-                transition: "background 0.2s, opacity 0.2s",
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(255, 255, 255, 0.3)")}
-              onMouseLeave={(e) => (e.currentTarget.style.background = "rgba(255, 255, 255, 0.15)")}
-            >
-              ✕
-            </button>
-          </div>
-
-          {/* Card Body (Chat History & Quick Options) */}
-          <div
-            style={{
-              backgroundColor: "#f4f6f8",
-              padding: "16px 14px",
-              maxHeight: "330px",
-              overflowY: "auto",
-              display: "flex",
-              flexDirection: "column",
-              gap: "12px",
-            }}
-          >
-            {/* Bot Greeting Bubble */}
+            {/* Action Area */}
             <div
               style={{
                 backgroundColor: "#ffffff",
-                borderRadius: "14px",
-                borderTopLeftRadius: "3px",
-                padding: "12px 14px",
-                boxShadow: "0 2px 8px rgba(0, 0, 0, 0.04)",
-                border: "1px solid #e2e8f0",
+                padding: "10px 12px 10px",
+                borderTop: "1px solid #f1f5f9",
+                display: "flex",
+                flexDirection: "column",
+                gap: "8px",
               }}
             >
-              <p
-                style={{
-                  margin: 0,
-                  fontSize: "13.5px",
-                  lineHeight: "1.55",
-                  color: "#1e293b",
-                }}
-              >
-                👋 Hello! Welcome to <strong>Metro Valley Digital</strong>. How can our growth strategists assist your business today?
-              </p>
-              <span
-                style={{
-                  display: "block",
-                  textAlign: "right",
-                  fontSize: "10px",
-                  color: "#94a3b8",
-                  marginTop: "5px",
-                }}
-              >
-                Just now
-              </span>
-            </div>
-
-            {/* Quick-choice options */}
-            <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
-              <span style={{ fontSize: "11px", fontWeight: "700", color: "#64748b", textTransform: "uppercase", letterSpacing: "0.5px" }}>
-                Select a growth topic:
-              </span>
-              {quickOptions.map((opt, idx) => (
-                <button
-                  key={idx}
-                  type="button"
-                  onClick={() => handleSelectOption(opt)}
-                  style={{
-                    textAlign: "left",
-                    backgroundColor: selectedTopic?.label === opt.label ? "#dcfce7" : "#ffffff",
-                    borderColor: selectedTopic?.label === opt.label ? "#22c55e" : "#e2e8f0",
-                    borderWidth: "1px",
-                    borderStyle: "solid",
-                    borderRadius: "10px",
-                    padding: "8px 12px",
-                    fontSize: "12.5px",
-                    fontWeight: "600",
-                    color: selectedTopic?.label === opt.label ? "#166534" : "#334155",
-                    cursor: "pointer",
-                    transition: "all 0.15s ease",
-                  }}
-                  onMouseEnter={(e) => {
-                    if (selectedTopic?.label !== opt.label) {
-                      e.currentTarget.style.backgroundColor = "#f8fafc";
-                      e.currentTarget.style.borderColor = "#cbd5e1";
-                    }
-                  }}
-                  onMouseLeave={(e) => {
-                    if (selectedTopic?.label !== opt.label) {
-                      e.currentTarget.style.backgroundColor = "#ffffff";
-                      e.currentTarget.style.borderColor = "#e2e8f0";
-                    }
-                  }}
-                >
-                  {opt.label}
-                </button>
-              ))}
-            </div>
-
-            {/* If a topic was selected, show instant bot reply */}
-            {selectedTopic && (
-              <div
-                style={{
-                  backgroundColor: "#e8f5e9",
-                  borderRadius: "14px",
-                  borderTopLeftRadius: "3px",
-                  padding: "10px 12px",
-                  border: "1px solid #c8e6c9",
-                  animation: "fadeIn 0.2s ease-in",
-                }}
-              >
-                <p style={{ margin: 0, fontSize: "12.5px", color: "#1b5e20", lineHeight: "1.5" }}>
-                  💡 {selectedTopic.reply}
-                </p>
-                <span style={{ display: "block", marginTop: "4px", fontSize: "11px", fontWeight: "700", color: "#2e7d32" }}>
-                  Click below to chat with our team on WhatsApp ⬇️
-                </span>
-              </div>
-            )}
-            <div ref={chatEndRef} />
-          </div>
-
-          {/* Action / Send Area */}
-          <div
-            style={{
-              backgroundColor: "#ffffff",
-              padding: "12px 14px 14px",
-              borderTop: "1px solid #f1f5f9",
-            }}
-          >
-            {/* Input preview or custom message edit */}
-            <div style={{ marginBottom: "10px" }}>
+              {/* Optional Custom Input */}
               <input
                 type="text"
                 value={customMsg}
                 onChange={(e) => setCustomMsg(e.target.value)}
-                placeholder="Type your question or choose topic above..."
+                placeholder="Or type a question..."
                 style={{
                   width: "100%",
-                  padding: "8px 12px",
-                  fontSize: "12.5px",
+                  padding: "6px 10px",
+                  fontSize: "11.5px",
                   border: "1px solid #cbd5e1",
-                  borderRadius: "8px",
+                  borderRadius: "7px",
                   outline: "none",
                   boxSizing: "border-box",
+                  color: "#0f172a",
                 }}
               />
-            </div>
 
-            <a
-              href={waUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setIsOpen(false)}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                gap: "8px",
-                width: "100%",
-                backgroundColor: "#25D366",
-                color: "#ffffff",
-                padding: "11px 16px",
-                borderRadius: "26px",
-                fontSize: "14px",
-                fontWeight: "700",
-                textDecoration: "none",
-                boxShadow: "0 4px 14px rgba(37, 211, 102, 0.4)",
-                transition: "all 0.2s ease",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = "#20ba5a";
-                e.currentTarget.style.transform = "translateY(-1px)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = "#25D366";
-                e.currentTarget.style.transform = "translateY(0)";
-              }}
-            >
-              <svg
-                width="19"
-                height="19"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
-              </svg>
-              Start WhatsApp Chat
-            </a>
-
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "8px" }}>
-              <span style={{ fontSize: "10.5px", color: "#64748b" }}>
-                🇨🇦 Vancouver: +1 (604) 540-3999
-              </span>
-              <button
-                type="button"
-                onClick={handleClose}
+              {/* Start WhatsApp Chat Button */}
+              <a
+                href={waUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsOpen(false)}
                 style={{
-                  background: "transparent",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "7px",
+                  width: "100%",
+                  backgroundColor: "#25D366",
+                  color: "#ffffff",
+                  padding: "9px 12px",
+                  borderRadius: "20px",
+                  fontSize: "13px",
+                  fontWeight: "700",
+                  textDecoration: "none",
+                  boxShadow: "0 3px 10px rgba(37, 211, 102, 0.35)",
+                  transition: "background-color 0.15s ease",
                   border: "none",
-                  fontSize: "11px",
-                  color: "#94a3b8",
-                  cursor: "pointer",
-                  textDecoration: "underline",
-                  padding: 0,
+                }}
+                onMouseEnter={(e) =>
+                  (e.currentTarget.style.backgroundColor = "#20ba5a")
+                }
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.backgroundColor = "#25D366")
+                }
+              >
+                <Send size={14} strokeWidth={2.4} />
+                <span>Start WhatsApp Chat</span>
+              </a>
+
+              {/* Responsive Footer Info with Lucide Icons */}
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  fontSize: "10.5px",
+                  color: "#64748b",
+                  paddingTop: "2px",
                 }}
               >
-                Close chat
-              </button>
+                <a
+                  href="https://maps.app.goo.gl/opsWCpAwBhZ5H18w6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color: "#0284c7",
+                    textDecoration: "none",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "3px",
+                    fontWeight: "600",
+                  }}
+                >
+                  <MapPin size={11} strokeWidth={2.2} />
+                  <span>Vancouver HQ</span>
+                </a>
+
+                <a
+                  href="tel:+17786080909"
+                  style={{
+                    color: "#166534",
+                    textDecoration: "none",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "3px",
+                    fontWeight: "700",
+                  }}
+                >
+                  <Phone size={10} strokeWidth={2.4} />
+                  <span>+1 778-608-0909</span>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      )}
-
-      {/* Floating Action Trigger Button (Bottom Right) */}
-      <button
-        type="button"
-        onClick={handleToggle}
-        aria-label="Open WhatsApp Chat with Metro Valley Digital"
-        style={{
-          width: "58px",
-          height: "58px",
-          borderRadius: "50%",
-          backgroundColor: "#25D366",
-          color: "#ffffff",
-          border: "none",
-          cursor: "pointer",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          boxShadow: "0 6px 22px rgba(37, 211, 102, 0.45)",
-          transition: "transform 0.2s ease, background-color 0.2s ease",
-          position: "relative",
-          outline: "none",
-        }}
-        onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.08)")}
-        onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
-      >
-        {/* Pulsing notification dot when closed */}
-        {!isOpen && hasPrompted && (
-          <span
-            style={{
-              position: "absolute",
-              top: "-2px",
-              right: "-2px",
-              width: "14px",
-              height: "14px",
-              backgroundColor: "#ef4444",
-              borderRadius: "50%",
-              border: "2px solid #ffffff",
-              boxShadow: "0 0 0 2px rgba(239, 68, 68, 0.3)",
-            }}
-          ></span>
         )}
 
-        {isOpen ? (
-          <span style={{ fontSize: "20px", fontWeight: "700", lineHeight: 1 }}>✕</span>
-        ) : (
-          <svg
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2.2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
-          </svg>
-        )}
-      </button>
-    </div>
+        {/* Floating Action Trigger Button */}
+        <button
+          type="button"
+          onClick={handleToggle}
+          aria-label={
+            isOpen
+              ? "Close WhatsApp Chat"
+              : "Open WhatsApp Chat with Metro Valley Digital"
+          }
+          style={{
+            width: "52px",
+            height: "52px",
+            borderRadius: "50%",
+            backgroundColor: "#25D366",
+            color: "#ffffff",
+            border: "none",
+            cursor: "pointer",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            boxShadow: "0 4px 18px rgba(37, 211, 102, 0.42)",
+            transition: "transform 0.15s ease, background-color 0.15s ease",
+            position: "relative",
+            outline: "none",
+          }}
+          onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.06)")}
+          onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
+        >
+          {/* Notification badge when closed & prompted */}
+          {!isOpen && hasPrompted && (
+            <span
+              style={{
+                position: "absolute",
+                top: "-1px",
+                right: "-1px",
+                width: "12px",
+                height: "12px",
+                backgroundColor: "#ef4444",
+                borderRadius: "50%",
+                border: "2px solid #ffffff",
+                boxShadow: "0 0 0 2px rgba(239, 68, 68, 0.25)",
+              }}
+            />
+          )}
+
+          {isOpen ? (
+            <X size={22} strokeWidth={2.6} />
+          ) : (
+            <MessageCircle size={26} strokeWidth={2.3} />
+          )}
+        </button>
+      </div>
+    </>
   );
 }
+

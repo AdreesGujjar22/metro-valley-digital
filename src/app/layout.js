@@ -48,7 +48,7 @@ export const metadata = {
     template: "%s | Metro Valley Digital",
   },
   description:
-    "Dominate local search, rank #1 on Google 3-Pack, and scale paid ads with Metro Valley Digital. Vancouver & Lahore growth agency engineering proven client ROI.",
+    "Dominate local search, rank #1 on Google 3-Pack, and scale paid ads with Metro Valley Digital. Vancouver, BC growth marketing agency engineering proven client ROI.",
   keywords: [
     "Local SEO Agency",
     "Google 3-Pack Optimization",
@@ -60,7 +60,8 @@ export const metadata = {
     "Next.js Web Development",
     "AI Chatbot Integration",
     "Generative Engine Optimization",
-    "Lahore Software House",
+    "Vancouver Software House",
+    "Canada SEO Agency",
   ],
   authors: [{ name: "Metro Valley Digital", url: "https://metrovalleydigital.com" }],
   creator: "Metro Valley Digital",
@@ -76,7 +77,7 @@ export const metadata = {
   openGraph: {
     title: "Metro Valley Digital | SEO & Growth Marketing Agency",
     description:
-      "Dominate local search, rank #1 on Google 3-Pack, and scale paid ads with Metro Valley Digital. Vancouver & Lahore growth agency engineering proven client ROI.",
+      "Dominate local search, rank #1 on Google 3-Pack, and scale paid ads with Metro Valley Digital. Vancouver, BC growth marketing agency engineering proven client ROI.",
     url: "https://metrovalleydigital.com",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
@@ -94,7 +95,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Metro Valley Digital | SEO & Growth Marketing Agency",
     description:
-      "Dominate local search, rank #1 on Google 3-Pack, and scale paid ads with Metro Valley Digital. Vancouver & Lahore growth agency engineering proven client ROI.",
+      "Dominate local search, rank #1 on Google 3-Pack, and scale paid ads with Metro Valley Digital. Vancouver, BC growth marketing agency engineering proven client ROI.",
     images: ["https://metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
     creator: "@metrovalleydig",
   },

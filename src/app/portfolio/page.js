@@ -1,7 +1,7 @@
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SectionTitle from "@/components/SectionTitle";
 import PortfolioGrid from "@/components/PortfolioGrid";
-import { BreadcrumbSchema } from "@/components/SeoSchemas";
+import { BreadcrumbSchema, PortfolioSchema } from "@/components/SeoSchemas";
 import Link from "next/link";
 
 export const metadata = {
@@ -40,6 +40,7 @@ export const metadata = {
 export default function PortfolioPage() {
   return (
     <>
+      <PortfolioSchema />
       <BreadcrumbSchema items={[{ name: "Portfolio", url: "/portfolio" }]} />
       <Breadcrumbs
         title="Client Case Studies & Portfolio"

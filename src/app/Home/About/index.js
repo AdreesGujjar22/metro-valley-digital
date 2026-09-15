@@ -49,10 +49,10 @@ export default function About() {
                   About Metro Valley Digital
                 </span>
                 <h2 className="mt-3 mb-3" style={{ fontSize: "34px", fontWeight: "800", lineHeight: "1.25" }}>
-                  Toronto & Lahore Dual-Hub <b>Growth Engine & Software House</b>
+                  Vancouver&apos;s Leading <b>Growth Engine & Software House</b>
                 </h2>
                 <p style={{ color: "#475569", fontSize: "16px", lineHeight: "1.7" }}>
-                  Metro Valley Digital bridges high-level commercial growth strategy in Canada with elite engineering capacity in Pakistan. We specialize in turning local search queries and paid traffic into predictable, high-value client acquisitions.
+                  Metro Valley Digital provides high-level commercial growth strategy and elite engineering based in Vancouver, BC, Canada. We specialize in turning local search queries and paid traffic into predictable, high-value client acquisitions.
                 </p>
                 <div className="feature mt-4">
                   {/* <!-- Single Feature --> */}

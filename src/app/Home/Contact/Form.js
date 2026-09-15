@@ -23,7 +23,7 @@ export default function Form() {
         </div>
         <h4 style={{ color: "#198754", fontWeight: "700" }}>Audit Request Received!</h4>
         <p style={{ color: "#334155", fontSize: "15px", marginTop: "8px" }}>
-          A Senior Growth Strategist from our Toronto or Lahore hub will review your website and reach out within 2-4 business hours.
+          A Senior Growth Strategist from our Vancouver team will review your website and reach out within 2-4 business hours.
         </p>
         <button
           onClick={() => setSubmitted(false)}
@@ -64,7 +64,7 @@ export default function Form() {
               <input
                 type="tel"
                 name="phone"
-                placeholder="Phone Number (e.g. +1 604...)"
+                placeholder="Phone Number (e.g. +1 778...)"
                 required
               />
             </div>
@@ -99,7 +99,7 @@ export default function Form() {
             <div className="form-group">
               <textarea
                 name="message"
-                placeholder="Tell us about your target market (Toronto, Canada, Pakistan, etc.) and current growth goals *"
+                placeholder="Tell us about your target market (Vancouver, Canada, North America, etc.) and current growth goals *"
                 required
                 rows={3}
               ></textarea>

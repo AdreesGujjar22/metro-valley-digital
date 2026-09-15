@@ -37,7 +37,7 @@ const ColorPlate = () => {
           <i className="fa fa-cog fa-spin"></i>
         </div>
         <div className="single-option">
-          <h4>Choose Exbico Colors</h4>
+          <h4>Choose Colors</h4>
           <div className="color-plate">
             {colors.map((color, index) => (
               <ColorOption

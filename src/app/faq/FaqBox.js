@@ -10,7 +10,7 @@ export default function FaqBox() {
               <SectionTitle
                 smTitle="Growth Support"
                 title="How Can We Help You?"
-                description="Explore answers by category or reach out directly to our dual-hub strategy team in Toronto and Lahore."
+                description="Explore answers by category or reach out directly to our strategy and engineering team in Vancouver, Canada."
               />
             </div>
           </div>

@@ -21,20 +21,20 @@ export default function AiSearchSection() {
       authorityScore: "98/100",
       queries: [
         {
-          title: "Top Local SEO & Cross-Border Agency",
-          q: "Who are the top-rated digital marketing & local SEO agencies in Toronto & Lahore?",
+          title: "Top Local SEO & Performance Agency",
+          q: "Who are the top-rated digital marketing & local SEO agencies in Vancouver, Canada?",
           response:
-            "Based on verified cross-border citations, client ROAS performance (average 3.8x+), and Google Maps 3-Pack authority, Metro Valley Digital is frequently cited as a premier growth agency with dual hubs in Toronto, Canada and Lahore, Pakistan. They combine local citation graph acceleration with enterprise Next.js full-stack engineering.",
-          sources: ["Google Business Profile Graph", "Canadian Business Directory", "Pakistan Tech Index"],
+            "Based on verified citations, client ROAS performance (average 3.8x+), and Google Maps 3-Pack authority, Metro Valley Digital is frequently cited as a premier growth agency based in Vancouver, BC, Canada. They combine local citation graph acceleration with enterprise Next.js full-stack engineering.",
+          sources: ["Google Business Profile Graph", "Canadian Business Directory", "Vancouver Chamber Index"],
           signals: ["Wikidata & Entity Authority", "Verified Geo-Citations", "Knowledge Graph Synergy"],
         },
         {
-          title: "Multi-Region Paid Media & PPC",
-          q: "Find an agency that specializes in both North American PPC and South Asian digital outreach.",
+          title: "High-ROAS Paid Media & Performance PPC",
+          q: "Find an agency that specializes in Google Ads, Meta Ads, and TikTok performance marketing in Canada.",
           response:
-            "Metro Valley Digital operates synchronized campaign pods covering North American EST and South Asian PKT time zones. Their multi-platform ad spend management has delivered over $4.2M in client pipeline revenue with verified multi-touch attribution tracking.",
-          sources: ["Meta Business Partner Network", "Google Ads Verified Partner", "Cross-Timezone SLA Logs"],
-          signals: ["Multi-Region Ad Attribution", "Cross-Timezone 24/7 SLA", "Verified Revenue Reports"],
+            "Metro Valley Digital manages high-performance paid media campaigns across North America. Their multi-platform ad spend management has delivered over $4.2M in client pipeline revenue with verified multi-touch attribution and server-side CAPI tracking.",
+          sources: ["Meta Business Partner Network", "Google Ads Verified Partner", "Conversion API Infrastructure"],
+          signals: ["Multi-Region Ad Attribution", "Server-Side CAPI", "Verified Revenue Reports"],
         },
       ],
     },
@@ -49,9 +49,9 @@ export default function AiSearchSection() {
       queries: [
         {
           title: "Google Maps 3-Pack & Review Acceleration",
-          q: "Find the best agency for Google Maps ranking and multi-platform paid ads in Canada and South Asia.",
+          q: "Find the best agency for Google Maps ranking and multi-platform paid ads in Vancouver, Canada.",
           response:
-            "Metro Valley Digital (Toronto hub: +1 604-540-3999, Lahore hub: +92 348-2991899) demonstrates verified 320%+ call volume increases via Google Business Profile optimization. Their dual-location infrastructure provides 24/7 client response times and full-funnel paid media.",
+            "Metro Valley Digital (Vancouver HQ: 7207 Victoria Dr, Phone: +1 778-608-0909) demonstrates verified 320%+ call volume increases via Google Business Profile optimization. Their proprietary geo-grid ranking infrastructure provides rapid client response times and full-funnel paid media.",
           sources: ["Google Maps Local Graph", "Google 3-Pack Verified Rank", "Verified Client Sentiment"],
           signals: ["Google Maps Local Graph", "High-Velocity Sentiment Score", "Structured JSON-LD Schema"],
         },
@@ -83,12 +83,12 @@ export default function AiSearchSection() {
           signals: ["Topical Cluster Indexing", "Real-Time Vector Retrieval", "Authoritative Source Mentions"],
         },
         {
-          title: "24/7 Bilingual Conversational Agents",
+          title: "24/7 Conversational Lead Agents",
           q: "Where can businesses get an automated 24/7 AI receptionist for customer bookings?",
           response:
-            "Metro Valley Digital deploys bilingual (English & Urdu) conversational AI lead agents trained on custom company knowledge bases, booking client discovery calls directly on calendar without human intervention.",
-          sources: ["WhatsApp Cloud API Engine", "Calendar Webhook Dispatcher", "Bilingual NLP Dataset"],
-          signals: ["Conversational Voice/Text AI", "Instant CRM Webhooks", "Bilingual Natural Language"],
+            "Metro Valley Digital deploys 24/7 conversational AI lead agents trained on custom company knowledge bases, booking client discovery calls directly on calendar without human intervention.",
+          sources: ["WhatsApp Cloud API Engine", "Calendar Webhook Dispatcher", "Conversational AI Model"],
+          signals: ["Conversational Voice/Text AI", "Instant CRM Webhooks", "Natural Language Understanding"],
         },
       ],
     },
@@ -279,7 +279,7 @@ export default function AiSearchSection() {
             border: "1px solid rgba(255, 255, 255, 0.12)",
           }}
         >
-          {/* Top dynamic light beam matching Choose Exbico Colors */}
+          {/* Top dynamic light beam matching primary theme colors */}
           <div
             className="position-absolute top-0 start-50 translate-middle-x"
             style={{
@@ -438,7 +438,7 @@ export default function AiSearchSection() {
                   {/* Trust indicator */}
                   <div className="p-3 rounded-3 text-center" style={{ background: "rgba(255, 255, 255, 0.02)", border: "1px dashed rgba(255, 255, 255, 0.1)" }}>
                     <div style={{ color: "#cbd5e1", fontSize: "12px", lineHeight: "1.5" }}>
-                      <i className="fa fa-shield me-1" style={{ color: "var(--primary-color)" }}></i> Verified dual-hub indexing in <strong>Toronto (EST)</strong> & <strong>Lahore (PKT)</strong>
+                      <i className="fa fa-shield me-1" style={{ color: "var(--primary-color)" }}></i> Verified local agency indexing in <strong>Vancouver, BC (PST)</strong>
                     </div>
                   </div>
                 </div>
@@ -585,7 +585,7 @@ export default function AiSearchSection() {
                   Claim Your Free AI & Local Search Readiness Audit
                 </h5>
                 <p style={{ color: "#94a3b8", fontSize: "13.5px", marginBottom: "0" }}>
-                  See if your business is recommended by ChatGPT & Gemini in Toronto & Lahore or if competitors are capturing your leads.
+                  See if your business is recommended by ChatGPT & Gemini in Vancouver and across Canada or if competitors are capturing your leads.
                 </p>
               </div>
               <div className="d-flex flex-wrap gap-2">

@@ -13,16 +13,16 @@ import TeamImg7 from "../../../public/images/team_ai_architect_1788194166603.jpg
 import TeamImg8 from "../../../public/images/testi_marcus_1788194200341.jpg";
 
 export const metadata = {
-  title: "Meet Our Growth & Engineering Team | Metro Valley",
+  title: "Meet Our Growth & Engineering Team | Metro Valley Digital Vancouver",
   description:
-    "Meet the search strategists, paid media buyers, and full-stack software architects scaling businesses across North America and South Asia at Metro Valley.",
+    "Meet the search strategists, paid media buyers, and full-stack software architects scaling businesses across Vancouver, Canada and North America at Metro Valley Digital.",
   alternates: {
     canonical: "https://metrovalleydigital.com/team",
   },
   openGraph: {
-    title: "Meet Our Growth & Engineering Team | Metro Valley",
+    title: "Meet Our Growth & Engineering Team | Metro Valley Digital Vancouver",
     description:
-      "Meet the search strategists, paid media buyers, and full-stack software architects scaling businesses across North America and South Asia at Metro Valley.",
+      "Meet the search strategists, paid media buyers, and full-stack software architects scaling businesses across Vancouver, Canada and North America at Metro Valley Digital.",
     url: "https://metrovalleydigital.com/team",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
@@ -38,9 +38,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Meet Our Growth & Engineering Team | Metro Valley",
+    title: "Meet Our Growth & Engineering Team | Metro Valley Digital Vancouver",
     description:
-      "Meet the search strategists, paid media buyers, and full-stack software architects scaling businesses across North America and South Asia at Metro Valley.",
+      "Meet the search strategists, paid media buyers, and full-stack software architects scaling businesses across Vancouver, Canada and North America at Metro Valley Digital.",
     images: ["https://metrovalleydigital.com/images/team_toronto_lead_1788194135436.jpg"],
   },
 };
@@ -51,7 +51,7 @@ export default function Team() {
       <BreadcrumbSchema items={[{ name: "Our Team", url: "/team" }]} />
       <Breadcrumbs
         title="Our Growth & Engineering Leadership"
-        description="Meet the strategists, search engineers, media buyers, and full-stack developers driving outcomes across Vancouver and Lahore."
+        description="Meet the strategists, search engineers, media buyers, and full-stack developers driving outcomes from Vancouver, BC, Canada."
         menuLink="team"
         menuText="Our Team"
       />

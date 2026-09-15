@@ -11,15 +11,20 @@ export default function Topbar() {
               <div className="topbar-address">
                 <ul className="d-flex flex-wrap align-items-center gap-2 gap-md-3 mb-0 list-unstyled">
                   <li>
-                    <a href="tel:+16045403999" title="Canada Office">
+                    <a href="tel:+17786080909" title="Call Metro Valley Digital">
                       <i className="fa fa-phone" style={{ color: "var(--primary-color)" }}></i>
-                      <span>CA:</span> +1 (604) 540-3999
+                      <span>Call:</span> +1 778-608-0909
                     </a>
                   </li>
                   <li>
-                    <a href="tel:+923482991899" title="Pakistan Office">
-                      <i className="fa fa-phone" style={{ color: "var(--primary-color)" }}></i>
-                      <span>PK:</span> +92 348 2991899
+                    <a
+                      href="https://maps.app.goo.gl/opsWCpAwBhZ5H18w6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Google Maps (GMB) - 7207 Victoria Dr, Vancouver, BC"
+                    >
+                      <i className="fa fa-map-marker" style={{ color: "var(--primary-color)" }}></i>
+                      <span>7207 Victoria Dr, Vancouver, BC</span>
                     </a>
                   </li>
                   <li className="d-none d-sm-inline-block">

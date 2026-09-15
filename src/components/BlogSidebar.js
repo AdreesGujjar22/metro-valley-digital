@@ -90,7 +90,7 @@ export default function BlogSidebar() {
           <span className="badge bg-white text-primary px-3 py-1 rounded-pill fw-bold mb-3" style={{ fontSize: "11px", color: "#28b463" }}>FREE GROWTH AUDIT</span>
           <h4 style={{ color: "#ffffff", fontWeight: "800", fontSize: "20px", marginBottom: "12px" }}>Scale Your Inbound Revenue</h4>
           <p style={{ color: "#e2e8f0", fontSize: "14px", lineHeight: "1.6", marginBottom: "20px" }}>
-            Get a tailored Google Maps & Paid Ads competitor blueprint from our Vancouver & Lahore teams.
+            Get a tailored Google Maps & Paid Ads competitor blueprint from our Vancouver strategy team.
           </p>
           <Link href="/contact" className="btn btn-light w-100 fw-bold py-2" style={{ borderRadius: "8px", color: "#28b463" }}>
             Book 30-Min Audit

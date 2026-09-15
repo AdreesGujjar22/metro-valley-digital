@@ -19,8 +19,9 @@ export function SitewideSchemas() {
     image: "https://metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg",
     description: COMPANY_INFO.description,
     email: COMPANY_INFO.email,
-    telephone: COMPANY_INFO.locations.canada.phone,
+    telephone: COMPANY_INFO.phone,
     sameAs: [
+      "https://maps.app.goo.gl/opsWCpAwBhZ5H18w6",
       COMPANY_INFO.socials.facebook,
       COMPANY_INFO.socials.linkedin,
       COMPANY_INFO.socials.instagram,
@@ -29,17 +30,17 @@ export function SitewideSchemas() {
     contactPoint: [
       {
         "@type": "ContactPoint",
-        telephone: COMPANY_INFO.locations.canada.phone,
+        telephone: COMPANY_INFO.phone,
         contactType: "customer service",
         areaServed: ["CA", "US"],
         availableLanguage: ["English"],
       },
       {
         "@type": "ContactPoint",
-        telephone: COMPANY_INFO.locations.pakistan.phone,
-        contactType: "technical support",
-        areaServed: ["PK", "AE", "GB"],
-        availableLanguage: ["English", "Urdu"],
+        telephone: COMPANY_INFO.phone,
+        contactType: "sales & growth strategy",
+        areaServed: ["CA", "US"],
+        availableLanguage: ["English"],
       },
     ],
   };
@@ -48,23 +49,32 @@ export function SitewideSchemas() {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "ProfessionalService"],
     "@id": "https://metrovalleydigital.com/#localbusiness-canada",
-    name: "Metro Valley Digital - Vancouver HQ",
+    name: "Metro Valley Digital - Vancouver Headquarters",
     url: "https://metrovalleydigital.com",
-    telephone: COMPANY_INFO.locations.canada.phone,
+    hasMap: "https://maps.app.goo.gl/opsWCpAwBhZ5H18w6",
+    telephone: "+1 778-608-0909",
     email: COMPANY_INFO.email,
     priceRange: "$$",
     image: "https://metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg",
+    sameAs: [
+      "https://maps.app.goo.gl/opsWCpAwBhZ5H18w6",
+      COMPANY_INFO.socials.facebook,
+      COMPANY_INFO.socials.linkedin,
+      COMPANY_INFO.socials.instagram,
+      COMPANY_INFO.socials.twitter,
+    ],
     address: {
       "@type": "PostalAddress",
-      streetAddress: COMPANY_INFO.locations.canada.address,
-      addressLocality: COMPANY_INFO.locations.canada.city,
-      addressRegion: COMPANY_INFO.locations.canada.region,
+      streetAddress: "7207 Victoria Dr",
+      addressLocality: "Vancouver",
+      addressRegion: "BC",
+      postalCode: "V5P 3Z2",
       addressCountry: "CA",
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: "49.2827",
-      longitude: "-123.1207",
+      latitude: "49.2185",
+      longitude: "-123.0658",
     },
     openingHoursSpecification: [
       {
@@ -78,6 +88,7 @@ export function SitewideSchemas() {
       { "@type": "City", name: "Vancouver" },
       { "@type": "City", name: "Burnaby" },
       { "@type": "City", name: "Richmond" },
+      { "@type": "City", name: "Surrey" },
       { "@type": "City", name: "Toronto" },
       { "@type": "Country", name: "Canada" },
       { "@type": "Country", name: "United States" },
@@ -101,44 +112,6 @@ export function SitewideSchemas() {
       bestRating: "5",
       worstRating: "1",
     },
-  };
-
-  const localBusinessPakistanSchema = {
-    "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "ProfessionalService"],
-    "@id": "https://metrovalleydigital.com/#localbusiness-pakistan",
-    name: "Metro Valley Digital - Lahore Innovation Center",
-    url: "https://metrovalleydigital.com",
-    telephone: COMPANY_INFO.locations.pakistan.phone,
-    email: COMPANY_INFO.email,
-    priceRange: "$$",
-    image: "https://metrovalleydigital.com/images/agency_workspace_1788191445921.jpg",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: COMPANY_INFO.locations.pakistan.address,
-      addressLocality: COMPANY_INFO.locations.pakistan.city,
-      addressRegion: COMPANY_INFO.locations.pakistan.region,
-      addressCountry: "PK",
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: "31.5204",
-      longitude: "74.3587",
-    },
-    openingHoursSpecification: [
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        opens: "09:00",
-        closes: "19:00",
-      },
-    ],
-    areaServed: [
-      { "@type": "City", name: "Lahore" },
-      { "@type": "City", name: "Karachi" },
-      { "@type": "City", name: "Islamabad" },
-      { "@type": "Country", name: "Pakistan" },
-    ],
   };
 
   const websiteSchema = {
@@ -234,10 +207,6 @@ export function SitewideSchemas() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessPakistanSchema) }}
-      />
-      <script
-        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
       />
       <script
@@ -282,11 +251,11 @@ export function FaqSchema({ faqs = [] }) {
   const defaultFaqs = [
     {
       q: "How fast can we see results for Google 3-Pack & Local SEO?",
-      a: "Most local service businesses in Vancouver and Lahore see notable map ranking improvements and proximity expansion within 45 to 90 days following our citation cleanup, geo-grid optimization, and review velocity funnels.",
+      a: "Most local service businesses in Vancouver and across Canada see notable map ranking improvements and proximity expansion within 45 to 90 days following our citation cleanup, geo-grid optimization, and review velocity funnels.",
     },
     {
-      q: "How do you manage cross-border operations between Vancouver and Lahore?",
-      a: "Our account directors and growth strategists operate in Vancouver (PST), while our engineering, technical SEO, and development pods operate in Lahore (PKT), providing 24/7 campaign monitoring and rapid turnaround.",
+      q: "How do you provide transparent reporting and campaign communication?",
+      a: "Our account directors and growth strategists operate from Vancouver (PST), providing real-time KPI dashboards, weekly sprint updates, and dedicated campaign optimization.",
     },
     {
       q: "What ad platforms do you specialize in?",
@@ -342,7 +311,7 @@ export function ServiceCatalogSchema() {
           name: "Metro Valley Digital",
           url: "https://metrovalleydigital.com",
         },
-        areaServed: ["Canada", "United States", "Pakistan", "Global"],
+        areaServed: ["Canada", "United States", "North America", "Global"],
       },
     })),
   };
@@ -369,23 +338,27 @@ export function ServiceDetailSchema({ service }) {
     image: service.image ? `https://metrovalleydigital.com${service.image}` : undefined,
     provider: {
       "@type": "LocalBusiness",
-      name: "Metro Valley Digital",
+      name: "Metro Valley Digital - Vancouver Headquarters",
       url: "https://metrovalleydigital.com",
-      telephone: COMPANY_INFO.locations.canada.phone,
+      hasMap: "https://maps.app.goo.gl/opsWCpAwBhZ5H18w6",
+      telephone: "+1 778-608-0909",
       email: COMPANY_INFO.email,
       priceRange: "$$",
       address: {
         "@type": "PostalAddress",
-        streetAddress: COMPANY_INFO.locations.canada.address,
-        addressLocality: COMPANY_INFO.locations.canada.city,
-        addressRegion: COMPANY_INFO.locations.canada.region,
+        streetAddress: "7207 Victoria Dr",
+        addressLocality: "Vancouver",
+        addressRegion: "BC",
+        postalCode: "V5P 3Z2",
         addressCountry: "CA",
       },
     },
     areaServed: [
-      { "@type": "City", name: "Toronto" },
+      { "@type": "City", name: "Vancouver" },
+      { "@type": "City", name: "Burnaby" },
+      { "@type": "City", name: "Richmond" },
+      { "@type": "City", name: "Surrey" },
       { "@type": "Country", name: "Canada" },
-      { "@type": "Country", name: "Pakistan" },
       { "@type": "Country", name: "United States" },
       { "@type": "Country", name: "Global" },
     ],
@@ -456,7 +429,8 @@ export function ServiceDetailSchema({ service }) {
   );
 }
 
-export function ArticleSchema({ title, description, datePublished, dateModified, author, image, url }) {
+export function ArticleSchema({ title, description, datePublished, dateModified, author, authorName, image, url }) {
+  const resolvedAuthor = author || authorName || "Sam Martin";
   const schema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -471,7 +445,7 @@ export function ArticleSchema({ title, description, datePublished, dateModified,
     },
     author: {
       "@type": "Person",
-      name: author || "Sam Martin",
+      name: resolvedAuthor,
       jobTitle: "Head of Growth & Search Strategy",
       worksFor: {
         "@type": "Organization",
@@ -495,4 +469,95 @@ export function ArticleSchema({ title, description, datePublished, dateModified,
     />
   );
 }
+
+export function AboutPageSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "@id": "https://metrovalleydigital.com/about-us#webpage",
+    url: "https://metrovalleydigital.com/about-us",
+    name: "About Metro Valley Digital | Vancouver Digital Marketing & Software Agency",
+    description: "Learn how Metro Valley Digital engineers #1 Google 3-Pack rankings, 4x+ ROAS paid advertising, and bespoke Next.js web applications from Vancouver, BC, Canada.",
+    mainEntity: {
+      "@type": "Organization",
+      name: "Metro Valley Digital",
+      url: "https://metrovalleydigital.com",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "7207 Victoria Dr",
+        addressLocality: "Vancouver",
+        addressRegion: "BC",
+        postalCode: "V5P 3Z2",
+        addressCountry: "CA",
+      },
+      telephone: "+1 778-608-0909",
+      email: "growth@metrovalleydigital.com",
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+export function ContactPageSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "@id": "https://metrovalleydigital.com/contact#webpage",
+    url: "https://metrovalleydigital.com/contact",
+    name: "Contact Metro Valley Digital | Vancouver Digital Growth Agency",
+    description: "Connect with Metro Valley Digital at 7207 Victoria Dr, Vancouver, BC V5P 3Z2, Canada (+1 778-608-0909) for a free 30-minute growth audit or custom software consultation.",
+    mainEntity: {
+      "@type": "LocalBusiness",
+      name: "Metro Valley Digital - Vancouver Headquarters",
+      url: "https://metrovalleydigital.com",
+      hasMap: "https://maps.app.goo.gl/opsWCpAwBhZ5H18w6",
+      telephone: "+1 778-608-0909",
+      email: "growth@metrovalleydigital.com",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "7207 Victoria Dr",
+        addressLocality: "Vancouver",
+        addressRegion: "BC",
+        postalCode: "V5P 3Z2",
+        addressCountry: "CA",
+      },
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+export function PortfolioSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://metrovalleydigital.com/portfolio#webpage",
+    url: "https://metrovalleydigital.com/portfolio",
+    name: "Client Case Studies & Verified Growth Results | Metro Valley Digital",
+    description: "Verified case studies demonstrating +340% local call surges, 6.4x paid media ROAS, and modern software architectures delivered by Metro Valley Digital.",
+    provider: {
+      "@type": "Organization",
+      name: "Metro Valley Digital",
+      url: "https://metrovalleydigital.com",
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
 

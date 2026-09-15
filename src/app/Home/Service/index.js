@@ -32,7 +32,7 @@ export default function Service() {
                 image={ServiceImg1}
                 icon="fa fa-map-marker"
                 title="Local SEO & Google 3-Pack"
-                description="Rank #1 in Google Maps and local search grids across Toronto & Lahore. Geo-relevance citation networks, GMB review velocity, and on-page optimization."
+                description="Rank #1 in Google Maps and local search grids across Vancouver and Canada. Geo-relevance citation networks, GMB review velocity, and on-page optimization."
                 btnURL="local-seo-google-business-profile"
               />
             </div>

@@ -16,8 +16,8 @@ export default function Team() {
             <div className="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12">
               <SectionTitle
                 smTitle="Growth Architects"
-                title="Cross-Border Leadership"
-                description="Our multidisciplinary strategists, local search engineers, and software architects operating across Toronto and Lahore."
+                title="Experienced Agency Leadership"
+                description="Our multidisciplinary strategists, local search engineers, and software architects based in Vancouver, BC, Canada."
               />
             </div>
           </div>

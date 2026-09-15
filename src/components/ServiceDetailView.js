@@ -37,8 +37,7 @@ export default function ServiceDetailView({ service }) {
   };
 
   const canadaPhone = COMPANY_INFO.locations.canada.phone;
-  const pkPhone = COMPANY_INFO.locations.pakistan.phone;
-  const whatsappUrl = `https://wa.me/923482991899?text=${encodeURIComponent(
+  const whatsappUrl = `https://wa.me/17786080909?text=${encodeURIComponent(
     `Hi Metro Valley Digital, I am interested in your ${service.title} services. Could we schedule a consultation?`
   )}`;
 
@@ -905,6 +904,17 @@ export default function ServiceDetailView({ service }) {
                       </a>
                     </div>
                     <div className="mb-2">
+                      <strong className="text-dark">Address:</strong>{" "}
+                      <a
+                        href="https://maps.app.goo.gl/opsWCpAwBhZ5H18w6"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary text-decoration-none"
+                      >
+                        7207 Victoria Dr, Vancouver, BC
+                      </a>
+                    </div>
+                    <div className="mb-2">
                       <strong className="text-dark">WhatsApp Helpdesk:</strong>{" "}
                       <a
                         href={whatsappUrl}
@@ -912,7 +922,7 @@ export default function ServiceDetailView({ service }) {
                         rel="noopener noreferrer"
                         className="text-success text-decoration-none"
                       >
-                        {pkPhone}
+                        +1 778-608-0909
                       </a>
                     </div>
                     <div>

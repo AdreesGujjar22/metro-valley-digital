@@ -12,7 +12,7 @@ export default function About() {
           </div>
           <div className="about-description">
             <p style={{ color: "#94a3b8", fontSize: "14px", lineHeight: "1.6" }}>
-              Metro Valley Digital is a premier growth agency & software house operating across Vancouver, Canada and Lahore, Pakistan. Specializing in Google 3-Pack Local SEO, high-ROAS paid media, and Next.js full-stack engineering.
+              Metro Valley Digital is a premier growth agency & software house based in Vancouver, BC, Canada. Specializing in Google 3-Pack Local SEO, high-ROAS paid media, and Next.js full-stack engineering.
             </p>
           </div>
           {/* <!-- Quick Link Box -->	 */}
@@ -21,8 +21,10 @@ export default function About() {
               <i className="fa fa-phone"></i>
             </div>
             <div className="contact-text">
-              <p style={{ margin: 0, fontSize: "12px", color: "#94a3b8" }}>Canada Direct Line</p>
-              <h5 style={{ margin: 0, fontSize: "15px", color: "#ffffff", fontWeight: "700" }}>+1 (604) 540-3999</h5>
+              <p style={{ margin: 0, fontSize: "12px", color: "#94a3b8" }}>Vancouver Direct Line</p>
+              <h5 style={{ margin: 0, fontSize: "15px", color: "#ffffff", fontWeight: "700" }}>
+                <a href="tel:+17786080909" style={{ color: "#ffffff", textDecoration: "none" }}>+1 778-608-0909</a>
+              </h5>
             </div>
           </div>
         </div>

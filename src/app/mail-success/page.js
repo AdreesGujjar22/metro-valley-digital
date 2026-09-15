@@ -34,7 +34,7 @@ export default function MailSuccess() {
                   Growth Request <span>Received!</span>
                 </h2>
                 <p style={{ color: "#64748b", fontSize: "16px", lineHeight: "1.7", maxWidth: "560px", margin: "0 auto 24px" }}>
-                  We have received your details. A Senior Growth Strategist from our Toronto or Lahore team will review your local presence and respond within 24 hours with your preliminary competitor teardown.
+                  We have received your details. A Senior Growth Strategist from our Vancouver strategy team will review your local presence and respond within 24 hours with your preliminary competitor teardown.
                 </p>
                 <Link href="/" className="theme-btn primary px-4 py-2">
                   <i className="fa fa-arrow-left me-2"></i> Back to Homepage

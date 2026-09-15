@@ -5,26 +5,27 @@ export default function Contact() {
     <>
       <div className="col-lg-3 col-md-6 col-12">
         <div className="single-widget">
-          <h3 className="widget-title">Locations & Contact</h3>
+          <h3 className="widget-title">Office & Contact</h3>
           {/* <!-- Footer Contact --> */}
           <div className="footer-contact">
             <ul className="contact-bottom">
-              <li style={{ marginBottom: "12px" }}>
-                <span style={{ color: "#38bdf8", fontWeight: "600", fontSize: "13px", display: "block" }}>🇨🇦 Canada Headquarters</span>
-                <span style={{ color: "#cbd5e1", fontSize: "13px" }}>Vancouver, BC, Canada</span>
-                <div style={{ marginTop: "3px" }}>
-                  <Link href="tel:+16045403999" style={{ color: "#94a3b8", fontSize: "13px" }}>
-                    <i className="fa fa-phone" style={{ marginRight: "6px" }}></i>+1 (604) 540-3999
+              <li style={{ marginBottom: "14px" }}>
+                <span style={{ color: "#38bdf8", fontWeight: "600", fontSize: "13px", display: "block" }}>🇨🇦 Vancouver Headquarters</span>
+                <span style={{ color: "#cbd5e1", fontSize: "13px", display: "block", marginTop: "2px" }}>
+                  7207 Victoria Dr, Vancouver, BC V5P 3Z2, Canada
+                </span>
+                <div style={{ marginTop: "6px", display: "flex", flexDirection: "column", gap: "6px" }}>
+                  <Link href="tel:+17786080909" style={{ color: "#94a3b8", fontSize: "13px" }}>
+                    <i className="fa fa-phone" style={{ marginRight: "6px" }}></i>+1 778-608-0909
                   </Link>
-                </div>
-              </li>
-              <li style={{ marginBottom: "12px" }}>
-                <span style={{ color: "#38bdf8", fontWeight: "600", fontSize: "13px", display: "block" }}>🇵🇰 Pakistan Tech Hub</span>
-                <span style={{ color: "#cbd5e1", fontSize: "13px" }}>Lahore, Punjab, Pakistan</span>
-                <div style={{ marginTop: "3px" }}>
-                  <Link href="tel:+923482991899" style={{ color: "#94a3b8", fontSize: "13px" }}>
-                    <i className="fa fa-phone" style={{ marginRight: "6px" }}></i>+92 348 2991899
-                  </Link>
+                  <a
+                    href="https://maps.app.goo.gl/opsWCpAwBhZ5H18w6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "#38bdf8", fontSize: "12.5px" }}
+                  >
+                    <i className="fa fa-map-marker" style={{ marginRight: "6px" }}></i>View on Google Maps (GMB)
+                  </a>
                 </div>
               </li>
               <li>

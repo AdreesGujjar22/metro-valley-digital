@@ -31,10 +31,10 @@ export default function Sliders() {
     {
       id: "slider3",
       image: TestimonialImg3,
-      name: "Dr. Farhan Qureshi",
-      designation: "Principal Surgeon, MedCare Polyclinics (Lahore)",
+      name: "Dr. Ryan Vance",
+      designation: "Clinical Director, Metro Health Clinics (Vancouver)",
       description:
-        "The custom Next.js patient web portal and AI booking chatbot developed by their engineering team in Lahore reduced our front-desk workload by 70%. Combined with their Local SEO rank boost, we have a continuous 3-week waiting list.",
+        "The custom Next.js patient web portal and AI booking chatbot developed by their engineering team reduced our front-desk workload by 70%. Combined with their Local SEO rank boost, we have a continuous 3-week waiting list.",
     },
   ]);
 

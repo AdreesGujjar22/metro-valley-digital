@@ -22,7 +22,7 @@ export default function Testimonial() {
                   <h3 style={{ color: "#ffffff", fontSize: "32px", fontWeight: "800" }}>Client Growth & Success Stories</h3>
                   <div className="line-bot"></div>
                   <p style={{ color: "#cbd5e1", fontSize: "16px" }}>
-                    Hear how our Local SEO strategies, Google 3-Pack rank dominance, and performance ad campaigns generate massive ROI for businesses in Canada and Pakistan.
+                    Hear how our Local SEO strategies, Google 3-Pack rank dominance, and performance ad campaigns generate massive ROI for businesses across Vancouver and Canada.
                   </p>
                 </div>
               </div>

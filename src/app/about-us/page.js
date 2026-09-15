@@ -2,19 +2,19 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Team from "../Home/Team";
 import Service from "../Home/Service";
 import About from "../Home/About";
-import { BreadcrumbSchema } from "@/components/SeoSchemas";
+import { BreadcrumbSchema, AboutPageSchema } from "@/components/SeoSchemas";
 
 export const metadata = {
-  title: "About Metro Valley Digital | Dual-Hub Growth Agency",
+  title: "About Metro Valley Digital | Vancouver Digital Marketing & Software Agency",
   description:
-    "Learn how Metro Valley Digital empowers businesses with data-driven Local SEO, Google 3-Pack rankings, paid media ads, and custom Next.js web applications.",
+    "Learn how Metro Valley Digital empowers businesses with data-driven Local SEO, Google 3-Pack rankings, paid media ads, and custom Next.js web applications in Vancouver, BC, Canada.",
   alternates: {
     canonical: "https://metrovalleydigital.com/about-us",
   },
   openGraph: {
-    title: "About Metro Valley Digital | Dual-Hub Growth Agency",
+    title: "About Metro Valley Digital | Vancouver Digital Marketing & Software Agency",
     description:
-      "Learn how Metro Valley Digital empowers businesses with data-driven Local SEO, Google 3-Pack rankings, paid media ads, and custom Next.js web applications.",
+      "Learn how Metro Valley Digital empowers businesses with data-driven Local SEO, Google 3-Pack rankings, paid media ads, and custom Next.js web applications in Vancouver, BC, Canada.",
     url: "https://metrovalleydigital.com/about-us",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Metro Valley Digital | Dual-Hub Growth Agency",
+    title: "About Metro Valley Digital | Vancouver Digital Marketing & Software Agency",
     description:
-      "Learn how Metro Valley Digital empowers businesses with data-driven Local SEO, Google 3-Pack rankings, paid media ads, and custom Next.js web applications.",
+      "Learn how Metro Valley Digital empowers businesses with data-driven Local SEO, Google 3-Pack rankings, paid media ads, and custom Next.js web applications in Vancouver, BC, Canada.",
     images: ["https://metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
   },
 };
@@ -40,10 +40,11 @@ export const metadata = {
 export default function AboutUs() {
   return (
     <>
+      <AboutPageSchema />
       <BreadcrumbSchema items={[{ name: "About Us", url: "/about-us" }]} />
       <Breadcrumbs
         title="About Metro Valley Digital"
-        description="A high-performance digital marketing growth agency and software house connecting Canadian commercial leadership with world-class engineering in Lahore."
+        description="A high-performance digital marketing growth agency and software house based in Vancouver, BC, Canada delivering world-class Local SEO, Paid Media, and Next.js engineering."
         menuLink="about-us"
         menuText="About us"
       />

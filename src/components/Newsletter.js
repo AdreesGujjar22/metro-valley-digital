@@ -22,7 +22,7 @@ export default function Newsletter() {
                 <span className="badge bg-primary text-uppercase px-3 py-1 mb-2">Weekly Growth Intelligence</span>
                 <h2 className="text-white fw-bold">Get Actionable Local SEO & Paid Ad Strategies</h2>
                 <p className="text-white-50">
-                  Join 2,500+ business founders and marketing leaders in Canada & Pakistan receiving our tactical breakdowns on Google algorithmic shifts, Meta ROAS tactics, and AI search engine optimization.
+                  Join 2,500+ business founders and marketing leaders across Canada receiving our tactical breakdowns on Google algorithmic shifts, Meta ROAS tactics, and AI search engine optimization.
                 </p>
               </div>
               <form className="form-main mx-auto" style={{ maxWidth: "580px" }}>

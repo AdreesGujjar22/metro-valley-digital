@@ -52,7 +52,7 @@ export const BLOG_POSTS = [
       },
     ],
     quote: {
-      text: "When our Vancouver and Lahore engineering teams audit an underperforming local business, 90% suffer from broken NAP consistency and an absence of localized schema entities. Fixing these unlocks immediate top-tier ranking gains.",
+      text: "When our Vancouver engineering team audits an underperforming local business, 90% suffer from broken NAP consistency and an absence of localized schema entities. Fixing these unlocks immediate top-tier ranking gains.",
       author: "Tariq Vance, Managing Director",
     },
     relatedProject: {

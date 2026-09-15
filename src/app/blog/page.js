@@ -56,7 +56,7 @@ export default function BlogPage() {
               <SectionTitle
                 smTitle="Articles & Playbooks"
                 title="SEO, Paid Ads & Software Growth Guides"
-                description="Actionable strategies, technical breakdowns, and verified client case studies written by our Vancouver and Lahore digital growth engineers."
+                description="Actionable strategies, technical breakdowns, and verified client case studies written by our Vancouver digital growth engineers."
               />
             </div>
           </div>

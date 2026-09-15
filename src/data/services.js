@@ -608,7 +608,7 @@ export const SERVICES_CATALOG = [
         "Their product research uncovered a home goods sub-category with low competition and 45% profit margins. Metro Valley handled our Amazon listing and A+ content, and our product became a top 10 bestseller in 90 days.",
       author: "Hassan Qureshi",
       role: "Amazon FBA Brand Owner, SwiftHome",
-      location: "Lahore & North America",
+      location: "Vancouver & North America",
     },
   },
   {
@@ -908,7 +908,7 @@ export const SERVICES_CATALOG = [
         "Metro Valley built our cross-platform on-demand delivery app from wireframe to the Apple App Store and Google Play. The app has processed over 25,000 orders without a single crash.",
       author: "Zainab Chaudhry",
       role: "Founder, QuickDrop Logistics",
-      location: "Toronto & Lahore",
+      location: "Vancouver, BC, Canada",
     },
   },
 ];

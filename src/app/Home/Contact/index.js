@@ -28,7 +28,7 @@ export default function Contact() {
                       Request Your Free Growth Strategy Session
                     </h3>
                     <p style={{ color: "#64748b", fontSize: "15px", lineHeight: "1.6" }}>
-                      Whether you&apos;re aiming to dominate local Toronto search, scale Meta ad funnels in Canada, or build custom software with our Lahore engineering team, we&apos;re ready.
+                      Whether you&apos;re aiming to dominate local Vancouver search, scale Meta & Google ad funnels across Canada, or build custom Next.js software with our engineering team, we&apos;re ready.
                     </p>
                   </div>
                   <Form />

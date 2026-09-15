@@ -25,18 +25,18 @@ export default function CallAction() {
                   Get Your Free 30-Minute Growth Audit & Competitor Gap Analysis
                 </h3>
                 <p style={{ color: "#cbd5e1", fontSize: "17px", lineHeight: "1.7", margin: "16px 0 24px 0" }}>
-                  We will analyze your local Google Map Pack rankings, paid ad funnels, and conversion bottlenecks across Toronto, Canada or Lahore, Pakistan — completely free.
+                  We will analyze your local Google Map Pack rankings, paid ad funnels, and conversion bottlenecks across Vancouver, Canada — completely free.
                 </p>
                 <div className="cta-button d-flex flex-wrap gap-3">
                   <Link href="/contact" className="theme-btn" style={{ boxShadow: "0 4px 15px rgba(13, 110, 253, 0.4)" }}>
                     Claim Free Growth Audit
                   </Link>
                   <a
-                    href="tel:+16045403999"
+                    href="tel:+17786080909"
                     className="btn btn-outline-light px-4 py-2"
                     style={{ borderRadius: "6px", fontWeight: "600", height: "48px", display: "inline-flex", alignItems: "center" }}
                   >
-                    <i className="fa fa-phone me-2" style={{ marginRight: "8px" }}></i> Call CA: +1 (604) 540-3999
+                    <i className="fa fa-phone me-2" style={{ marginRight: "8px" }}></i> Call +1 778-608-0909
                   </a>
                 </div>
               </div>

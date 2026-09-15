@@ -50,7 +50,7 @@ export default function Sliders() {
       tag: "⚡ High-Performance Digital Growth Agency",
       title: "Dominate Local Search & Accelerate Revenue",
       subTitle:
-        "Vancouver & Lahore's premier growth agency. We engineer #1 Google 3-Pack rankings, high-converting Next.js web applications, and multi-channel marketing campaigns that consistently 3x your inbound pipeline.",
+        "Vancouver's premier growth agency based in BC, Canada. We engineer #1 Google 3-Pack rankings, high-converting Next.js web applications, and multi-channel marketing campaigns that consistently 3x your inbound pipeline.",
       button: {
         text: "Scale Your Revenue",
         link: "/contact",

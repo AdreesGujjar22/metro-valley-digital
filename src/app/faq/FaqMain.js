@@ -44,7 +44,7 @@ export default function FaqMain() {
                       </AccordionItemHeading>
                       <AccordionItemPanel>
                         <div className="faq-body">
-                          Most local businesses see ranking velocity improvements and expanded map coverage within 30 to 60 days. Highly competitive metro areas (such as Vancouver, Burnaby, Richmond, or Lahore) typically reach stable #1–#3 positions within a 90-day sprint as citation networks and review signals mature.
+                          Most local businesses see ranking velocity improvements and expanded map coverage within 30 to 60 days. Highly competitive metro areas (such as Vancouver, Burnaby, Richmond, or Surrey) typically reach stable #1–#3 positions within a 90-day sprint as citation networks and review signals mature.
                         </div>
                       </AccordionItemPanel>
                     </AccordionItem>
@@ -81,12 +81,12 @@ export default function FaqMain() {
                     <AccordionItem className="panel panel-default" uuid="d">
                       <AccordionItemHeading className="faq-heading">
                         <AccordionItemButton className="faq-title">
-                          <span>4</span> How does the Vancouver & Lahore dual-hub model benefit clients?
+                          <span>4</span> What results and reporting can clients expect?
                         </AccordionItemButton>
                       </AccordionItemHeading>
                       <AccordionItemPanel>
                         <div className="faq-body">
-                          Clients receive senior commercial strategy, account management, and market intelligence aligned with North American business standards, paired with a dedicated 24/7 engineering and creative production team in Lahore. This ensures rapid turnaround times and unmatched cost efficiency.
+                          Clients receive senior commercial strategy, transparent real-time conversion dashboards, and dedicated account management. We provide weekly sprint check-ins, monthly ROI reports, and continuous performance optimizations across your local search and paid campaigns.
                         </div>
                       </AccordionItemPanel>
                     </AccordionItem>
