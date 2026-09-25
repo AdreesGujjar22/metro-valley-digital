@@ -1,20 +1,23 @@
 import ServiceDetailView from "@/components/ServiceDetailView";
 import { getServiceBySlug } from "@/data/services";
 import { notFound } from "next/navigation";
+import { ServiceAreaSchema } from "@/components/SeoSchemas";
+import { COMPANY_INFO } from "@/data/company";
+import Link from "next/link";
 
 const service = getServiceBySlug("local-seo-google-business-profile");
 
 export const metadata = {
-  title: "Local SEO & Google Business Profile Optimization | Metro Valley Digital",
+  title: "Local SEO & Google Business Profile | Metro Valley",
   description:
-    "Dominate local search results with expert Local SEO & GMB optimization. Rank in the Google Map Pack, get more calls, and drive foot traffic. Serving Vancouver & beyond.",
+    "Climb the Google Map 3-Pack with GBP optimization, citation cleanup, and review growth built for Vancouver, Burnaby, Surrey & Lower Mainland businesses.",
   alternates: {
     canonical: "https://metrovalleydigital.com/local-seo-google-business-profile",
   },
   openGraph: {
-    title: "Local SEO & Google Business Profile Optimization | Metro Valley Digital",
+    title: "Local SEO & Google Business Profile | Metro Valley",
     description:
-      "Dominate local search results with expert Local SEO & GMB optimization. Rank in the Google Map Pack, get more calls, and drive foot traffic. Serving Vancouver & beyond.",
+      "Climb the Google Map 3-Pack with GBP optimization, citation cleanup, and review growth built for Vancouver, Burnaby, Surrey & Lower Mainland businesses.",
     url: "https://metrovalleydigital.com/local-seo-google-business-profile",
     siteName: "Metro Valley Digital",
     images: [
@@ -30,14 +33,36 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Local SEO & Google Business Profile Optimization | Metro Valley Digital",
+    title: "Local SEO & Google Business Profile | Metro Valley",
     description:
-      "Dominate local search results with expert Local SEO & GMB optimization. Rank in the Google Map Pack, get more calls, and drive foot traffic. Serving Vancouver & beyond.",
+      "Climb the Google Map 3-Pack with GBP optimization, citation cleanup, and review growth built for Vancouver, Burnaby, Surrey & Lower Mainland businesses.",
     images: ["https://metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
   },
 };
 
 export default function LocalSeoPage() {
   if (!service) return notFound();
-  return <ServiceDetailView service={service} />;
+  return (
+    <>
+      <ServiceAreaSchema />
+      <ServiceDetailView service={service} />
+      <section style={{ padding: "50px 0 70px", backgroundColor: "#ffffff" }}>
+        <div className="container">
+          <h2 style={{ fontSize: "24px", fontWeight: "800", color: "#0f172a", marginBottom: "10px" }}>
+            Local SEO & Google Business Profile Coverage Across Metro Vancouver
+          </h2>
+          <p style={{ color: "#475569", maxWidth: "760px", marginBottom: "18px" }}>
+            We build Google Business Profile and Map Pack strategies for neighbourhoods including{" "}
+            {COMPANY_INFO.serviceAreas.neighbourhoods.slice(0, 6).join(", ")}, plus the surrounding
+            cities of {COMPANY_INFO.serviceAreas.metroCities.slice(0, 6).join(", ")}. If your
+            customers search &ldquo;near me&rdquo; from any of these areas, we make sure your
+            business shows up first. Explore our full{" "}
+            <Link href="/website-seo-optimization">website SEO</Link> and{" "}
+            <Link href="/geo-generative-engine-optimization">AI search optimization</Link> services
+            to pair with local rankings.
+          </p>
+        </div>
+      </section>
+    </>
+  );
 }

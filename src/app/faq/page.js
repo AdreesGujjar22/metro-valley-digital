@@ -5,16 +5,16 @@ import FaqMain from "./FaqMain";
 import { BreadcrumbSchema, FaqSchema } from "@/components/SeoSchemas";
 
 export const metadata = {
-  title: "Local SEO & Growth Marketing FAQ | Metro Valley Digital Vancouver",
+  title: "SEO & Marketing FAQs | Metro Valley Digital",
   description:
-    "Get clear answers about our Local SEO methodologies, Google 3-Pack ranking timelines, PPC ad management, custom Next.js builds, and contract deliverables.",
+    "Straight answers on Local SEO timelines, Google 3-Pack rankings, PPC management, Next.js builds, and contract terms from our Vancouver growth team.",
   alternates: {
     canonical: "https://metrovalleydigital.com/faq",
   },
   openGraph: {
-    title: "Local SEO & Growth Marketing FAQ | Metro Valley Digital Vancouver",
+    title: "SEO & Marketing FAQs | Metro Valley Digital",
     description:
-      "Get clear answers about our Local SEO methodologies, Google 3-Pack ranking timelines, PPC ad management, custom Next.js builds, and contract deliverables.",
+      "Straight answers on Local SEO timelines, Google 3-Pack rankings, PPC management, Next.js builds, and contract terms from our Vancouver growth team.",
     url: "https://metrovalleydigital.com/faq",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Local SEO & Growth Marketing FAQ | Metro Valley Digital Vancouver",
+    title: "SEO & Marketing FAQs | Metro Valley Digital",
     description:
-      "Get clear answers about our Local SEO methodologies, Google 3-Pack ranking timelines, PPC ad management, custom Next.js builds, and contract deliverables.",
+      "Straight answers on Local SEO timelines, Google 3-Pack rankings, PPC management, Next.js builds, and contract terms from our Vancouver growth team.",
     images: ["https://metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg"],
   },
 };

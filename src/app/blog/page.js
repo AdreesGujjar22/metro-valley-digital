@@ -5,16 +5,16 @@ import { BreadcrumbSchema } from "@/components/SeoSchemas";
 import Link from "next/link";
 
 export const metadata = {
-  title: "SEO & Growth Marketing Insights | Metro Valley Digital Vancouver",
+  title: "SEO & Growth Marketing Blog | Metro Valley Digital",
   description:
-    "Tactical guides, case studies, and engineering playbooks on Local SEO, Google Maps 3-Pack rankings, performance PPC ads, Next.js web development, and conversational AI.",
+    "Guides and case studies on Local SEO, Google 3-Pack rankings, performance ads, Next.js development, and AI tools from our Vancouver growth team.",
   alternates: {
     canonical: "https://metrovalleydigital.com/blog",
   },
   openGraph: {
-    title: "SEO & Growth Marketing Insights | Metro Valley Digital Vancouver",
+    title: "SEO & Growth Marketing Blog | Metro Valley Digital",
     description:
-      "Tactical guides, case studies, and engineering playbooks on Local SEO, Google Maps 3-Pack rankings, performance PPC ads, Next.js web development, and conversational AI.",
+      "Guides and case studies on Local SEO, Google 3-Pack rankings, performance ads, Next.js development, and AI tools from our Vancouver growth team.",
     url: "https://metrovalleydigital.com/blog",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO & Growth Marketing Insights | Metro Valley Digital Vancouver",
+    title: "SEO & Growth Marketing Blog | Metro Valley Digital",
     description:
-      "Tactical guides, case studies, and engineering playbooks on Local SEO, Google Maps 3-Pack rankings, performance PPC ads, Next.js web development, and conversational AI.",
+      "Guides and case studies on Local SEO, Google 3-Pack rankings, performance ads, Next.js development, and AI tools from our Vancouver growth team.",
     images: ["https://metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
   },
 };

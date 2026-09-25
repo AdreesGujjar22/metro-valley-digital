@@ -5,16 +5,16 @@ import { notFound } from "next/navigation";
 const service = getServiceBySlug("website-development");
 
 export const metadata = {
-  title: "Custom Website Development Services | Fast, Responsive & SEO-Ready | Metro Valley Digital",
+  title: "Website Development Services | Metro Valley Digital",
   description:
-    "Professional website development — custom, responsive & SEO-optimized sites built to convert. From business websites to complex web apps, Metro Valley Digital delivers.",
+    "Fast, responsive, SEO-ready websites built on modern Next.js architecture, designed to load quickly, rank well, and convert visitors.",
   alternates: {
     canonical: "https://metrovalleydigital.com/website-development",
   },
   openGraph: {
-    title: "Custom Website Development Services | Fast, Responsive & SEO-Ready | Metro Valley Digital",
+    title: "Website Development Services | Metro Valley Digital",
     description:
-      "Professional website development — custom, responsive & SEO-optimized sites built to convert. From business websites to complex web apps, Metro Valley Digital delivers.",
+      "Fast, responsive, SEO-ready websites built on modern Next.js architecture, designed to load quickly, rank well, and convert visitors.",
     url: "https://metrovalleydigital.com/website-development",
     siteName: "Metro Valley Digital",
     images: [
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Custom Website Development Services | Fast, Responsive & SEO-Ready | Metro Valley Digital",
+    title: "Website Development Services | Metro Valley Digital",
     description:
-      "Professional website development — custom, responsive & SEO-optimized sites built to convert. From business websites to complex web apps, Metro Valley Digital delivers.",
+      "Fast, responsive, SEO-ready websites built on modern Next.js architecture, designed to load quickly, rank well, and convert visitors.",
     images: ["https://metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
   },
 };

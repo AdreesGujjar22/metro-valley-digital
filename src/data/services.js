@@ -7,9 +7,9 @@ export const SERVICES_CATALOG = [
     category: "Search & SEO",
     title: "SEO Services",
     shortTitle: "SEO Services",
-    metaTitle: "SEO Services in Vancouver | Rank Higher on Google | Metro Valley Digital",
+    metaTitle: "SEO Services in Vancouver | Metro Valley Digital",
     metaDescription:
-      "Boost organic traffic with expert SEO services from Metro Valley Digital. On-page, off-page & technical SEO strategies that drive real rankings and ROI. Get a free audit today.",
+      "Rank higher, drive organic traffic, and convert more visitors with technical, on-page, and off-page SEO built for Vancouver and Canada-wide businesses.",
     h1: "Professional SEO Services That Drive Real Results",
     bodyCopy:
       "Search Engine Optimization (SEO) is the foundation of sustainable online growth. At Metro Valley Digital, we help businesses climb Google rankings, attract high-intent organic traffic, and convert visitors into paying customers — without relying on paid ads.",
@@ -83,9 +83,9 @@ export const SERVICES_CATALOG = [
     category: "AI & Search Innovation",
     title: "GEO (Generative Engine Optimization)",
     shortTitle: "GEO Services",
-    metaTitle: "GEO Services | Generative Engine Optimization for AI Search | Metro Valley Digital",
+    metaTitle: "GEO: Generative Engine Optimization | Metro Valley",
     metaDescription:
-      "Get found on ChatGPT, Google AI Overviews & Perplexity with GEO — Generative Engine Optimization. Metro Valley Digital optimizes your brand for the AI-powered search era.",
+      "Get cited by ChatGPT, Gemini, and Perplexity with AI search entity optimization, structured data, and fact-dense content from our Vancouver GEO team.",
     h1: "GEO Services — Get Your Brand Recommended by AI",
     bodyCopy:
       "Search is evolving beyond the traditional '10 blue links.' Tools like ChatGPT, Google AI Overviews, Gemini, and Perplexity are now answering user queries directly — and only citing select sources. GEO (Generative Engine Optimization) ensures your brand is one of them.",
@@ -155,9 +155,9 @@ export const SERVICES_CATALOG = [
     category: "Search & SEO",
     title: "Local SEO & Google Business Profile (GMB) Optimization",
     shortTitle: "Local SEO & GMB",
-    metaTitle: "Local SEO & Google Business Profile Optimization | Metro Valley Digital",
+    metaTitle: "Local SEO & Google Business Profile | Metro Valley",
     metaDescription:
-      "Dominate local search results with expert Local SEO & GMB optimization. Rank in the Google Map Pack, get more calls, and drive foot traffic. Serving Vancouver & beyond.",
+      "Climb the Google Map 3-Pack with GBP optimization, citation cleanup, and review growth built for Vancouver, Burnaby, Surrey & Lower Mainland businesses.",
     h1: "Local SEO Services — Rank in Your Neighborhood, Get Found Fast",
     bodyCopy:
       "If you run a local business, showing up in the Google Map Pack (the top 3 local results) is critical. We optimize your Google Business Profile (GMB) and local presence so nearby customers find and choose you first.",
@@ -231,9 +231,9 @@ export const SERVICES_CATALOG = [
     category: "Search & SEO",
     title: "Website SEO (On-Page & Technical)",
     shortTitle: "Website SEO Optimization",
-    metaTitle: "Website SEO Optimization Services | Improve Site Speed & Rankings | Metro Valley Digital",
+    metaTitle: "Website SEO Optimization Services | Metro Valley",
     metaDescription:
-      "Full website SEO audits & optimization — technical fixes, on-page SEO, speed improvements, and structure that Google loves. Improve rankings with Metro Valley Digital.",
+      "Improve Core Web Vitals, fix technical errors, and align on-page SEO so your site ranks and converts. Vancouver-based technical SEO specialists.",
     h1: "Website SEO Optimization — Built for Speed, Structure & Search Rankings",
     bodyCopy:
       "Your website is your digital storefront. If it's slow, poorly structured, or not optimized, you're losing both rankings and customers. We optimize every technical and on-page element of your site for maximum search performance.",
@@ -311,9 +311,9 @@ export const SERVICES_CATALOG = [
     category: "Advertising & Social Media",
     title: "Social Media Marketing",
     shortTitle: "Social Media Marketing",
-    metaTitle: "Social Media Marketing Services | Grow Your Brand Online | Metro Valley Digital",
+    metaTitle: "Social Media Marketing Services | Metro Valley",
     metaDescription:
-      "Expert social media marketing on Instagram, Facebook, TikTok, LinkedIn & more. Content creation, community management & growth strategy from Metro Valley Digital.",
+      "Grow your brand with strategy-led content calendars, short-form video, and community management across Instagram, TikTok, and Facebook.",
     h1: "Social Media Marketing That Builds Real Engagement & Brand Loyalty",
     bodyCopy:
       "We help brands grow their presence across Instagram, Facebook, TikTok, LinkedIn, and X (Twitter) with strategic content, consistent posting, and community engagement that turns followers into customers.",
@@ -387,9 +387,9 @@ export const SERVICES_CATALOG = [
     category: "Advertising & Social Media",
     title: "Paid Advertising (Meta, TikTok, Google Ads & More)",
     shortTitle: "Paid Ads & PPC",
-    metaTitle: "Paid Ads Management | Meta, TikTok & Google Ads Experts | Metro Valley Digital",
+    metaTitle: "Paid Ads Management | Meta, TikTok & Google Ads",
     metaDescription:
-      "Certified ad specialists managing Meta, TikTok, Google & YouTube Ads. Data-driven campaigns that lower CPA and maximize ROI. Get a free ad account audit from Metro Valley Digital.",
+      "High-ROAS Meta, TikTok, Google, and LinkedIn ad campaigns with server-side tracking and creative testing, managed by our Vancouver performance team.",
     h1: "Paid Advertising Experts — Meta, TikTok, Google & More",
     bodyCopy:
       "Running ads without expertise wastes budget fast. Our certified media buyers create, manage, and optimize high-converting ad campaigns across every major platform to maximize your return on ad spend (ROAS).",
@@ -459,9 +459,9 @@ export const SERVICES_CATALOG = [
     category: "E-Commerce & Marketplaces",
     title: "Shopify & E-Commerce Store Development",
     shortTitle: "Shopify & E-Commerce",
-    metaTitle: "Shopify & E-Commerce Store Development Services | Metro Valley Digital",
+    metaTitle: "Shopify & E-Commerce Development | Metro Valley",
     metaDescription:
-      "Custom Shopify store setup, design & optimization built to convert. From product pages to checkout flow, Metro Valley Digital builds high-performing e-commerce stores.",
+      "Custom Shopify stores built for speed, conversion, and scale, from theme design to checkout optimization and ongoing store support.",
     h1: "Shopify & E-Commerce Development Built to Convert",
     bodyCopy:
       "We design, build, and optimize Shopify and e-commerce stores that look professional, load fast, and are engineered to turn visitors into paying customers.",
@@ -539,9 +539,9 @@ export const SERVICES_CATALOG = [
     category: "E-Commerce & Marketplaces",
     title: "Amazon & eBay Product Hunting & Listing Optimization",
     shortTitle: "Amazon & eBay Research",
-    metaTitle: "Amazon & eBay Product Research & Listing Optimization | Metro Valley Digital",
+    metaTitle: "Amazon & eBay Product Research | Metro Valley",
     metaDescription:
-      "Expert Amazon & eBay product hunting, sourcing & listing optimization services. Find winning products and boost sales rank with Metro Valley Digital.",
+      "Data-driven product hunting, supplier sourcing, and A9/A10 listing optimization to help your Amazon and eBay stores find profitable winners.",
     h1: "Amazon & eBay Product Hunting & Listing Optimization Experts",
     bodyCopy:
       "Finding the right product is the single biggest factor in e-commerce success. Our product research specialists use data-driven tools and market analysis to identify high-demand, low-competition, profitable products for Amazon FBA and eBay sellers.",
@@ -619,9 +619,9 @@ export const SERVICES_CATALOG = [
     category: "Software & App Engineering",
     title: "Website Development",
     shortTitle: "Custom Web Development",
-    metaTitle: "Custom Website Development Services | Fast, Responsive & SEO-Ready | Metro Valley Digital",
+    metaTitle: "Website Development Services | Metro Valley Digital",
     metaDescription:
-      "Professional website development — custom, responsive & SEO-optimized sites built to convert. From business websites to complex web apps, Metro Valley Digital delivers.",
+      "Fast, responsive, SEO-ready websites built on modern Next.js architecture, designed to load quickly, rank well, and convert visitors.",
     h1: "Custom Website Development — Fast, Functional & Built to Grow Your Business",
     bodyCopy:
       "We design and develop custom websites tailored to your brand and business goals — combining clean design, fast performance, and SEO-ready structure from day one.",
@@ -695,9 +695,9 @@ export const SERVICES_CATALOG = [
     category: "AI & Search Innovation",
     title: "AI Chatbot Integration",
     shortTitle: "AI Chatbots & Automation",
-    metaTitle: "AI Chatbot Integration Services for Websites | Metro Valley Digital",
+    metaTitle: "AI Chatbot Integration Services | Metro Valley",
     metaDescription:
-      "Add 24/7 AI chatbots to your website for instant customer support, lead capture & sales automation. Custom chatbot integration by Metro Valley Digital.",
+      "Custom AI chatbots that capture leads, answer FAQs, and qualify customers 24/7, integrated with your CRM, WhatsApp, and email.",
     h1: "AI Chatbot Integration — 24/7 Automated Customer Support & Lead Generation",
     bodyCopy:
       "We integrate intelligent AI chatbots into your website to instantly answer customer questions, capture leads, and guide visitors toward conversion — around the clock, without human intervention.",
@@ -771,9 +771,9 @@ export const SERVICES_CATALOG = [
     category: "Software & App Engineering",
     title: "AI Website Building",
     shortTitle: "AI Website Building",
-    metaTitle: "AI Website Builder Services | Launch Faster with AI | Metro Valley Digital",
+    metaTitle: "AI Website Building Services | Metro Valley",
     metaDescription:
-      "Get a professionally designed, AI-powered website built faster and smarter. Metro Valley Digital combines AI tools with expert design for stunning, SEO-ready websites.",
+      "Launch a polished, SEO-structured website faster with AI-assisted design and human-refined branding, copy, and UX from our Vancouver team.",
     h1: "AI-Powered Website Building — Smarter, Faster Website Creation",
     bodyCopy:
       "We leverage cutting-edge AI website-building tools combined with expert human design and SEO strategy to launch stunning, functional websites in a fraction of the traditional time — without sacrificing quality.",
@@ -843,9 +843,9 @@ export const SERVICES_CATALOG = [
     category: "Software & App Engineering",
     title: "Mobile Application Development",
     shortTitle: "Mobile App Development",
-    metaTitle: "Mobile App Development Services | iOS & Android Apps | Metro Valley Digital",
+    metaTitle: "Mobile App Development Services | Metro Valley",
     metaDescription:
-      "Custom iOS & Android mobile app development from concept to launch. Metro Valley Digital builds scalable, user-friendly mobile apps for businesses of all sizes.",
+      "iOS and Android apps built with React Native and Flutter, from UI/UX design through app store submission and post-launch support.",
     h1: "Mobile Application Development — From Idea to App Store Launch",
     bodyCopy:
       "We design and develop custom mobile applications for iOS and Android that are intuitive, scalable, and built to solve real business problems — from MVPs to full-featured apps.",

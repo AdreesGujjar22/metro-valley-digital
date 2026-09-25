@@ -5,16 +5,16 @@ import Sliders from "../Home/Testimonial/Sliders";
 import { BreadcrumbSchema, ServiceCatalogSchema } from "@/components/SeoSchemas";
 
 export const metadata = {
-  title: "Digital Marketing, SEO & Web Services Catalog | Metro Valley Digital",
+  title: "Digital Marketing & SEO Services | Metro Valley Digital",
   description:
-    "Explore our 12 core digital marketing and engineering services: Local SEO, GEO AI search optimization, paid ads, Shopify development, custom software, and AI chatbots.",
+    "Browse 12 growth services: Local SEO, GEO, paid ads, Shopify builds, custom software, and AI chatbots for Vancouver and Canada-wide businesses.",
   alternates: {
     canonical: "https://metrovalleydigital.com/services",
   },
   openGraph: {
-    title: "Digital Marketing, SEO & Web Services Catalog | Metro Valley Digital",
+    title: "Digital Marketing & SEO Services | Metro Valley Digital",
     description:
-      "Explore our 12 core digital marketing and engineering services: Local SEO, GEO AI search optimization, paid ads, Shopify development, custom software, and AI chatbots.",
+      "Browse 12 growth services: Local SEO, GEO, paid ads, Shopify builds, custom software, and AI chatbots for Vancouver and Canada-wide businesses.",
     url: "https://metrovalleydigital.com/services",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Digital Marketing, SEO & Web Services Catalog | Metro Valley Digital",
+    title: "Digital Marketing & SEO Services | Metro Valley Digital",
     description:
-      "Explore our 12 core digital marketing and engineering services: Local SEO, GEO AI search optimization, paid ads, Shopify development, custom software, and AI chatbots.",
+      "Browse 12 growth services: Local SEO, GEO, paid ads, Shopify builds, custom software, and AI chatbots for Vancouver and Canada-wide businesses.",
     images: ["https://metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
   },
 };

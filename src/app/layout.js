@@ -48,7 +48,7 @@ export const metadata = {
     template: "%s | Metro Valley Digital",
   },
   description:
-    "Dominate local search, rank #1 on Google 3-Pack, and scale paid ads with Metro Valley Digital. Vancouver, BC growth marketing agency engineering proven client ROI.",
+    "Vancouver-based SEO and growth marketing agency helping local businesses rank #1 on Google, scale paid ads, and build custom web and AI software.",
   keywords: [
     "Local SEO Agency",
     "Google 3-Pack Optimization",
@@ -77,7 +77,7 @@ export const metadata = {
   openGraph: {
     title: "Metro Valley Digital | SEO & Growth Marketing Agency",
     description:
-      "Dominate local search, rank #1 on Google 3-Pack, and scale paid ads with Metro Valley Digital. Vancouver, BC growth marketing agency engineering proven client ROI.",
+      "Vancouver-based SEO and growth marketing agency helping local businesses rank #1 on Google, scale paid ads, and build custom web and AI software.",
     url: "https://metrovalleydigital.com",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
@@ -95,7 +95,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Metro Valley Digital | SEO & Growth Marketing Agency",
     description:
-      "Dominate local search, rank #1 on Google 3-Pack, and scale paid ads with Metro Valley Digital. Vancouver, BC growth marketing agency engineering proven client ROI.",
+      "Vancouver-based SEO and growth marketing agency helping local businesses rank #1 on Google, scale paid ads, and build custom web and AI software.",
     images: ["https://metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
     creator: "@metrovalleydig",
   },

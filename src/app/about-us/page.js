@@ -5,16 +5,16 @@ import About from "../Home/About";
 import { BreadcrumbSchema, AboutPageSchema } from "@/components/SeoSchemas";
 
 export const metadata = {
-  title: "About Metro Valley Digital | Vancouver Digital Marketing & Software Agency",
+  title: "About Metro Valley Digital | Vancouver SEO Agency",
   description:
-    "Learn how Metro Valley Digital empowers businesses with data-driven Local SEO, Google 3-Pack rankings, paid media ads, and custom Next.js web applications in Vancouver, BC, Canada.",
+    "Meet the Vancouver team behind Metro Valley Digital's Local SEO, paid ads, and custom software results for businesses across BC and North America.",
   alternates: {
     canonical: "https://metrovalleydigital.com/about-us",
   },
   openGraph: {
-    title: "About Metro Valley Digital | Vancouver Digital Marketing & Software Agency",
+    title: "About Metro Valley Digital | Vancouver SEO Agency",
     description:
-      "Learn how Metro Valley Digital empowers businesses with data-driven Local SEO, Google 3-Pack rankings, paid media ads, and custom Next.js web applications in Vancouver, BC, Canada.",
+      "Meet the Vancouver team behind Metro Valley Digital's Local SEO, paid ads, and custom software results for businesses across BC and North America.",
     url: "https://metrovalleydigital.com/about-us",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Metro Valley Digital | Vancouver Digital Marketing & Software Agency",
+    title: "About Metro Valley Digital | Vancouver SEO Agency",
     description:
-      "Learn how Metro Valley Digital empowers businesses with data-driven Local SEO, Google 3-Pack rankings, paid media ads, and custom Next.js web applications in Vancouver, BC, Canada.",
+      "Meet the Vancouver team behind Metro Valley Digital's Local SEO, paid ads, and custom software results for businesses across BC and North America.",
     images: ["https://metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
   },
 };

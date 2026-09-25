@@ -3,16 +3,16 @@ import Pricing from "../Home/Pricing";
 import { BreadcrumbSchema } from "@/components/SeoSchemas";
 
 export const metadata = {
-  title: "Transparent Growth & SEO Pricing Plans | Metro Valley Digital Vancouver",
+  title: "SEO & Growth Marketing Pricing | Metro Valley Digital",
   description:
-    "Explore transparent ROI-driven pricing packages for Local SEO, Google 3-Pack optimization, paid media management, and custom Next.js software development.",
+    "Transparent, ROI-focused pricing for Local SEO, Google 3-Pack optimization, paid ads, and custom Next.js development. No hidden fees, no long contracts.",
   alternates: {
     canonical: "https://metrovalleydigital.com/pricing",
   },
   openGraph: {
-    title: "Transparent Growth & SEO Pricing Plans | Metro Valley Digital Vancouver",
+    title: "SEO & Growth Marketing Pricing | Metro Valley Digital",
     description:
-      "Explore transparent ROI-driven pricing packages for Local SEO, Google 3-Pack optimization, paid media management, and custom Next.js software development.",
+      "Transparent, ROI-focused pricing for Local SEO, Google 3-Pack optimization, paid ads, and custom Next.js development. No hidden fees, no long contracts.",
     url: "https://metrovalleydigital.com/pricing",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
@@ -28,9 +28,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Transparent Growth & SEO Pricing Plans | Metro Valley Digital Vancouver",
+    title: "SEO & Growth Marketing Pricing | Metro Valley Digital",
     description:
-      "Explore transparent ROI-driven pricing packages for Local SEO, Google 3-Pack optimization, paid media management, and custom Next.js software development.",
+      "Transparent, ROI-focused pricing for Local SEO, Google 3-Pack optimization, paid ads, and custom Next.js development. No hidden fees, no long contracts.",
     images: ["https://metrovalleydigital.com/images/paid_ads_roas_1788191423627.jpg"],
   },
 };

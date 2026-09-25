@@ -86,9 +86,8 @@ export function SitewideSchemas() {
     ],
     areaServed: [
       { "@type": "City", name: "Vancouver" },
-      { "@type": "City", name: "Burnaby" },
-      { "@type": "City", name: "Richmond" },
-      { "@type": "City", name: "Surrey" },
+      ...COMPANY_INFO.serviceAreas.neighbourhoods.map((n) => ({ "@type": "Place", name: n })),
+      ...COMPANY_INFO.serviceAreas.metroCities.map((c) => ({ "@type": "City", name: c })),
       { "@type": "City", name: "Toronto" },
       { "@type": "Country", name: "Canada" },
       { "@type": "Country", name: "United States" },
@@ -284,6 +283,32 @@ export function FaqSchema({ faqs = [] }) {
         text: item.a,
       },
     })),
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+export function ServiceAreaSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://metrovalleydigital.com/#service-area",
+    name: "Metro Valley Digital Service Coverage",
+    provider: { "@id": "https://metrovalleydigital.com/#organization" },
+    areaServed: [
+      { "@type": "City", name: "Vancouver" },
+      ...COMPANY_INFO.serviceAreas.neighbourhoods.map((n) => ({
+        "@type": "Place",
+        name: n,
+        containedInPlace: { "@type": "City", name: "Vancouver" },
+      })),
+      ...COMPANY_INFO.serviceAreas.metroCities.map((c) => ({ "@type": "City", name: c })),
+    ],
   };
 
   return (
