@@ -17,7 +17,7 @@ export default function About() {
           </div>
           {/* <!-- Quick Link Box -->	 */}
           <div className="f-contact-box" style={{ background: "rgba(255,255,255,0.06)", padding: "12px 16px", borderRadius: "8px", marginTop: "16px" }}>
-            <div className="box-icon" style={{ color: "#38bdf8" }}>
+            <div className="box-icon" style={{ color: "var(--primary-color)" }}>
               <i className="fa fa-phone"></i>
             </div>
             <div className="contact-text">

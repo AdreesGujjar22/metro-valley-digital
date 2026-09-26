@@ -122,7 +122,7 @@ export default async function CaseStudyPage({ params }) {
                 </span>
               </div>
 
-              <h2 style={{ fontSize: "17px", fontWeight: "700", color: "#28b463", marginBottom: "10px" }}>
+              <h2 style={{ fontSize: "17px", fontWeight: "700", color: "var(--primary-color)", marginBottom: "10px" }}>
                 {project.subtitle}
               </h2>
               <p style={{ color: "#475569", fontSize: "15.5px", lineHeight: "1.8", marginBottom: "30px" }}>
@@ -142,7 +142,7 @@ export default async function CaseStudyPage({ params }) {
                         textAlign: "center",
                       }}
                     >
-                      <div style={{ fontSize: "22px", fontWeight: "900", color: "#28b463" }}>{res.value}</div>
+                      <div style={{ fontSize: "22px", fontWeight: "900", color: "var(--primary-color)" }}>{res.value}</div>
                       <div style={{ fontSize: "12px", color: "#64748b", fontWeight: "600", marginTop: "2px" }}>
                         {res.label}
                       </div>
@@ -225,7 +225,7 @@ export default async function CaseStudyPage({ params }) {
                 <Link
                   href="/contact"
                   className="btn btn-success fw-bold px-4 py-2 rounded-pill"
-                  style={{ backgroundColor: "#28b463", borderColor: "#28b463" }}
+                  style={{ backgroundColor: "var(--primary-color)", borderColor: "var(--primary-color)" }}
                 >
                   Schedule Free Audit
                 </Link>
@@ -259,11 +259,11 @@ export default async function CaseStudyPage({ params }) {
                     </div>
                     <div>
                       <div style={{ fontSize: "13.5px", fontWeight: "700", color: "#0f172a", lineHeight: "1.3" }}>{rp.title}</div>
-                      <div style={{ fontSize: "12px", color: "#28b463", fontWeight: "600" }}>{rp.results[0]?.value} {rp.results[0]?.label}</div>
+                      <div style={{ fontSize: "12px", color: "var(--primary-color)", fontWeight: "600" }}>{rp.results[0]?.value} {rp.results[0]?.label}</div>
                     </div>
                   </Link>
                 ))}
-                <Link href="/portfolio" style={{ fontSize: "13px", color: "#28b463", fontWeight: "700", display: "inline-block", marginTop: "6px" }}>
+                <Link href="/portfolio" style={{ fontSize: "13px", color: "var(--primary-color)", fontWeight: "700", display: "inline-block", marginTop: "6px" }}>
                   View all case studies <i className="fa fa-arrow-right ms-1"></i>
                 </Link>
               </div>

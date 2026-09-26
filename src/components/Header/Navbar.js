@@ -7,6 +7,19 @@ import { usePathname } from "next/navigation";
 
 import AgencyLogo from "../AgencyLogo";
 import MobileOffcanvas from "../MobileOffcanvas";
+import { SERVICES_CATALOG } from "@/data/services";
+
+// Group the real services catalog by its existing category field so the
+// desktop mega menu always reflects the actual services on the site.
+const SERVICE_MENU_GROUPS = SERVICES_CATALOG.reduce((groups, service) => {
+  let group = groups.find((g) => g.category === service.category);
+  if (!group) {
+    group = { category: service.category, items: [] };
+    groups.push(group);
+  }
+  group.items.push(service);
+  return groups;
+}, []);
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -62,7 +75,7 @@ export default function Navbar() {
                                     Home
                                   </Link>
                                 </li>
-                                <li>
+                                <li className="has-mega-menu">
                                   <Link
                                     className={` ${
                                       pathname === "/services" ||
@@ -86,49 +99,44 @@ export default function Navbar() {
                                     Services
                                     <i className="fa fa-angle-down"></i>
                                   </Link>
-                                  <ul className="sub-menu" style={{ minWidth: "260px" }}>
-                                    <li>
-                                      <Link href="/services">
-                                        <strong>All 12 Services Overview</strong>
+
+                                  {/* Desktop Services Mega Menu */}
+                                  <div className="mega-menu">
+                                    <div className="mega-menu-top">
+                                      <span className="mega-menu-eyebrow">
+                                        Explore Our Services
+                                      </span>
+                                      <Link href="/services" className="mega-menu-viewall">
+                                        View All 12 Services
+                                        <i className="fa fa-long-arrow-right"></i>
                                       </Link>
-                                    </li>
-                                    <li>
-                                      <Link href="/seo-services">SEO Services (Rank Higher)</Link>
-                                    </li>
-                                    <li>
-                                      <Link href="/geo-generative-engine-optimization">GEO (AI Search Optimization)</Link>
-                                    </li>
-                                    <li>
-                                      <Link href="/local-seo-google-business-profile">Local SEO & Google Maps</Link>
-                                    </li>
-                                    <li>
-                                      <Link href="/website-seo-optimization">Website SEO & Speed</Link>
-                                    </li>
-                                    <li>
-                                      <Link href="/paid-advertising-ppc">Paid Ads (Meta, TikTok, Google)</Link>
-                                    </li>
-                                    <li>
-                                      <Link href="/social-media-marketing">Social Media Marketing</Link>
-                                    </li>
-                                    <li>
-                                      <Link href="/shopify-ecommerce-development">Shopify & E-Commerce</Link>
-                                    </li>
-                                    <li>
-                                      <Link href="/amazon-ebay-product-research">Amazon & eBay Research</Link>
-                                    </li>
-                                    <li>
-                                      <Link href="/website-development">Website Development</Link>
-                                    </li>
-                                    <li>
-                                      <Link href="/ai-chatbot-integration">AI Chatbot Integration</Link>
-                                    </li>
-                                    <li>
-                                      <Link href="/ai-website-building">AI Website Building</Link>
-                                    </li>
-                                    <li>
-                                      <Link href="/mobile-app-development">Mobile App Development</Link>
-                                    </li>
-                                  </ul>
+                                    </div>
+                                    <div className="mega-menu-grid">
+                                      {SERVICE_MENU_GROUPS.map((group) => (
+                                        <div className="mega-menu-col" key={group.category}>
+                                          <div className="mega-menu-col-head">
+                                            <span className="mega-menu-badge">
+                                              {group.category.charAt(0)}
+                                            </span>
+                                            <h4>{group.category}</h4>
+                                          </div>
+                                          <ul className="mega-menu-list">
+                                            {group.items.map((item) => (
+                                              <li key={item.slug}>
+                                                <Link href={item.url || `/${item.slug}`}>
+                                                  <span>
+                                                    <i className={item.icon}></i>
+                                                    {item.shortTitle || item.title}
+                                                  </span>
+                                                  <i className="fa fa-angle-right mega-menu-arrow"></i>
+                                                </Link>
+                                              </li>
+                                            ))}
+                                          </ul>
+                                        </div>
+                                      ))}
+                                    </div>
+                                  </div>
                                 </li>
                                 <li>
                                   <Link

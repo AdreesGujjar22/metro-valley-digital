@@ -71,8 +71,8 @@ export default function ServiceDetailView({ service }) {
               <div className="d-flex flex-wrap align-items-center gap-3">
                 <span
                   style={{
-                    backgroundColor: "rgba(14, 165, 233, 0.2)",
-                    color: "#38bdf8",
+                    backgroundColor: "rgba(var(--primary-color-rgb), 0.2)",
+                    color: "var(--primary-color)",
                     padding: "4px 12px",
                     borderRadius: "20px",
                     fontWeight: "600",
@@ -142,7 +142,7 @@ export default function ServiceDetailView({ service }) {
                     href="/services"
                     className="text-decoration-none"
                     style={{
-                      color: "#2563eb",
+                      color: "var(--primary-color)",
                       fontWeight: "700",
                       fontSize: "14px",
                       textTransform: "uppercase",
@@ -188,7 +188,7 @@ export default function ServiceDetailView({ service }) {
                   <div
                     style={{
                       backgroundColor: "#f8fafc",
-                      borderLeft: "4px solid #2563eb",
+                      borderLeft: "4px solid var(--primary-color)",
                       padding: "20px 24px",
                       borderRadius: "0 10px 10px 0",
                       marginBottom: "36px",
@@ -200,11 +200,11 @@ export default function ServiceDetailView({ service }) {
                           width: "48px",
                           height: "48px",
                           borderRadius: "50%",
-                          backgroundColor: "rgba(37, 99, 235, 0.1)",
+                          backgroundColor: "rgba(var(--primary-color-rgb), 0.1)",
                           display: "flex",
                           alignItems: "center",
                           justifyContent: "center",
-                          color: "#2563eb",
+                          color: "var(--primary-color)",
                           fontSize: "22px",
                           marginRight: "18px",
                           flexShrink: 0,
@@ -287,8 +287,8 @@ export default function ServiceDetailView({ service }) {
                                   width: "28px",
                                   height: "28px",
                                   borderRadius: "50%",
-                                  backgroundColor: "rgba(37, 99, 235, 0.1)",
-                                  color: "#2563eb",
+                                  backgroundColor: "rgba(var(--primary-color-rgb), 0.1)",
+                                  color: "var(--primary-color)",
                                   display: "flex",
                                   alignItems: "center",
                                   justifyContent: "center",
@@ -369,7 +369,7 @@ export default function ServiceDetailView({ service }) {
                       href="#audit-form"
                       className="btn"
                       style={{
-                        backgroundColor: "#2563eb",
+                        backgroundColor: "var(--primary-color)",
                         color: "#ffffff",
                         fontWeight: "700",
                         fontSize: "15px",
@@ -500,7 +500,7 @@ export default function ServiceDetailView({ service }) {
                             key={index}
                             style={{
                               backgroundColor: "#ffffff",
-                              border: isOpen ? "1px solid #2563eb" : "1px solid #e2e8f0",
+                              border: isOpen ? "1px solid var(--primary-color)" : "1px solid #e2e8f0",
                               borderRadius: "10px",
                               marginBottom: "14px",
                               overflow: "hidden",
@@ -526,7 +526,7 @@ export default function ServiceDetailView({ service }) {
                                 style={{
                                   fontSize: "16px",
                                   fontWeight: "700",
-                                  color: isOpen ? "#2563eb" : "#0f172a",
+                                  color: isOpen ? "var(--primary-color)" : "#0f172a",
                                 }}
                               >
                                 {faq.q}
@@ -536,7 +536,7 @@ export default function ServiceDetailView({ service }) {
                                   width: "28px",
                                   height: "28px",
                                   borderRadius: "50%",
-                                  backgroundColor: isOpen ? "#2563eb" : "#f1f5f9",
+                                  backgroundColor: isOpen ? "var(--primary-color)" : "#f1f5f9",
                                   color: isOpen ? "#ffffff" : "#64748b",
                                   display: "flex",
                                   alignItems: "center",
@@ -611,7 +611,7 @@ export default function ServiceDetailView({ service }) {
                                   style={{
                                     fontSize: "11px",
                                     textTransform: "uppercase",
-                                    color: "#2563eb",
+                                    color: "var(--primary-color)",
                                     fontWeight: "700",
                                     letterSpacing: "0.5px",
                                   }}
@@ -647,7 +647,7 @@ export default function ServiceDetailView({ service }) {
                                 style={{
                                   marginTop: "14px",
                                   fontSize: "13px",
-                                  color: "#2563eb",
+                                  color: "var(--primary-color)",
                                   fontWeight: "700",
                                   display: "flex",
                                   alignItems: "center",
@@ -688,8 +688,8 @@ export default function ServiceDetailView({ service }) {
                 >
                   <span
                     style={{
-                      backgroundColor: "rgba(37,99,235,0.1)",
-                      color: "#2563eb",
+                      backgroundColor: "rgba(var(--primary-color-rgb),0.1)",
+                      color: "var(--primary-color)",
                       fontWeight: "700",
                       fontSize: "12px",
                       padding: "4px 10px",
@@ -873,7 +873,7 @@ export default function ServiceDetailView({ service }) {
                         type="submit"
                         className="btn w-100"
                         style={{
-                          backgroundColor: "#2563eb",
+                          backgroundColor: "var(--primary-color)",
                           color: "#ffffff",
                           fontWeight: "700",
                           fontSize: "15px",
@@ -962,7 +962,7 @@ export default function ServiceDetailView({ service }) {
                             href={s.url}
                             className="text-decoration-none d-flex align-items-center justify-content-between p-2 rounded"
                             style={{
-                              backgroundColor: isCurrent ? "#2563eb" : "transparent",
+                              backgroundColor: isCurrent ? "var(--primary-color)" : "transparent",
                               color: isCurrent ? "#ffffff" : "#334155",
                               fontWeight: isCurrent ? "700" : "500",
                               transition: "all 0.15s ease",
@@ -971,7 +971,7 @@ export default function ServiceDetailView({ service }) {
                             <span>
                               <i
                                 className={`${s.icon} me-2`}
-                                style={{ color: isCurrent ? "#ffffff" : "#2563eb", width: "16px" }}
+                                style={{ color: isCurrent ? "#ffffff" : "var(--primary-color)", width: "16px" }}
                               ></i>
                               {s.shortTitle || s.title}
                             </span>
@@ -1002,7 +1002,7 @@ export default function ServiceDetailView({ service }) {
             <div className="col-lg-8 col-12 mb-4 mb-lg-0">
               <span
                 style={{
-                  color: "#38bdf8",
+                  color: "var(--primary-color)",
                   fontWeight: "700",
                   fontSize: "13px",
                   textTransform: "uppercase",
@@ -1033,7 +1033,7 @@ export default function ServiceDetailView({ service }) {
                   href="#audit-form"
                   className="btn"
                   style={{
-                    backgroundColor: "#2563eb",
+                    backgroundColor: "var(--primary-color)",
                     color: "#ffffff",
                     fontWeight: "700",
                     fontSize: "15px",

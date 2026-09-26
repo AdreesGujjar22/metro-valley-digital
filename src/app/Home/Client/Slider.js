@@ -97,8 +97,8 @@ export default function Sliders() {
       subtext: "Custom AI Agents & Lead Bots",
       icon: (
         <svg width="40" height="40" viewBox="0 0 24 24">
-          <circle cx="12" cy="12" r="10" fill="#28b463" opacity="0.15" />
-          <path d="M12 4L14.5 9.5L20 12L14.5 14.5L12 20L9.5 14.5L4 12L9.5 9.5L12 4Z" fill="#28b463" />
+          <circle cx="12" cy="12" r="10" fill="var(--primary-color)" opacity="0.15" />
+          <path d="M12 4L14.5 9.5L20 12L14.5 14.5L12 20L9.5 14.5L4 12L9.5 9.5L12 4Z" fill="var(--primary-color)" />
         </svg>
       ),
       badge: "AI Retrieval Tech",

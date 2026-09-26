@@ -130,7 +130,7 @@ export default async function ServiceAreaPage({ params }) {
                           textDecoration: "none",
                         }}
                       >
-                        <span style={{ fontSize: "12px", color: "#28b463", fontWeight: "700" }}>
+                        <span style={{ fontSize: "12px", color: "var(--primary-color)", fontWeight: "700" }}>
                           PRIMARY RECOMMENDATION
                         </span>
                         <div style={{ fontSize: "15px", fontWeight: "700", color: "#0f172a", marginTop: "4px" }}>
@@ -201,7 +201,7 @@ export default async function ServiceAreaPage({ params }) {
                 <Link
                   href="/contact"
                   className="btn btn-success fw-bold px-4 py-2 rounded-pill"
-                  style={{ backgroundColor: "#28b463", borderColor: "#28b463" }}
+                  style={{ backgroundColor: "var(--primary-color)", borderColor: "var(--primary-color)" }}
                 >
                   Get My Free Audit
                 </Link>
@@ -255,7 +255,7 @@ export default async function ServiceAreaPage({ params }) {
 
                 <Link
                   href="/service-areas"
-                  style={{ fontSize: "13px", color: "#28b463", fontWeight: "700", display: "inline-block", marginTop: "10px" }}
+                  style={{ fontSize: "13px", color: "var(--primary-color)", fontWeight: "700", display: "inline-block", marginTop: "10px" }}
                 >
                   View all service areas <i className="fa fa-arrow-right ms-1"></i>
                 </Link>

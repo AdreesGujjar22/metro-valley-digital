@@ -129,7 +129,7 @@ export default async function BlogDetailPage({ params }) {
 
                 {/* Article Content */}
                 <div className="single-content" style={{ marginTop: "24px" }}>
-                  <p style={{ fontSize: "17px", lineHeight: "1.75", color: "#334155", fontWeight: "500", borderLeft: "4px solid #28b463", paddingLeft: "16px", marginBottom: "28px" }}>
+                  <p style={{ fontSize: "17px", lineHeight: "1.75", color: "#334155", fontWeight: "500", borderLeft: "4px solid var(--primary-color)", paddingLeft: "16px", marginBottom: "28px" }}>
                     {post.summary}
                   </p>
 
@@ -152,7 +152,7 @@ export default async function BlogDetailPage({ params }) {
                     <blockquote
                       style={{
                         background: "#f8fafc",
-                        borderLeft: "4px solid #28b463",
+                        borderLeft: "4px solid var(--primary-color)",
                         borderRadius: "0 12px 12px 0",
                         padding: "24px 28px",
                         margin: "32px 0",
@@ -162,7 +162,7 @@ export default async function BlogDetailPage({ params }) {
                       <p style={{ fontSize: "16px", fontStyle: "italic", color: "#1e293b", lineHeight: "1.7", margin: 0 }}>
                         &ldquo;{post.quote.text}&rdquo;
                       </p>
-                      <span style={{ display: "block", marginTop: "10px", fontSize: "13px", fontWeight: "700", color: "#28b463" }}>
+                      <span style={{ display: "block", marginTop: "10px", fontSize: "13px", fontWeight: "700", color: "var(--primary-color)" }}>
                         — {post.quote.author}
                       </span>
                     </blockquote>
@@ -194,7 +194,7 @@ export default async function BlogDetailPage({ params }) {
                         <Link
                           href={post.relatedProject.link}
                           className="btn btn-success fw-bold px-4 py-2 rounded-pill"
-                          style={{ backgroundColor: "#28b463", borderColor: "#28b463", fontSize: "14px" }}
+                          style={{ backgroundColor: "var(--primary-color)", borderColor: "var(--primary-color)", fontSize: "14px" }}
                         >
                           View Full Case Study
                         </Link>
@@ -252,7 +252,7 @@ export default async function BlogDetailPage({ params }) {
                       />
                     </div>
                     <div>
-                      <span style={{ fontSize: "12px", textTransform: "uppercase", letterSpacing: "1px", color: "#28b463", fontWeight: "800" }}>
+                      <span style={{ fontSize: "12px", textTransform: "uppercase", letterSpacing: "1px", color: "var(--primary-color)", fontWeight: "800" }}>
                         Written By
                       </span>
                       <h4 style={{ margin: "4px 0", fontSize: "18px", fontWeight: "800", color: "#0f172a" }}>
@@ -282,7 +282,7 @@ export default async function BlogDetailPage({ params }) {
                         <Link
                           href="/contact"
                           className="btn btn-success fw-bold px-4 py-2 rounded-pill"
-                          style={{ backgroundColor: "#28b463", borderColor: "#28b463" }}
+                          style={{ backgroundColor: "var(--primary-color)", borderColor: "var(--primary-color)" }}
                         >
                           Book Free Audit
                         </Link>

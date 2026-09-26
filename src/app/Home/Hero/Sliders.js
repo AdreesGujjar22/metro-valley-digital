@@ -117,7 +117,7 @@ export default function Sliders() {
                 <div className="row">
                   <div className="col-lg-8 col-md-10 col-12">
                     <div className="hero-content" style={{ marginTop: 0, paddingTop: 0 }}>
-                      <div className="hero-badge mb-3 d-inline-block px-3 py-1 rounded-pill" style={{ background: "rgba(40, 180, 99, 0.25)", border: "1px solid rgba(40, 180, 99, 0.5)", color: "#86efac", fontSize: "14px", fontWeight: "600" }}>
+                      <div className="hero-badge mb-3 d-inline-block px-3 py-1 rounded-pill" style={{ background: "rgba(var(--primary-color-rgb), 0.25)", border: "1px solid rgba(var(--primary-color-rgb), 0.5)", color: "var(--primary-color-light)", fontSize: "14px", fontWeight: "600" }}>
                         {singleSlider.tag}
                       </div>
                       {sliderIndex === 0 ? (
@@ -137,7 +137,7 @@ export default function Sliders() {
                         <a
                           href={singleSlider?.button.link}
                           className="theme-btn"
-                          style={{ boxShadow: "0 4px 15px rgba(40, 180, 99, 0.4)" }}
+                          style={{ boxShadow: "0 4px 15px rgba(var(--primary-color-rgb), 0.4)" }}
                         >
                           {singleSlider?.button.text}
                         </a>

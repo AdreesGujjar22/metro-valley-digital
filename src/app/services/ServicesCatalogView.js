@@ -30,9 +30,9 @@ export default function ServicesCatalogView() {
                   onClick={() => setSelectedCategory(cat)}
                   type="button"
                   style={{
-                    backgroundColor: active ? "#2563eb" : "#f1f5f9",
+                    backgroundColor: active ? "var(--primary-color)" : "#f1f5f9",
                     color: active ? "#ffffff" : "#334155",
-                    border: active ? "1px solid #2563eb" : "1px solid #e2e8f0",
+                    border: active ? "1px solid var(--primary-color)" : "1px solid #e2e8f0",
                     padding: "8px 18px",
                     borderRadius: "30px",
                     fontWeight: "600",
@@ -123,8 +123,8 @@ export default function ServicesCatalogView() {
                     fontWeight: "700",
                     textTransform: "uppercase",
                     letterSpacing: "0.6px",
-                    color: "#2563eb",
-                    backgroundColor: "rgba(37,99,235,0.08)",
+                    color: "var(--primary-color)",
+                    backgroundColor: "rgba(var(--primary-color-rgb),0.08)",
                     padding: "3px 8px",
                     borderRadius: "4px",
                     display: "inline-block",
@@ -168,7 +168,7 @@ export default function ServicesCatalogView() {
                 <Link
                   href={service.url}
                   style={{
-                    color: "#2563eb",
+                    color: "var(--primary-color)",
                     fontWeight: "700",
                     fontSize: "13px",
                     textDecoration: "none",
@@ -190,7 +190,7 @@ export default function ServicesCatalogView() {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    color: "#2563eb",
+                    color: "var(--primary-color)",
                     fontSize: "12px",
                   }}
                 >

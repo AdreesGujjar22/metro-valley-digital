@@ -85,7 +85,7 @@ export default function BlogPage() {
               <Link
                 href="/contact"
                 className="btn btn-success fw-bold px-4 py-3 rounded-pill"
-                style={{ backgroundColor: "#28b463", borderColor: "#28b463", fontSize: "15px" }}
+                style={{ backgroundColor: "var(--primary-color)", borderColor: "var(--primary-color)", fontSize: "15px" }}
               >
                 Subscribe & Request Audit
               </Link>

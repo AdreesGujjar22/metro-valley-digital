@@ -72,7 +72,7 @@ export default function ContactPage() {
               </h4>
               <p style={{ margin: "4px 0 0", color: "#475569", fontSize: "14px" }}>
                 7207 Victoria Dr, Vancouver, BC V5P 3Z2, Canada • Phone:{" "}
-                <a href="tel:+17786080909" style={{ color: "#0284c7", fontWeight: "600" }}>
+                <a href="tel:+17786080909" style={{ color: "var(--primary-color)", fontWeight: "600" }}>
                   +1 778-608-0909
                 </a>
               </p>

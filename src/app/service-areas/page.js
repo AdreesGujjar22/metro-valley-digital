@@ -52,7 +52,7 @@ function AreaCard({ area }) {
           transition: "box-shadow 0.2s ease",
         }}
       >
-        <span style={{ fontSize: "11px", color: "#28b463", fontWeight: "700", letterSpacing: "0.5px" }}>
+        <span style={{ fontSize: "11px", color: "var(--primary-color)", fontWeight: "700", letterSpacing: "0.5px" }}>
           {SERVICE_AREA_TYPE_LABELS[area.type].toUpperCase()}
         </span>
         <h3 style={{ fontSize: "18px", fontWeight: "800", color: "#0f172a", margin: "6px 0 8px" }}>

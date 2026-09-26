@@ -37,8 +37,8 @@ export default function PortfolioGrid() {
               }`}
               style={{
                 fontSize: "14px",
-                borderColor: activeCategory === cat.id ? "#28b463" : "#e2e8f0",
-                backgroundColor: activeCategory === cat.id ? "#28b463" : "#ffffff",
+                borderColor: activeCategory === cat.id ? "var(--primary-color)" : "#e2e8f0",
+                backgroundColor: activeCategory === cat.id ? "var(--primary-color)" : "#ffffff",
               }}
             >
               {cat.label}
@@ -91,13 +91,13 @@ export default function PortfolioGrid() {
                       position: "absolute",
                       bottom: "16px",
                       left: "16px",
-                      background: "#28b463",
+                      background: "var(--primary-color)",
                       color: "#ffffff",
                       fontSize: "13px",
                       fontWeight: "800",
                       padding: "5px 12px",
                       borderRadius: "8px",
-                      boxShadow: "0 4px 12px rgba(40,180,99,0.35)",
+                      boxShadow: "0 4px 12px rgba(var(--primary-color-rgb),0.35)",
                     }}
                   >
                     {project.results[0]?.value} {project.results[0]?.label}
@@ -120,7 +120,7 @@ export default function PortfolioGrid() {
                   <h3 style={{ fontSize: "21px", fontWeight: "800", color: "#0f172a", marginBottom: "6px" }}>
                     {project.title}
                   </h3>
-                  <p style={{ color: "#28b463", fontWeight: "600", fontSize: "14px", marginBottom: "12px" }}>
+                  <p style={{ color: "var(--primary-color)", fontWeight: "600", fontSize: "14px", marginBottom: "12px" }}>
                     {project.subtitle}
                   </p>
 
@@ -164,7 +164,7 @@ export default function PortfolioGrid() {
                     <Link
                       href="/contact"
                       className="btn btn-success fw-bold py-2 px-3 rounded-3"
-                      style={{ fontSize: "14px", backgroundColor: "#28b463", borderColor: "#28b463" }}
+                      style={{ fontSize: "14px", backgroundColor: "var(--primary-color)", borderColor: "var(--primary-color)" }}
                     >
                       <i className="fa fa-arrow-right"></i>
                     </Link>

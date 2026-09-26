@@ -70,8 +70,8 @@ export default function BlogListing() {
                 }`}
                 style={{
                   fontSize: "13px",
-                  borderColor: selectedCategory === cat.id ? "#28b463" : "#e2e8f0",
-                  backgroundColor: selectedCategory === cat.id ? "#28b463" : "#ffffff",
+                  borderColor: selectedCategory === cat.id ? "var(--primary-color)" : "#e2e8f0",
+                  backgroundColor: selectedCategory === cat.id ? "var(--primary-color)" : "#ffffff",
                 }}
               >
                 {cat.label}
@@ -137,7 +137,7 @@ export default function BlogListing() {
           <button
             onClick={() => { setSelectedCategory("all"); setSearchQuery(""); }}
             className="btn btn-success fw-bold px-4 rounded-pill"
-            style={{ backgroundColor: "#28b463" }}
+            style={{ backgroundColor: "var(--primary-color)" }}
           >
             Reset Filters
           </button>
@@ -186,7 +186,7 @@ export default function BlogListing() {
                       position: "absolute",
                       bottom: "14px",
                       right: "14px",
-                      background: "#28b463",
+                      background: "var(--primary-color)",
                       color: "#ffffff",
                       fontSize: "11px",
                       fontWeight: "700",
@@ -311,8 +311,8 @@ export default function BlogListing() {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    backgroundColor: currentPage === pageNum ? "#28b463" : "#ffffff",
-                    borderColor: currentPage === pageNum ? "#28b463" : "#e2e8f0",
+                    backgroundColor: currentPage === pageNum ? "var(--primary-color)" : "#ffffff",
+                    borderColor: currentPage === pageNum ? "var(--primary-color)" : "#e2e8f0",
                   }}
                 >
                   {pageNum}
