@@ -18,7 +18,7 @@ export async function generateMetadata({ params }) {
 
   if (!post) {
     return {
-      title: "Article Not Found | Metro Valley Digital",
+      title: "Article Not Found",
     };
   }
 
@@ -26,18 +26,18 @@ export async function generateMetadata({ params }) {
     title: `${post.metaTitle}`,
     description: post.metaDescription,
     alternates: {
-      canonical: `https://metrovalleydigital.com/blog/${post.slug}`,
+      canonical: `https://www.metrovalleydigital.com/blog/${post.slug}`,
     },
     openGraph: {
       title: post.metaTitle,
       description: post.metaDescription,
-      url: `https://metrovalleydigital.com/blog/${post.slug}`,
+      url: `https://www.metrovalleydigital.com/blog/${post.slug}`,
       siteName: "Metro Valley Digital",
       locale: "en_CA",
       type: "article",
       images: [
         {
-          url: `https://metrovalleydigital.com${post.image}`,
+          url: `https://www.metrovalleydigital.com${post.image}`,
           width: 1200,
           height: 630,
           alt: post.title,
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title: post.metaTitle,
       description: post.metaDescription,
-      images: [`https://metrovalleydigital.com${post.image}`],
+      images: [`https://www.metrovalleydigital.com${post.image}`],
     },
   };
 }
@@ -72,17 +72,18 @@ export default async function BlogDetailPage({ params }) {
       <ArticleSchema
         title={post.title}
         description={post.metaDescription}
-        image={`https://metrovalleydigital.com${post.image}`}
+        image={`https://www.metrovalleydigital.com${post.image}`}
         datePublished={post.date}
         dateModified={post.date}
         authorName={post.author.name}
-        url={`https://metrovalleydigital.com/blog/${post.slug}`}
+        url={`https://www.metrovalleydigital.com/blog/${post.slug}`}
       />
       <Breadcrumbs
         title={post.title}
         description={post.summary}
         menuLink={`blog/${post.slug}`}
         menuText="Article Detail"
+        isH1={false}
       />
 
       {/* <!-- Blog Detail Area with Sidebar --> */}
@@ -128,7 +129,7 @@ export default async function BlogDetailPage({ params }) {
 
                 {/* Article Content */}
                 <div className="single-content" style={{ marginTop: "24px" }}>
-                  <p style={{ fontSize: "17px", lineHeight: "1.75", color: "#334155", fontWeight: "500", borderLeft: "4px solid #28b463", paddingLeft: "16px", marginBottom: "28px" }}>
+                  <p style={{ fontSize: "17px", lineHeight: "1.75", color: "#334155", fontWeight: "500", borderLeft: "4px solid var(--primary-color)", paddingLeft: "16px", marginBottom: "28px" }}>
                     {post.summary}
                   </p>
 
@@ -151,7 +152,7 @@ export default async function BlogDetailPage({ params }) {
                     <blockquote
                       style={{
                         background: "#f8fafc",
-                        borderLeft: "4px solid #28b463",
+                        borderLeft: "4px solid var(--primary-color)",
                         borderRadius: "0 12px 12px 0",
                         padding: "24px 28px",
                         margin: "32px 0",
@@ -161,7 +162,7 @@ export default async function BlogDetailPage({ params }) {
                       <p style={{ fontSize: "16px", fontStyle: "italic", color: "#1e293b", lineHeight: "1.7", margin: 0 }}>
                         &ldquo;{post.quote.text}&rdquo;
                       </p>
-                      <span style={{ display: "block", marginTop: "10px", fontSize: "13px", fontWeight: "700", color: "#28b463" }}>
+                      <span style={{ display: "block", marginTop: "10px", fontSize: "13px", fontWeight: "700", color: "var(--primary-color)" }}>
                         — {post.quote.author}
                       </span>
                     </blockquote>
@@ -193,7 +194,7 @@ export default async function BlogDetailPage({ params }) {
                         <Link
                           href={post.relatedProject.link}
                           className="btn btn-success fw-bold px-4 py-2 rounded-pill"
-                          style={{ backgroundColor: "#28b463", borderColor: "#28b463", fontSize: "14px" }}
+                          style={{ backgroundColor: "var(--primary-color)", borderColor: "var(--primary-color)", fontSize: "14px" }}
                         >
                           View Full Case Study
                         </Link>
@@ -251,7 +252,7 @@ export default async function BlogDetailPage({ params }) {
                       />
                     </div>
                     <div>
-                      <span style={{ fontSize: "12px", textTransform: "uppercase", letterSpacing: "1px", color: "#28b463", fontWeight: "800" }}>
+                      <span style={{ fontSize: "12px", textTransform: "uppercase", letterSpacing: "1px", color: "var(--primary-color)", fontWeight: "800" }}>
                         Written By
                       </span>
                       <h4 style={{ margin: "4px 0", fontSize: "18px", fontWeight: "800", color: "#0f172a" }}>
@@ -281,7 +282,7 @@ export default async function BlogDetailPage({ params }) {
                         <Link
                           href="/contact"
                           className="btn btn-success fw-bold px-4 py-2 rounded-pill"
-                          style={{ backgroundColor: "#28b463", borderColor: "#28b463" }}
+                          style={{ backgroundColor: "var(--primary-color)", borderColor: "var(--primary-color)" }}
                         >
                           Book Free Audit
                         </Link>

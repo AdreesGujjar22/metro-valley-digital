@@ -10,26 +10,27 @@ import Funfact from "./Home/Funfact";
 import Blog from "./Home/Blog";
 import Contact from "./Home/Contact";
 import Client from "./Home/Client";
-import { ServiceCatalogSchema } from "@/components/SeoSchemas";
+import HomeFaq from "./Home/Faq";
+import { ServiceCatalogSchema, FaqSchema } from "@/components/SeoSchemas";
 
 export const metadata = {
-  title: "Metro Valley Digital | Digital Marketing, SEO, Web Development & AI Solutions in Vancouver",
+  title: "Vancouver SEO & Digital Marketing",
   description:
-    "Full-service digital marketing agency offering SEO, GEO, local SEO, paid ads, social media, e-commerce, web & app development, and AI solutions. Get a free consultation today.",
+    "Vancouver agency ranking local businesses #1 on Google, running high-ROI paid ads, and building custom websites, apps, and AI tools. Book a free audit.",
   alternates: {
-    canonical: "https://metrovalleydigital.com",
+    canonical: "https://www.metrovalleydigital.com",
   },
   openGraph: {
-    title: "Metro Valley Digital | Digital Marketing, SEO, Web Development & AI Solutions in Vancouver",
+    title: "Vancouver SEO & Digital Marketing",
     description:
-      "Full-service digital marketing agency offering SEO, GEO, local SEO, paid ads, social media, e-commerce, web & app development, and AI solutions. Get a free consultation today.",
-    url: "https://metrovalleydigital.com",
+      "Vancouver agency ranking local businesses #1 on Google, running high-ROI paid ads, and building custom websites, apps, and AI tools. Book a free audit.",
+    url: "https://www.metrovalleydigital.com",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
     type: "website",
     images: [
       {
-        url: "https://metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg",
+        url: "https://www.metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg",
         width: 1200,
         height: 630,
         alt: "Metro Valley Digital Growth Agency Vancouver",
@@ -38,10 +39,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Metro Valley Digital | Digital Marketing, SEO, Web Development & AI Solutions in Vancouver",
+    title: "Vancouver SEO & Digital Marketing",
     description:
-      "Full-service digital marketing agency offering SEO, GEO, local SEO, paid ads, social media, e-commerce, web & app development, and AI solutions. Get a free consultation today.",
-    images: ["https://metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
+      "Vancouver agency ranking local businesses #1 on Google, running high-ROI paid ads, and building custom websites, apps, and AI tools. Book a free audit.",
+    images: ["https://www.metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
   },
 };
 
@@ -49,6 +50,7 @@ export default function Home() {
   return (
     <>
       <ServiceCatalogSchema />
+      <FaqSchema />
       <Hero />
       <About />
       <Service />
@@ -59,6 +61,7 @@ export default function Home() {
       <CallAction />
       <Funfact />
       <Blog />
+      <HomeFaq />
       <Contact />
       <Client />
     </>

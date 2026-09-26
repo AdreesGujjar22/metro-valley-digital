@@ -19,18 +19,6 @@ import "../../public/css/font-awesome.min.css";
 // Animate CSS
 import "animate.css";
 
-// Swiper CSS
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import "swiper/css/effect-fade";
-
-// Modal Video CSS
-import "react-modal-video/css/modal-video.min.css";
-
-// Lighbox Gallery CSS
-import "lightbox.js-react/dist/index.css";
-
 // Global CSS
 import "./globals.css";
 
@@ -42,13 +30,17 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://metrovalleydigital.com"),
+  metadataBase: new URL("https://www.metrovalleydigital.com"),
+  applicationName: "Metro Valley Digital",
+  icons: {
+    icon: "/images/favicon.png",
+  },
   title: {
-    default: "Metro Valley Digital | SEO & Growth Marketing Agency",
+    default: "Digital Growth Agency | Metro Valley Digital",
     template: "%s | Metro Valley Digital",
   },
   description:
-    "Dominate local search, rank #1 on Google 3-Pack, and scale paid ads with Metro Valley Digital. Vancouver, BC growth marketing agency engineering proven client ROI.",
+    "Vancouver-based SEO and growth marketing agency helping local businesses rank #1 on Google, scale paid ads, and build custom web and AI software.",
   keywords: [
     "Local SEO Agency",
     "Google 3-Pack Optimization",
@@ -63,7 +55,7 @@ export const metadata = {
     "Vancouver Software House",
     "Canada SEO Agency",
   ],
-  authors: [{ name: "Metro Valley Digital", url: "https://metrovalleydigital.com" }],
+  authors: [{ name: "Metro Valley Digital", url: "https://www.metrovalleydigital.com" }],
   creator: "Metro Valley Digital",
   publisher: "Metro Valley Digital",
   formatDetection: {
@@ -72,19 +64,19 @@ export const metadata = {
     telephone: true,
   },
   alternates: {
-    canonical: "https://metrovalleydigital.com",
+    canonical: "https://www.metrovalleydigital.com",
   },
   openGraph: {
     title: "Metro Valley Digital | SEO & Growth Marketing Agency",
     description:
-      "Dominate local search, rank #1 on Google 3-Pack, and scale paid ads with Metro Valley Digital. Vancouver, BC growth marketing agency engineering proven client ROI.",
-    url: "https://metrovalleydigital.com",
+      "Vancouver-based SEO and growth marketing agency helping local businesses rank #1 on Google, scale paid ads, and build custom web and AI software.",
+    url: "https://www.metrovalleydigital.com",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
     type: "website",
     images: [
       {
-        url: "https://metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg",
+        url: "https://www.metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg",
         width: 1200,
         height: 630,
         alt: "Metro Valley Digital - Growth Agency & Software House",
@@ -95,8 +87,8 @@ export const metadata = {
     card: "summary_large_image",
     title: "Metro Valley Digital | SEO & Growth Marketing Agency",
     description:
-      "Dominate local search, rank #1 on Google 3-Pack, and scale paid ads with Metro Valley Digital. Vancouver, BC growth marketing agency engineering proven client ROI.",
-    images: ["https://metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
+      "Vancouver-based SEO and growth marketing agency helping local businesses rank #1 on Google, scale paid ads, and build custom web and AI software.",
+    images: ["https://www.metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
     creator: "@metrovalleydig",
   },
   robots: {

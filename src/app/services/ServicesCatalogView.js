@@ -16,12 +16,9 @@ export default function ServicesCatalogView() {
   return (
     <div className="container">
       {/* Category Tabs */}
-      <div className="row mb-5">
+      <div className="row">
         <div className="col-12">
-          <div
-            className="d-flex flex-wrap justify-content-center gap-2"
-            style={{ padding: "10px 0" }}
-          >
+          <div className="services-category-tabs">
             {SERVICE_CATEGORIES.map((cat) => {
               const active = selectedCategory === cat;
               return (
@@ -29,17 +26,8 @@ export default function ServicesCatalogView() {
                   key={cat}
                   onClick={() => setSelectedCategory(cat)}
                   type="button"
-                  style={{
-                    backgroundColor: active ? "#2563eb" : "#f1f5f9",
-                    color: active ? "#ffffff" : "#334155",
-                    border: active ? "1px solid #2563eb" : "1px solid #e2e8f0",
-                    padding: "8px 18px",
-                    borderRadius: "30px",
-                    fontWeight: "600",
-                    fontSize: "14px",
-                    cursor: "pointer",
-                    transition: "all 0.2s ease",
-                  }}
+                  aria-pressed={active}
+                  className={`services-category-tab${active ? " is-active" : ""}`}
                 >
                   {cat}
                 </button>
@@ -51,13 +39,13 @@ export default function ServicesCatalogView() {
 
       {/* Services Grid */}
       <div className="row g-4">
-        {filteredServices.map((service, index) => (
+        {filteredServices.map((service) => (
           <div
             key={service.id}
             className="col-lg-4 col-md-6 col-12"
           >
             <div
-              className="single-service"
+              className="single-service services-catalog-card"
               style={{
                 display: "flex",
                 flexDirection: "column",
@@ -82,7 +70,7 @@ export default function ServicesCatalogView() {
                   fontSize: "20px",
                 }}
               >
-                <h6>{service.number}</h6>
+                <span className="card-number">{service.number}</span>
               </div>
 
               <div
@@ -123,8 +111,8 @@ export default function ServicesCatalogView() {
                     fontWeight: "700",
                     textTransform: "uppercase",
                     letterSpacing: "0.6px",
-                    color: "#2563eb",
-                    backgroundColor: "rgba(37,99,235,0.08)",
+                    color: "var(--primary-color)",
+                    backgroundColor: "rgba(var(--primary-color-rgb),0.08)",
                     padding: "3px 8px",
                     borderRadius: "4px",
                     display: "inline-block",
@@ -133,14 +121,14 @@ export default function ServicesCatalogView() {
                 >
                   {service.category}
                 </span>
-                <h4 style={{ fontSize: "19px", fontWeight: "700", marginBottom: "12px" }}>
+                <h3 style={{ fontSize: "19px", fontWeight: "700", marginBottom: "12px" }}>
                   <Link
                     href={service.url}
                     style={{ color: "#0f172a", textDecoration: "none" }}
                   >
                     {service.title}
                   </Link>
-                </h4>
+                </h3>
                 <p
                   style={{
                     color: "#64748b",
@@ -155,46 +143,12 @@ export default function ServicesCatalogView() {
                 </p>
               </div>
 
-              <div
-                className="service-bottom"
-                style={{
-                  borderTop: "1px solid #f1f5f9",
-                  paddingTop: "16px",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                }}
-              >
+              <div className="service-bottom services-catalog-card-bottom">
                 <Link
                   href={service.url}
-                  style={{
-                    color: "#2563eb",
-                    fontWeight: "700",
-                    fontSize: "13px",
-                    textDecoration: "none",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "6px",
-                  }}
+                  className="service-explore-btn"
                 >
                   Explore Service <i className="fa fa-arrow-right"></i>
-                </Link>
-                <Link
-                  href={service.url}
-                  aria-label={`View ${service.title} page`}
-                  style={{
-                    width: "32px",
-                    height: "32px",
-                    borderRadius: "50%",
-                    backgroundColor: "#f1f5f9",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    color: "#2563eb",
-                    fontSize: "12px",
-                  }}
-                >
-                  <i className="fa fa-chevron-right"></i>
                 </Link>
               </div>
             </div>

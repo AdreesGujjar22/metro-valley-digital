@@ -5,23 +5,23 @@ import { BreadcrumbSchema, PortfolioSchema } from "@/components/SeoSchemas";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Client Case Studies & Verified Growth Results | Metro Valley Digital Vancouver",
+  title: "Case Studies & Client Results",
   description:
-    "Explore verified client case studies: +340% local call surges, 6.4x paid ad ROAS, and custom Next.js software architecture delivered by Metro Valley Digital in Vancouver, Canada.",
+    "Verified case studies: local call surges up to 340%, 6.4x paid ad ROAS, and custom Next.js builds delivered for clients across Vancouver and Canada.",
   alternates: {
-    canonical: "https://metrovalleydigital.com/portfolio",
+    canonical: "https://www.metrovalleydigital.com/portfolio",
   },
   openGraph: {
-    title: "Client Case Studies & Verified Growth Results | Metro Valley Digital Vancouver",
+    title: "Case Studies & Client Results",
     description:
-      "Explore verified client case studies: +340% local call surges, 6.4x paid ad ROAS, and custom Next.js software architecture delivered by Metro Valley Digital in Vancouver, Canada.",
-    url: "https://metrovalleydigital.com/portfolio",
+      "Verified case studies: local call surges up to 340%, 6.4x paid ad ROAS, and custom Next.js builds delivered for clients across Vancouver and Canada.",
+    url: "https://www.metrovalleydigital.com/portfolio",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
     type: "website",
     images: [
       {
-        url: "https://metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg",
+        url: "https://www.metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg",
         width: 1200,
         height: 630,
         alt: "Metro Valley Digital Case Studies",
@@ -30,10 +30,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Client Case Studies & Verified Growth Results | Metro Valley Digital Vancouver",
+    title: "Case Studies & Client Results",
     description:
-      "Explore verified client case studies: +340% local call surges, 6.4x paid ad ROAS, and custom Next.js software architecture delivered by Metro Valley Digital in Vancouver, Canada.",
-    images: ["https://metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg"],
+      "Verified case studies: local call surges up to 340%, 6.4x paid ad ROAS, and custom Next.js builds delivered for clients across Vancouver and Canada.",
+    images: ["https://www.metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg"],
   },
 };
 
@@ -50,7 +50,7 @@ export default function PortfolioPage() {
       />
 
       {/* <!-- Portfolio Area --> */}
-      <section className="portfolio-area" id="portfolio" style={{ padding: "60px 0 80px" }}>
+      <section className="portfolio-area" id="portfolio">
         <div className="container">
           <div className="row">
             <div className="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12 text-center">
@@ -85,7 +85,7 @@ export default function PortfolioPage() {
               <Link
                 href="/contact"
                 className="btn btn-success fw-bold px-4 py-3 rounded-pill"
-                style={{ backgroundColor: "#28b463", borderColor: "#28b463", fontSize: "16px" }}
+                style={{ backgroundColor: "var(--primary-color)", borderColor: "var(--primary-color)", fontSize: "16px" }}
               >
                 Claim Your Free Strategy Audit
               </Link>

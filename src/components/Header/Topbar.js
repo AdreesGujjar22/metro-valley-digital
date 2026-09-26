@@ -28,9 +28,9 @@ export default function Topbar() {
                     </a>
                   </li>
                   <li className="d-none d-sm-inline-block">
-                    <a href="mailto:hello@metrovalleydigital.com">
+                    <a href="mailto:info@metrovalleydigital.com">
                       <i className="fa fa-envelope" style={{ color: "var(--primary-color)" }}></i>
-                      <span>Email:</span> hello@metrovalleydigital.com
+                      <span>Email:</span> info@metrovalleydigital.com
                     </a>
                   </li>
                 </ul>
@@ -69,4 +69,3 @@ export default function Topbar() {
     </>
   );
 }
-

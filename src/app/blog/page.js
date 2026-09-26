@@ -5,23 +5,23 @@ import { BreadcrumbSchema } from "@/components/SeoSchemas";
 import Link from "next/link";
 
 export const metadata = {
-  title: "SEO & Growth Marketing Insights | Metro Valley Digital Vancouver",
+  title: "SEO & Growth Marketing Blog",
   description:
-    "Tactical guides, case studies, and engineering playbooks on Local SEO, Google Maps 3-Pack rankings, performance PPC ads, Next.js web development, and conversational AI.",
+    "Guides and case studies on Local SEO, Google 3-Pack rankings, performance ads, Next.js development, and AI tools from our Vancouver growth team.",
   alternates: {
-    canonical: "https://metrovalleydigital.com/blog",
+    canonical: "https://www.metrovalleydigital.com/blog",
   },
   openGraph: {
-    title: "SEO & Growth Marketing Insights | Metro Valley Digital Vancouver",
+    title: "SEO & Growth Marketing Blog",
     description:
-      "Tactical guides, case studies, and engineering playbooks on Local SEO, Google Maps 3-Pack rankings, performance PPC ads, Next.js web development, and conversational AI.",
-    url: "https://metrovalleydigital.com/blog",
+      "Guides and case studies on Local SEO, Google 3-Pack rankings, performance ads, Next.js development, and AI tools from our Vancouver growth team.",
+    url: "https://www.metrovalleydigital.com/blog",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
     type: "website",
     images: [
       {
-        url: "https://metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg",
+        url: "https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg",
         width: 1200,
         height: 630,
         alt: "Metro Valley Digital Blog Insights",
@@ -30,10 +30,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO & Growth Marketing Insights | Metro Valley Digital Vancouver",
+    title: "SEO & Growth Marketing Blog",
     description:
-      "Tactical guides, case studies, and engineering playbooks on Local SEO, Google Maps 3-Pack rankings, performance PPC ads, Next.js web development, and conversational AI.",
-    images: ["https://metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
+      "Guides and case studies on Local SEO, Google 3-Pack rankings, performance ads, Next.js development, and AI tools from our Vancouver growth team.",
+    images: ["https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
   },
 };
 
@@ -85,7 +85,7 @@ export default function BlogPage() {
               <Link
                 href="/contact"
                 className="btn btn-success fw-bold px-4 py-3 rounded-pill"
-                style={{ backgroundColor: "#28b463", borderColor: "#28b463", fontSize: "15px" }}
+                style={{ backgroundColor: "var(--primary-color)", borderColor: "var(--primary-color)", fontSize: "15px" }}
               >
                 Subscribe & Request Audit
               </Link>

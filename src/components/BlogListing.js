@@ -58,21 +58,14 @@ export default function BlogListing() {
       {/* Search & Filter Controls */}
       <div className="row align-items-center mb-5 g-3">
         <div className="col-lg-7 col-12">
-          <div className="d-flex flex-wrap gap-2">
+          <div className="blog-category-tabs" role="group" aria-label="Filter blog articles">
             {CATEGORIES.map((cat) => (
               <button
                 key={cat.id}
+                type="button"
                 onClick={() => handleCategoryChange(cat.id)}
-                className={`btn px-3 py-2 rounded-pill fw-semibold ${
-                  selectedCategory === cat.id
-                    ? "btn-success text-white shadow-sm"
-                    : "btn-outline-secondary bg-white text-dark border-1"
-                }`}
-                style={{
-                  fontSize: "13px",
-                  borderColor: selectedCategory === cat.id ? "#28b463" : "#e2e8f0",
-                  backgroundColor: selectedCategory === cat.id ? "#28b463" : "#ffffff",
-                }}
+                className={`case-study-tab${selectedCategory === cat.id ? " is-active" : ""}`}
+                aria-pressed={selectedCategory === cat.id}
               >
                 {cat.label}
               </button>
@@ -137,7 +130,7 @@ export default function BlogListing() {
           <button
             onClick={() => { setSelectedCategory("all"); setSearchQuery(""); }}
             className="btn btn-success fw-bold px-4 rounded-pill"
-            style={{ backgroundColor: "#28b463" }}
+            style={{ backgroundColor: "var(--primary-color)" }}
           >
             Reset Filters
           </button>
@@ -186,7 +179,7 @@ export default function BlogListing() {
                       position: "absolute",
                       bottom: "14px",
                       right: "14px",
-                      background: "#28b463",
+                      background: "var(--primary-color)",
                       color: "#ffffff",
                       fontSize: "11px",
                       fontWeight: "700",
@@ -311,8 +304,8 @@ export default function BlogListing() {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    backgroundColor: currentPage === pageNum ? "#28b463" : "#ffffff",
-                    borderColor: currentPage === pageNum ? "#28b463" : "#e2e8f0",
+                    backgroundColor: currentPage === pageNum ? "var(--primary-color)" : "#ffffff",
+                    borderColor: currentPage === pageNum ? "var(--primary-color)" : "#e2e8f0",
                   }}
                 >
                   {pageNum}

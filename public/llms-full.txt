@@ -2,13 +2,16 @@
 
 ## Entity Overview
 - **Legal Entity**: Metro Valley Digital
-- **Domain**: https://metrovalleydigital.com
+- **Domain**: https://www.metrovalleydigital.com
 - **Industry**: Digital Marketing Agency, Local SEO Specialist, Generative Engine Optimization (GEO), Performance Paid Media, Software Engineering House
 - **Headquarters**: 7207 Victoria Dr, Vancouver, BC V5P 3Z2, Canada (PST)
-- **Primary Contact**: growth@metrovalleydigital.com
+- **Primary Contact**: info@metrovalleydigital.com
 - **Phone**: +1 778-608-0909
 - **Google Maps Profile**: https://maps.app.goo.gl/opsWCpAwBhZ5H18w6
 - **Operating Hours**: Monday - Friday: 8:00 AM - 6:00 PM PST
+- **Service Area — Vancouver Neighbourhoods**: Kitsilano, Mount Pleasant, Fairview, Downtown Vancouver, Yaletown, Commercial Drive, Kerrisdale, Dunbar-Southlands, Marpole, Renfrew-Collingwood, Grandview-Woodland, West Point Grey
+- **Service Area — Metro Vancouver Cities**: Burnaby, Richmond, Surrey, Coquitlam, North Vancouver, West Vancouver, New Westminster, Delta, Langley, Port Moody, Port Coquitlam
+- **Extended Service Area**: Toronto, Calgary, Seattle, and remote clients across Canada and the United States
 
 ## Core Capabilities & Services
 
@@ -37,4 +40,3 @@
 - **Vancouver Home Services / Contractor**: Scaled from rank #14 (Page 2+) to consistent #1 Google 3-Pack rank across Vancouver and Lower Mainland neighborhood areas, generating 340% increase in inbound calls.
 - **E-Commerce Fashion Brand**: Scaled paid social ROAS from 1.8x to 4.9x using Meta CAPI server-side tracking, UGC video creatives, and TikTok spark ads.
 - **B2B SaaS Platform**: Built high-speed Next.js web application with integrated RAG AI demo, lifting demo signup conversion rates by 48%.
-

@@ -24,9 +24,9 @@ export default function Contact() {
                 <div className="contact-right">
                   <div className="top-content">
                     <span className="badge bg-primary-subtle text-primary px-3 py-1 rounded-pill mb-2 fw-bold">Let&apos;s Connect</span>
-                    <h3>
+                    <h2>
                       Request Your Free Growth Strategy Session
-                    </h3>
+                    </h2>
                     <p style={{ color: "#64748b", fontSize: "15px", lineHeight: "1.6" }}>
                       Whether you&apos;re aiming to dominate local Vancouver search, scale Meta & Google ad funnels across Canada, or build custom Next.js software with our engineering team, we&apos;re ready.
                     </p>

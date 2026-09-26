@@ -10,7 +10,7 @@ export default function Contact() {
           <div className="footer-contact">
             <ul className="contact-bottom">
               <li style={{ marginBottom: "14px" }}>
-                <span style={{ color: "#38bdf8", fontWeight: "600", fontSize: "13px", display: "block" }}>🇨🇦 Vancouver Headquarters</span>
+                <span style={{ color: "var(--primary-color)", fontWeight: "600", fontSize: "13px", display: "block" }}>🇨🇦 Vancouver Headquarters</span>
                 <span style={{ color: "#cbd5e1", fontSize: "13px", display: "block", marginTop: "2px" }}>
                   7207 Victoria Dr, Vancouver, BC V5P 3Z2, Canada
                 </span>
@@ -22,15 +22,15 @@ export default function Contact() {
                     href="https://maps.app.goo.gl/opsWCpAwBhZ5H18w6"
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{ color: "#38bdf8", fontSize: "12.5px" }}
+                    style={{ color: "var(--primary-color)", fontSize: "12.5px" }}
                   >
                     <i className="fa fa-map-marker" style={{ marginRight: "6px" }}></i>View on Google Maps (GMB)
                   </a>
                 </div>
               </li>
               <li>
-                <Link href="mailto:hello@metrovalleydigital.com" style={{ color: "#94a3b8", fontSize: "13px" }}>
-                  <i className="fa fa-envelope" style={{ marginRight: "6px" }}></i>hello@metrovalleydigital.com
+                <Link href="mailto:info@metrovalleydigital.com" style={{ color: "#94a3b8", fontSize: "13px" }}>
+                  <i className="fa fa-envelope" style={{ marginRight: "6px" }}></i>info@metrovalleydigital.com
                 </Link>
               </li>
             </ul>

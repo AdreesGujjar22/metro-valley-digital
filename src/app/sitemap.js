@@ -1,8 +1,10 @@
 import { SERVICES_CATALOG } from "@/data/services";
 import { BLOG_POSTS } from "@/data/blogs";
+import { SERVICE_AREAS } from "@/data/serviceAreas";
+import { PROJECTS_DATA } from "@/data/projects";
 
 export default function sitemap() {
-  const baseUrl = "https://metrovalleydigital.com";
+  const baseUrl = "https://www.metrovalleydigital.com";
   const now = new Date().toISOString();
 
   const serviceUrls = SERVICES_CATALOG.map((service) => ({
@@ -17,6 +19,20 @@ export default function sitemap() {
     lastModified: now,
     changeFrequency: "weekly",
     priority: 0.85,
+  }));
+
+  const serviceAreaUrls = SERVICE_AREAS.map((area) => ({
+    url: `${baseUrl}/service-areas/${area.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: area.type === "neighbourhood" || area.type === "metro" ? 0.8 : 0.6,
+  }));
+
+  const caseStudyUrls = PROJECTS_DATA.map((project) => ({
+    url: `${baseUrl}/case-studies/${project.id}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.75,
   }));
 
   const coreUrls = [
@@ -80,7 +96,13 @@ export default function sitemap() {
       changeFrequency: "daily",
       priority: 0.85,
     },
+    {
+      url: `${baseUrl}/service-areas`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
   ];
 
-  return [...coreUrls, ...serviceUrls, ...blogUrls];
+  return [...coreUrls, ...serviceUrls, ...serviceAreaUrls, ...blogUrls, ...caseStudyUrls];
 }

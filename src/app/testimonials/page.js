@@ -4,23 +4,23 @@ import Testimonial from "../Home/Testimonial";
 import { BreadcrumbSchema } from "@/components/SeoSchemas";
 
 export const metadata = {
-  title: "Client Reviews & Verified Results | Metro Valley Digital Vancouver",
+  title: "Client Reviews & Testimonials",
   description:
-    "Read real client feedback and verified testimonials on how Metro Valley Digital scales businesses with #1 Google Map rankings and high-converting paid ads.",
+    "Real feedback from Vancouver and Canada-wide clients on how Metro Valley Digital delivers #1 Google rankings and high-converting ad campaigns.",
   alternates: {
-    canonical: "https://metrovalleydigital.com/testimonials",
+    canonical: "https://www.metrovalleydigital.com/testimonials",
   },
   openGraph: {
-    title: "Client Reviews & Verified Results | Metro Valley Digital Vancouver",
+    title: "Client Reviews & Testimonials",
     description:
-      "Read real client feedback and verified testimonials on how Metro Valley Digital scales businesses with #1 Google Map rankings and high-converting paid ads.",
-    url: "https://metrovalleydigital.com/testimonials",
+      "Real feedback from Vancouver and Canada-wide clients on how Metro Valley Digital delivers #1 Google rankings and high-converting ad campaigns.",
+    url: "https://www.metrovalleydigital.com/testimonials",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
     type: "website",
     images: [
       {
-        url: "https://metrovalleydigital.com/images/testi_marcus_1788194200341.jpg",
+        url: "https://www.metrovalleydigital.com/images/testi_marcus_1788194200341.jpg",
         width: 1200,
         height: 630,
         alt: "Metro Valley Digital Testimonials",
@@ -29,10 +29,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Client Reviews & Verified Results | Metro Valley Digital Vancouver",
+    title: "Client Reviews & Testimonials",
     description:
-      "Read real client feedback and verified testimonials on how Metro Valley Digital scales businesses with #1 Google Map rankings and high-converting paid ads.",
-    images: ["https://metrovalleydigital.com/images/testi_marcus_1788194200341.jpg"],
+      "Real feedback from Vancouver and Canada-wide clients on how Metro Valley Digital delivers #1 Google rankings and high-converting ad campaigns.",
+    images: ["https://www.metrovalleydigital.com/images/testi_marcus_1788194200341.jpg"],
   },
 };
 

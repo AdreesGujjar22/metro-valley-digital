@@ -5,23 +5,23 @@ import FaqMain from "./FaqMain";
 import { BreadcrumbSchema, FaqSchema } from "@/components/SeoSchemas";
 
 export const metadata = {
-  title: "Local SEO & Growth Marketing FAQ | Metro Valley Digital Vancouver",
+  title: "SEO & Marketing FAQs",
   description:
-    "Get clear answers about our Local SEO methodologies, Google 3-Pack ranking timelines, PPC ad management, custom Next.js builds, and contract deliverables.",
+    "Straight answers on Local SEO timelines, Google 3-Pack rankings, PPC management, Next.js builds, and contract terms from our Vancouver growth team.",
   alternates: {
-    canonical: "https://metrovalleydigital.com/faq",
+    canonical: "https://www.metrovalleydigital.com/faq",
   },
   openGraph: {
-    title: "Local SEO & Growth Marketing FAQ | Metro Valley Digital Vancouver",
+    title: "SEO & Marketing FAQs",
     description:
-      "Get clear answers about our Local SEO methodologies, Google 3-Pack ranking timelines, PPC ad management, custom Next.js builds, and contract deliverables.",
-    url: "https://metrovalleydigital.com/faq",
+      "Straight answers on Local SEO timelines, Google 3-Pack rankings, PPC management, Next.js builds, and contract terms from our Vancouver growth team.",
+    url: "https://www.metrovalleydigital.com/faq",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
     type: "website",
     images: [
       {
-        url: "https://metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg",
+        url: "https://www.metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg",
         width: 1200,
         height: 630,
         alt: "Metro Valley Digital FAQ",
@@ -30,10 +30,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Local SEO & Growth Marketing FAQ | Metro Valley Digital Vancouver",
+    title: "SEO & Marketing FAQs",
     description:
-      "Get clear answers about our Local SEO methodologies, Google 3-Pack ranking timelines, PPC ad management, custom Next.js builds, and contract deliverables.",
-    images: ["https://metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg"],
+      "Straight answers on Local SEO timelines, Google 3-Pack rankings, PPC management, Next.js builds, and contract terms from our Vancouver growth team.",
+    images: ["https://www.metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg"],
   },
 };
 

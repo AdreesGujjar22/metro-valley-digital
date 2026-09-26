@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import FaqAccordion from "@/components/FaqAccordion";
 import Image from "next/image";
 import Breadcrumbs from "./Breadcrumbs";
 import { ServiceDetailSchema } from "./SeoSchemas";
@@ -9,7 +10,6 @@ import { SERVICES_CATALOG } from "@/data/services";
 import { COMPANY_INFO } from "@/data/company";
 
 export default function ServiceDetailView({ service }) {
-  const [openFaq, setOpenFaq] = useState(0);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -55,80 +55,6 @@ export default function ServiceDetailView({ service }) {
         isH1={false}
       />
 
-      {/* Above-the-fold Quick Action & Trust Bar */}
-      <section
-        style={{
-          backgroundColor: "#0f172a",
-          borderBottom: "1px solid rgba(255,255,255,0.1)",
-          padding: "14px 0",
-          color: "#e2e8f0",
-          fontSize: "14px",
-        }}
-      >
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-7 col-md-6 col-12 mb-2 mb-md-0">
-              <div className="d-flex flex-wrap align-items-center gap-3">
-                <span
-                  style={{
-                    backgroundColor: "rgba(14, 165, 233, 0.2)",
-                    color: "#38bdf8",
-                    padding: "4px 12px",
-                    borderRadius: "20px",
-                    fontWeight: "600",
-                    fontSize: "12px",
-                    letterSpacing: "0.5px",
-                    textTransform: "uppercase",
-                  }}
-                >
-                  {service.highlightBadge || service.category}
-                </span>
-                <span>
-                  <i className="fa fa-map-marker text-primary me-2"></i>
-                  Serving Vancouver, BC, Canada & Global
-                </span>
-                <span className="d-none d-lg-inline text-muted">•</span>
-                <span className="d-none d-lg-inline">
-                  <i className="fa fa-check-circle text-success me-1"></i> Free Strategy Audit
-                </span>
-              </div>
-            </div>
-            <div className="col-lg-5 col-md-6 col-12 text-md-end">
-              <div className="d-flex flex-wrap justify-content-md-end align-items-center gap-2">
-                <a
-                  href={`tel:${canadaPhone.replace(/[^0-9+]/g, "")}`}
-                  className="btn btn-sm text-white"
-                  style={{
-                    backgroundColor: "rgba(255,255,255,0.1)",
-                    border: "1px solid rgba(255,255,255,0.2)",
-                    fontSize: "13px",
-                    padding: "6px 14px",
-                    borderRadius: "6px",
-                  }}
-                >
-                  <i className="fa fa-phone me-1 text-primary"></i> {canadaPhone}
-                </a>
-                <a
-                  href={whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-sm text-white"
-                  style={{
-                    backgroundColor: "#25D366",
-                    fontSize: "13px",
-                    padding: "6px 14px",
-                    borderRadius: "6px",
-                    fontWeight: "600",
-                  }}
-                >
-                  <i className="fa fa-whatsapp me-1"></i> WhatsApp
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Main Service Content Section */}
       <section className="service-details-area" style={{ padding: "80px 0 60px", backgroundColor: "#ffffff" }}>
         <div className="container">
@@ -142,7 +68,7 @@ export default function ServiceDetailView({ service }) {
                     href="/services"
                     className="text-decoration-none"
                     style={{
-                      color: "#2563eb",
+                      color: "var(--primary-color)",
                       fontWeight: "700",
                       fontSize: "14px",
                       textTransform: "uppercase",
@@ -188,7 +114,7 @@ export default function ServiceDetailView({ service }) {
                   <div
                     style={{
                       backgroundColor: "#f8fafc",
-                      borderLeft: "4px solid #2563eb",
+                      borderLeft: "4px solid var(--primary-color)",
                       padding: "20px 24px",
                       borderRadius: "0 10px 10px 0",
                       marginBottom: "36px",
@@ -200,11 +126,11 @@ export default function ServiceDetailView({ service }) {
                           width: "48px",
                           height: "48px",
                           borderRadius: "50%",
-                          backgroundColor: "rgba(37, 99, 235, 0.1)",
+                          backgroundColor: "rgba(var(--primary-color-rgb), 0.1)",
                           display: "flex",
                           alignItems: "center",
                           justifyContent: "center",
-                          color: "#2563eb",
+                          color: "var(--primary-color)",
                           fontSize: "22px",
                           marginRight: "18px",
                           flexShrink: 0,
@@ -287,8 +213,8 @@ export default function ServiceDetailView({ service }) {
                                   width: "28px",
                                   height: "28px",
                                   borderRadius: "50%",
-                                  backgroundColor: "rgba(37, 99, 235, 0.1)",
-                                  color: "#2563eb",
+                                  backgroundColor: "rgba(var(--primary-color-rgb), 0.1)",
+                                  color: "var(--primary-color)",
                                   display: "flex",
                                   alignItems: "center",
                                   justifyContent: "center",
@@ -367,15 +293,7 @@ export default function ServiceDetailView({ service }) {
                   <div className="d-flex flex-wrap gap-3 align-items-center">
                     <a
                       href="#audit-form"
-                      className="btn"
-                      style={{
-                        backgroundColor: "#2563eb",
-                        color: "#ffffff",
-                        fontWeight: "700",
-                        fontSize: "15px",
-                        padding: "12px 26px",
-                        borderRadius: "8px",
-                      }}
+                      className="theme-btn navbar-cta-btn"
                     >
                       {service.ctaText || "Get Started Today →"}
                     </a>
@@ -492,79 +410,8 @@ export default function ServiceDetailView({ service }) {
                       </span>
                     </div>
 
-                    <div className="faq-accordion-wrap">
-                      {service.faqs.map((faq, index) => {
-                        const isOpen = openFaq === index;
-                        return (
-                          <div
-                            key={index}
-                            style={{
-                              backgroundColor: "#ffffff",
-                              border: isOpen ? "1px solid #2563eb" : "1px solid #e2e8f0",
-                              borderRadius: "10px",
-                              marginBottom: "14px",
-                              overflow: "hidden",
-                              transition: "border 0.2s ease",
-                            }}
-                          >
-                            <button
-                              type="button"
-                              onClick={() => setOpenFaq(isOpen ? -1 : index)}
-                              style={{
-                                width: "100%",
-                                textAlign: "left",
-                                backgroundColor: isOpen ? "#f8fafc" : "#ffffff",
-                                border: "none",
-                                padding: "18px 22px",
-                                display: "flex",
-                                justifyContent: "space-between",
-                                alignItems: "center",
-                                cursor: "pointer",
-                              }}
-                            >
-                              <span
-                                style={{
-                                  fontSize: "16px",
-                                  fontWeight: "700",
-                                  color: isOpen ? "#2563eb" : "#0f172a",
-                                }}
-                              >
-                                {faq.q}
-                              </span>
-                              <span
-                                style={{
-                                  width: "28px",
-                                  height: "28px",
-                                  borderRadius: "50%",
-                                  backgroundColor: isOpen ? "#2563eb" : "#f1f5f9",
-                                  color: isOpen ? "#ffffff" : "#64748b",
-                                  display: "flex",
-                                  alignItems: "center",
-                                  justifyContent: "center",
-                                  fontSize: "13px",
-                                  marginLeft: "12px",
-                                  flexShrink: 0,
-                                }}
-                              >
-                                <i className={`fa ${isOpen ? "fa-minus" : "fa-plus"}`}></i>
-                              </span>
-                            </button>
-                            {isOpen && (
-                              <div
-                                style={{
-                                  padding: "16px 22px 22px",
-                                  borderTop: "1px solid #f1f5f9",
-                                  color: "#334155",
-                                  fontSize: "15px",
-                                  lineHeight: "1.7",
-                                }}
-                              >
-                                {faq.a}
-                              </div>
-                            )}
-                          </div>
-                        );
-                      })}
+                    <div className="faq-inner">
+                      <FaqAccordion items={service.faqs} idPrefix={`service-faq-${service.slug}`} />
                     </div>
                   </div>
                 )}
@@ -611,7 +458,7 @@ export default function ServiceDetailView({ service }) {
                                   style={{
                                     fontSize: "11px",
                                     textTransform: "uppercase",
-                                    color: "#2563eb",
+                                    color: "var(--primary-color)",
                                     fontWeight: "700",
                                     letterSpacing: "0.5px",
                                   }}
@@ -647,7 +494,7 @@ export default function ServiceDetailView({ service }) {
                                 style={{
                                   marginTop: "14px",
                                   fontSize: "13px",
-                                  color: "#2563eb",
+                                  color: "var(--primary-color)",
                                   fontWeight: "700",
                                   display: "flex",
                                   alignItems: "center",
@@ -688,8 +535,8 @@ export default function ServiceDetailView({ service }) {
                 >
                   <span
                     style={{
-                      backgroundColor: "rgba(37,99,235,0.1)",
-                      color: "#2563eb",
+                      backgroundColor: "rgba(var(--primary-color-rgb),0.1)",
+                      color: "var(--primary-color)",
                       fontWeight: "700",
                       fontSize: "12px",
                       padding: "4px 10px",
@@ -871,16 +718,7 @@ export default function ServiceDetailView({ service }) {
 
                       <button
                         type="submit"
-                        className="btn w-100"
-                        style={{
-                          backgroundColor: "#2563eb",
-                          color: "#ffffff",
-                          fontWeight: "700",
-                          fontSize: "15px",
-                          padding: "12px",
-                          borderRadius: "8px",
-                          border: "none",
-                        }}
+                        className="theme-btn navbar-cta-btn w-100"
                       >
                         Submit Audit Request →
                       </button>
@@ -927,55 +765,27 @@ export default function ServiceDetailView({ service }) {
                     </div>
                     <div>
                       <strong className="text-dark">Direct Email:</strong>{" "}
-                      <a href="mailto:growth@metrovalleydigital.com" className="text-primary text-decoration-none">
-                        growth@metrovalleydigital.com
+                      <a href="mailto:info@metrovalleydigital.com" className="text-primary text-decoration-none">
+                        info@metrovalleydigital.com
                       </a>
                     </div>
                   </div>
                 </div>
 
                 {/* All Services Navigation Widget */}
-                <div
-                  style={{
-                    backgroundColor: "#f8fafc",
-                    border: "1px solid #e2e8f0",
-                    borderRadius: "14px",
-                    padding: "24px",
-                  }}
-                >
-                  <h4
-                    style={{
-                      fontSize: "17px",
-                      fontWeight: "800",
-                      color: "#0f172a",
-                      marginBottom: "16px",
-                    }}
-                  >
-                    All Growth Services
-                  </h4>
-                  <ul className="list-unstyled mb-0" style={{ fontSize: "14px" }}>
+                <div className="widget categories-widget service-categories-widget">
+                  <h4 className="widget-title">All Growth Services</h4>
+                  <ul className="list-unstyled mb-0">
                     {SERVICES_CATALOG.map((s) => {
                       const isCurrent = s.slug === service.slug;
                       return (
-                        <li key={s.id} style={{ marginBottom: "8px" }}>
+                        <li key={s.id}>
                           <Link
                             href={s.url}
-                            className="text-decoration-none d-flex align-items-center justify-content-between p-2 rounded"
-                            style={{
-                              backgroundColor: isCurrent ? "#2563eb" : "transparent",
-                              color: isCurrent ? "#ffffff" : "#334155",
-                              fontWeight: isCurrent ? "700" : "500",
-                              transition: "all 0.15s ease",
-                            }}
+                            className={isCurrent ? "is-current" : ""}
+                            aria-current={isCurrent ? "page" : undefined}
                           >
-                            <span>
-                              <i
-                                className={`${s.icon} me-2`}
-                                style={{ color: isCurrent ? "#ffffff" : "#2563eb", width: "16px" }}
-                              ></i>
-                              {s.shortTitle || s.title}
-                            </span>
-                            <i className="fa fa-angle-right" style={{ opacity: isCurrent ? 1 : 0.4 }}></i>
+                            {s.shortTitle || s.title}<span>{s.number}</span>
                           </Link>
                         </li>
                       );
@@ -1002,7 +812,7 @@ export default function ServiceDetailView({ service }) {
             <div className="col-lg-8 col-12 mb-4 mb-lg-0">
               <span
                 style={{
-                  color: "#38bdf8",
+                  color: "var(--primary-color)",
                   fontWeight: "700",
                   fontSize: "13px",
                   textTransform: "uppercase",
@@ -1031,15 +841,7 @@ export default function ServiceDetailView({ service }) {
               <div className="d-flex flex-column flex-sm-row justify-content-lg-end gap-3">
                 <a
                   href="#audit-form"
-                  className="btn"
-                  style={{
-                    backgroundColor: "#2563eb",
-                    color: "#ffffff",
-                    fontWeight: "700",
-                    fontSize: "15px",
-                    padding: "14px 28px",
-                    borderRadius: "8px",
-                  }}
+                  className="theme-btn navbar-cta-btn"
                 >
                   Book Consultation
                 </a>

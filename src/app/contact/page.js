@@ -2,26 +2,28 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Contact from "../Home/Contact";
 import Client from "../Home/Client";
-import { BreadcrumbSchema, ContactPageSchema } from "@/components/SeoSchemas";
+import { BreadcrumbSchema, ContactPageSchema, ServiceAreaSchema } from "@/components/SeoSchemas";
+import { COMPANY_INFO } from "@/data/company";
+import { getServiceAreaByName } from "@/data/serviceAreas";
 
 export const metadata = {
-  title: "Contact Metro Valley Digital | Vancouver Digital Marketing HQ",
+  title: "Contact Vancouver Office",
   description:
-    "Connect with Metro Valley Digital at 7207 Victoria Dr, Vancouver, BC V5P 3Z2, Canada (+1 778-608-0909) for a free 30-minute growth & SEO audit.",
+    "Reach our Vancouver office at 7207 Victoria Dr for a free 30-minute SEO and growth audit. Call, email, or message us on WhatsApp today.",
   alternates: {
-    canonical: "https://metrovalleydigital.com/contact",
+    canonical: "https://www.metrovalleydigital.com/contact",
   },
   openGraph: {
-    title: "Contact Metro Valley Digital | Vancouver Digital Marketing HQ",
+    title: "Contact Vancouver Office",
     description:
-      "Connect with Metro Valley Digital at 7207 Victoria Dr, Vancouver, BC V5P 3Z2, Canada (+1 778-608-0909) for a free 30-minute growth & SEO audit.",
-    url: "https://metrovalleydigital.com/contact",
+      "Reach our Vancouver office at 7207 Victoria Dr for a free 30-minute SEO and growth audit. Call, email, or message us on WhatsApp today.",
+    url: "https://www.metrovalleydigital.com/contact",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
     type: "website",
     images: [
       {
-        url: "https://metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg",
+        url: "https://www.metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg",
         width: 1200,
         height: 630,
         alt: "Contact Metro Valley Digital Vancouver",
@@ -30,10 +32,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Metro Valley Digital | Vancouver Digital Marketing HQ",
+    title: "Contact Vancouver Office",
     description:
-      "Connect with Metro Valley Digital at 7207 Victoria Dr, Vancouver, BC V5P 3Z2, Canada (+1 778-608-0909) for a free 30-minute growth & SEO audit.",
-    images: ["https://metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
+      "Reach our Vancouver office at 7207 Victoria Dr for a free 30-minute SEO and growth audit. Call, email, or message us on WhatsApp today.",
+    images: ["https://www.metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
   },
 };
 
@@ -41,6 +43,7 @@ export default function ContactPage() {
   return (
     <>
       <ContactPageSchema />
+      <ServiceAreaSchema />
       <BreadcrumbSchema items={[{ name: "Contact", url: "/contact" }]} />
       <Breadcrumbs
         title="Contact Metro Valley Digital"
@@ -49,47 +52,34 @@ export default function ContactPage() {
         menuText="Contact"
       />
       <Contact />
-      {/* <!-- Google-Maps & GMB Banner --> */}
-      <div className="maps-area">
-        <div className="container mb-4">
-          <div
-            className="p-4 rounded-3 d-flex flex-wrap align-items-center justify-content-between gap-3"
-            style={{
-              backgroundColor: "#f8fafc",
-              border: "1px solid #e2e8f0",
-              boxShadow: "0 4px 15px rgba(0,0,0,0.03)",
-            }}
-          >
-            <div>
-              <span className="badge bg-success-subtle text-success px-3 py-1 rounded-pill mb-2 fw-bold">
-                📍 Verified Google Business Profile (GMB)
+      <section className="maps-area">
+        <div className="container business-profile-container">
+          <div className="business-profile-card">
+            <div className="business-profile-info">
+              <span className="business-profile-badge">
+                <i className="fa fa-check-circle" aria-hidden="true"></i>
+                Verified Google Business Profile
               </span>
-              <h4 style={{ margin: 0, fontSize: "20px", fontWeight: "800", color: "#0f172a" }}>
-                Metro Valley Digital - Vancouver Headquarters
-              </h4>
-              <p style={{ margin: "4px 0 0", color: "#475569", fontSize: "14px" }}>
-                7207 Victoria Dr, Vancouver, BC V5P 3Z2, Canada • Phone:{" "}
-                <a href="tel:+17786080909" style={{ color: "#0284c7", fontWeight: "600" }}>
-                  +1 778-608-0909
-                </a>
+              <h2>Metro Valley Digital — Vancouver Headquarters</h2>
+              <p>
+                7207 Victoria Dr, Vancouver, BC V5P 3Z2, Canada
+                <span aria-hidden="true"> · </span>
+                <a href="tel:+17786080909">+1 778-608-0909</a>
               </p>
             </div>
-            <div className="d-flex flex-wrap gap-2">
+            <div className="business-profile-actions">
               <a
                 href="https://maps.app.goo.gl/opsWCpAwBhZ5H18w6"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-primary px-4 py-2"
-                style={{ borderRadius: "8px", fontWeight: "700", display: "inline-flex", alignItems: "center", gap: "8px" }}
+                className="theme-btn navbar-cta-btn"
               >
-                <i className="fa fa-map-marker"></i> Open in Google Maps (GMB)
+                <i className="fa fa-map-marker" aria-hidden="true"></i>
+                Open in Google Maps
               </a>
-              <a
-                href="tel:+17786080909"
-                className="btn btn-outline-secondary px-3 py-2"
-                style={{ borderRadius: "8px", fontWeight: "600", display: "inline-flex", alignItems: "center", gap: "6px" }}
-              >
-                <i className="fa fa-phone"></i> Call Direct
+              <a href="tel:+17786080909" className="btn btn-outline-secondary">
+                <i className="fa fa-phone" aria-hidden="true"></i>
+                Call Direct
               </a>
             </div>
           </div>
@@ -98,10 +88,104 @@ export default function ContactPage() {
           <iframe
             id="gmap_canvas"
             title="Metro Valley Digital Vancouver Location - 7207 Victoria Dr, Vancouver, BC"
-            src="https://maps.google.com/maps?q=7207%20Victoria%20Dr,%20Vancouver,%20BC%20V5P%203Z2,%20Canada&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.0366566933258!2d-123.06626689999997!3d49.2188319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486752f09111487%3A0xba4a6c5b4e88b35f!2sMETRO%20VALLEY%20DIGITAL!5e0!3m2!1sen!2sca!4v1790368651439!5m2!1sen!2sca"
+            className="google-map-embed"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="strict-origin-when-cross-origin"
           ></iframe>
         </div>
-      </div>
+      </section>
+
+      {/* Service Areas & Neighbourhoods */}
+      <section style={{ padding: "60px 0", backgroundColor: "#f8fafc" }}>
+        <div className="container">
+          <h2 style={{ fontSize: "26px", fontWeight: "800", color: "#0f172a", marginBottom: "10px" }}>
+            Neighbourhoods & Cities We Serve Across Metro Vancouver
+          </h2>
+          <p style={{ color: "#475569", maxWidth: "760px", marginBottom: "24px" }}>
+            Our Vancouver headquarters puts us within reach of clients across the Lower Mainland.
+            Whether you run a storefront in {COMPANY_INFO.serviceAreas.neighbourhoods[0]} or a
+            multi-location business spanning {COMPANY_INFO.serviceAreas.metroCities[0]} and{" "}
+            {COMPANY_INFO.serviceAreas.metroCities[1]}, our{" "}
+            <Link href="/local-seo-google-business-profile">local SEO</Link> and growth marketing
+            programs are built around how people in your neighbourhood actually search.
+          </p>
+          <div className="row">
+            <div className="col-md-6 mb-4">
+              <h3 style={{ fontSize: "16px", fontWeight: "700", color: "#0f172a", marginBottom: "10px" }}>
+                Vancouver Neighbourhoods
+              </h3>
+              <div className="d-flex flex-wrap gap-2">
+                {COMPANY_INFO.serviceAreas.neighbourhoods.map((n) => {
+                  const area = getServiceAreaByName(n);
+                  return (
+                    <Link
+                      key={n}
+                      href={area ? `/service-areas/${area.slug}` : "/service-areas"}
+                      style={{
+                        backgroundColor: "#ffffff",
+                        border: "1px solid #e2e8f0",
+                        borderRadius: "20px",
+                        padding: "6px 14px",
+                        fontSize: "13px",
+                        color: "#334155",
+                        textDecoration: "none",
+                      }}
+                    >
+                      {n}
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+            <div className="col-md-6 mb-4">
+              <h3 style={{ fontSize: "16px", fontWeight: "700", color: "#0f172a", marginBottom: "10px" }}>
+                Metro Vancouver & Surrounding Cities
+              </h3>
+              <div className="d-flex flex-wrap gap-2">
+                {COMPANY_INFO.serviceAreas.metroCities.map((c) => {
+                  const area = getServiceAreaByName(c);
+                  return (
+                    <Link
+                      key={c}
+                      href={area ? `/service-areas/${area.slug}` : "/service-areas"}
+                      style={{
+                        backgroundColor: "#ffffff",
+                        border: "1px solid #e2e8f0",
+                        borderRadius: "20px",
+                        padding: "6px 14px",
+                        fontSize: "13px",
+                        color: "#334155",
+                        textDecoration: "none",
+                      }}
+                    >
+                      {c}
+                    </Link>
+                  );
+                })}
+              </div>
+              <p style={{ marginTop: "14px", fontSize: "13px", color: "#64748b" }}>
+                We also work remotely with clients in{" "}
+                {COMPANY_INFO.serviceAreas.extendedCities.map((city, i) => {
+                  const area = getServiceAreaByName(city);
+                  return (
+                    <span key={city}>
+                      {area ? <Link href={`/service-areas/${area.slug}`}>{city}</Link> : city}
+                      {i < COMPANY_INFO.serviceAreas.extendedCities.length - 1 ? ", " : ""}
+                    </span>
+                  );
+                })}{" "}
+                and across Canada and the U.S. See our full{" "}
+                <Link href="/services">service catalog</Link>,{" "}
+                <Link href="/service-areas">all service areas</Link>, or read client results on
+                the <Link href="/portfolio">portfolio</Link> page.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Client />
     </>
   );

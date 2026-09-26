@@ -5,21 +5,21 @@ import { notFound } from "next/navigation";
 const service = getServiceBySlug("ai-website-building");
 
 export const metadata = {
-  title: "AI Website Builder Services | Launch Faster with AI | Metro Valley Digital",
+  title: "AI Website Building",
   description:
-    "Get a professionally designed, AI-powered website built faster and smarter. Metro Valley Digital combines AI tools with expert design for stunning, SEO-ready websites.",
+    "Launch a polished, SEO-structured website faster with AI-assisted design and human-refined branding, copy, and UX from our Vancouver team.",
   alternates: {
-    canonical: "https://metrovalleydigital.com/ai-website-building",
+    canonical: "https://www.metrovalleydigital.com/ai-website-building",
   },
   openGraph: {
-    title: "AI Website Builder Services | Launch Faster with AI | Metro Valley Digital",
+    title: "AI Website Building",
     description:
-      "Get a professionally designed, AI-powered website built faster and smarter. Metro Valley Digital combines AI tools with expert design for stunning, SEO-ready websites.",
-    url: "https://metrovalleydigital.com/ai-website-building",
+      "Launch a polished, SEO-structured website faster with AI-assisted design and human-refined branding, copy, and UX from our Vancouver team.",
+    url: "https://www.metrovalleydigital.com/ai-website-building",
     siteName: "Metro Valley Digital",
     images: [
       {
-        url: "https://metrovalleydigital.com/images/service/service-img-2.jpg",
+        url: "https://www.metrovalleydigital.com/images/service/service-img-2.jpg",
         width: 1200,
         height: 630,
         alt: "AI Website Builder Services - Metro Valley Digital",
@@ -30,10 +30,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Website Builder Services | Launch Faster with AI | Metro Valley Digital",
+    title: "AI Website Building",
     description:
-      "Get a professionally designed, AI-powered website built faster and smarter. Metro Valley Digital combines AI tools with expert design for stunning, SEO-ready websites.",
-    images: ["https://metrovalleydigital.com/images/service/service-img-2.jpg"],
+      "Launch a polished, SEO-structured website faster with AI-assisted design and human-refined branding, copy, and UX from our Vancouver team.",
+    images: ["https://www.metrovalleydigital.com/images/service/service-img-2.jpg"],
   },
 };
 

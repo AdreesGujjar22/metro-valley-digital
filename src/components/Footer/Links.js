@@ -43,6 +43,11 @@ export default function Links() {
                 <i className="fa fa-angle-double-right"></i>AI Chatbot Integration
               </Link>
             </li>
+            <li>
+              <Link href="/service-areas">
+                <i className="fa fa-angle-double-right"></i>All Service Areas
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

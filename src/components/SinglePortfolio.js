@@ -3,9 +3,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { SlideshowLightbox } from "lightbox.js-react";
+import "lightbox.js-react/dist/index.css";
 
 export default function SinglePortfolio(props) {
-  const { image, title, category } = props;
+  const { image, title, category, href = "/portfolio" } = props;
 
   const imageUrl = typeof image === "object" ? image.src : image;
   const sanitizedIdentifier = imageUrl.replace(/[^a-zA-Z0-9]/g, "");
@@ -36,7 +37,7 @@ export default function SinglePortfolio(props) {
           </div>
           <div className="portfolio-content">
             <h4>
-              <Link href="/portfolio">
+              <Link href={href}>
                 {title ? title : "Art & Studio"}
               </Link>
             </h4>

@@ -5,23 +5,23 @@ import Sliders from "../Home/Testimonial/Sliders";
 import { BreadcrumbSchema, ServiceCatalogSchema } from "@/components/SeoSchemas";
 
 export const metadata = {
-  title: "Digital Marketing, SEO & Web Services Catalog | Metro Valley Digital",
+  title: "Digital Marketing & SEO Services",
   description:
-    "Explore our 12 core digital marketing and engineering services: Local SEO, GEO AI search optimization, paid ads, Shopify development, custom software, and AI chatbots.",
+    "Browse 12 growth services: Local SEO, GEO, paid ads, Shopify builds, custom software, and AI chatbots for Vancouver and Canada-wide businesses.",
   alternates: {
-    canonical: "https://metrovalleydigital.com/services",
+    canonical: "https://www.metrovalleydigital.com/services",
   },
   openGraph: {
-    title: "Digital Marketing, SEO & Web Services Catalog | Metro Valley Digital",
+    title: "Digital Marketing & SEO Services",
     description:
-      "Explore our 12 core digital marketing and engineering services: Local SEO, GEO AI search optimization, paid ads, Shopify development, custom software, and AI chatbots.",
-    url: "https://metrovalleydigital.com/services",
+      "Browse 12 growth services: Local SEO, GEO, paid ads, Shopify builds, custom software, and AI chatbots for Vancouver and Canada-wide businesses.",
+    url: "https://www.metrovalleydigital.com/services",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
     type: "website",
     images: [
       {
-        url: "https://metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg",
+        url: "https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg",
         width: 1200,
         height: 630,
         alt: "Metro Valley Digital Services Catalog",
@@ -30,10 +30,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Digital Marketing, SEO & Web Services Catalog | Metro Valley Digital",
+    title: "Digital Marketing & SEO Services",
     description:
-      "Explore our 12 core digital marketing and engineering services: Local SEO, GEO AI search optimization, paid ads, Shopify development, custom software, and AI chatbots.",
-    images: ["https://metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
+      "Browse 12 growth services: Local SEO, GEO, paid ads, Shopify builds, custom software, and AI chatbots for Vancouver and Canada-wide businesses.",
+    images: ["https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
   },
 };
 

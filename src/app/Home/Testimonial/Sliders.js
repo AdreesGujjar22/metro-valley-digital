@@ -1,5 +1,9 @@
 "use client";
 
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
@@ -64,7 +68,7 @@ export default function Sliders() {
                     />
                   </div>
                   <div className="testimonial-bottom">
-                    <h6>{singleSlider.name}</h6>
+                    <h4>{singleSlider.name}</h4>
                     <p>{singleSlider.designation}</p>
                   </div>
                   <ul className="testimonial-social">

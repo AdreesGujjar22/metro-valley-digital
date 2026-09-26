@@ -43,7 +43,7 @@ export default function Counter() {
             <i className={singleCounter.iconClass}></i>
             <div className="main-count">
               <h3>{singleCounter.title}</h3>
-              <h6>
+              <div className="count-number">
                 <span className="counter">
                   <CountUp
                     end={singleCounter.number}
@@ -52,7 +52,7 @@ export default function Counter() {
                   />
                 </span>
                 +
-              </h6>
+              </div>
             </div>
           </div>
         </div>

@@ -19,7 +19,7 @@ export default function SingleService(props) {
       <div className="single-service">
         {cardNumber && (
           <div className={cardNumberClass ? cardNumberClass : "number"}>
-            <h6>{cardNumber}</h6>
+            <span className="card-number">{cardNumber}</span>
           </div>
         )}
         <div className="service-head" style={{ display: "inline-block", position: "relative" }}>
@@ -35,14 +35,14 @@ export default function SingleService(props) {
           <i className={icon ? icon : "fa fa-bolt"}></i>
         </div>
         <div className="service-content">
-          <h4>
+          <h3>
             <Link
               href={btnURL ? (btnURL.startsWith("/") ? btnURL : `/${btnURL}`) : "/contact"}
               style={{ color: "inherit", textDecoration: "none" }}
             >
               {title ? title : "Growth Strategy"}
             </Link>
-          </h4>
+          </h3>
           <p>
             {description
               ? description
