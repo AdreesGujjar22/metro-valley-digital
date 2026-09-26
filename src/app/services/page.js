@@ -9,19 +9,19 @@ export const metadata = {
   description:
     "Browse 12 growth services: Local SEO, GEO, paid ads, Shopify builds, custom software, and AI chatbots for Vancouver and Canada-wide businesses.",
   alternates: {
-    canonical: "https://metrovalleydigital.com/services",
+    canonical: "https://www.metrovalleydigital.com/services",
   },
   openGraph: {
     title: "Digital Marketing & SEO Services",
     description:
       "Browse 12 growth services: Local SEO, GEO, paid ads, Shopify builds, custom software, and AI chatbots for Vancouver and Canada-wide businesses.",
-    url: "https://metrovalleydigital.com/services",
+    url: "https://www.metrovalleydigital.com/services",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
     type: "website",
     images: [
       {
-        url: "https://metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg",
+        url: "https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg",
         width: 1200,
         height: 630,
         alt: "Metro Valley Digital Services Catalog",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Digital Marketing & SEO Services",
     description:
       "Browse 12 growth services: Local SEO, GEO, paid ads, Shopify builds, custom software, and AI chatbots for Vancouver and Canada-wide businesses.",
-    images: ["https://metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
   },
 };
 

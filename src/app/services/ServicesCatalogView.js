@@ -16,12 +16,9 @@ export default function ServicesCatalogView() {
   return (
     <div className="container">
       {/* Category Tabs */}
-      <div className="row mb-5">
+      <div className="row">
         <div className="col-12">
-          <div
-            className="d-flex flex-wrap justify-content-center gap-2"
-            style={{ padding: "10px 0" }}
-          >
+          <div className="services-category-tabs">
             {SERVICE_CATEGORIES.map((cat) => {
               const active = selectedCategory === cat;
               return (
@@ -29,17 +26,8 @@ export default function ServicesCatalogView() {
                   key={cat}
                   onClick={() => setSelectedCategory(cat)}
                   type="button"
-                  style={{
-                    backgroundColor: active ? "var(--primary-color)" : "#f1f5f9",
-                    color: active ? "#ffffff" : "#334155",
-                    border: active ? "1px solid var(--primary-color)" : "1px solid #e2e8f0",
-                    padding: "8px 18px",
-                    borderRadius: "30px",
-                    fontWeight: "600",
-                    fontSize: "14px",
-                    cursor: "pointer",
-                    transition: "all 0.2s ease",
-                  }}
+                  aria-pressed={active}
+                  className={`services-category-tab${active ? " is-active" : ""}`}
                 >
                   {cat}
                 </button>
@@ -51,13 +39,13 @@ export default function ServicesCatalogView() {
 
       {/* Services Grid */}
       <div className="row g-4">
-        {filteredServices.map((service, index) => (
+        {filteredServices.map((service) => (
           <div
             key={service.id}
             className="col-lg-4 col-md-6 col-12"
           >
             <div
-              className="single-service"
+              className="single-service services-catalog-card"
               style={{
                 display: "flex",
                 flexDirection: "column",
@@ -155,46 +143,12 @@ export default function ServicesCatalogView() {
                 </p>
               </div>
 
-              <div
-                className="service-bottom"
-                style={{
-                  borderTop: "1px solid #f1f5f9",
-                  paddingTop: "16px",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                }}
-              >
+              <div className="service-bottom services-catalog-card-bottom">
                 <Link
                   href={service.url}
-                  style={{
-                    color: "var(--primary-color)",
-                    fontWeight: "700",
-                    fontSize: "13px",
-                    textDecoration: "none",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "6px",
-                  }}
+                  className="service-explore-btn"
                 >
                   Explore Service <i className="fa fa-arrow-right"></i>
-                </Link>
-                <Link
-                  href={service.url}
-                  aria-label={`View ${service.title} page`}
-                  style={{
-                    width: "32px",
-                    height: "32px",
-                    borderRadius: "50%",
-                    backgroundColor: "#f1f5f9",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    color: "var(--primary-color)",
-                    fontSize: "12px",
-                  }}
-                >
-                  <i className="fa fa-chevron-right"></i>
                 </Link>
               </div>
             </div>

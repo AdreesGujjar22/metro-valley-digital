@@ -6,13 +6,13 @@ export const metadata = {
   description:
     "Review the terms for accessing and using the Metro Valley Digital website and its information.",
   alternates: {
-    canonical: "https://metrovalleydigital.com/terms-of-service",
+    canonical: "https://www.metrovalleydigital.com/terms-of-service",
   },
   openGraph: {
     title: "Terms of Service | Metro Valley Digital",
     description:
       "Review the terms for accessing and using the Metro Valley Digital website and its information.",
-    url: "https://metrovalleydigital.com/terms-of-service",
+    url: "https://www.metrovalleydigital.com/terms-of-service",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
     type: "website",

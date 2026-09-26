@@ -22,16 +22,16 @@ export async function generateMetadata({ params }) {
     title: service.metaTitle,
     description: service.metaDescription,
     alternates: {
-      canonical: `https://metrovalleydigital.com/${service.slug}`,
+      canonical: `https://www.metrovalleydigital.com/${service.slug}`,
     },
     openGraph: {
       title: service.metaTitle,
       description: service.metaDescription,
-      url: `https://metrovalleydigital.com/${service.slug}`,
+      url: `https://www.metrovalleydigital.com/${service.slug}`,
       siteName: "Metro Valley Digital",
       images: [
         {
-          url: `https://metrovalleydigital.com${service.image}`,
+          url: `https://www.metrovalleydigital.com${service.image}`,
           width: 1200,
           height: 630,
           alt: `${service.title} - Metro Valley Digital`,
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title: service.metaTitle,
       description: service.metaDescription,
-      images: [`https://metrovalleydigital.com${service.image}`],
+      images: [`https://www.metrovalleydigital.com${service.image}`],
     },
   };
 }

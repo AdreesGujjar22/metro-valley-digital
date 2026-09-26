@@ -9,19 +9,19 @@ export const metadata = {
   description:
     "Straight answers on Local SEO timelines, Google 3-Pack rankings, PPC management, Next.js builds, and contract terms from our Vancouver growth team.",
   alternates: {
-    canonical: "https://metrovalleydigital.com/faq",
+    canonical: "https://www.metrovalleydigital.com/faq",
   },
   openGraph: {
     title: "SEO & Marketing FAQs",
     description:
       "Straight answers on Local SEO timelines, Google 3-Pack rankings, PPC management, Next.js builds, and contract terms from our Vancouver growth team.",
-    url: "https://metrovalleydigital.com/faq",
+    url: "https://www.metrovalleydigital.com/faq",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
     type: "website",
     images: [
       {
-        url: "https://metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg",
+        url: "https://www.metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg",
         width: 1200,
         height: 630,
         alt: "Metro Valley Digital FAQ",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "SEO & Marketing FAQs",
     description:
       "Straight answers on Local SEO timelines, Google 3-Pack rankings, PPC management, Next.js builds, and contract terms from our Vancouver growth team.",
-    images: ["https://metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg"],
   },
 };
 

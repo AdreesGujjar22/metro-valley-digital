@@ -6,13 +6,13 @@ export const metadata = {
   description:
     "Learn how Metro Valley Digital handles information entered on this website, browser storage, and third-party services.",
   alternates: {
-    canonical: "https://metrovalleydigital.com/privacy-policy",
+    canonical: "https://www.metrovalleydigital.com/privacy-policy",
   },
   openGraph: {
     title: "Privacy Policy | Metro Valley Digital",
     description:
       "Learn how Metro Valley Digital handles information entered on this website, browser storage, and third-party services.",
-    url: "https://metrovalleydigital.com/privacy-policy",
+    url: "https://www.metrovalleydigital.com/privacy-policy",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
     type: "website",

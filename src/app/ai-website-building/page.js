@@ -9,17 +9,17 @@ export const metadata = {
   description:
     "Launch a polished, SEO-structured website faster with AI-assisted design and human-refined branding, copy, and UX from our Vancouver team.",
   alternates: {
-    canonical: "https://metrovalleydigital.com/ai-website-building",
+    canonical: "https://www.metrovalleydigital.com/ai-website-building",
   },
   openGraph: {
     title: "AI Website Building",
     description:
       "Launch a polished, SEO-structured website faster with AI-assisted design and human-refined branding, copy, and UX from our Vancouver team.",
-    url: "https://metrovalleydigital.com/ai-website-building",
+    url: "https://www.metrovalleydigital.com/ai-website-building",
     siteName: "Metro Valley Digital",
     images: [
       {
-        url: "https://metrovalleydigital.com/images/service/service-img-2.jpg",
+        url: "https://www.metrovalleydigital.com/images/service/service-img-2.jpg",
         width: 1200,
         height: 630,
         alt: "AI Website Builder Services - Metro Valley Digital",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "AI Website Building",
     description:
       "Launch a polished, SEO-structured website faster with AI-assisted design and human-refined branding, copy, and UX from our Vancouver team.",
-    images: ["https://metrovalleydigital.com/images/service/service-img-2.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/service/service-img-2.jpg"],
   },
 };
 

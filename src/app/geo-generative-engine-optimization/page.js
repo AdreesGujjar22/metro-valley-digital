@@ -9,17 +9,17 @@ export const metadata = {
   description:
     "Get cited by ChatGPT, Gemini, and Perplexity with AI search entity optimization, structured data, and fact-dense content from our Vancouver GEO team.",
   alternates: {
-    canonical: "https://metrovalleydigital.com/geo-generative-engine-optimization",
+    canonical: "https://www.metrovalleydigital.com/geo-generative-engine-optimization",
   },
   openGraph: {
     title: "Generative Engine Optimization",
     description:
       "Get cited by ChatGPT, Gemini, and Perplexity with AI search entity optimization, structured data, and fact-dense content from our Vancouver GEO team.",
-    url: "https://metrovalleydigital.com/geo-generative-engine-optimization",
+    url: "https://www.metrovalleydigital.com/geo-generative-engine-optimization",
     siteName: "Metro Valley Digital",
     images: [
       {
-        url: "https://metrovalleydigital.com/images/ai_code_agents_1788193536610.jpg",
+        url: "https://www.metrovalleydigital.com/images/ai_code_agents_1788193536610.jpg",
         width: 1200,
         height: 630,
         alt: "GEO Generative Engine Optimization - Metro Valley Digital",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Generative Engine Optimization",
     description:
       "Get cited by ChatGPT, Gemini, and Perplexity with AI search entity optimization, structured data, and fact-dense content from our Vancouver GEO team.",
-    images: ["https://metrovalleydigital.com/images/ai_code_agents_1788193536610.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/ai_code_agents_1788193536610.jpg"],
   },
 };
 

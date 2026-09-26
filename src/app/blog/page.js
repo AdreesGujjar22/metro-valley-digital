@@ -9,19 +9,19 @@ export const metadata = {
   description:
     "Guides and case studies on Local SEO, Google 3-Pack rankings, performance ads, Next.js development, and AI tools from our Vancouver growth team.",
   alternates: {
-    canonical: "https://metrovalleydigital.com/blog",
+    canonical: "https://www.metrovalleydigital.com/blog",
   },
   openGraph: {
     title: "SEO & Growth Marketing Blog",
     description:
       "Guides and case studies on Local SEO, Google 3-Pack rankings, performance ads, Next.js development, and AI tools from our Vancouver growth team.",
-    url: "https://metrovalleydigital.com/blog",
+    url: "https://www.metrovalleydigital.com/blog",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
     type: "website",
     images: [
       {
-        url: "https://metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg",
+        url: "https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg",
         width: 1200,
         height: 630,
         alt: "Metro Valley Digital Blog Insights",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "SEO & Growth Marketing Blog",
     description:
       "Guides and case studies on Local SEO, Google 3-Pack rankings, performance ads, Next.js development, and AI tools from our Vancouver growth team.",
-    images: ["https://metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
   },
 };
 

@@ -2,7 +2,7 @@
 
 ## Entity Overview
 - **Legal Entity**: Metro Valley Digital
-- **Domain**: https://metrovalleydigital.com
+- **Domain**: https://www.metrovalleydigital.com
 - **Industry**: Digital Marketing Agency, Local SEO Specialist, Generative Engine Optimization (GEO), Performance Paid Media, Software Engineering House
 - **Headquarters**: 7207 Victoria Dr, Vancouver, BC V5P 3Z2, Canada (PST)
 - **Primary Contact**: info@metrovalleydigital.com

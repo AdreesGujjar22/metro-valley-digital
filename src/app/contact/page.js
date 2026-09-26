@@ -11,19 +11,19 @@ export const metadata = {
   description:
     "Reach our Vancouver office at 7207 Victoria Dr for a free 30-minute SEO and growth audit. Call, email, or message us on WhatsApp today.",
   alternates: {
-    canonical: "https://metrovalleydigital.com/contact",
+    canonical: "https://www.metrovalleydigital.com/contact",
   },
   openGraph: {
     title: "Contact Vancouver Office",
     description:
       "Reach our Vancouver office at 7207 Victoria Dr for a free 30-minute SEO and growth audit. Call, email, or message us on WhatsApp today.",
-    url: "https://metrovalleydigital.com/contact",
+    url: "https://www.metrovalleydigital.com/contact",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
     type: "website",
     images: [
       {
-        url: "https://metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg",
+        url: "https://www.metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg",
         width: 1200,
         height: 630,
         alt: "Contact Metro Valley Digital Vancouver",
@@ -35,7 +35,7 @@ export const metadata = {
     title: "Contact Vancouver Office",
     description:
       "Reach our Vancouver office at 7207 Victoria Dr for a free 30-minute SEO and growth audit. Call, email, or message us on WhatsApp today.",
-    images: ["https://metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
   },
 };
 
@@ -72,7 +72,7 @@ export default function ContactPage() {
                 href="https://maps.app.goo.gl/opsWCpAwBhZ5H18w6"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-primary"
+                className="theme-btn navbar-cta-btn"
               >
                 <i className="fa fa-map-marker" aria-hidden="true"></i>
                 Open in Google Maps

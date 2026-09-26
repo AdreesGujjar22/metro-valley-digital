@@ -9,17 +9,17 @@ export const metadata = {
   description:
     "Rank higher, drive organic traffic, and convert more visitors with technical, on-page, and off-page SEO built for Vancouver and Canada-wide businesses.",
   alternates: {
-    canonical: "https://metrovalleydigital.com/seo-services",
+    canonical: "https://www.metrovalleydigital.com/seo-services",
   },
   openGraph: {
     title: "SEO Services in Vancouver",
     description:
       "Rank higher, drive organic traffic, and convert more visitors with technical, on-page, and off-page SEO built for Vancouver and Canada-wide businesses.",
-    url: "https://metrovalleydigital.com/seo-services",
+    url: "https://www.metrovalleydigital.com/seo-services",
     siteName: "Metro Valley Digital",
     images: [
       {
-        url: "https://metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg",
+        url: "https://www.metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg",
         width: 1200,
         height: 630,
         alt: "SEO Services in Vancouver - Metro Valley Digital",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "SEO Services in Vancouver",
     description:
       "Rank higher, drive organic traffic, and convert more visitors with technical, on-page, and off-page SEO built for Vancouver and Canada-wide businesses.",
-    images: ["https://metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg"],
   },
 };
 

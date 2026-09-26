@@ -9,19 +9,19 @@ export const metadata = {
   description:
     "Meet the Vancouver team behind Metro Valley Digital's Local SEO, paid ads, and custom software results for businesses across BC and North America.",
   alternates: {
-    canonical: "https://metrovalleydigital.com/about-us",
+    canonical: "https://www.metrovalleydigital.com/about-us",
   },
   openGraph: {
     title: "About Metro Valley",
     description:
       "Meet the Vancouver team behind Metro Valley Digital's Local SEO, paid ads, and custom software results for businesses across BC and North America.",
-    url: "https://metrovalleydigital.com/about-us",
+    url: "https://www.metrovalleydigital.com/about-us",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
     type: "website",
     images: [
       {
-        url: "https://metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg",
+        url: "https://www.metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg",
         width: 1200,
         height: 630,
         alt: "About Metro Valley Digital",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "About Metro Valley",
     description:
       "Meet the Vancouver team behind Metro Valley Digital's Local SEO, paid ads, and custom software results for businesses across BC and North America.",
-    images: ["https://metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
   },
 };
 

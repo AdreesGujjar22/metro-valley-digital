@@ -9,19 +9,19 @@ export const metadata = {
   description:
     "Verified case studies: local call surges up to 340%, 6.4x paid ad ROAS, and custom Next.js builds delivered for clients across Vancouver and Canada.",
   alternates: {
-    canonical: "https://metrovalleydigital.com/portfolio",
+    canonical: "https://www.metrovalleydigital.com/portfolio",
   },
   openGraph: {
     title: "Case Studies & Client Results",
     description:
       "Verified case studies: local call surges up to 340%, 6.4x paid ad ROAS, and custom Next.js builds delivered for clients across Vancouver and Canada.",
-    url: "https://metrovalleydigital.com/portfolio",
+    url: "https://www.metrovalleydigital.com/portfolio",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
     type: "website",
     images: [
       {
-        url: "https://metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg",
+        url: "https://www.metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg",
         width: 1200,
         height: 630,
         alt: "Metro Valley Digital Case Studies",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Case Studies & Client Results",
     description:
       "Verified case studies: local call surges up to 340%, 6.4x paid ad ROAS, and custom Next.js builds delivered for clients across Vancouver and Canada.",
-    images: ["https://metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg"],
   },
 };
 

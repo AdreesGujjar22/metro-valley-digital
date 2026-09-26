@@ -8,19 +8,19 @@ export const metadata = {
   description:
     "Real feedback from Vancouver and Canada-wide clients on how Metro Valley Digital delivers #1 Google rankings and high-converting ad campaigns.",
   alternates: {
-    canonical: "https://metrovalleydigital.com/testimonials",
+    canonical: "https://www.metrovalleydigital.com/testimonials",
   },
   openGraph: {
     title: "Client Reviews & Testimonials",
     description:
       "Real feedback from Vancouver and Canada-wide clients on how Metro Valley Digital delivers #1 Google rankings and high-converting ad campaigns.",
-    url: "https://metrovalleydigital.com/testimonials",
+    url: "https://www.metrovalleydigital.com/testimonials",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
     type: "website",
     images: [
       {
-        url: "https://metrovalleydigital.com/images/testi_marcus_1788194200341.jpg",
+        url: "https://www.metrovalleydigital.com/images/testi_marcus_1788194200341.jpg",
         width: 1200,
         height: 630,
         alt: "Metro Valley Digital Testimonials",
@@ -32,7 +32,7 @@ export const metadata = {
     title: "Client Reviews & Testimonials",
     description:
       "Real feedback from Vancouver and Canada-wide clients on how Metro Valley Digital delivers #1 Google rankings and high-converting ad campaigns.",
-    images: ["https://metrovalleydigital.com/images/testi_marcus_1788194200341.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/testi_marcus_1788194200341.jpg"],
   },
 };
 

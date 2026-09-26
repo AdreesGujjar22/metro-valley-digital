@@ -26,18 +26,18 @@ export async function generateMetadata({ params }) {
     title: `${post.metaTitle}`,
     description: post.metaDescription,
     alternates: {
-      canonical: `https://metrovalleydigital.com/blog/${post.slug}`,
+      canonical: `https://www.metrovalleydigital.com/blog/${post.slug}`,
     },
     openGraph: {
       title: post.metaTitle,
       description: post.metaDescription,
-      url: `https://metrovalleydigital.com/blog/${post.slug}`,
+      url: `https://www.metrovalleydigital.com/blog/${post.slug}`,
       siteName: "Metro Valley Digital",
       locale: "en_CA",
       type: "article",
       images: [
         {
-          url: `https://metrovalleydigital.com${post.image}`,
+          url: `https://www.metrovalleydigital.com${post.image}`,
           width: 1200,
           height: 630,
           alt: post.title,
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title: post.metaTitle,
       description: post.metaDescription,
-      images: [`https://metrovalleydigital.com${post.image}`],
+      images: [`https://www.metrovalleydigital.com${post.image}`],
     },
   };
 }
@@ -72,11 +72,11 @@ export default async function BlogDetailPage({ params }) {
       <ArticleSchema
         title={post.title}
         description={post.metaDescription}
-        image={`https://metrovalleydigital.com${post.image}`}
+        image={`https://www.metrovalleydigital.com${post.image}`}
         datePublished={post.date}
         dateModified={post.date}
         authorName={post.author.name}
-        url={`https://metrovalleydigital.com/blog/${post.slug}`}
+        url={`https://www.metrovalleydigital.com/blog/${post.slug}`}
       />
       <Breadcrumbs
         title={post.title}

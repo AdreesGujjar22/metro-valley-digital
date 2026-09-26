@@ -29,7 +29,7 @@ export async function generateMetadata({ params }) {
     0,
     120
   )}... Get a free growth audit from Metro Valley Digital.`;
-  const url = `https://metrovalleydigital.com/service-areas/${area.slug}`;
+  const url = `https://www.metrovalleydigital.com/service-areas/${area.slug}`;
 
   return {
     title,
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }) {
       type: "website",
       images: [
         {
-          url: "https://metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg",
+          url: "https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg",
           width: 1200,
           height: 630,
           alt: `Digital Marketing Services in ${area.name} - Metro Valley Digital`,
@@ -55,7 +55,7 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title,
       description,
-      images: ["https://metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
+      images: ["https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
     },
   };
 }

@@ -29,8 +29,8 @@ export default function Contact() {
                 </div>
               </li>
               <li>
-                <Link href="mailto:hello@metrovalleydigital.com" style={{ color: "#94a3b8", fontSize: "13px" }}>
-                  <i className="fa fa-envelope" style={{ marginRight: "6px" }}></i>hello@metrovalleydigital.com
+                <Link href="mailto:info@metrovalleydigital.com" style={{ color: "#94a3b8", fontSize: "13px" }}>
+                  <i className="fa fa-envelope" style={{ marginRight: "6px" }}></i>info@metrovalleydigital.com
                 </Link>
               </li>
             </ul>

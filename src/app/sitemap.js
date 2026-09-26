@@ -4,7 +4,7 @@ import { SERVICE_AREAS } from "@/data/serviceAreas";
 import { PROJECTS_DATA } from "@/data/projects";
 
 export default function sitemap() {
-  const baseUrl = "https://metrovalleydigital.com";
+  const baseUrl = "https://www.metrovalleydigital.com";
   const now = new Date().toISOString();
 
   const serviceUrls = SERVICES_CATALOG.map((service) => ({

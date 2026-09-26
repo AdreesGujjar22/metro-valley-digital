@@ -13,7 +13,6 @@ export const SERVICES_CATALOG = [
     h1: "Professional SEO Services That Drive Real Results",
     bodyCopy:
       "Search Engine Optimization (SEO) is the foundation of sustainable online growth. At Metro Valley Digital, we help businesses climb Google rankings, attract high-intent organic traffic, and convert visitors into paying customers — without relying on paid ads.",
-    highlightBadge: "Organic Ranking Driver",
     icon: "fa fa-line-chart",
     image: "/images/seo_audit_screen_1788193501910.jpg",
     processTitle: "Our SEO Process Includes:",
@@ -89,7 +88,6 @@ export const SERVICES_CATALOG = [
     h1: "GEO Services — Get Your Brand Recommended by AI",
     bodyCopy:
       "Search is evolving beyond the traditional '10 blue links.' Tools like ChatGPT, Google AI Overviews, Gemini, and Perplexity are now answering user queries directly — and only citing select sources. GEO (Generative Engine Optimization) ensures your brand is one of them.",
-    highlightBadge: "AI Search Era Strategy",
     icon: "fa fa-magic",
     image: "/images/ai_code_agents_1788193536610.jpg",
     processTitle: "What We Do:",
@@ -161,7 +159,6 @@ export const SERVICES_CATALOG = [
     h1: "Local SEO Services — Rank in Your Neighborhood, Get Found Fast",
     bodyCopy:
       "If you run a local business, showing up in the Google Map Pack (the top 3 local results) is critical. We optimize your Google Business Profile (GMB) and local presence so nearby customers find and choose you first.",
-    highlightBadge: "Map Pack #1 Dominance",
     icon: "fa fa-map-marker",
     image: "/images/local_seo_maps_1788193488227.jpg",
     processTitle: "Our Local SEO Services Include:",
@@ -237,7 +234,6 @@ export const SERVICES_CATALOG = [
     h1: "Website SEO Optimization — Built for Speed, Structure & Search Rankings",
     bodyCopy:
       "Your website is your digital storefront. If it's slow, poorly structured, or not optimized, you're losing both rankings and customers. We optimize every technical and on-page element of your site for maximum search performance.",
-    highlightBadge: "Technical Site Health 98+",
     icon: "fa fa-wrench",
     image: "/images/local_seo_growth_1788191403673.jpg",
     processTitle: "What's Included:",
@@ -317,7 +313,6 @@ export const SERVICES_CATALOG = [
     h1: "Social Media Marketing That Builds Real Engagement & Brand Loyalty",
     bodyCopy:
       "We help brands grow their presence across Instagram, Facebook, TikTok, LinkedIn, and X (Twitter) with strategic content, consistent posting, and community engagement that turns followers into customers.",
-    highlightBadge: "Brand & Viral Engagement",
     icon: "fa fa-share-alt",
     image: "/images/smm_video_growth_1788193518995.jpg",
     processTitle: "Our Social Media Services:",
@@ -393,7 +388,6 @@ export const SERVICES_CATALOG = [
     h1: "Paid Advertising Experts — Meta, TikTok, Google & More",
     bodyCopy:
       "Running ads without expertise wastes budget fast. Our certified media buyers create, manage, and optimize high-converting ad campaigns across every major platform to maximize your return on ad spend (ROAS).",
-    highlightBadge: "High-ROAS Certified Media Buyers",
     icon: "fa fa-bullseye",
     image: "/images/paid_ads_roas_1788191423627.jpg",
     processTitle: "Platforms We Manage & Our Process:",
@@ -465,7 +459,6 @@ export const SERVICES_CATALOG = [
     h1: "Shopify & E-Commerce Development Built to Convert",
     bodyCopy:
       "We design, build, and optimize Shopify and e-commerce stores that look professional, load fast, and are engineered to turn visitors into paying customers.",
-    highlightBadge: "High-Converting Store Design",
     icon: "fa fa-shopping-cart",
     image: "/images/agency_workspace_1788191445921.jpg",
     processTitle: "Our E-Commerce Services:",
@@ -545,7 +538,6 @@ export const SERVICES_CATALOG = [
     h1: "Amazon & eBay Product Hunting & Listing Optimization Experts",
     bodyCopy:
       "Finding the right product is the single biggest factor in e-commerce success. Our product research specialists use data-driven tools and market analysis to identify high-demand, low-competition, profitable products for Amazon FBA and eBay sellers.",
-    highlightBadge: "FBA & Marketplace Growth",
     icon: "fa fa-tags",
     image: "/images/service/service-img-1.jpg",
     processTitle: "Our Services Include:",
@@ -625,7 +617,6 @@ export const SERVICES_CATALOG = [
     h1: "Custom Website Development — Fast, Functional & Built to Grow Your Business",
     bodyCopy:
       "We design and develop custom websites tailored to your brand and business goals — combining clean design, fast performance, and SEO-ready structure from day one.",
-    highlightBadge: "Modern Framework Engineering",
     icon: "fa fa-laptop",
     image: "/images/metro_agency_hero_1788191381646.jpg",
     processTitle: "Our Development Services:",
@@ -701,7 +692,6 @@ export const SERVICES_CATALOG = [
     h1: "AI Chatbot Integration — 24/7 Automated Customer Support & Lead Generation",
     bodyCopy:
       "We integrate intelligent AI chatbots into your website to instantly answer customer questions, capture leads, and guide visitors toward conversion — around the clock, without human intervention.",
-    highlightBadge: "24/7 Smart Sales Agents",
     icon: "fa fa-comments-o",
     image: "/images/office_contact_hero_1788194259077.jpg",
     processTitle: "What We Offer:",
@@ -777,7 +767,6 @@ export const SERVICES_CATALOG = [
     h1: "AI-Powered Website Building — Smarter, Faster Website Creation",
     bodyCopy:
       "We leverage cutting-edge AI website-building tools combined with expert human design and SEO strategy to launch stunning, functional websites in a fraction of the traditional time — without sacrificing quality.",
-    highlightBadge: "Accelerated 1-2 Week Launch",
     icon: "fa fa-bolt",
     image: "/images/service/service-img-2.jpg",
     processTitle: "Our AI Website Building Process:",
@@ -849,7 +838,6 @@ export const SERVICES_CATALOG = [
     h1: "Mobile Application Development — From Idea to App Store Launch",
     bodyCopy:
       "We design and develop custom mobile applications for iOS and Android that are intuitive, scalable, and built to solve real business problems — from MVPs to full-featured apps.",
-    highlightBadge: "iOS & Android Cross-Platform",
     icon: "fa fa-mobile",
     image: "/images/service/service-img-3.jpg",
     processTitle: "Our App Development Services:",

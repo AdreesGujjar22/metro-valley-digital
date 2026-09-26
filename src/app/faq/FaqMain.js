@@ -1,17 +1,29 @@
 "use client";
 
 import Image from "next/image";
-import {
-  Accordion,
-  AccordionItem,
-  AccordionItemHeading,
-  AccordionItemButton,
-  AccordionItemPanel,
-} from "react-accessible-accordion";
-
+import FaqAccordion from "@/components/FaqAccordion";
 import SectionTitle from "@/components/SectionTitle";
 
 import FaqImg from "../../../public/images/agency_workspace_1788191445921.jpg";
+
+const faqItems = [
+  {
+    q: "How quickly can we expect to rank in the Google 3-Pack?",
+    a: "Most local businesses see ranking velocity improvements and expanded map coverage within 30 to 60 days. Highly competitive metro areas (such as Vancouver, Burnaby, Richmond, or Surrey) typically reach stable #1–#3 positions within a 90-day sprint as citation networks and review signals mature.",
+  },
+  {
+    q: "What ad platforms do you specialize in for Paid Marketing?",
+    a: "We run high-converting paid campaigns across Meta (Facebook & Instagram), TikTok Ads, and Google Ads (Search, Performance Max, and YouTube). We design custom direct-response video creatives and configure server-side CAPI attribution for 4.5x+ ROAS.",
+  },
+  {
+    q: "Why do you build web software with Next.js & React?",
+    a: "Next.js delivers sub-second load times, flawless 100/100 Core Web Vitals, and native server-side rendering for superior SEO indexing. Unlike bloated WordPress sites, Next.js ensures maximum conversion rates and frictionless integration with custom AI chatbots and CRM systems.",
+  },
+  {
+    q: "What results and reporting can clients expect?",
+    a: "Clients receive senior commercial strategy, transparent real-time conversion dashboards, and dedicated account management. We provide weekly sprint check-ins, monthly ROI reports, and continuous performance optimizations across your local search and paid campaigns.",
+  },
+];
 
 export default function FaqMain() {
   return (
@@ -34,63 +46,7 @@ export default function FaqMain() {
             >
               <div className="faq-inner">
                 <div className="faq-content">
-                  <Accordion className="panel-group" preExpanded={["a"]}>
-                    {/* Single Faq */}
-                    <AccordionItem className="panel panel-default" uuid="a">
-                      <AccordionItemHeading className="faq-heading">
-                        <AccordionItemButton className="faq-title">
-                          <span>1</span> How quickly can we expect to rank in the Google 3-Pack?
-                        </AccordionItemButton>
-                      </AccordionItemHeading>
-                      <AccordionItemPanel>
-                        <div className="faq-body">
-                          Most local businesses see ranking velocity improvements and expanded map coverage within 30 to 60 days. Highly competitive metro areas (such as Vancouver, Burnaby, Richmond, or Surrey) typically reach stable #1–#3 positions within a 90-day sprint as citation networks and review signals mature.
-                        </div>
-                      </AccordionItemPanel>
-                    </AccordionItem>
-
-                    {/* Single Faq */}
-                    <AccordionItem className="panel panel-default" uuid="b">
-                      <AccordionItemHeading className="faq-heading">
-                        <AccordionItemButton className="faq-title">
-                          <span>2</span> What ad platforms do you specialize in for Paid Marketing?
-                        </AccordionItemButton>
-                      </AccordionItemHeading>
-                      <AccordionItemPanel>
-                        <div className="faq-body">
-                          We run high-converting paid campaigns across Meta (Facebook & Instagram), TikTok Ads, and Google Ads (Search, Performance Max, and YouTube). We design custom direct-response video creatives and configure server-side CAPI attribution for 4.5x+ ROAS.
-                        </div>
-                      </AccordionItemPanel>
-                    </AccordionItem>
-
-                    {/* Single Faq */}
-                    <AccordionItem className="panel panel-default" uuid="c">
-                      <AccordionItemHeading className="faq-heading">
-                        <AccordionItemButton className="faq-title">
-                          <span>3</span> Why do you build web software with Next.js & React?
-                        </AccordionItemButton>
-                      </AccordionItemHeading>
-                      <AccordionItemPanel>
-                        <div className="faq-body">
-                          Next.js delivers sub-second load times, flawless 100/100 Core Web Vitals, and native server-side rendering for superior SEO indexing. Unlike bloated WordPress sites, Next.js ensures maximum conversion rates and frictionless integration with custom AI chatbots and CRM systems.
-                        </div>
-                      </AccordionItemPanel>
-                    </AccordionItem>
-
-                    {/* Single Faq */}
-                    <AccordionItem className="panel panel-default" uuid="d">
-                      <AccordionItemHeading className="faq-heading">
-                        <AccordionItemButton className="faq-title">
-                          <span>4</span> What results and reporting can clients expect?
-                        </AccordionItemButton>
-                      </AccordionItemHeading>
-                      <AccordionItemPanel>
-                        <div className="faq-body">
-                          Clients receive senior commercial strategy, transparent real-time conversion dashboards, and dedicated account management. We provide weekly sprint check-ins, monthly ROI reports, and continuous performance optimizations across your local search and paid campaigns.
-                        </div>
-                      </AccordionItemPanel>
-                    </AccordionItem>
-                  </Accordion>
+                  <FaqAccordion items={faqItems} idPrefix="faq-page" />
                 </div>
               </div>
             </div>

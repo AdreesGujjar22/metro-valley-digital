@@ -180,7 +180,7 @@ export default function Sliders() {
         channel="youtube"
         autoplay
         isOpen={isOpen}
-        videoId="pNje3bWz7V8"
+        videoId="4PyESvrIv30"
         onClose={() => setOpen(false)}
       />
       {/* <!-- End Hero Area --> */}

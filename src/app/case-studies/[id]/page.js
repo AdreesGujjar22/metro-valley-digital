@@ -19,7 +19,7 @@ export async function generateMetadata({ params }) {
 
   const title = project.title;
   const description = project.summary;
-  const url = `https://metrovalleydigital.com/case-studies/${project.id}`;
+  const url = `https://www.metrovalleydigital.com/case-studies/${project.id}`;
 
   return {
     title,
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }) {
       type: "article",
       images: [
         {
-          url: `https://metrovalleydigital.com${project.image}`,
+          url: `https://www.metrovalleydigital.com${project.image}`,
           width: 1200,
           height: 630,
           alt: `${project.title} Case Study - Metro Valley Digital`,
@@ -45,7 +45,7 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title,
       description,
-      images: [`https://metrovalleydigital.com${project.image}`],
+      images: [`https://www.metrovalleydigital.com${project.image}`],
     },
   };
 }

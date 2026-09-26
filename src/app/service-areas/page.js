@@ -10,19 +10,19 @@ export const metadata = {
   description:
     "Metro Valley Digital delivers local SEO, paid ads, and web development across every Vancouver neighbourhood, Metro Vancouver city, and select remote markets. Find your area.",
   alternates: {
-    canonical: "https://metrovalleydigital.com/service-areas",
+    canonical: "https://www.metrovalleydigital.com/service-areas",
   },
   openGraph: {
     title: "Vancouver Service Areas",
     description:
       "Local SEO, paid ads, and web development across every Vancouver neighbourhood, Metro Vancouver city, and select remote markets.",
-    url: "https://metrovalleydigital.com/service-areas",
+    url: "https://www.metrovalleydigital.com/service-areas",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
     type: "website",
     images: [
       {
-        url: "https://metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg",
+        url: "https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg",
         width: 1200,
         height: 630,
         alt: "Metro Valley Digital Service Areas",
@@ -34,18 +34,27 @@ export const metadata = {
     title: "Vancouver Service Areas",
     description:
       "Local SEO, paid ads, and web development across every Vancouver neighbourhood, Metro Vancouver city, and select remote markets.",
-    images: ["https://metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
   },
 };
 
-const AREA_CARD_IMAGES = [
-  "/images/local_seo_maps_1788193488227.jpg",
-  "/images/paid_ads_roas_1788191423627.jpg",
-  "/images/seo_audit_screen_1788193501910.jpg",
-  "/images/ai_code_agents_1788193536610.jpg",
-  "/images/smm_video_growth_1788193518995.jpg",
-  "/images/local_seo_growth_1788191403673.jpg",
-];
+const AREA_CARD_IMAGES = {
+  neighbourhood: [
+    "/images/service-areas/alex_agrico-vancouver-7450141_1920.jpg",
+    "/images/service-areas/arttower-vancouver-56623_1920.jpg",
+  ],
+  metro: [
+    "/images/service-areas/geraldfriedrich2-canada-3290310_1920.jpg",
+    "/images/service-areas/jameswheeler-buildings-2297210_1920.jpg",
+    "/images/service-areas/chris1007-city-948984_1920.jpg",
+    "/images/service-areas/w10496z-canada-3860167_1920.jpg",
+  ],
+  extended: [
+    "/images/service-areas/12019-toronto-123058_1920.jpg",
+    "/images/service-areas/12019-edmonton-77798_1920.jpg",
+    "/images/service-areas/chris1007-city-948984_1920.jpg",
+  ],
+};
 
 function AreaCard({ area, image }) {
   return (
@@ -58,7 +67,7 @@ function AreaCard({ area, image }) {
         <div className="portfolio-img">
           <Image
             src={image}
-            alt={`${area.name}, ${area.region}`}
+            alt={`Area photo representing ${area.name}, ${area.region}`}
             fill
             sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
           />
@@ -116,7 +125,7 @@ export default function ServiceAreasIndexPage() {
               <AreaCard
                 key={area.slug}
                 area={area}
-                image={AREA_CARD_IMAGES[index % AREA_CARD_IMAGES.length]}
+                image={AREA_CARD_IMAGES.neighbourhood[index % AREA_CARD_IMAGES.neighbourhood.length]}
               />
             ))}
           </div>
@@ -129,7 +138,7 @@ export default function ServiceAreasIndexPage() {
               <AreaCard
                 key={area.slug}
                 area={area}
-                image={AREA_CARD_IMAGES[index % AREA_CARD_IMAGES.length]}
+                image={AREA_CARD_IMAGES.metro[index % AREA_CARD_IMAGES.metro.length]}
               />
             ))}
           </div>
@@ -142,7 +151,7 @@ export default function ServiceAreasIndexPage() {
               <AreaCard
                 key={area.slug}
                 area={area}
-                image={AREA_CARD_IMAGES[index % AREA_CARD_IMAGES.length]}
+                image={AREA_CARD_IMAGES.extended[index % AREA_CARD_IMAGES.extended.length]}
               />
             ))}
           </div>

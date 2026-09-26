@@ -17,19 +17,19 @@ export const metadata = {
   description:
     "Meet the search strategists, paid media buyers, and software engineers behind Metro Valley Digital's results across Vancouver and North America.",
   alternates: {
-    canonical: "https://metrovalleydigital.com/team",
+    canonical: "https://www.metrovalleydigital.com/team",
   },
   openGraph: {
     title: "Our Team",
     description:
       "Meet the search strategists, paid media buyers, and software engineers behind Metro Valley Digital's results across Vancouver and North America.",
-    url: "https://metrovalleydigital.com/team",
+    url: "https://www.metrovalleydigital.com/team",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
     type: "website",
     images: [
       {
-        url: "https://metrovalleydigital.com/images/team_toronto_lead_1788194135436.jpg",
+        url: "https://www.metrovalleydigital.com/images/team_toronto_lead_1788194135436.jpg",
         width: 1200,
         height: 630,
         alt: "Metro Valley Digital Team Leadership",
@@ -41,7 +41,7 @@ export const metadata = {
     title: "Our Team",
     description:
       "Meet the search strategists, paid media buyers, and software engineers behind Metro Valley Digital's results across Vancouver and North America.",
-    images: ["https://metrovalleydigital.com/images/team_toronto_lead_1788194135436.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/team_toronto_lead_1788194135436.jpg"],
   },
 };
 

@@ -13,17 +13,17 @@ export const metadata = {
   description:
     "Climb the Google Map 3-Pack with GBP optimization, citation cleanup, and review growth built for Vancouver, Burnaby, Surrey & Lower Mainland businesses.",
   alternates: {
-    canonical: "https://metrovalleydigital.com/local-seo-google-business-profile",
+    canonical: "https://www.metrovalleydigital.com/local-seo-google-business-profile",
   },
   openGraph: {
     title: "Local SEO & Google Business Profile",
     description:
       "Climb the Google Map 3-Pack with GBP optimization, citation cleanup, and review growth built for Vancouver, Burnaby, Surrey & Lower Mainland businesses.",
-    url: "https://metrovalleydigital.com/local-seo-google-business-profile",
+    url: "https://www.metrovalleydigital.com/local-seo-google-business-profile",
     siteName: "Metro Valley Digital",
     images: [
       {
-        url: "https://metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg",
+        url: "https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg",
         width: 1200,
         height: 630,
         alt: "Local SEO & Google Business Profile Optimization Vancouver - Metro Valley Digital",
@@ -37,7 +37,7 @@ export const metadata = {
     title: "Local SEO & Google Business Profile",
     description:
       "Climb the Google Map 3-Pack with GBP optimization, citation cleanup, and review growth built for Vancouver, Burnaby, Surrey & Lower Mainland businesses.",
-    images: ["https://metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
   },
 };
 

@@ -18,19 +18,19 @@ export const metadata = {
   description:
     "Vancouver agency ranking local businesses #1 on Google, running high-ROI paid ads, and building custom websites, apps, and AI tools. Book a free audit.",
   alternates: {
-    canonical: "https://metrovalleydigital.com",
+    canonical: "https://www.metrovalleydigital.com",
   },
   openGraph: {
     title: "Vancouver SEO & Digital Marketing",
     description:
       "Vancouver agency ranking local businesses #1 on Google, running high-ROI paid ads, and building custom websites, apps, and AI tools. Book a free audit.",
-    url: "https://metrovalleydigital.com",
+    url: "https://www.metrovalleydigital.com",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
     type: "website",
     images: [
       {
-        url: "https://metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg",
+        url: "https://www.metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg",
         width: 1200,
         height: 630,
         alt: "Metro Valley Digital Growth Agency Vancouver",
@@ -42,7 +42,7 @@ export const metadata = {
     title: "Vancouver SEO & Digital Marketing",
     description:
       "Vancouver agency ranking local businesses #1 on Google, running high-ROI paid ads, and building custom websites, apps, and AI tools. Book a free audit.",
-    images: ["https://metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
   },
 };
 

@@ -9,17 +9,17 @@ export const metadata = {
   description:
     "Improve Core Web Vitals, fix technical errors, and align on-page SEO so your site ranks and converts. Vancouver-based technical SEO specialists.",
   alternates: {
-    canonical: "https://metrovalleydigital.com/website-seo-optimization",
+    canonical: "https://www.metrovalleydigital.com/website-seo-optimization",
   },
   openGraph: {
     title: "Website SEO Optimization",
     description:
       "Improve Core Web Vitals, fix technical errors, and align on-page SEO so your site ranks and converts. Vancouver-based technical SEO specialists.",
-    url: "https://metrovalleydigital.com/website-seo-optimization",
+    url: "https://www.metrovalleydigital.com/website-seo-optimization",
     siteName: "Metro Valley Digital",
     images: [
       {
-        url: "https://metrovalleydigital.com/images/local_seo_growth_1788191403673.jpg",
+        url: "https://www.metrovalleydigital.com/images/local_seo_growth_1788191403673.jpg",
         width: 1200,
         height: 630,
         alt: "Website SEO Technical Optimization - Metro Valley Digital",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Website SEO Optimization",
     description:
       "Improve Core Web Vitals, fix technical errors, and align on-page SEO so your site ranks and converts. Vancouver-based technical SEO specialists.",
-    images: ["https://metrovalleydigital.com/images/local_seo_growth_1788191403673.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/local_seo_growth_1788191403673.jpg"],
   },
 };
 

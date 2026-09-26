@@ -1,5 +1,5 @@
 export default function robots() {
-  const baseUrl = "https://metrovalleydigital.com";
+  const baseUrl = "https://www.metrovalleydigital.com";
 
   return {
     rules: [

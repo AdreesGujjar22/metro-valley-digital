@@ -1,14 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import {
-  Accordion,
-  AccordionItem,
-  AccordionItemHeading,
-  AccordionItemButton,
-  AccordionItemPanel,
-} from "react-accessible-accordion";
-
+import FaqAccordion from "@/components/FaqAccordion";
 import SectionTitle from "@/components/SectionTitle";
 
 const homeFaqs = [
@@ -49,20 +42,9 @@ export default function HomeFaq() {
         </div>
         <div className="row">
           <div className="col-lg-8 offset-lg-2 col-12">
-            <Accordion className="panel-group" preExpanded={["home-faq-0"]}>
-              {homeFaqs.map((item, i) => (
-                <AccordionItem className="panel panel-default" uuid={`home-faq-${i}`} key={item.q}>
-                  <AccordionItemHeading className="faq-heading">
-                    <AccordionItemButton className="faq-title">
-                      <span>{i + 1}</span> {item.q}
-                    </AccordionItemButton>
-                  </AccordionItemHeading>
-                  <AccordionItemPanel>
-                    <div className="faq-body">{item.a}</div>
-                  </AccordionItemPanel>
-                </AccordionItem>
-              ))}
-            </Accordion>
+            <div className="faq-inner">
+              <FaqAccordion items={homeFaqs} idPrefix="home-faq" />
+            </div>
             <p style={{ textAlign: "center", marginTop: "24px", color: "#64748b", fontSize: "14px" }}>
               Have a different question? See our full <Link href="/faq">FAQ page</Link> or{" "}
               <Link href="/contact">get in touch</Link>.
