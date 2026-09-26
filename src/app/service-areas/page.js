@@ -1,18 +1,19 @@
 import Link from "next/link";
+import Image from "next/image";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SectionTitle from "@/components/SectionTitle";
 import { BreadcrumbSchema, ServiceAreaListSchema } from "@/components/SeoSchemas";
 import { SERVICE_AREAS, getServiceAreasByType, SERVICE_AREA_TYPE_LABELS } from "@/data/serviceAreas";
 
 export const metadata = {
-  title: "Service Areas | Vancouver, Metro Vancouver & Beyond | Metro Valley Digital",
+  title: "Vancouver Service Areas",
   description:
     "Metro Valley Digital delivers local SEO, paid ads, and web development across every Vancouver neighbourhood, Metro Vancouver city, and select remote markets. Find your area.",
   alternates: {
     canonical: "https://metrovalleydigital.com/service-areas",
   },
   openGraph: {
-    title: "Service Areas | Vancouver, Metro Vancouver & Beyond | Metro Valley Digital",
+    title: "Vancouver Service Areas",
     description:
       "Local SEO, paid ads, and web development across every Vancouver neighbourhood, Metro Vancouver city, and select remote markets.",
     url: "https://metrovalleydigital.com/service-areas",
@@ -30,37 +31,48 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Service Areas | Metro Valley Digital",
+    title: "Vancouver Service Areas",
     description:
       "Local SEO, paid ads, and web development across every Vancouver neighbourhood, Metro Vancouver city, and select remote markets.",
     images: ["https://metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
   },
 };
 
-function AreaCard({ area }) {
+const AREA_CARD_IMAGES = [
+  "/images/local_seo_maps_1788193488227.jpg",
+  "/images/paid_ads_roas_1788191423627.jpg",
+  "/images/seo_audit_screen_1788193501910.jpg",
+  "/images/ai_code_agents_1788193536610.jpg",
+  "/images/smm_video_growth_1788193518995.jpg",
+  "/images/local_seo_growth_1788191403673.jpg",
+];
+
+function AreaCard({ area, image }) {
   return (
     <div className="col-lg-4 col-md-6 col-12">
       <Link
         href={`/service-areas/${area.slug}`}
-        className="d-block h-100"
-        style={{
-          background: "#ffffff",
-          border: "1px solid #e2e8f0",
-          borderRadius: "12px",
-          padding: "20px",
-          textDecoration: "none",
-          transition: "box-shadow 0.2s ease",
-        }}
+        className="portfolio-single service-area-portfolio-card"
+        aria-label={`${area.name}, ${area.region} — view coverage`}
       >
-        <span style={{ fontSize: "11px", color: "var(--primary-color)", fontWeight: "700", letterSpacing: "0.5px" }}>
-          {SERVICE_AREA_TYPE_LABELS[area.type].toUpperCase()}
-        </span>
-        <h3 style={{ fontSize: "18px", fontWeight: "800", color: "#0f172a", margin: "6px 0 8px" }}>
-          {area.name}
-        </h3>
-        <p style={{ fontSize: "13px", color: "#64748b", margin: 0, lineHeight: "1.6" }}>{area.region}</p>
-        <span style={{ fontSize: "13px", color: "#0f172a", fontWeight: "700", marginTop: "10px", display: "inline-block" }}>
-          View coverage <i className="fa fa-arrow-right ms-1"></i>
+        <div className="portfolio-img">
+          <Image
+            src={image}
+            alt={`${area.name}, ${area.region}`}
+            fill
+            sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+          />
+        </div>
+        <div className="portfolio-content">
+          <h4>{area.name}</h4>
+          <p>
+            {SERVICE_AREA_TYPE_LABELS[area.type].toUpperCase()} · {area.region}
+            <br />
+            View coverage
+          </p>
+        </div>
+        <span className="p-button" aria-hidden="true">
+          <i className="fa fa-arrow-right"></i>
         </span>
       </Link>
     </div>
@@ -100,8 +112,12 @@ export default function ServiceAreasIndexPage() {
             Vancouver Neighbourhoods
           </h2>
           <div className="row g-3 mb-5">
-            {neighbourhoods.map((area) => (
-              <AreaCard key={area.slug} area={area} />
+            {neighbourhoods.map((area, index) => (
+              <AreaCard
+                key={area.slug}
+                area={area}
+                image={AREA_CARD_IMAGES[index % AREA_CARD_IMAGES.length]}
+              />
             ))}
           </div>
 
@@ -109,8 +125,12 @@ export default function ServiceAreasIndexPage() {
             Metro Vancouver Cities
           </h2>
           <div className="row g-3 mb-5">
-            {metroCities.map((area) => (
-              <AreaCard key={area.slug} area={area} />
+            {metroCities.map((area, index) => (
+              <AreaCard
+                key={area.slug}
+                area={area}
+                image={AREA_CARD_IMAGES[index % AREA_CARD_IMAGES.length]}
+              />
             ))}
           </div>
 
@@ -118,8 +138,12 @@ export default function ServiceAreasIndexPage() {
             Remote & Cross-Border Markets
           </h2>
           <div className="row g-3">
-            {extended.map((area) => (
-              <AreaCard key={area.slug} area={area} />
+            {extended.map((area, index) => (
+              <AreaCard
+                key={area.slug}
+                area={area}
+                image={AREA_CARD_IMAGES[index % AREA_CARD_IMAGES.length]}
+              />
             ))}
           </div>
         </div>

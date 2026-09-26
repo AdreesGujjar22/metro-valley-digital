@@ -14,7 +14,7 @@ export async function generateMetadata({ params }) {
 
   if (!service) {
     return {
-      title: "Service Not Found | Metro Valley Digital",
+      title: "Service Not Found",
     };
   }
 

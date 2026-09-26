@@ -14,14 +14,14 @@ import HomeFaq from "./Home/Faq";
 import { ServiceCatalogSchema, FaqSchema } from "@/components/SeoSchemas";
 
 export const metadata = {
-  title: "Vancouver SEO & Digital Marketing Agency | Metro Valley",
+  title: "Vancouver SEO & Digital Marketing",
   description:
     "Vancouver agency ranking local businesses #1 on Google, running high-ROI paid ads, and building custom websites, apps, and AI tools. Book a free audit.",
   alternates: {
     canonical: "https://metrovalleydigital.com",
   },
   openGraph: {
-    title: "Vancouver SEO & Digital Marketing Agency | Metro Valley",
+    title: "Vancouver SEO & Digital Marketing",
     description:
       "Vancouver agency ranking local businesses #1 on Google, running high-ROI paid ads, and building custom websites, apps, and AI tools. Book a free audit.",
     url: "https://metrovalleydigital.com",
@@ -39,7 +39,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vancouver SEO & Digital Marketing Agency | Metro Valley",
+    title: "Vancouver SEO & Digital Marketing",
     description:
       "Vancouver agency ranking local businesses #1 on Google, running high-ROI paid ads, and building custom websites, apps, and AI tools. Book a free audit.",
     images: ["https://metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],

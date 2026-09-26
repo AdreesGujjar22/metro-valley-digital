@@ -58,21 +58,14 @@ export default function BlogListing() {
       {/* Search & Filter Controls */}
       <div className="row align-items-center mb-5 g-3">
         <div className="col-lg-7 col-12">
-          <div className="d-flex flex-wrap gap-2">
+          <div className="blog-category-tabs" role="group" aria-label="Filter blog articles">
             {CATEGORIES.map((cat) => (
               <button
                 key={cat.id}
+                type="button"
                 onClick={() => handleCategoryChange(cat.id)}
-                className={`btn px-3 py-2 rounded-pill fw-semibold ${
-                  selectedCategory === cat.id
-                    ? "btn-success text-white shadow-sm"
-                    : "btn-outline-secondary bg-white text-dark border-1"
-                }`}
-                style={{
-                  fontSize: "13px",
-                  borderColor: selectedCategory === cat.id ? "var(--primary-color)" : "#e2e8f0",
-                  backgroundColor: selectedCategory === cat.id ? "var(--primary-color)" : "#ffffff",
-                }}
+                className={`case-study-tab${selectedCategory === cat.id ? " is-active" : ""}`}
+                aria-pressed={selectedCategory === cat.id}
               >
                 {cat.label}
               </button>

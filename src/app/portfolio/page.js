@@ -5,14 +5,14 @@ import { BreadcrumbSchema, PortfolioSchema } from "@/components/SeoSchemas";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Case Studies & Client Results | Metro Valley Digital",
+  title: "Case Studies & Client Results",
   description:
     "Verified case studies: local call surges up to 340%, 6.4x paid ad ROAS, and custom Next.js builds delivered for clients across Vancouver and Canada.",
   alternates: {
     canonical: "https://metrovalleydigital.com/portfolio",
   },
   openGraph: {
-    title: "Case Studies & Client Results | Metro Valley Digital",
+    title: "Case Studies & Client Results",
     description:
       "Verified case studies: local call surges up to 340%, 6.4x paid ad ROAS, and custom Next.js builds delivered for clients across Vancouver and Canada.",
     url: "https://metrovalleydigital.com/portfolio",
@@ -30,7 +30,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Case Studies & Client Results | Metro Valley Digital",
+    title: "Case Studies & Client Results",
     description:
       "Verified case studies: local call surges up to 340%, 6.4x paid ad ROAS, and custom Next.js builds delivered for clients across Vancouver and Canada.",
     images: ["https://metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg"],
@@ -50,7 +50,7 @@ export default function PortfolioPage() {
       />
 
       {/* <!-- Portfolio Area --> */}
-      <section className="portfolio-area" id="portfolio" style={{ padding: "60px 0 80px" }}>
+      <section className="portfolio-area" id="portfolio">
         <div className="container">
           <div className="row">
             <div className="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12 text-center">

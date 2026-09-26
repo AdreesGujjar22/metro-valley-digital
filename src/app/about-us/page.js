@@ -5,14 +5,14 @@ import About from "../Home/About";
 import { BreadcrumbSchema, AboutPageSchema } from "@/components/SeoSchemas";
 
 export const metadata = {
-  title: "About Metro Valley Digital | Vancouver SEO Agency",
+  title: "About Metro Valley",
   description:
     "Meet the Vancouver team behind Metro Valley Digital's Local SEO, paid ads, and custom software results for businesses across BC and North America.",
   alternates: {
     canonical: "https://metrovalleydigital.com/about-us",
   },
   openGraph: {
-    title: "About Metro Valley Digital | Vancouver SEO Agency",
+    title: "About Metro Valley",
     description:
       "Meet the Vancouver team behind Metro Valley Digital's Local SEO, paid ads, and custom software results for businesses across BC and North America.",
     url: "https://metrovalleydigital.com/about-us",
@@ -30,7 +30,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Metro Valley Digital | Vancouver SEO Agency",
+    title: "About Metro Valley",
     description:
       "Meet the Vancouver team behind Metro Valley Digital's Local SEO, paid ads, and custom software results for businesses across BC and North America.",
     images: ["https://metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],

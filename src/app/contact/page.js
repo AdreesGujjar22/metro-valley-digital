@@ -7,14 +7,14 @@ import { COMPANY_INFO } from "@/data/company";
 import { getServiceAreaByName } from "@/data/serviceAreas";
 
 export const metadata = {
-  title: "Contact Metro Valley Digital | Vancouver, BC",
+  title: "Contact Vancouver Office",
   description:
     "Reach our Vancouver office at 7207 Victoria Dr for a free 30-minute SEO and growth audit. Call, email, or message us on WhatsApp today.",
   alternates: {
     canonical: "https://metrovalleydigital.com/contact",
   },
   openGraph: {
-    title: "Contact Metro Valley Digital | Vancouver, BC",
+    title: "Contact Vancouver Office",
     description:
       "Reach our Vancouver office at 7207 Victoria Dr for a free 30-minute SEO and growth audit. Call, email, or message us on WhatsApp today.",
     url: "https://metrovalleydigital.com/contact",
@@ -32,7 +32,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Metro Valley Digital | Vancouver, BC",
+    title: "Contact Vancouver Office",
     description:
       "Reach our Vancouver office at 7207 Victoria Dr for a free 30-minute SEO and growth audit. Call, email, or message us on WhatsApp today.",
     images: ["https://metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
@@ -52,47 +52,34 @@ export default function ContactPage() {
         menuText="Contact"
       />
       <Contact />
-      {/* <!-- Google-Maps & GMB Banner --> */}
-      <div className="maps-area">
-        <div className="container mb-4">
-          <div
-            className="p-4 rounded-3 d-flex flex-wrap align-items-center justify-content-between gap-3"
-            style={{
-              backgroundColor: "#f8fafc",
-              border: "1px solid #e2e8f0",
-              boxShadow: "0 4px 15px rgba(0,0,0,0.03)",
-            }}
-          >
-            <div>
-              <span className="badge bg-success-subtle text-success px-3 py-1 rounded-pill mb-2 fw-bold">
-                📍 Verified Google Business Profile (GMB)
+      <section className="maps-area">
+        <div className="container business-profile-container">
+          <div className="business-profile-card">
+            <div className="business-profile-info">
+              <span className="business-profile-badge">
+                <i className="fa fa-check-circle" aria-hidden="true"></i>
+                Verified Google Business Profile
               </span>
-              <h4 style={{ margin: 0, fontSize: "20px", fontWeight: "800", color: "#0f172a" }}>
-                Metro Valley Digital - Vancouver Headquarters
-              </h4>
-              <p style={{ margin: "4px 0 0", color: "#475569", fontSize: "14px" }}>
-                7207 Victoria Dr, Vancouver, BC V5P 3Z2, Canada • Phone:{" "}
-                <a href="tel:+17786080909" style={{ color: "var(--primary-color)", fontWeight: "600" }}>
-                  +1 778-608-0909
-                </a>
+              <h2>Metro Valley Digital — Vancouver Headquarters</h2>
+              <p>
+                7207 Victoria Dr, Vancouver, BC V5P 3Z2, Canada
+                <span aria-hidden="true"> · </span>
+                <a href="tel:+17786080909">+1 778-608-0909</a>
               </p>
             </div>
-            <div className="d-flex flex-wrap gap-2">
+            <div className="business-profile-actions">
               <a
                 href="https://maps.app.goo.gl/opsWCpAwBhZ5H18w6"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-primary px-4 py-2"
-                style={{ borderRadius: "8px", fontWeight: "700", display: "inline-flex", alignItems: "center", gap: "8px" }}
+                className="btn btn-primary"
               >
-                <i className="fa fa-map-marker"></i> Open in Google Maps (GMB)
+                <i className="fa fa-map-marker" aria-hidden="true"></i>
+                Open in Google Maps
               </a>
-              <a
-                href="tel:+17786080909"
-                className="btn btn-outline-secondary px-3 py-2"
-                style={{ borderRadius: "8px", fontWeight: "600", display: "inline-flex", alignItems: "center", gap: "6px" }}
-              >
-                <i className="fa fa-phone"></i> Call Direct
+              <a href="tel:+17786080909" className="btn btn-outline-secondary">
+                <i className="fa fa-phone" aria-hidden="true"></i>
+                Call Direct
               </a>
             </div>
           </div>
@@ -102,15 +89,13 @@ export default function ContactPage() {
             id="gmap_canvas"
             title="Metro Valley Digital Vancouver Location - 7207 Victoria Dr, Vancouver, BC"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.0366566933258!2d-123.06626689999997!3d49.2188319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486752f09111487%3A0xba4a6c5b4e88b35f!2sMETRO%20VALLEY%20DIGITAL!5e0!3m2!1sen!2sca!4v1790368651439!5m2!1sen!2sca"
-            width="600"
-            height="450"
-            style={{ border: 0, width: "100%", height: "100%" }}
-            allowFullScreen=""
+            className="google-map-embed"
+            allowFullScreen
             loading="lazy"
             referrerPolicy="strict-origin-when-cross-origin"
           ></iframe>
         </div>
-      </div>
+      </section>
 
       {/* Service Areas & Neighbourhoods */}
       <section style={{ padding: "60px 0", backgroundColor: "#f8fafc" }}>

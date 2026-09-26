@@ -3,14 +3,14 @@ import Pricing from "../Home/Pricing";
 import { BreadcrumbSchema } from "@/components/SeoSchemas";
 
 export const metadata = {
-  title: "SEO & Growth Marketing Pricing | Metro Valley Digital",
+  title: "SEO & Growth Marketing Pricing",
   description:
     "Transparent, ROI-focused pricing for Local SEO, Google 3-Pack optimization, paid ads, and custom Next.js development. No hidden fees, no long contracts.",
   alternates: {
     canonical: "https://metrovalleydigital.com/pricing",
   },
   openGraph: {
-    title: "SEO & Growth Marketing Pricing | Metro Valley Digital",
+    title: "SEO & Growth Marketing Pricing",
     description:
       "Transparent, ROI-focused pricing for Local SEO, Google 3-Pack optimization, paid ads, and custom Next.js development. No hidden fees, no long contracts.",
     url: "https://metrovalleydigital.com/pricing",
@@ -28,7 +28,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO & Growth Marketing Pricing | Metro Valley Digital",
+    title: "SEO & Growth Marketing Pricing",
     description:
       "Transparent, ROI-focused pricing for Local SEO, Google 3-Pack optimization, paid ads, and custom Next.js development. No hidden fees, no long contracts.",
     images: ["https://metrovalleydigital.com/images/paid_ads_roas_1788191423627.jpg"],

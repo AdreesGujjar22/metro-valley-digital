@@ -32,7 +32,7 @@ const poppins = Poppins({
 export const metadata = {
   metadataBase: new URL("https://metrovalleydigital.com"),
   title: {
-    default: "Metro Valley Digital | SEO & Growth Marketing Agency",
+    default: "Digital Growth Agency | Metro Valley Digital",
     template: "%s | Metro Valley Digital",
   },
   description:

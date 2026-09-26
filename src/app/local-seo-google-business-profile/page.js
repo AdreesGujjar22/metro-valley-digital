@@ -9,14 +9,14 @@ import Link from "next/link";
 const service = getServiceBySlug("local-seo-google-business-profile");
 
 export const metadata = {
-  title: "Local SEO & Google Business Profile | Metro Valley",
+  title: "Local SEO & Google Business Profile",
   description:
     "Climb the Google Map 3-Pack with GBP optimization, citation cleanup, and review growth built for Vancouver, Burnaby, Surrey & Lower Mainland businesses.",
   alternates: {
     canonical: "https://metrovalleydigital.com/local-seo-google-business-profile",
   },
   openGraph: {
-    title: "Local SEO & Google Business Profile | Metro Valley",
+    title: "Local SEO & Google Business Profile",
     description:
       "Climb the Google Map 3-Pack with GBP optimization, citation cleanup, and review growth built for Vancouver, Burnaby, Surrey & Lower Mainland businesses.",
     url: "https://metrovalleydigital.com/local-seo-google-business-profile",
@@ -34,7 +34,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Local SEO & Google Business Profile | Metro Valley",
+    title: "Local SEO & Google Business Profile",
     description:
       "Climb the Google Map 3-Pack with GBP optimization, citation cleanup, and review growth built for Vancouver, Burnaby, Surrey & Lower Mainland businesses.",
     images: ["https://metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],

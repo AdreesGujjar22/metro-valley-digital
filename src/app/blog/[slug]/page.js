@@ -18,7 +18,7 @@ export async function generateMetadata({ params }) {
 
   if (!post) {
     return {
-      title: "Article Not Found | Metro Valley Digital",
+      title: "Article Not Found",
     };
   }
 

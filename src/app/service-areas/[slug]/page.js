@@ -21,10 +21,10 @@ export async function generateMetadata({ params }) {
   const area = getServiceAreaBySlug(slug);
 
   if (!area) {
-    return { title: "Service Area Not Found | Metro Valley Digital" };
+    return { title: "Service Area Not Found" };
   }
 
-  const title = `SEO & Digital Marketing Services in ${area.name} | Metro Valley Digital`;
+  const title = `SEO Services in ${area.name}`;
   const description = `Local SEO, paid ads, and web development for ${area.name} businesses — ${area.businessMix.slice(
     0,
     120

@@ -5,14 +5,14 @@ import { BreadcrumbSchema } from "@/components/SeoSchemas";
 import Link from "next/link";
 
 export const metadata = {
-  title: "SEO & Growth Marketing Blog | Metro Valley Digital",
+  title: "SEO & Growth Marketing Blog",
   description:
     "Guides and case studies on Local SEO, Google 3-Pack rankings, performance ads, Next.js development, and AI tools from our Vancouver growth team.",
   alternates: {
     canonical: "https://metrovalleydigital.com/blog",
   },
   openGraph: {
-    title: "SEO & Growth Marketing Blog | Metro Valley Digital",
+    title: "SEO & Growth Marketing Blog",
     description:
       "Guides and case studies on Local SEO, Google 3-Pack rankings, performance ads, Next.js development, and AI tools from our Vancouver growth team.",
     url: "https://metrovalleydigital.com/blog",
@@ -30,7 +30,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO & Growth Marketing Blog | Metro Valley Digital",
+    title: "SEO & Growth Marketing Blog",
     description:
       "Guides and case studies on Local SEO, Google 3-Pack rankings, performance ads, Next.js development, and AI tools from our Vancouver growth team.",
     images: ["https://metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],

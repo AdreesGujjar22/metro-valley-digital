@@ -4,14 +4,14 @@ import Testimonial from "../Home/Testimonial";
 import { BreadcrumbSchema } from "@/components/SeoSchemas";
 
 export const metadata = {
-  title: "Client Reviews & Testimonials | Metro Valley Digital",
+  title: "Client Reviews & Testimonials",
   description:
     "Real feedback from Vancouver and Canada-wide clients on how Metro Valley Digital delivers #1 Google rankings and high-converting ad campaigns.",
   alternates: {
     canonical: "https://metrovalleydigital.com/testimonials",
   },
   openGraph: {
-    title: "Client Reviews & Testimonials | Metro Valley Digital",
+    title: "Client Reviews & Testimonials",
     description:
       "Real feedback from Vancouver and Canada-wide clients on how Metro Valley Digital delivers #1 Google rankings and high-converting ad campaigns.",
     url: "https://metrovalleydigital.com/testimonials",
@@ -29,7 +29,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Client Reviews & Testimonials | Metro Valley Digital",
+    title: "Client Reviews & Testimonials",
     description:
       "Real feedback from Vancouver and Canada-wide clients on how Metro Valley Digital delivers #1 Google rankings and high-converting ad campaigns.",
     images: ["https://metrovalleydigital.com/images/testi_marcus_1788194200341.jpg"],

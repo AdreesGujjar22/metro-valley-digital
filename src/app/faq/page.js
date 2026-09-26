@@ -5,14 +5,14 @@ import FaqMain from "./FaqMain";
 import { BreadcrumbSchema, FaqSchema } from "@/components/SeoSchemas";
 
 export const metadata = {
-  title: "SEO & Marketing FAQs | Metro Valley Digital",
+  title: "SEO & Marketing FAQs",
   description:
     "Straight answers on Local SEO timelines, Google 3-Pack rankings, PPC management, Next.js builds, and contract terms from our Vancouver growth team.",
   alternates: {
     canonical: "https://metrovalleydigital.com/faq",
   },
   openGraph: {
-    title: "SEO & Marketing FAQs | Metro Valley Digital",
+    title: "SEO & Marketing FAQs",
     description:
       "Straight answers on Local SEO timelines, Google 3-Pack rankings, PPC management, Next.js builds, and contract terms from our Vancouver growth team.",
     url: "https://metrovalleydigital.com/faq",
@@ -30,7 +30,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO & Marketing FAQs | Metro Valley Digital",
+    title: "SEO & Marketing FAQs",
     description:
       "Straight answers on Local SEO timelines, Google 3-Pack rankings, PPC management, Next.js builds, and contract terms from our Vancouver growth team.",
     images: ["https://metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg"],

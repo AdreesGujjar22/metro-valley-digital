@@ -516,7 +516,7 @@ export function AboutPageSchema() {
         addressCountry: "CA",
       },
       telephone: "+1 778-608-0909",
-      email: "growth@metrovalleydigital.com",
+      email: "info@metrovalleydigital.com",
     },
   };
 
@@ -542,7 +542,7 @@ export function ContactPageSchema() {
       url: "https://metrovalleydigital.com",
       hasMap: "https://maps.app.goo.gl/opsWCpAwBhZ5H18w6",
       telephone: "+1 778-608-0909",
-      email: "growth@metrovalleydigital.com",
+      email: "info@metrovalleydigital.com",
       address: {
         "@type": "PostalAddress",
         streetAddress: "7207 Victoria Dr",
@@ -724,5 +724,3 @@ export function PortfolioSchema() {
     />
   );
 }
-
-

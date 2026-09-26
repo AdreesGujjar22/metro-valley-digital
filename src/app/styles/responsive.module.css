@@ -21,6 +21,10 @@
   .header .header-inner {
     padding: 12px 0;
   }
+  .business-profile-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
   .topbar .topbar-left {
     float: none;
     text-align: center;
@@ -262,7 +266,7 @@
   .contact-area .contact-right {
     padding: 0px 10px;
   }
-  .contact-area .top-content h3 {
+  .contact-area .top-content h2 {
     font-size: 22px;
   }
   .blog-c-form {
@@ -607,8 +611,28 @@
   .single-count .main-count {
     margin-left: 10px;
   }
-  .contact-area .top-content h3 {
+  .contact-area .top-content h2 {
     font-size: 18px;
+  }
+  .maps-area {
+    padding-top: 40px;
+  }
+  .business-profile-card {
+    align-items: stretch;
+    gap: 20px;
+    padding: 22px;
+  }
+  .business-profile-card h2 {
+    font-size: 19px;
+  }
+  .business-profile-actions {
+    flex-direction: column;
+  }
+  .business-profile-actions .btn {
+    width: 100%;
+  }
+  .maps-area .main-maps {
+    height: 340px;
   }
   .contact-area .left-col {
     display: none;
@@ -1003,6 +1027,21 @@
   }
   .widget.banner-ad-widget img {
     height: 340px;
+  }
+  .case-study-tabs {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    margin-bottom: 26px;
+    overflow-x: auto;
+  }
+  .case-study-tab {
+    flex: 0 0 auto;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .case-study-tab::after {
+    display: none;
   }
 }
 

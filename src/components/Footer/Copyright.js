@@ -17,7 +17,8 @@ export default function Copyright() {
               <div className="footer-bottom-links text-md-end" style={{ color: "#94a3b8", fontSize: "13px" }}>
                 <Link href="/services" style={{ color: "#94a3b8", marginRight: "16px" }}>Local SEO</Link>
                 <Link href="/services" style={{ color: "#94a3b8", marginRight: "16px" }}>Paid Ads</Link>
-                <Link href="/contact" style={{ color: "#94a3b8" }}>Privacy & Terms</Link>
+                <Link href="/privacy-policy" style={{ color: "#94a3b8", marginRight: "16px" }}>Privacy Policy</Link>
+                <Link href="/terms-of-service" style={{ color: "#94a3b8" }}>Terms of Service</Link>
               </div>
             </div>
           </div>

@@ -5,14 +5,14 @@ import { notFound } from "next/navigation";
 const service = getServiceBySlug("geo-generative-engine-optimization");
 
 export const metadata = {
-  title: "GEO: Generative Engine Optimization | Metro Valley",
+  title: "Generative Engine Optimization",
   description:
     "Get cited by ChatGPT, Gemini, and Perplexity with AI search entity optimization, structured data, and fact-dense content from our Vancouver GEO team.",
   alternates: {
     canonical: "https://metrovalleydigital.com/geo-generative-engine-optimization",
   },
   openGraph: {
-    title: "GEO: Generative Engine Optimization | Metro Valley",
+    title: "Generative Engine Optimization",
     description:
       "Get cited by ChatGPT, Gemini, and Perplexity with AI search entity optimization, structured data, and fact-dense content from our Vancouver GEO team.",
     url: "https://metrovalleydigital.com/geo-generative-engine-optimization",
@@ -30,7 +30,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "GEO: Generative Engine Optimization | Metro Valley",
+    title: "Generative Engine Optimization",
     description:
       "Get cited by ChatGPT, Gemini, and Perplexity with AI search entity optimization, structured data, and fact-dense content from our Vancouver GEO team.",
     images: ["https://metrovalleydigital.com/images/ai_code_agents_1788193536610.jpg"],

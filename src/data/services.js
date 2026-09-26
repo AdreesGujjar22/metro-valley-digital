@@ -7,7 +7,7 @@ export const SERVICES_CATALOG = [
     category: "Search & SEO",
     title: "SEO Services",
     shortTitle: "SEO Services",
-    metaTitle: "SEO Services in Vancouver | Metro Valley Digital",
+    metaTitle: "Vancouver SEO Services",
     metaDescription:
       "Rank higher, drive organic traffic, and convert more visitors with technical, on-page, and off-page SEO built for Vancouver and Canada-wide businesses.",
     h1: "Professional SEO Services That Drive Real Results",
@@ -83,7 +83,7 @@ export const SERVICES_CATALOG = [
     category: "AI & Search Innovation",
     title: "GEO (Generative Engine Optimization)",
     shortTitle: "GEO Services",
-    metaTitle: "GEO: Generative Engine Optimization | Metro Valley",
+    metaTitle: "Generative Engine Optimization",
     metaDescription:
       "Get cited by ChatGPT, Gemini, and Perplexity with AI search entity optimization, structured data, and fact-dense content from our Vancouver GEO team.",
     h1: "GEO Services — Get Your Brand Recommended by AI",
@@ -155,7 +155,7 @@ export const SERVICES_CATALOG = [
     category: "Search & SEO",
     title: "Local SEO & Google Business Profile (GMB) Optimization",
     shortTitle: "Local SEO & GMB",
-    metaTitle: "Local SEO & Google Business Profile | Metro Valley",
+    metaTitle: "Local SEO & Google Business Profile",
     metaDescription:
       "Climb the Google Map 3-Pack with GBP optimization, citation cleanup, and review growth built for Vancouver, Burnaby, Surrey & Lower Mainland businesses.",
     h1: "Local SEO Services — Rank in Your Neighborhood, Get Found Fast",
@@ -231,7 +231,7 @@ export const SERVICES_CATALOG = [
     category: "Search & SEO",
     title: "Website SEO (On-Page & Technical)",
     shortTitle: "Website SEO Optimization",
-    metaTitle: "Website SEO Optimization Services | Metro Valley",
+    metaTitle: "Website SEO Optimization",
     metaDescription:
       "Improve Core Web Vitals, fix technical errors, and align on-page SEO so your site ranks and converts. Vancouver-based technical SEO specialists.",
     h1: "Website SEO Optimization — Built for Speed, Structure & Search Rankings",
@@ -311,7 +311,7 @@ export const SERVICES_CATALOG = [
     category: "Advertising & Social Media",
     title: "Social Media Marketing",
     shortTitle: "Social Media Marketing",
-    metaTitle: "Social Media Marketing Services | Metro Valley",
+    metaTitle: "Social Media Marketing",
     metaDescription:
       "Grow your brand with strategy-led content calendars, short-form video, and community management across Instagram, TikTok, and Facebook.",
     h1: "Social Media Marketing That Builds Real Engagement & Brand Loyalty",
@@ -387,7 +387,7 @@ export const SERVICES_CATALOG = [
     category: "Advertising & Social Media",
     title: "Paid Advertising (Meta, TikTok, Google Ads & More)",
     shortTitle: "Paid Ads & PPC",
-    metaTitle: "Paid Ads Management | Meta, TikTok & Google Ads",
+    metaTitle: "Paid Ads Management",
     metaDescription:
       "High-ROAS Meta, TikTok, Google, and LinkedIn ad campaigns with server-side tracking and creative testing, managed by our Vancouver performance team.",
     h1: "Paid Advertising Experts — Meta, TikTok, Google & More",
@@ -459,7 +459,7 @@ export const SERVICES_CATALOG = [
     category: "E-Commerce & Marketplaces",
     title: "Shopify & E-Commerce Store Development",
     shortTitle: "Shopify & E-Commerce",
-    metaTitle: "Shopify & E-Commerce Development | Metro Valley",
+    metaTitle: "Shopify & E-Commerce Development",
     metaDescription:
       "Custom Shopify stores built for speed, conversion, and scale, from theme design to checkout optimization and ongoing store support.",
     h1: "Shopify & E-Commerce Development Built to Convert",
@@ -539,7 +539,7 @@ export const SERVICES_CATALOG = [
     category: "E-Commerce & Marketplaces",
     title: "Amazon & eBay Product Hunting & Listing Optimization",
     shortTitle: "Amazon & eBay Research",
-    metaTitle: "Amazon & eBay Product Research | Metro Valley",
+    metaTitle: "Amazon & eBay Product Research",
     metaDescription:
       "Data-driven product hunting, supplier sourcing, and A9/A10 listing optimization to help your Amazon and eBay stores find profitable winners.",
     h1: "Amazon & eBay Product Hunting & Listing Optimization Experts",
@@ -619,7 +619,7 @@ export const SERVICES_CATALOG = [
     category: "Software & App Engineering",
     title: "Website Development",
     shortTitle: "Custom Web Development",
-    metaTitle: "Website Development Services | Metro Valley Digital",
+    metaTitle: "Website Development",
     metaDescription:
       "Fast, responsive, SEO-ready websites built on modern Next.js architecture, designed to load quickly, rank well, and convert visitors.",
     h1: "Custom Website Development — Fast, Functional & Built to Grow Your Business",
@@ -695,7 +695,7 @@ export const SERVICES_CATALOG = [
     category: "AI & Search Innovation",
     title: "AI Chatbot Integration",
     shortTitle: "AI Chatbots & Automation",
-    metaTitle: "AI Chatbot Integration Services | Metro Valley",
+    metaTitle: "AI Chatbot Integration",
     metaDescription:
       "Custom AI chatbots that capture leads, answer FAQs, and qualify customers 24/7, integrated with your CRM, WhatsApp, and email.",
     h1: "AI Chatbot Integration — 24/7 Automated Customer Support & Lead Generation",
@@ -771,7 +771,7 @@ export const SERVICES_CATALOG = [
     category: "Software & App Engineering",
     title: "AI Website Building",
     shortTitle: "AI Website Building",
-    metaTitle: "AI Website Building Services | Metro Valley",
+    metaTitle: "AI Website Building",
     metaDescription:
       "Launch a polished, SEO-structured website faster with AI-assisted design and human-refined branding, copy, and UX from our Vancouver team.",
     h1: "AI-Powered Website Building — Smarter, Faster Website Creation",
@@ -843,7 +843,7 @@ export const SERVICES_CATALOG = [
     category: "Software & App Engineering",
     title: "Mobile Application Development",
     shortTitle: "Mobile App Development",
-    metaTitle: "Mobile App Development Services | Metro Valley",
+    metaTitle: "Mobile App Development",
     metaDescription:
       "iOS and Android apps built with React Native and Flutter, from UI/UX design through app store submission and post-launch support.",
     h1: "Mobile Application Development — From Idea to App Store Launch",

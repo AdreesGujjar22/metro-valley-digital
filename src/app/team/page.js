@@ -13,14 +13,14 @@ import TeamImg7 from "../../../public/images/team_ai_architect_1788194166603.jpg
 import TeamImg8 from "../../../public/images/testi_marcus_1788194200341.jpg";
 
 export const metadata = {
-  title: "Our Team | Metro Valley Digital Vancouver",
+  title: "Our Team",
   description:
     "Meet the search strategists, paid media buyers, and software engineers behind Metro Valley Digital's results across Vancouver and North America.",
   alternates: {
     canonical: "https://metrovalleydigital.com/team",
   },
   openGraph: {
-    title: "Our Team | Metro Valley Digital Vancouver",
+    title: "Our Team",
     description:
       "Meet the search strategists, paid media buyers, and software engineers behind Metro Valley Digital's results across Vancouver and North America.",
     url: "https://metrovalleydigital.com/team",
@@ -38,7 +38,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Our Team | Metro Valley Digital Vancouver",
+    title: "Our Team",
     description:
       "Meet the search strategists, paid media buyers, and software engineers behind Metro Valley Digital's results across Vancouver and North America.",
     images: ["https://metrovalleydigital.com/images/team_toronto_lead_1788194135436.jpg"],

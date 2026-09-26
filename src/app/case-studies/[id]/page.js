@@ -14,10 +14,10 @@ export async function generateMetadata({ params }) {
   const project = getProjectById(id);
 
   if (!project) {
-    return { title: "Case Study Not Found | Metro Valley Digital" };
+    return { title: "Case Study Not Found" };
   }
 
-  const title = `${project.title} Case Study | ${project.subtitle} | Metro Valley Digital`;
+  const title = project.title;
   const description = project.summary;
   const url = `https://metrovalleydigital.com/case-studies/${project.id}`;
 

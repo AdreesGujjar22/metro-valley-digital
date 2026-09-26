@@ -3,7 +3,7 @@ export const BLOG_POSTS = [
     id: "local-seo-google-3-pack-ranking-guide",
     slug: "local-seo-google-3-pack-ranking-guide",
     title: "How We Rank #1 on Google 3-Pack in Competitive Metro Areas (Vancouver Case Study)",
-    metaTitle: "Google Maps 3-Pack SEO Playbook | Metro Valley",
+    metaTitle: "Local SEO 3-Pack Ranking Guide",
     metaDescription:
       "How we took a Vancouver service business from page 4 to #1 on Google Maps with geo-signals, review velocity, and localized citation building.",
     date: "Oct 12, 2026",
@@ -65,7 +65,7 @@ export const BLOG_POSTS = [
     id: "meta-tiktok-ads-roas-framework-2026",
     slug: "meta-tiktok-ads-roas-framework-2026",
     title: "The 2026 Meta & TikTok Ad Creative Framework for 5x+ ROAS",
-    metaTitle: "Meta & TikTok Ads ROAS Framework | Metro Valley",
+    metaTitle: "Meta & TikTok Ads ROAS Framework",
     metaDescription:
       "The direct-response creative frameworks, server-side CAPI setups, and testing structures that consistently drive 5x+ ROAS for e-commerce brands.",
     date: "Oct 08, 2026",
@@ -120,7 +120,7 @@ export const BLOG_POSTS = [
     id: "nextjs-app-router-vs-legacy-cms-seo",
     slug: "nextjs-app-router-vs-legacy-cms-seo",
     title: "Why Next.js App Router Outranks Legacy CMS in Core Web Vitals and Conversion",
-    metaTitle: "Next.js App Router: SEO & Speed Gains | Metro Valley",
+    metaTitle: "Next.js SEO & Speed Gains",
     metaDescription:
       "How the Next.js App Router delivers sub-second load times, strong Core Web Vitals, and better crawl budgets than a bloated WordPress site.",
     date: "Sep 29, 2026",
@@ -168,7 +168,7 @@ export const BLOG_POSTS = [
     id: "ai-chatbot-lead-conversion-playbook",
     slug: "ai-chatbot-lead-conversion-playbook",
     title: "Integrating 24/7 AI Chat Agents to Double Inbound Lead Velocity",
-    metaTitle: "AI Chatbots for 24/7 Lead Capture | Metro Valley",
+    metaTitle: "AI Chatbots for Lead Capture",
     metaDescription:
       "How conversational AI assistants triage inquiries, qualify prospects, and sync with your CRM to stop after-hours leads from slipping away.",
     date: "Sep 15, 2026",
@@ -216,7 +216,7 @@ export const BLOG_POSTS = [
     id: "generative-engine-optimization-geo-guide",
     slug: "generative-engine-optimization-geo-guide",
     title: "Generative Engine Optimization (GEO): Getting Cited by ChatGPT & Perplexity",
-    metaTitle: "Generative Engine Optimization (GEO) Guide | MVD",
+    metaTitle: "GEO Optimization Guide",
     metaDescription:
       "How entity schema and citation building get your brand recommended by ChatGPT, Google Gemini, and Perplexity when people ask AI for suggestions.",
     date: "Sep 02, 2026",
@@ -263,7 +263,7 @@ export const BLOG_POSTS = [
     id: "shopify-ecommerce-conversion-rate-optimization",
     slug: "shopify-ecommerce-conversion-rate-optimization",
     title: "E-Commerce CRO: 7 Checkout Optimizations That Boosted Revenue by 38%",
-    metaTitle: "E-Commerce CRO Playbook | Metro Valley Digital",
+    metaTitle: "E-Commerce CRO Playbook",
     metaDescription:
       "Actionable Shopify CRO tactics — one-page checkout, trust badges, payment installments, and speed fixes that reduce cart abandonment.",
     date: "Aug 20, 2026",
@@ -304,7 +304,7 @@ export const BLOG_POSTS = [
     id: "multi-location-seo-rank-multiple-cities",
     slug: "multi-location-seo-rank-multiple-cities",
     title: "Multi-Location Local SEO: How to Dominate Multiple Cities Without Penalties",
-    metaTitle: "Multi-Location Local SEO Strategy | Metro Valley",
+    metaTitle: "Multi-Location Local SEO Guide",
     metaDescription:
       "How to scale a local service business across multiple cities with city landing pages, separate Google Business Profiles, and localized schema.",
     date: "Aug 10, 2026",
@@ -345,7 +345,7 @@ export const BLOG_POSTS = [
     id: "b2b-google-search-ads-pipeline-growth",
     slug: "b2b-google-search-ads-pipeline-growth",
     title: "High-Intent B2B Google Ads: Slashing Cost-Per-SQL by 42%",
-    metaTitle: "B2B Google Ads Optimization Strategy | Metro Valley",
+    metaTitle: "B2B Google Ads Optimization",
     metaDescription:
       "A practical guide to B2B Google Search Ads — exact-match keyword structures, negative keyword mining, and offline conversion tracking.",
     date: "Jul 28, 2026",
