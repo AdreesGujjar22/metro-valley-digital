@@ -213,7 +213,7 @@ export default function WhatsAppFloating() {
                   />
                 </div>
                 <div>
-                  <h4
+                  <div
                     style={{
                       margin: 0,
                       fontSize: "14px",
@@ -223,7 +223,7 @@ export default function WhatsAppFloating() {
                     }}
                   >
                     Metro Valley Digital
-                  </h4>
+                  </div>
                   <p
                     style={{
                       margin: "2px 0 0",

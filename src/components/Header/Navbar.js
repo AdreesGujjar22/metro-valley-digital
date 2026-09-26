@@ -145,6 +145,18 @@ export default function Navbar() {
                                 <li>
                                   <Link
                                     className={` ${
+                                      pathname.startsWith("/service-areas")
+                                        ? "active"
+                                        : ""
+                                    }`}
+                                    href="/service-areas"
+                                  >
+                                    Service Areas
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    className={` ${
                                       pathname.startsWith("/blog")
                                         ? "active"
                                         : ""

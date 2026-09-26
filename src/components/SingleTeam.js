@@ -20,7 +20,7 @@ export default function SingleTeam(props) {
         </div>
         <div className="team-bottom">
           <div className="team-content" style={{ padding: "16px 12px 8px" }}>
-            <h4 style={{ fontSize: "18px", fontWeight: "700", color: "#ffffff", marginBottom: "4px" }}>{name ? name : "Sam Martin"}</h4>
+            <h3 style={{ fontSize: "18px", fontWeight: "700", color: "#ffffff", marginBottom: "4px" }}>{name ? name : "Sam Martin"}</h3>
             <p style={{ color: "#ffffff", fontSize: "14px", fontWeight: "500", opacity: "0.95" }}>{designation ? designation : "Web Designer"}</p>
           </div>
           <div className="team-social">

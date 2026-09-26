@@ -3,6 +3,12 @@
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
+import Image from "next/image";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "swiper/css/effect-fade";
+import "react-modal-video/css/modal-video.min.css";
 
 import HeroBg1 from "../../../../public/images/metro_agency_hero_1788191381646.jpg";
 import HeroBg2 from "../../../../public/images/local_seo_growth_1788191403673.jpg";
@@ -17,7 +23,7 @@ export default function Sliders() {
       id: "slider1",
       bgImg: HeroBg3,
       tag: "📈 Meta, TikTok & Google Ads Performance",
-      title: "AI Powered Digital Marketing",
+      title: "Vancouver SEO & AI-Powered Digital Marketing",
       subTitle: "SEO AEO GEO And Social Media All In One Place",
       button: {
         text: "Claim Free 30-Min Growth Audit",
@@ -75,31 +81,54 @@ export default function Sliders() {
           modules={[Autoplay, Pagination]}
           className="hero-slider"
         >
-          {heroSliders.map((singleSlider) => (
+          {heroSliders.map((singleSlider, sliderIndex) => (
             <SwiperSlide
               className="single-slider"
               style={{
-                backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.74), rgba(15, 23, 42, 0.88)), url(${singleSlider.bgImg.src})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center center",
+                position: "relative",
                 minHeight: "600px",
                 paddingTop: "120px",
                 paddingBottom: "80px",
                 display: "flex",
                 alignItems: "center",
+                overflow: "hidden",
               }}
               key={singleSlider.id}
             >
-              <div className="container">
+              <Image
+                src={singleSlider.bgImg}
+                alt=""
+                fill
+                priority={sliderIndex === 0}
+                loading={sliderIndex === 0 ? undefined : "lazy"}
+                sizes="100vw"
+                style={{ objectFit: "cover", objectPosition: "center center", zIndex: 0 }}
+              />
+              <div
+                aria-hidden="true"
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  background: "linear-gradient(rgba(15, 23, 42, 0.74), rgba(15, 23, 42, 0.88))",
+                  zIndex: 1,
+                }}
+              />
+              <div className="container" style={{ position: "relative", zIndex: 2 }}>
                 <div className="row">
                   <div className="col-lg-8 col-md-10 col-12">
                     <div className="hero-content" style={{ marginTop: 0, paddingTop: 0 }}>
                       <div className="hero-badge mb-3 d-inline-block px-3 py-1 rounded-pill" style={{ background: "rgba(40, 180, 99, 0.25)", border: "1px solid rgba(40, 180, 99, 0.5)", color: "#86efac", fontSize: "14px", fontWeight: "600" }}>
                         {singleSlider.tag}
                       </div>
-                      <h1 style={{ color: "#ffffff", fontWeight: "800", textShadow: "0 2px 10px rgba(0,0,0,0.5)", lineHeight: "1.2" }}>
-                        {singleSlider?.title}
-                      </h1>
+                      {sliderIndex === 0 ? (
+                        <h1 style={{ color: "#ffffff", fontWeight: "800", textShadow: "0 2px 10px rgba(0,0,0,0.5)", lineHeight: "1.2" }}>
+                          {singleSlider?.title}
+                        </h1>
+                      ) : (
+                        <h2 style={{ color: "#ffffff", fontWeight: "800", textShadow: "0 2px 10px rgba(0,0,0,0.5)", lineHeight: "1.2", fontSize: "inherit" }}>
+                          {singleSlider?.title}
+                        </h2>
+                      )}
                       <p style={{ color: "#cbd5e1", fontSize: "17px", lineHeight: "1.6", marginTop: "16px", marginBottom: "28px" }}>
                         {singleSlider?.subTitle}
                       </p>

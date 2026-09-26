@@ -1,5 +1,9 @@
 "use client";
 
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import SingleBlog from "@/components/SingleBlog";

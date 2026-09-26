@@ -158,15 +158,18 @@ input:-webkit-autofill:focus {
   text-align: center;
   margin-bottom: 50px;
 }
-.section-title h6 {
+.section-title h6,
+.section-title .eyebrow {
   font-size: 15px;
   color: #fff;
   text-transform: capitalize;
   position: relative;
   z-index: 11;
   line-height: 35px;
+  display: inline-block;
 }
-.section-title h6::before {
+.section-title h6::before,
+.section-title .eyebrow::before {
   position: absolute;
   content: "";
   width: 120px;

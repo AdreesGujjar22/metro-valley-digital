@@ -294,7 +294,8 @@ Version: 1.0.0
   font-weight: 600;
   border-radius: 3px;
 }
-.hero-area .hero-content h1 {
+.hero-area .hero-content h1,
+.hero-area .hero-content h2 {
   color: #333;
   font-size: 50px;
   font-weight: 700;
@@ -399,7 +400,8 @@ Version: 1.0.0
 .hero-area .swiper-slide-active span {
   animation: fadeInUp 0.8s both 1s;
 }
-.hero-area .swiper-slide-active .hero-content h1 {
+.hero-area .swiper-slide-active .hero-content h1,
+.hero-area .swiper-slide-active .hero-content h2 {
   animation: fadeInUp 1s both 1.2s;
 }
 .hero-area .swiper-slide-active .hero-content p {
@@ -579,7 +581,8 @@ Version: 1.0.0
   transition: all 0.4s ease;
   left: 35px;
 }
-.single-service:hover .number h6 {
+.single-service:hover .number h6,
+.single-service:hover .number .card-number {
   border-radius: 50px;
 }
 .single-service:hover .number::before {
@@ -588,7 +591,9 @@ Version: 1.0.0
 .single-service .number.last:before {
   display: none;
 }
-.single-service .number h6 {
+.single-service .number h6,
+.single-service .number .card-number {
+  display: inline-block;
   font-size: 20px;
   width: 35px;
   height: 35px;
@@ -635,7 +640,7 @@ Version: 1.0.0
 .single-service .service-content {
   margin-top: 25px;
 }
-.single-service .service-content h4 {
+.single-service .service-content h3 {
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
@@ -644,7 +649,7 @@ Version: 1.0.0
   transition: all 0.3s ease;
   margin-bottom: 12px;
 }
-.single-service .service-content h4:hover {
+.single-service .service-content h3:hover {
   color: var(--primary-color);
 }
 .single-service .service-content p {
@@ -1042,7 +1047,7 @@ Version: 1.0.0
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
 }
-.single-team .team-content h4 {
+.single-team .team-content h3 {
   font-size: 20px;
   color: #000;
   color: #fff;
@@ -1160,7 +1165,7 @@ Version: 1.0.0
   margin-top: 15px;
   text-align: center;
 }
-.testimonial-item .testimonial-bottom h6 {
+.testimonial-item .testimonial-bottom h4 {
   font-size: 18px;
   font-weight: 600;
   color: #fff;
@@ -1284,7 +1289,7 @@ Version: 1.0.0
 .pricing-area .single-pricing.active .pricing-head {
   background: var(--primary-color);
 }
-.pricing-area .single-pricing.active .pricing-head h4 {
+.pricing-area .single-pricing.active .pricing-head h3 {
   color: #fff;
 }
 .single-pricing:hover .pricing-bottom .theme-btn,
@@ -1301,7 +1306,7 @@ Version: 1.0.0
   background: #26313c;
   padding: 20px 0px;
 }
-.pricing-area .single-pricing .pricing-head h4 {
+.pricing-area .single-pricing .pricing-head h3 {
   font-size: 20px;
   font-weight: 700;
   color: #fff;
@@ -1312,7 +1317,7 @@ Version: 1.0.0
   text-align: center;
   padding: 20px 0px;
 }
-.single-pricing .pricing-middle .price h2 {
+.single-pricing .pricing-middle .price .price-value {
   font-size: 40px;
   color: #000;
   font-weight: 600;
@@ -1441,12 +1446,12 @@ Version: 1.0.0
   color: #000;
   font-weight: 500;
 }
-.single-count .main-count h6 {
+.single-count .main-count .count-number {
   font-size: 25px;
   margin-top: 5px;
   font-weight: 800;
 }
-.single-count .main-count h6 span {
+.single-count .main-count .count-number span {
   font-size: 20px;
 }
 /*======================================

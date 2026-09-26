@@ -4,6 +4,7 @@ import Contact from "../Home/Contact";
 import Client from "../Home/Client";
 import { BreadcrumbSchema, ContactPageSchema, ServiceAreaSchema } from "@/components/SeoSchemas";
 import { COMPANY_INFO } from "@/data/company";
+import { getServiceAreaByName } from "@/data/serviceAreas";
 
 export const metadata = {
   title: "Contact Metro Valley Digital | Vancouver, BC",
@@ -100,7 +101,13 @@ export default function ContactPage() {
           <iframe
             id="gmap_canvas"
             title="Metro Valley Digital Vancouver Location - 7207 Victoria Dr, Vancouver, BC"
-            src="https://maps.google.com/maps?q=7207%20Victoria%20Dr,%20Vancouver,%20BC%20V5P%203Z2,%20Canada&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.0366566933258!2d-123.06626689999997!3d49.2188319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486752f09111487%3A0xba4a6c5b4e88b35f!2sMETRO%20VALLEY%20DIGITAL!5e0!3m2!1sen!2sca!4v1790368651439!5m2!1sen!2sca"
+            width="600"
+            height="450"
+            style={{ border: 0, width: "100%", height: "100%" }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="strict-origin-when-cross-origin"
           ></iframe>
         </div>
       </div>
@@ -125,21 +132,26 @@ export default function ContactPage() {
                 Vancouver Neighbourhoods
               </h3>
               <div className="d-flex flex-wrap gap-2">
-                {COMPANY_INFO.serviceAreas.neighbourhoods.map((n) => (
-                  <span
-                    key={n}
-                    style={{
-                      backgroundColor: "#ffffff",
-                      border: "1px solid #e2e8f0",
-                      borderRadius: "20px",
-                      padding: "6px 14px",
-                      fontSize: "13px",
-                      color: "#334155",
-                    }}
-                  >
-                    {n}
-                  </span>
-                ))}
+                {COMPANY_INFO.serviceAreas.neighbourhoods.map((n) => {
+                  const area = getServiceAreaByName(n);
+                  return (
+                    <Link
+                      key={n}
+                      href={area ? `/service-areas/${area.slug}` : "/service-areas"}
+                      style={{
+                        backgroundColor: "#ffffff",
+                        border: "1px solid #e2e8f0",
+                        borderRadius: "20px",
+                        padding: "6px 14px",
+                        fontSize: "13px",
+                        color: "#334155",
+                        textDecoration: "none",
+                      }}
+                    >
+                      {n}
+                    </Link>
+                  );
+                })}
               </div>
             </div>
             <div className="col-md-6 mb-4">
@@ -147,27 +159,42 @@ export default function ContactPage() {
                 Metro Vancouver & Surrounding Cities
               </h3>
               <div className="d-flex flex-wrap gap-2">
-                {COMPANY_INFO.serviceAreas.metroCities.map((c) => (
-                  <span
-                    key={c}
-                    style={{
-                      backgroundColor: "#ffffff",
-                      border: "1px solid #e2e8f0",
-                      borderRadius: "20px",
-                      padding: "6px 14px",
-                      fontSize: "13px",
-                      color: "#334155",
-                    }}
-                  >
-                    {c}
-                  </span>
-                ))}
+                {COMPANY_INFO.serviceAreas.metroCities.map((c) => {
+                  const area = getServiceAreaByName(c);
+                  return (
+                    <Link
+                      key={c}
+                      href={area ? `/service-areas/${area.slug}` : "/service-areas"}
+                      style={{
+                        backgroundColor: "#ffffff",
+                        border: "1px solid #e2e8f0",
+                        borderRadius: "20px",
+                        padding: "6px 14px",
+                        fontSize: "13px",
+                        color: "#334155",
+                        textDecoration: "none",
+                      }}
+                    >
+                      {c}
+                    </Link>
+                  );
+                })}
               </div>
               <p style={{ marginTop: "14px", fontSize: "13px", color: "#64748b" }}>
-                We also work remotely with clients in {COMPANY_INFO.serviceAreas.extendedCities.join(", ")}{" "}
+                We also work remotely with clients in{" "}
+                {COMPANY_INFO.serviceAreas.extendedCities.map((city, i) => {
+                  const area = getServiceAreaByName(city);
+                  return (
+                    <span key={city}>
+                      {area ? <Link href={`/service-areas/${area.slug}`}>{city}</Link> : city}
+                      {i < COMPANY_INFO.serviceAreas.extendedCities.length - 1 ? ", " : ""}
+                    </span>
+                  );
+                })}{" "}
                 and across Canada and the U.S. See our full{" "}
-                <Link href="/services">service catalog</Link> or read client results on the{" "}
-                <Link href="/portfolio">portfolio</Link> page.
+                <Link href="/services">service catalog</Link>,{" "}
+                <Link href="/service-areas">all service areas</Link>, or read client results on
+                the <Link href="/portfolio">portfolio</Link> page.
               </p>
             </div>
           </div>

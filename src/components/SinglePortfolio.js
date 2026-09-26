@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { SlideshowLightbox } from "lightbox.js-react";
+import "lightbox.js-react/dist/index.css";
 
 export default function SinglePortfolio(props) {
   const { image, title, category } = props;
@@ -35,11 +36,11 @@ export default function SinglePortfolio(props) {
             )}
           </div>
           <div className="portfolio-content">
-            <h4>
+            <h3>
               <Link href="/portfolio">
                 {title ? title : "Art & Studio"}
               </Link>
-            </h4>
+            </h3>
             <p>{category ? category : "UI/UX, Branding"}</p>
           </div>
           <Link

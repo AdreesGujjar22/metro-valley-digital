@@ -3,6 +3,7 @@ import { getServiceBySlug } from "@/data/services";
 import { notFound } from "next/navigation";
 import { ServiceAreaSchema } from "@/components/SeoSchemas";
 import { COMPANY_INFO } from "@/data/company";
+import { getServiceAreaByName } from "@/data/serviceAreas";
 import Link from "next/link";
 
 const service = getServiceBySlug("local-seo-google-business-profile");
@@ -53,10 +54,28 @@ export default function LocalSeoPage() {
           </h2>
           <p style={{ color: "#475569", maxWidth: "760px", marginBottom: "18px" }}>
             We build Google Business Profile and Map Pack strategies for neighbourhoods including{" "}
-            {COMPANY_INFO.serviceAreas.neighbourhoods.slice(0, 6).join(", ")}, plus the surrounding
-            cities of {COMPANY_INFO.serviceAreas.metroCities.slice(0, 6).join(", ")}. If your
-            customers search &ldquo;near me&rdquo; from any of these areas, we make sure your
-            business shows up first. Explore our full{" "}
+            {COMPANY_INFO.serviceAreas.neighbourhoods.slice(0, 6).map((n, i, arr) => {
+              const area = getServiceAreaByName(n);
+              return (
+                <span key={n}>
+                  {area ? <Link href={`/service-areas/${area.slug}`}>{n}</Link> : n}
+                  {i < arr.length - 1 ? ", " : ""}
+                </span>
+              );
+            })}
+            , plus the surrounding cities of{" "}
+            {COMPANY_INFO.serviceAreas.metroCities.slice(0, 6).map((c, i, arr) => {
+              const area = getServiceAreaByName(c);
+              return (
+                <span key={c}>
+                  {area ? <Link href={`/service-areas/${area.slug}`}>{c}</Link> : c}
+                  {i < arr.length - 1 ? ", " : ""}
+                </span>
+              );
+            })}
+            . If your customers search &ldquo;near me&rdquo; from any of these areas, we make sure
+            your business shows up first. See our full{" "}
+            <Link href="/service-areas">service area coverage map</Link>, or explore our{" "}
             <Link href="/website-seo-optimization">website SEO</Link> and{" "}
             <Link href="/geo-generative-engine-optimization">AI search optimization</Link> services
             to pair with local rankings.

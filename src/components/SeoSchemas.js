@@ -562,6 +562,146 @@ export function ContactPageSchema() {
   );
 }
 
+export function ServiceAreaDetailSchema({ area }) {
+  if (!area) return null;
+
+  const areaUrl = `https://metrovalleydigital.com/service-areas/${area.slug}`;
+  const placeType = area.type === "neighbourhood" ? "Place" : "City";
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${areaUrl}#service`,
+    name: `Digital Marketing & SEO Services in ${area.name}`,
+    serviceType: "Digital Marketing, SEO & Web Development",
+    description: `Metro Valley Digital provides local SEO, paid advertising, and web development services for businesses in ${area.name}, ${area.region}.`,
+    url: areaUrl,
+    provider: {
+      "@type": "LocalBusiness",
+      name: "Metro Valley Digital - Vancouver Headquarters",
+      url: "https://metrovalleydigital.com",
+      hasMap: "https://maps.app.goo.gl/opsWCpAwBhZ5H18w6",
+      telephone: "+1 778-608-0909",
+      email: COMPANY_INFO.email,
+      priceRange: "$$",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "7207 Victoria Dr",
+        addressLocality: "Vancouver",
+        addressRegion: "BC",
+        postalCode: "V5P 3Z2",
+        addressCountry: "CA",
+      },
+    },
+    areaServed: {
+      "@type": placeType,
+      name: area.name,
+      ...(area.type === "neighbourhood"
+        ? { containedInPlace: { "@type": "City", name: "Vancouver" } }
+        : {}),
+    },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://metrovalleydigital.com/" },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Service Areas",
+        item: "https://metrovalleydigital.com/service-areas",
+      },
+      { "@type": "ListItem", position: 3, name: area.name, item: areaUrl },
+    ],
+  };
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+    </>
+  );
+}
+
+export function ServiceAreaListSchema({ areas = [] }) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Metro Valley Digital Service Areas",
+    itemListElement: areas.map((area, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@type": "Service",
+        name: `Digital Marketing Services in ${area.name}`,
+        url: `https://metrovalleydigital.com/service-areas/${area.slug}`,
+      },
+    })),
+  };
+
+  return (
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+  );
+}
+
+export function CaseStudySchema({ project }) {
+  if (!project) return null;
+
+  const url = `https://metrovalleydigital.com/case-studies/${project.id}`;
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": `${url}#case-study`,
+    headline: `${project.title}: ${project.subtitle}`,
+    description: project.summary,
+    image: `https://metrovalleydigital.com${project.image}`,
+    about: {
+      "@type": "Service",
+      name: project.category,
+      provider: { "@id": "https://metrovalleydigital.com/#organization" },
+    },
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    author: {
+      "@type": "Organization",
+      name: "Metro Valley Digital",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Metro Valley Digital",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://metrovalleydigital.com/images/site_logo.png",
+      },
+    },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://metrovalleydigital.com/" },
+      { "@type": "ListItem", position: 2, name: "Portfolio", item: "https://metrovalleydigital.com/portfolio" },
+      { "@type": "ListItem", position: 3, name: project.title, item: url },
+    ],
+  };
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+    </>
+  );
+}
+
 export function PortfolioSchema() {
   const schema = {
     "@context": "https://schema.org",

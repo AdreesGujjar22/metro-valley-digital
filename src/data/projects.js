@@ -281,3 +281,23 @@ export const PROJECTS_DATA = [
       "Reduced manual dispatch processing time by 65% and successfully onboarded over 2,400 commercial vehicles across North America.",
   },
 ];
+
+export function getProjectById(id) {
+  return PROJECTS_DATA.find((p) => p.id === id) || null;
+}
+
+export function getAllProjectIds() {
+  return PROJECTS_DATA.map((p) => p.id);
+}
+
+export function getRelatedProjects(project, limit = 2) {
+  if (!project) return [];
+  return PROJECTS_DATA.filter(
+    (p) => p.id !== project.id && p.categorySlug === project.categorySlug
+  )
+    .slice(0, limit)
+    .concat(
+      PROJECTS_DATA.filter((p) => p.id !== project.id && p.categorySlug !== project.categorySlug)
+    )
+    .slice(0, limit);
+}

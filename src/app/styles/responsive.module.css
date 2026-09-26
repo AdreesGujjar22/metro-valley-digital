@@ -76,7 +76,8 @@
     font-size: 18px;
     padding: 5px 20px;
   }
-  .hero-area .hero-content h1 {
+  .hero-area .hero-content h1,
+  .hero-area .hero-content h2 {
     font-size: 35px;
     line-height: 45px;
   }
@@ -386,7 +387,8 @@
     font-size: 18px;
     padding: 5px 20px;
   }
-  .hero-area .hero-content h1 {
+  .hero-area .hero-content h1,
+  .hero-area .hero-content h2 {
     font-size: 22px;
     line-height: 32px;
   }

@@ -19,18 +19,6 @@ import "../../public/css/font-awesome.min.css";
 // Animate CSS
 import "animate.css";
 
-// Swiper CSS
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import "swiper/css/effect-fade";
-
-// Modal Video CSS
-import "react-modal-video/css/modal-video.min.css";
-
-// Lighbox Gallery CSS
-import "lightbox.js-react/dist/index.css";
-
 // Global CSS
 import "./globals.css";
 

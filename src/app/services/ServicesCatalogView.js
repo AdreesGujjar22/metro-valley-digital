@@ -82,7 +82,7 @@ export default function ServicesCatalogView() {
                   fontSize: "20px",
                 }}
               >
-                <h6>{service.number}</h6>
+                <span className="card-number">{service.number}</span>
               </div>
 
               <div
@@ -133,14 +133,14 @@ export default function ServicesCatalogView() {
                 >
                   {service.category}
                 </span>
-                <h4 style={{ fontSize: "19px", fontWeight: "700", marginBottom: "12px" }}>
+                <h3 style={{ fontSize: "19px", fontWeight: "700", marginBottom: "12px" }}>
                   <Link
                     href={service.url}
                     style={{ color: "#0f172a", textDecoration: "none" }}
                   >
                     {service.title}
                   </Link>
-                </h4>
+                </h3>
                 <p
                   style={{
                     color: "#64748b",

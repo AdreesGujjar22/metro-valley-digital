@@ -83,6 +83,7 @@ export default async function BlogDetailPage({ params }) {
         description={post.summary}
         menuLink={`blog/${post.slug}`}
         menuText="Article Detail"
+        isH1={false}
       />
 
       {/* <!-- Blog Detail Area with Sidebar --> */}

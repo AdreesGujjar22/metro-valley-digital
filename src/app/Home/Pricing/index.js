@@ -24,12 +24,12 @@ export default function Pricing() {
               {/* <!-- Single Pricing --> */}
               <div className="single-pricing">
                 <div className="pricing-head">
-                  <h4>Local SEO Starter</h4>
+                  <h3>Local SEO Starter</h3>
                 </div>
                 <div className="pricing-middle">
                   <div className="circle-box">
                     <div className="price">
-                      <h2>$200</h2>
+                      <div className="price-value">$200</div>
                       <p>Monthly</p>
                     </div>
                   </div>
@@ -55,7 +55,7 @@ export default function Pricing() {
               {/* <!-- Single Pricing --> */}
               <div className="single-pricing active">
                 <div className="pricing-head">
-                  <h4>Growth Engine</h4>
+                  <h3>Growth Engine</h3>
                   <div className="sticker">
                     <span>Most Popular</span>
                   </div>
@@ -63,7 +63,7 @@ export default function Pricing() {
                 <div className="pricing-middle">
                   <div className="circle-box">
                     <div className="price">
-                      <h2>$299</h2>
+                      <div className="price-value">$299</div>
                       <p>Monthly</p>
                     </div>
                   </div>
@@ -89,12 +89,12 @@ export default function Pricing() {
               {/* <!-- Single Pricing --> */}
               <div className="single-pricing">
                 <div className="pricing-head">
-                  <h4>Market Leader</h4>
+                  <h3>Market Leader</h3>
                 </div>
                 <div className="pricing-middle">
                   <div className="circle-box">
                     <div className="price">
-                      <h2>$380</h2>
+                      <div className="price-value">$380</div>
                       <p>Monthly</p>
                     </div>
                   </div>
@@ -120,12 +120,12 @@ export default function Pricing() {
               {/* <!-- Single Pricing --> */}
               <div className="single-pricing">
                 <div className="pricing-head">
-                  <h4>Custom Software & AI</h4>
+                  <h3>Custom Software & AI</h3>
                 </div>
                 <div className="pricing-middle">
                   <div className="circle-box">
                     <div className="price">
-                      <h2>$450</h2>
+                      <div className="price-value">$450</div>
                       <p>Monthly</p>
                     </div>
                   </div>

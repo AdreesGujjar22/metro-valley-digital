@@ -22,9 +22,9 @@ export default function About() {
             </div>
             <div className="contact-text">
               <p style={{ margin: 0, fontSize: "12px", color: "#94a3b8" }}>Vancouver Direct Line</p>
-              <h5 style={{ margin: 0, fontSize: "15px", color: "#ffffff", fontWeight: "700" }}>
+              <div style={{ margin: 0, fontSize: "15px", color: "#ffffff", fontWeight: "700" }}>
                 <a href="tel:+17786080909" style={{ color: "#ffffff", textDecoration: "none" }}>+1 778-608-0909</a>
-              </h5>
+              </div>
             </div>
           </div>
         </div>

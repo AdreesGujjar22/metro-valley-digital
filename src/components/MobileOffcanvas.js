@@ -247,6 +247,17 @@ export default function MobileOffcanvas({ isSticky = false }) {
                   <li>
                     <Link
                       onClick={handleClose}
+                      className={` ${
+                        isActive("/service-areas") ? "active" : ""
+                      }`}
+                      href="/service-areas"
+                    >
+                      Service Areas
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      onClick={handleClose}
                       className={` ${isActive("/blog") ? "active" : ""}`}
                       href="/blog"
                     >

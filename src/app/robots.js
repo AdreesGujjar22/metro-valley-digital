@@ -10,7 +10,7 @@ export default function robots() {
       },
       {
         userAgent: ["GPTBot", "ChatGPT-User", "PerplexityBot", "ClaudeBot", "anthropic-ai", "Google-Extended", "Applebot"],
-        allow: ["/", "/llms.txt", "/llms-full.txt", "/services", "/about-us", "/portfolio", "/pricing", "/faq", "/blog"],
+        allow: ["/", "/llms.txt", "/llms-full.txt", "/services", "/about-us", "/portfolio", "/pricing", "/faq", "/blog", "/service-areas", "/case-studies"],
         disallow: ["/api/", "/mail-success"],
       },
     ],

@@ -10,7 +10,8 @@ import Funfact from "./Home/Funfact";
 import Blog from "./Home/Blog";
 import Contact from "./Home/Contact";
 import Client from "./Home/Client";
-import { ServiceCatalogSchema } from "@/components/SeoSchemas";
+import HomeFaq from "./Home/Faq";
+import { ServiceCatalogSchema, FaqSchema } from "@/components/SeoSchemas";
 
 export const metadata = {
   title: "Vancouver SEO & Digital Marketing Agency | Metro Valley",
@@ -49,6 +50,7 @@ export default function Home() {
   return (
     <>
       <ServiceCatalogSchema />
+      <FaqSchema />
       <Hero />
       <About />
       <Service />
@@ -59,6 +61,7 @@ export default function Home() {
       <CallAction />
       <Funfact />
       <Blog />
+      <HomeFaq />
       <Contact />
       <Client />
     </>
