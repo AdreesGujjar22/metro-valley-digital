@@ -9,13 +9,13 @@ export const metadata = {
   description:
     "Custom Shopify stores built for speed, conversion, and scale, from theme design to checkout optimization and ongoing store support.",
   alternates: {
-    canonical: "https://www.metrovalleydigital.com/shopify-ecommerce-development",
+    canonical: "https://www.metrovalleydigital.com/service/shopify-ecommerce-development",
   },
   openGraph: {
     title: "Shopify & E-Commerce Development",
     description:
       "Custom Shopify stores built for speed, conversion, and scale, from theme design to checkout optimization and ongoing store support.",
-    url: "https://www.metrovalleydigital.com/shopify-ecommerce-development",
+    url: "https://www.metrovalleydigital.com/service/shopify-ecommerce-development",
     siteName: "Metro Valley Digital",
     images: [
       {

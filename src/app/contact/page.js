@@ -177,7 +177,7 @@ export default function ContactPage() {
                   );
                 })}{" "}
                 and across Canada and the U.S. See our full{" "}
-                <Link href="/services">service catalog</Link>,{" "}
+                <Link href="/service">service catalog</Link>,{" "}
                 <Link href="/service-areas">all service areas</Link>, or read client results on
                 the <Link href="/portfolio">portfolio</Link> page.
               </p>

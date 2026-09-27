@@ -9,13 +9,13 @@ export const metadata = {
   description:
     "Custom AI chatbots that capture leads, answer FAQs, and qualify customers 24/7, integrated with your CRM, WhatsApp, and email.",
   alternates: {
-    canonical: "https://www.metrovalleydigital.com/ai-chatbot-integration",
+    canonical: "https://www.metrovalleydigital.com/service/ai-chatbot-integration",
   },
   openGraph: {
     title: "AI Chatbot Integration",
     description:
       "Custom AI chatbots that capture leads, answer FAQs, and qualify customers 24/7, integrated with your CRM, WhatsApp, and email.",
-    url: "https://www.metrovalleydigital.com/ai-chatbot-integration",
+    url: "https://www.metrovalleydigital.com/service/ai-chatbot-integration",
     siteName: "Metro Valley Digital",
     images: [
       {

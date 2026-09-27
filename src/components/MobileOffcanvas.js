@@ -117,8 +117,8 @@ export default function MobileOffcanvas({ isSticky = false }) {
                       <li>
                         <Link
                           onClick={handleClose}
-                          className={` ${isActive("/services") ? "active" : ""}`}
-                          href="/services"
+                          className={` ${isActive("/service") ? "active" : ""}`}
+                          href="/service"
                         >
                           <strong>All 12 Services</strong>
                         </Link>
@@ -126,8 +126,8 @@ export default function MobileOffcanvas({ isSticky = false }) {
                       <li>
                         <Link
                           onClick={handleClose}
-                          className={` ${isActive("/seo-services") ? "active" : ""}`}
-                          href="/seo-services"
+                          className={` ${isActive("/service/seo-services") ? "active" : ""}`}
+                          href="/service/seo-services"
                         >
                           SEO Services
                         </Link>
@@ -135,8 +135,8 @@ export default function MobileOffcanvas({ isSticky = false }) {
                       <li>
                         <Link
                           onClick={handleClose}
-                          className={` ${isActive("/geo-generative-engine-optimization") ? "active" : ""}`}
-                          href="/geo-generative-engine-optimization"
+                          className={` ${isActive("/service/geo-generative-engine-optimization") ? "active" : ""}`}
+                          href="/service/geo-generative-engine-optimization"
                         >
                           GEO (AI Search)
                         </Link>
@@ -144,8 +144,8 @@ export default function MobileOffcanvas({ isSticky = false }) {
                       <li>
                         <Link
                           onClick={handleClose}
-                          className={` ${isActive("/local-seo-google-business-profile") ? "active" : ""}`}
-                          href="/local-seo-google-business-profile"
+                          className={` ${isActive("/service/local-seo-google-business-profile") ? "active" : ""}`}
+                          href="/service/local-seo-google-business-profile"
                         >
                           Local SEO & GMB
                         </Link>
@@ -153,8 +153,8 @@ export default function MobileOffcanvas({ isSticky = false }) {
                       <li>
                         <Link
                           onClick={handleClose}
-                          className={` ${isActive("/website-seo-optimization") ? "active" : ""}`}
-                          href="/website-seo-optimization"
+                          className={` ${isActive("/service/website-seo-optimization") ? "active" : ""}`}
+                          href="/service/website-seo-optimization"
                         >
                           Website SEO & Speed
                         </Link>
@@ -162,8 +162,8 @@ export default function MobileOffcanvas({ isSticky = false }) {
                       <li>
                         <Link
                           onClick={handleClose}
-                          className={` ${isActive("/paid-advertising-ppc") ? "active" : ""}`}
-                          href="/paid-advertising-ppc"
+                          className={` ${isActive("/service/paid-advertising-ppc") ? "active" : ""}`}
+                          href="/service/paid-advertising-ppc"
                         >
                           Paid Ads (PPC)
                         </Link>
@@ -171,8 +171,8 @@ export default function MobileOffcanvas({ isSticky = false }) {
                       <li>
                         <Link
                           onClick={handleClose}
-                          className={` ${isActive("/social-media-marketing") ? "active" : ""}`}
-                          href="/social-media-marketing"
+                          className={` ${isActive("/service/social-media-marketing") ? "active" : ""}`}
+                          href="/service/social-media-marketing"
                         >
                           Social Media Marketing
                         </Link>
@@ -180,8 +180,8 @@ export default function MobileOffcanvas({ isSticky = false }) {
                       <li>
                         <Link
                           onClick={handleClose}
-                          className={` ${isActive("/shopify-ecommerce-development") ? "active" : ""}`}
-                          href="/shopify-ecommerce-development"
+                          className={` ${isActive("/service/shopify-ecommerce-development") ? "active" : ""}`}
+                          href="/service/shopify-ecommerce-development"
                         >
                           Shopify & E-Commerce
                         </Link>
@@ -189,8 +189,8 @@ export default function MobileOffcanvas({ isSticky = false }) {
                       <li>
                         <Link
                           onClick={handleClose}
-                          className={` ${isActive("/amazon-ebay-product-research") ? "active" : ""}`}
-                          href="/amazon-ebay-product-research"
+                          className={` ${isActive("/service/amazon-ebay-product-research") ? "active" : ""}`}
+                          href="/service/amazon-ebay-product-research"
                         >
                           Amazon & eBay Research
                         </Link>
@@ -198,8 +198,8 @@ export default function MobileOffcanvas({ isSticky = false }) {
                       <li>
                         <Link
                           onClick={handleClose}
-                          className={` ${isActive("/website-development") ? "active" : ""}`}
-                          href="/website-development"
+                          className={` ${isActive("/service/website-development") ? "active" : ""}`}
+                          href="/service/website-development"
                         >
                           Website Development
                         </Link>
@@ -207,8 +207,8 @@ export default function MobileOffcanvas({ isSticky = false }) {
                       <li>
                         <Link
                           onClick={handleClose}
-                          className={` ${isActive("/ai-chatbot-integration") ? "active" : ""}`}
-                          href="/ai-chatbot-integration"
+                          className={` ${isActive("/service/ai-chatbot-integration") ? "active" : ""}`}
+                          href="/service/ai-chatbot-integration"
                         >
                           AI Chatbot Integration
                         </Link>
@@ -216,8 +216,8 @@ export default function MobileOffcanvas({ isSticky = false }) {
                       <li>
                         <Link
                           onClick={handleClose}
-                          className={` ${isActive("/ai-website-building") ? "active" : ""}`}
-                          href="/ai-website-building"
+                          className={` ${isActive("/service/ai-website-building") ? "active" : ""}`}
+                          href="/service/ai-website-building"
                         >
                           AI Website Building
                         </Link>
@@ -225,8 +225,8 @@ export default function MobileOffcanvas({ isSticky = false }) {
                       <li>
                         <Link
                           onClick={handleClose}
-                          className={` ${isActive("/mobile-app-development") ? "active" : ""}`}
-                          href="/mobile-app-development"
+                          className={` ${isActive("/service/mobile-app-development") ? "active" : ""}`}
+                          href="/service/mobile-app-development"
                         >
                           Mobile App Development
                         </Link>

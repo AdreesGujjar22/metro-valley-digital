@@ -9,13 +9,13 @@ export const metadata = {
   description:
     "iOS and Android apps built with React Native and Flutter, from UI/UX design through app store submission and post-launch support.",
   alternates: {
-    canonical: "https://www.metrovalleydigital.com/mobile-app-development",
+    canonical: "https://www.metrovalleydigital.com/service/mobile-app-development",
   },
   openGraph: {
     title: "Mobile App Development",
     description:
       "iOS and Android apps built with React Native and Flutter, from UI/UX design through app store submission and post-launch support.",
-    url: "https://www.metrovalleydigital.com/mobile-app-development",
+    url: "https://www.metrovalleydigital.com/service/mobile-app-development",
     siteName: "Metro Valley Digital",
     images: [
       {

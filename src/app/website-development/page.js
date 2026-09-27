@@ -9,13 +9,13 @@ export const metadata = {
   description:
     "Fast, responsive, SEO-ready websites built on modern Next.js architecture, designed to load quickly, rank well, and convert visitors.",
   alternates: {
-    canonical: "https://www.metrovalleydigital.com/website-development",
+    canonical: "https://www.metrovalleydigital.com/service/website-development",
   },
   openGraph: {
     title: "Website Development",
     description:
       "Fast, responsive, SEO-ready websites built on modern Next.js architecture, designed to load quickly, rank well, and convert visitors.",
-    url: "https://www.metrovalleydigital.com/website-development",
+    url: "https://www.metrovalleydigital.com/service/website-development",
     siteName: "Metro Valley Digital",
     images: [
       {

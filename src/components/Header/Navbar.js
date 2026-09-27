@@ -23,6 +23,7 @@ const SERVICE_MENU_GROUPS = SERVICES_CATALOG.reduce((groups, service) => {
 
 export default function Navbar() {
   const pathname = usePathname();
+  const isServicesPage = pathname === "/service" || pathname.startsWith("/service/");
 
   const [isSticky, setIsSticky] = useState(false);
 
@@ -77,24 +78,8 @@ export default function Navbar() {
                                 </li>
                                 <li className="has-mega-menu">
                                   <Link
-                                    className={` ${
-                                      pathname === "/services" ||
-                                      pathname === "/seo-services" ||
-                                      pathname === "/geo-generative-engine-optimization" ||
-                                      pathname === "/local-seo-google-business-profile" ||
-                                      pathname === "/website-seo-optimization" ||
-                                      pathname === "/social-media-marketing" ||
-                                      pathname === "/paid-advertising-ppc" ||
-                                      pathname === "/shopify-ecommerce-development" ||
-                                      pathname === "/amazon-ebay-product-research" ||
-                                      pathname === "/website-development" ||
-                                      pathname === "/ai-chatbot-integration" ||
-                                      pathname === "/ai-website-building" ||
-                                      pathname === "/mobile-app-development"
-                                        ? "active"
-                                        : ""
-                                    }`}
-                                    href="/services"
+                                    className={isServicesPage ? "active" : ""}
+                                    href="/service"
                                   >
                                     Services
                                     <i className="fa fa-angle-down"></i>
@@ -106,7 +91,7 @@ export default function Navbar() {
                                       <span className="mega-menu-eyebrow">
                                         Explore Our Services
                                       </span>
-                                      <Link href="/services" className="mega-menu-viewall">
+                                      <Link href="/service" className="mega-menu-viewall">
                                         View All 12 Services
                                         <i className="fa fa-long-arrow-right"></i>
                                       </Link>
@@ -123,7 +108,7 @@ export default function Navbar() {
                                           <ul className="mega-menu-list">
                                             {group.items.map((item) => (
                                               <li key={item.slug}>
-                                                <Link href={item.url || `/${item.slug}`}>
+                                                <Link href={item.url || `/service/${item.slug}`}>
                                                   <span>
                                                     <i className={item.icon}></i>
                                                     {item.shortTitle || item.title}

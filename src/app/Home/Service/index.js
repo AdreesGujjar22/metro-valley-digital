@@ -33,7 +33,7 @@ export default function Service() {
                 icon="fa fa-map-marker"
                 title="Local SEO & Google 3-Pack"
                 description="Rank #1 in Google Maps and local search grids across Vancouver and Canada. Geo-relevance citation networks, GMB review velocity, and on-page optimization."
-                btnURL="local-seo-google-business-profile"
+                btnURL="/service/local-seo-google-business-profile"
               />
             </div>
             <div
@@ -47,7 +47,7 @@ export default function Service() {
                 icon="fa fa-bullhorn"
                 title="Paid Ads (Meta, TikTok & Google)"
                 description="High-converting performance marketing funnels designed for maximum ROAS. Rapid creative testing, precision audience targeting, and revenue attribution."
-                btnURL="paid-advertising-ppc"
+                btnURL="/service/paid-advertising-ppc"
               />
             </div>
             <div
@@ -61,13 +61,13 @@ export default function Service() {
                 icon="fa fa-code"
                 title="Website & App Engineering"
                 description="Full-stack custom web & mobile apps, Shopify e-commerce, and 24/7 AI chat agents that automatically qualify inbound leads and book appointments."
-                btnURL="website-development"
+                btnURL="/service/website-development"
               />
             </div>
           </div>
           <div className="row mt-5">
             <div className="col-12 text-center">
-              <Link href="/services" className="theme-btn">
+              <Link href="/service" className="theme-btn">
                 View All Specialized Services <i className="fa fa-arrow-right ms-2" style={{ marginLeft: "8px" }}></i>
               </Link>
             </div>

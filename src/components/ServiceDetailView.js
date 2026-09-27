@@ -1,24 +1,14 @@
 "use client";
 
-import { useState } from "react";
+
 import Link from "next/link";
 import FaqAccordion from "@/components/FaqAccordion";
 import Image from "next/image";
 import Breadcrumbs from "./Breadcrumbs";
 import { ServiceDetailSchema } from "./SeoSchemas";
 import { SERVICES_CATALOG } from "@/data/services";
-import { COMPANY_INFO } from "@/data/company";
 
 export default function ServiceDetailView({ service }) {
-  const [formSubmitted, setFormSubmitted] = useState(false);
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    website: "",
-    message: "",
-  });
-
   if (!service) return null;
 
   // Resolve related services for internal linking
@@ -26,17 +16,6 @@ export default function ServiceDetailView({ service }) {
     .map((slug) => SERVICES_CATALOG.find((s) => s.slug === slug))
     .filter(Boolean);
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-    setFormSubmitted(true);
-  };
-
-  const canadaPhone = COMPANY_INFO.locations.canada.phone;
   const whatsappUrl = `https://wa.me/17786080909?text=${encodeURIComponent(
     `Hi Metro Valley Digital, I am interested in your ${service.title} services. Could we schedule a consultation?`
   )}`;
@@ -50,7 +29,7 @@ export default function ServiceDetailView({ service }) {
       <Breadcrumbs
         title={service.title}
         description={service.metaDescription}
-        menuLink="services"
+        menuLink="service"
         menuText="Services"
         isH1={false}
       />
@@ -65,7 +44,7 @@ export default function ServiceDetailView({ service }) {
                 {/* Category & Badge */}
                 <div className="d-flex align-items-center gap-2 mb-3">
                   <Link
-                    href="/services"
+                    href="/service"
                     className="text-decoration-none"
                     style={{
                       color: "var(--primary-color)",
@@ -292,7 +271,7 @@ export default function ServiceDetailView({ service }) {
 
                   <div className="d-flex flex-wrap gap-3 align-items-center">
                     <a
-                      href="#audit-form"
+                      href="/contact"
                       className="theme-btn navbar-cta-btn"
                     >
                       {service.ctaText || "Get Started Today →"}
@@ -416,361 +395,46 @@ export default function ServiceDetailView({ service }) {
                   </div>
                 )}
 
-                {/* Internal Links: Related Services Cards */}
+
+              </div>
+            </div>
+
+
+            <div className="col-lg-4 col-12">
+              <div className="service-detail-sidebar">
+
                 {relatedServices.length > 0 && (
-                  <div style={{ marginBottom: "40px" }}>
-                    <h2
-                      style={{
-                        fontSize: "24px",
-                        fontWeight: "800",
-                        color: "#0f172a",
-                        marginBottom: "20px",
-                        paddingBottom: "10px",
-                        borderBottom: "2px solid #e2e8f0",
-                      }}
-                    >
-                      Related Growth Services
-                    </h2>
-                    <div className="row g-3">
+                  <div className="widget popular-feeds service-related-widget">
+                    <h4 className="widget-title">Related Growth Services</h4>
+                    <div className="popular-feed-loop">
                       {relatedServices.map((rel) => (
-                        <div key={rel.id} className="col-md-4 col-12">
+                        <div key={rel.id} className="single-popular-feed d-flex align-items-center gap-3 mb-3">
                           <Link
                             href={rel.url}
-                            className="text-decoration-none"
-                            style={{ display: "block", height: "100%" }}
+                            className="feed-img"
+                            style={{ display: "block", width: "75px", height: "75px", overflow: "hidden", borderRadius: "8px", flexShrink: 0, position: "relative" }}
                           >
-                            <div
-                              style={{
-                                backgroundColor: "#ffffff",
-                                border: "1px solid #e2e8f0",
-                                borderRadius: "10px",
-                                padding: "18px",
-                                height: "100%",
-                                transition: "all 0.2s ease",
-                                display: "flex",
-                                flexDirection: "column",
-                                justifyContent: "space-between",
-                              }}
-                              className="related-service-card"
-                            >
-                              <div>
-                                <span
-                                  style={{
-                                    fontSize: "11px",
-                                    textTransform: "uppercase",
-                                    color: "var(--primary-color)",
-                                    fontWeight: "700",
-                                    letterSpacing: "0.5px",
-                                  }}
-                                >
-                                  {rel.category}
-                                </span>
-                                <h3
-                                  style={{
-                                    fontSize: "16px",
-                                    fontWeight: "700",
-                                    color: "#0f172a",
-                                    marginTop: "6px",
-                                    marginBottom: "10px",
-                                    lineHeight: "1.35",
-                                  }}
-                                >
-                                  {rel.title}
-                                </h3>
-                                <p
-                                  style={{
-                                    fontSize: "13px",
-                                    color: "#64748b",
-                                    lineHeight: "1.55",
-                                    marginBottom: "0",
-                                  }}
-                                >
-                                  {rel.metaDescription.length > 90
-                                    ? rel.metaDescription.substring(0, 90) + "..."
-                                    : rel.metaDescription}
-                                </p>
-                              </div>
-                              <div
-                                style={{
-                                  marginTop: "14px",
-                                  fontSize: "13px",
-                                  color: "var(--primary-color)",
-                                  fontWeight: "700",
-                                  display: "flex",
-                                  alignItems: "center",
-                                  gap: "6px",
-                                }}
-                              >
-                                View Service Page <i className="fa fa-arrow-right"></i>
-                              </div>
-                            </div>
+                            <Image
+                              src={rel.image}
+                              alt={rel.title}
+                              width={75}
+                              height={75}
+                              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                            />
                           </Link>
+                          <div className="feed-desc">
+                            <h6 style={{ fontSize: "14px", lineHeight: "1.4", margin: 0, fontWeight: "700" }}>
+                              <Link href={rel.url}>{rel.shortTitle || rel.title}</Link>
+                            </h6>
+                            <span className="time" style={{ fontSize: "12px", color: "#64748b" }}>
+                              {rel.category}
+                            </span>
+                          </div>
                         </div>
                       ))}
                     </div>
                   </div>
                 )}
-              </div>
-            </div>
-
-            {/* Right Sticky Sidebar Column */}
-            <div className="col-lg-4 col-12">
-              <div
-                style={{
-                  position: "sticky",
-                  top: "100px",
-                }}
-              >
-                {/* Contact & Free Audit Lead Capture Card */}
-                <div
-                  id="audit-form"
-                  style={{
-                    backgroundColor: "#ffffff",
-                    border: "1px solid #e2e8f0",
-                    borderRadius: "14px",
-                    padding: "30px 24px",
-                    boxShadow: "0 10px 30px rgba(0,0,0,0.06)",
-                    marginBottom: "30px",
-                  }}
-                >
-                  <span
-                    style={{
-                      backgroundColor: "rgba(var(--primary-color-rgb),0.1)",
-                      color: "var(--primary-color)",
-                      fontWeight: "700",
-                      fontSize: "12px",
-                      padding: "4px 10px",
-                      borderRadius: "6px",
-                      textTransform: "uppercase",
-                      letterSpacing: "0.5px",
-                    }}
-                  >
-                    Free Consultation & Audit
-                  </span>
-                  <h3
-                    style={{
-                      fontSize: "20px",
-                      fontWeight: "800",
-                      color: "#0f172a",
-                      marginTop: "12px",
-                      marginBottom: "8px",
-                    }}
-                  >
-                    Request a Custom Strategy Plan
-                  </h3>
-                  <p style={{ color: "#64748b", fontSize: "14px", marginBottom: "20px" }}>
-                    Get actionable recommendations tailored to your industry, competition, and growth targets.
-                  </p>
-
-                  {formSubmitted ? (
-                    <div
-                      style={{
-                        backgroundColor: "#ecfdf5",
-                        border: "1px solid #a7f3d0",
-                        borderRadius: "8px",
-                        padding: "20px",
-                        textAlign: "center",
-                        color: "#065f46",
-                      }}
-                    >
-                      <i
-                        className="fa fa-check-circle"
-                        style={{ fontSize: "32px", color: "#10b981", marginBottom: "8px" }}
-                      ></i>
-                      <div style={{ fontWeight: "700", fontSize: "16px" }}>Thank You!</div>
-                      <p style={{ fontSize: "14px", marginTop: "4px", marginBottom: "14px" }}>
-                        We received your inquiry. A senior growth strategist will review your details and contact
-                        you within 2 business hours.
-                      </p>
-                      <a
-                        href={whatsappUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn btn-sm text-white"
-                        style={{ backgroundColor: "#25D366", fontWeight: "600", padding: "8px 14px" }}
-                      >
-                        <i className="fa fa-whatsapp me-1"></i> Or Chat With Us Right Now
-                      </a>
-                    </div>
-                  ) : (
-                    <form onSubmit={handleFormSubmit}>
-                      <div className="mb-3">
-                        <label
-                          htmlFor="lead-name"
-                          style={{ fontSize: "13px", fontWeight: "600", color: "#334155", marginBottom: "4px" }}
-                        >
-                          Full Name *
-                        </label>
-                        <input
-                          id="lead-name"
-                          type="text"
-                          name="name"
-                          required
-                          value={formData.name}
-                          onChange={handleInputChange}
-                          placeholder="e.g. David Miller"
-                          className="form-control"
-                          style={{
-                            fontSize: "14px",
-                            padding: "10px 14px",
-                            borderRadius: "8px",
-                            border: "1px solid #cbd5e1",
-                          }}
-                        />
-                      </div>
-
-                      <div className="mb-3">
-                        <label
-                          htmlFor="lead-email"
-                          style={{ fontSize: "13px", fontWeight: "600", color: "#334155", marginBottom: "4px" }}
-                        >
-                          Work Email *
-                        </label>
-                        <input
-                          id="lead-email"
-                          type="email"
-                          name="email"
-                          required
-                          value={formData.email}
-                          onChange={handleInputChange}
-                          placeholder="name@company.com"
-                          className="form-control"
-                          style={{
-                            fontSize: "14px",
-                            padding: "10px 14px",
-                            borderRadius: "8px",
-                            border: "1px solid #cbd5e1",
-                          }}
-                        />
-                      </div>
-
-                      <div className="mb-3">
-                        <label
-                          htmlFor="lead-phone"
-                          style={{ fontSize: "13px", fontWeight: "600", color: "#334155", marginBottom: "4px" }}
-                        >
-                          Phone / WhatsApp Number
-                        </label>
-                        <input
-                          id="lead-phone"
-                          type="tel"
-                          name="phone"
-                          value={formData.phone}
-                          onChange={handleInputChange}
-                          placeholder="+1 (604) 000-0000"
-                          className="form-control"
-                          style={{
-                            fontSize: "14px",
-                            padding: "10px 14px",
-                            borderRadius: "8px",
-                            border: "1px solid #cbd5e1",
-                          }}
-                        />
-                      </div>
-
-                      <div className="mb-3">
-                        <label
-                          htmlFor="lead-website"
-                          style={{ fontSize: "13px", fontWeight: "600", color: "#334155", marginBottom: "4px" }}
-                        >
-                          Website URL or Store Link
-                        </label>
-                        <input
-                          id="lead-website"
-                          type="text"
-                          name="website"
-                          value={formData.website}
-                          onChange={handleInputChange}
-                          placeholder="https://yourwebsite.com"
-                          className="form-control"
-                          style={{
-                            fontSize: "14px",
-                            padding: "10px 14px",
-                            borderRadius: "8px",
-                            border: "1px solid #cbd5e1",
-                          }}
-                        />
-                      </div>
-
-                      <div className="mb-3">
-                        <label
-                          htmlFor="lead-message"
-                          style={{ fontSize: "13px", fontWeight: "600", color: "#334155", marginBottom: "4px" }}
-                        >
-                          Project Details & Goals
-                        </label>
-                        <textarea
-                          id="lead-message"
-                          name="message"
-                          rows={3}
-                          value={formData.message}
-                          onChange={handleInputChange}
-                          placeholder={`Tell us about your goals for ${service.title}...`}
-                          className="form-control"
-                          style={{
-                            fontSize: "14px",
-                            padding: "10px 14px",
-                            borderRadius: "8px",
-                            border: "1px solid #cbd5e1",
-                          }}
-                        ></textarea>
-                      </div>
-
-                      <button
-                        type="submit"
-                        className="theme-btn navbar-cta-btn w-100"
-                      >
-                        Submit Audit Request →
-                      </button>
-                    </form>
-                  )}
-
-                  {/* Direct Contact Links */}
-                  <div
-                    style={{
-                      marginTop: "24px",
-                      paddingTop: "20px",
-                      borderTop: "1px solid #e2e8f0",
-                      fontSize: "13px",
-                      color: "#64748b",
-                    }}
-                  >
-                    <div className="mb-2">
-                      <strong className="text-dark">Vancouver Office:</strong>{" "}
-                      <a href={`tel:${canadaPhone.replace(/[^0-9+]/g, "")}`} className="text-primary text-decoration-none">
-                        {canadaPhone}
-                      </a>
-                    </div>
-                    <div className="mb-2">
-                      <strong className="text-dark">Address:</strong>{" "}
-                      <a
-                        href="https://maps.app.goo.gl/opsWCpAwBhZ5H18w6"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-primary text-decoration-none"
-                      >
-                        7207 Victoria Dr, Vancouver, BC
-                      </a>
-                    </div>
-                    <div className="mb-2">
-                      <strong className="text-dark">WhatsApp Helpdesk:</strong>{" "}
-                      <a
-                        href={whatsappUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-success text-decoration-none"
-                      >
-                        +1 778-608-0909
-                      </a>
-                    </div>
-                    <div>
-                      <strong className="text-dark">Direct Email:</strong>{" "}
-                      <a href="mailto:info@metrovalleydigital.com" className="text-primary text-decoration-none">
-                        info@metrovalleydigital.com
-                      </a>
-                    </div>
-                  </div>
-                </div>
 
                 {/* All Services Navigation Widget */}
                 <div className="widget categories-widget service-categories-widget">
@@ -840,7 +504,7 @@ export default function ServiceDetailView({ service }) {
             <div className="col-lg-4 col-12 text-lg-end">
               <div className="d-flex flex-column flex-sm-row justify-content-lg-end gap-3">
                 <a
-                  href="#audit-form"
+                  href="/contact"
                   className="theme-btn navbar-cta-btn"
                 >
                   Book Consultation

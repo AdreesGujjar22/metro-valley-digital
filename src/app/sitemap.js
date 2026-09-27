@@ -8,7 +8,7 @@ export default function sitemap() {
   const now = new Date().toISOString();
 
   const serviceUrls = SERVICES_CATALOG.map((service) => ({
-    url: `${baseUrl}/${service.slug}`,
+    url: `${baseUrl}/service/${service.slug}`,
     lastModified: now,
     changeFrequency: "weekly",
     priority: 0.9,
@@ -43,7 +43,7 @@ export default function sitemap() {
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/services`,
+      url: `${baseUrl}/service`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.95,

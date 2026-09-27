@@ -9,13 +9,13 @@ export const metadata = {
   description:
     "Data-driven product hunting, supplier sourcing, and A9/A10 listing optimization to help your Amazon and eBay stores find profitable winners.",
   alternates: {
-    canonical: "https://www.metrovalleydigital.com/amazon-ebay-product-research",
+    canonical: "https://www.metrovalleydigital.com/service/amazon-ebay-product-research",
   },
   openGraph: {
     title: "Amazon & eBay Research",
     description:
       "Data-driven product hunting, supplier sourcing, and A9/A10 listing optimization to help your Amazon and eBay stores find profitable winners.",
-    url: "https://www.metrovalleydigital.com/amazon-ebay-product-research",
+    url: "https://www.metrovalleydigital.com/service/amazon-ebay-product-research",
     siteName: "Metro Valley Digital",
     images: [
       {

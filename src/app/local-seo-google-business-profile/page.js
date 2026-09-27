@@ -13,13 +13,13 @@ export const metadata = {
   description:
     "Climb the Google Map 3-Pack with GBP optimization, citation cleanup, and review growth built for Vancouver, Burnaby, Surrey & Lower Mainland businesses.",
   alternates: {
-    canonical: "https://www.metrovalleydigital.com/local-seo-google-business-profile",
+    canonical: "https://www.metrovalleydigital.com/service/local-seo-google-business-profile",
   },
   openGraph: {
     title: "Local SEO & Google Business Profile",
     description:
       "Climb the Google Map 3-Pack with GBP optimization, citation cleanup, and review growth built for Vancouver, Burnaby, Surrey & Lower Mainland businesses.",
-    url: "https://www.metrovalleydigital.com/local-seo-google-business-profile",
+    url: "https://www.metrovalleydigital.com/service/local-seo-google-business-profile",
     siteName: "Metro Valley Digital",
     images: [
       {
@@ -76,8 +76,8 @@ export default function LocalSeoPage() {
             . If your customers search &ldquo;near me&rdquo; from any of these areas, we make sure
             your business shows up first. See our full{" "}
             <Link href="/service-areas">service area coverage map</Link>, or explore our{" "}
-            <Link href="/website-seo-optimization">website SEO</Link> and{" "}
-            <Link href="/geo-generative-engine-optimization">AI search optimization</Link> services
+            <Link href="/service/website-seo-optimization">website SEO</Link> and{" "}
+            <Link href="/service/geo-generative-engine-optimization">AI search optimization</Link> services
             to pair with local rankings.
           </p>
         </div>

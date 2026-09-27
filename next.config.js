@@ -22,15 +22,35 @@ const nextConfig = {
         permanent: true,
       },
       {
-        // Prevent duplicate content: /services/[slug] used to render the same
-        // content as the canonical top-level /[slug] service page.
-        source: '/services/:slug',
-        destination: '/:slug',
+        source: '/services',
+        destination: '/service',
         permanent: true,
       },
+      {
+        source: '/services/:slug',
+        destination: '/service/:slug',
+        permanent: true,
+      },
+      ...[
+        'seo-services',
+        'geo-generative-engine-optimization',
+        'local-seo-google-business-profile',
+        'website-seo-optimization',
+        'social-media-marketing',
+        'paid-advertising-ppc',
+        'shopify-ecommerce-development',
+        'amazon-ebay-product-research',
+        'website-development',
+        'ai-chatbot-integration',
+        'ai-website-building',
+        'mobile-app-development',
+      ].map((slug) => ({
+        source: `/${slug}`,
+        destination: `/service/${slug}`,
+        permanent: true,
+      })),
     ];
   },
 };
 
 module.exports = nextConfig;
-

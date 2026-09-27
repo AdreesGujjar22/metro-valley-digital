@@ -9,13 +9,13 @@ export const metadata = {
   description:
     "Grow your brand with strategy-led content calendars, short-form video, and community management across Instagram, TikTok, and Facebook.",
   alternates: {
-    canonical: "https://www.metrovalleydigital.com/social-media-marketing",
+    canonical: "https://www.metrovalleydigital.com/service/social-media-marketing",
   },
   openGraph: {
     title: "Social Media Marketing",
     description:
       "Grow your brand with strategy-led content calendars, short-form video, and community management across Instagram, TikTok, and Facebook.",
-    url: "https://www.metrovalleydigital.com/social-media-marketing",
+    url: "https://www.metrovalleydigital.com/service/social-media-marketing",
     siteName: "Metro Valley Digital",
     images: [
       {

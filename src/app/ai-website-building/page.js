@@ -9,13 +9,13 @@ export const metadata = {
   description:
     "Launch a polished, SEO-structured website faster with AI-assisted design and human-refined branding, copy, and UX from our Vancouver team.",
   alternates: {
-    canonical: "https://www.metrovalleydigital.com/ai-website-building",
+    canonical: "https://www.metrovalleydigital.com/service/ai-website-building",
   },
   openGraph: {
     title: "AI Website Building",
     description:
       "Launch a polished, SEO-structured website faster with AI-assisted design and human-refined branding, copy, and UX from our Vancouver team.",
-    url: "https://www.metrovalleydigital.com/ai-website-building",
+    url: "https://www.metrovalleydigital.com/service/ai-website-building",
     siteName: "Metro Valley Digital",
     images: [
       {

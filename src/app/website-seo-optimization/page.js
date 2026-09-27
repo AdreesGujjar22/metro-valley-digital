@@ -9,13 +9,13 @@ export const metadata = {
   description:
     "Improve Core Web Vitals, fix technical errors, and align on-page SEO so your site ranks and converts. Vancouver-based technical SEO specialists.",
   alternates: {
-    canonical: "https://www.metrovalleydigital.com/website-seo-optimization",
+    canonical: "https://www.metrovalleydigital.com/service/website-seo-optimization",
   },
   openGraph: {
     title: "Website SEO Optimization",
     description:
       "Improve Core Web Vitals, fix technical errors, and align on-page SEO so your site ranks and converts. Vancouver-based technical SEO specialists.",
-    url: "https://www.metrovalleydigital.com/website-seo-optimization",
+    url: "https://www.metrovalleydigital.com/service/website-seo-optimization",
     siteName: "Metro Valley Digital",
     images: [
       {

@@ -147,7 +147,7 @@ export function SitewideSchemas() {
         "@type": "SiteNavigationElement",
         position: 2,
         name: "Services",
-        url: "https://www.metrovalleydigital.com/services",
+        url: "https://www.metrovalleydigital.com/service",
       },
       {
         "@type": "SiteNavigationElement",
@@ -355,11 +355,11 @@ export function ServiceDetailSchema({ service }) {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": `https://www.metrovalleydigital.com/${service.slug}#service`,
+    "@id": `https://www.metrovalleydigital.com/service/${service.slug}#service`,
     name: service.title,
     serviceType: service.category,
     description: service.metaDescription || service.bodyCopy,
-    url: `https://www.metrovalleydigital.com/${service.slug}`,
+    url: `https://www.metrovalleydigital.com/service/${service.slug}`,
     image: service.image ? `https://www.metrovalleydigital.com${service.image}` : undefined,
     provider: {
       "@type": "LocalBusiness",
@@ -392,7 +392,7 @@ export function ServiceDetailSchema({ service }) {
       availability: "https://schema.org/InStock",
       price: "Custom Quote",
       priceCurrency: "USD",
-      url: `https://www.metrovalleydigital.com/${service.slug}`,
+      url: `https://www.metrovalleydigital.com/service/${service.slug}`,
     },
   };
 
@@ -423,13 +423,13 @@ export function ServiceDetailSchema({ service }) {
         "@type": "ListItem",
         position: 2,
         name: "Services",
-        item: "https://www.metrovalleydigital.com/services",
+        item: "https://www.metrovalleydigital.com/service",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: service.title,
-        item: `https://www.metrovalleydigital.com/${service.slug}`,
+        item: `https://www.metrovalleydigital.com/service/${service.slug}`,
       },
     ],
   };

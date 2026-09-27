@@ -9,13 +9,13 @@ export const metadata = {
   description:
     "Get cited by ChatGPT, Gemini, and Perplexity with AI search entity optimization, structured data, and fact-dense content from our Vancouver GEO team.",
   alternates: {
-    canonical: "https://www.metrovalleydigital.com/geo-generative-engine-optimization",
+    canonical: "https://www.metrovalleydigital.com/service/geo-generative-engine-optimization",
   },
   openGraph: {
     title: "Generative Engine Optimization",
     description:
       "Get cited by ChatGPT, Gemini, and Perplexity with AI search entity optimization, structured data, and fact-dense content from our Vancouver GEO team.",
-    url: "https://www.metrovalleydigital.com/geo-generative-engine-optimization",
+    url: "https://www.metrovalleydigital.com/service/geo-generative-engine-optimization",
     siteName: "Metro Valley Digital",
     images: [
       {

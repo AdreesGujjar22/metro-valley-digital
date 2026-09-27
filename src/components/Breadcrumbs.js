@@ -42,7 +42,7 @@ export default function Breadcrumbs(props) {
                     <i className="fa fa-angle-double-right"></i>
                   </li>
                   <li className="active">
-                    <Link href={`/${menuLink ? menuLink : "services"}`}>
+                    <Link href={`/${menuLink ? menuLink : "service"}`}>
                       {menuText ? menuText : "Services"}
                     </Link>
                   </li>

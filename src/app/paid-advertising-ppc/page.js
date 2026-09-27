@@ -9,13 +9,13 @@ export const metadata = {
   description:
     "High-ROAS Meta, TikTok, Google, and LinkedIn ad campaigns with server-side tracking and creative testing, managed by our Vancouver performance team.",
   alternates: {
-    canonical: "https://www.metrovalleydigital.com/paid-advertising-ppc",
+    canonical: "https://www.metrovalleydigital.com/service/paid-advertising-ppc",
   },
   openGraph: {
     title: "Paid Ads Management",
     description:
       "High-ROAS Meta, TikTok, Google, and LinkedIn ad campaigns with server-side tracking and creative testing, managed by our Vancouver performance team.",
-    url: "https://www.metrovalleydigital.com/paid-advertising-ppc",
+    url: "https://www.metrovalleydigital.com/service/paid-advertising-ppc",
     siteName: "Metro Valley Digital",
     images: [
       {

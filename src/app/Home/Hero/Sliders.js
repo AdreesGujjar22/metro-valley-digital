@@ -31,7 +31,7 @@ export default function Sliders() {
       },
       secondaryButton: {
         text: "Explore Services",
-        link: "/services",
+        link: "/service",
       },
     },
     {
@@ -43,7 +43,7 @@ export default function Sliders() {
         "Capture ready-to-buy customers in your city. Proprietary geo-grid proximity ranking, citation authority, review velocity, and AI search engine optimization (ChatGPT & Gemini Search).",
       button: {
         text: "Boost Local Rankings",
-        link: "/services",
+        link: "/service",
       },
       secondaryButton: {
         text: "View Case Studies",

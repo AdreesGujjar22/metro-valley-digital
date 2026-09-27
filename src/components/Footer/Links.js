@@ -9,37 +9,37 @@ export default function Links() {
           <h3 className="widget-title text-white fw-bold">Growth Solutions</h3>
           <ul className="list-unstyled">
             <li>
-              <Link href="/local-seo-google-business-profile">
+              <Link href="/service/local-seo-google-business-profile">
                 <i className="fa fa-angle-double-right"></i>Local SEO & Google Maps
               </Link>
             </li>
             <li>
-              <Link href="/seo-services">
+              <Link href="/service/seo-services">
                 <i className="fa fa-angle-double-right"></i>Organic SEO Services
               </Link>
             </li>
             <li>
-              <Link href="/geo-generative-engine-optimization">
+              <Link href="/service/geo-generative-engine-optimization">
                 <i className="fa fa-angle-double-right"></i>AI Search Optimization (GEO)
               </Link>
             </li>
             <li>
-              <Link href="/paid-advertising-ppc">
+              <Link href="/service/paid-advertising-ppc">
                 <i className="fa fa-angle-double-right"></i>Paid Ads (Meta, TikTok, Google)
               </Link>
             </li>
             <li>
-              <Link href="/shopify-ecommerce-development">
+              <Link href="/service/shopify-ecommerce-development">
                 <i className="fa fa-angle-double-right"></i>Shopify & E-Commerce
               </Link>
             </li>
             <li>
-              <Link href="/website-development">
+              <Link href="/service/website-development">
                 <i className="fa fa-angle-double-right"></i>Custom Web Development
               </Link>
             </li>
             <li>
-              <Link href="/ai-chatbot-integration">
+              <Link href="/service/ai-chatbot-integration">
                 <i className="fa fa-angle-double-right"></i>AI Chatbot Integration
               </Link>
             </li>

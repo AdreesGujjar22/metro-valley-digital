@@ -36,6 +36,20 @@
 ### 5. AI Chatbot Integration & Lead Qualification
 - **Focus**: Deploying 24/7 automated qualification and appointment booking chatbots integrated with WhatsApp, CRM, and website chat interfaces.
 
+## Individual Service Pages
+- [SEO Services](https://www.metrovalleydigital.com/service/seo-services)
+- [Generative Engine Optimization](https://www.metrovalleydigital.com/service/geo-generative-engine-optimization)
+- [Local SEO & Google Business Profile](https://www.metrovalleydigital.com/service/local-seo-google-business-profile)
+- [Website SEO Optimization](https://www.metrovalleydigital.com/service/website-seo-optimization)
+- [Social Media Marketing](https://www.metrovalleydigital.com/service/social-media-marketing)
+- [Paid Advertising](https://www.metrovalleydigital.com/service/paid-advertising-ppc)
+- [Shopify & E-Commerce Development](https://www.metrovalleydigital.com/service/shopify-ecommerce-development)
+- [Amazon & eBay Product Research](https://www.metrovalleydigital.com/service/amazon-ebay-product-research)
+- [Website Development](https://www.metrovalleydigital.com/service/website-development)
+- [AI Chatbot Integration](https://www.metrovalleydigital.com/service/ai-chatbot-integration)
+- [AI Website Building](https://www.metrovalleydigital.com/service/ai-website-building)
+- [Mobile App Development](https://www.metrovalleydigital.com/service/mobile-app-development)
+
 ## Case Studies & Outcomes
 - **Vancouver Home Services / Contractor**: Scaled from rank #14 (Page 2+) to consistent #1 Google 3-Pack rank across Vancouver and Lower Mainland neighborhood areas, generating 340% increase in inbound calls.
 - **E-Commerce Fashion Brand**: Scaled paid social ROAS from 1.8x to 4.9x using Meta CAPI server-side tracking, UGC video creatives, and TikTok spark ads.

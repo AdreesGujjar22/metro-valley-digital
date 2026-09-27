@@ -2,7 +2,7 @@ export const SERVICES_CATALOG = [
   {
     id: "seo-services",
     slug: "seo-services",
-    url: "/seo-services",
+    url: "/service/seo-services",
     number: "01",
     category: "Search & SEO",
     title: "SEO Services",
@@ -77,7 +77,7 @@ export const SERVICES_CATALOG = [
   {
     id: "geo-generative-engine-optimization",
     slug: "geo-generative-engine-optimization",
-    url: "/geo-generative-engine-optimization",
+    url: "/service/geo-generative-engine-optimization",
     number: "02",
     category: "AI & Search Innovation",
     title: "GEO (Generative Engine Optimization)",
@@ -148,7 +148,7 @@ export const SERVICES_CATALOG = [
   {
     id: "local-seo-google-business-profile",
     slug: "local-seo-google-business-profile",
-    url: "/local-seo-google-business-profile",
+    url: "/service/local-seo-google-business-profile",
     number: "03",
     category: "Search & SEO",
     title: "Local SEO & Google Business Profile (GMB) Optimization",
@@ -223,7 +223,7 @@ export const SERVICES_CATALOG = [
   {
     id: "website-seo-optimization",
     slug: "website-seo-optimization",
-    url: "/website-seo-optimization",
+    url: "/service/website-seo-optimization",
     number: "04",
     category: "Search & SEO",
     title: "Website SEO (On-Page & Technical)",
@@ -302,7 +302,7 @@ export const SERVICES_CATALOG = [
   {
     id: "social-media-marketing",
     slug: "social-media-marketing",
-    url: "/social-media-marketing",
+    url: "/service/social-media-marketing",
     number: "05",
     category: "Advertising & Social Media",
     title: "Social Media Marketing",
@@ -377,7 +377,7 @@ export const SERVICES_CATALOG = [
   {
     id: "paid-advertising-ppc",
     slug: "paid-advertising-ppc",
-    url: "/paid-advertising-ppc",
+    url: "/service/paid-advertising-ppc",
     number: "06",
     category: "Advertising & Social Media",
     title: "Paid Advertising (Meta, TikTok, Google Ads & More)",
@@ -448,7 +448,7 @@ export const SERVICES_CATALOG = [
   {
     id: "shopify-ecommerce-development",
     slug: "shopify-ecommerce-development",
-    url: "/shopify-ecommerce-development",
+    url: "/service/shopify-ecommerce-development",
     number: "07",
     category: "E-Commerce & Marketplaces",
     title: "Shopify & E-Commerce Store Development",
@@ -527,7 +527,7 @@ export const SERVICES_CATALOG = [
   {
     id: "amazon-ebay-product-research",
     slug: "amazon-ebay-product-research",
-    url: "/amazon-ebay-product-research",
+    url: "/service/amazon-ebay-product-research",
     number: "08",
     category: "E-Commerce & Marketplaces",
     title: "Amazon & eBay Product Hunting & Listing Optimization",
@@ -606,7 +606,7 @@ export const SERVICES_CATALOG = [
   {
     id: "website-development",
     slug: "website-development",
-    url: "/website-development",
+    url: "/service/website-development",
     number: "09",
     category: "Software & App Engineering",
     title: "Website Development",
@@ -681,7 +681,7 @@ export const SERVICES_CATALOG = [
   {
     id: "ai-chatbot-integration",
     slug: "ai-chatbot-integration",
-    url: "/ai-chatbot-integration",
+    url: "/service/ai-chatbot-integration",
     number: "10",
     category: "AI & Search Innovation",
     title: "AI Chatbot Integration",
@@ -756,7 +756,7 @@ export const SERVICES_CATALOG = [
   {
     id: "ai-website-building",
     slug: "ai-website-building",
-    url: "/ai-website-building",
+    url: "/service/ai-website-building",
     number: "11",
     category: "Software & App Engineering",
     title: "AI Website Building",
@@ -827,7 +827,7 @@ export const SERVICES_CATALOG = [
   {
     id: "mobile-app-development",
     slug: "mobile-app-development",
-    url: "/mobile-app-development",
+    url: "/service/mobile-app-development",
     number: "12",
     category: "Software & App Engineering",
     title: "Mobile Application Development",
