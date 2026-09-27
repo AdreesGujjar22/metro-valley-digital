@@ -55,7 +55,15 @@ export default function Navbar() {
                   <div className="row align-items-center">
                     <div className="col-lg-3 col-md-4 col-8">
                       {/* <!-- Modern Agency Logo --> */}
-                      <div className="logo py-1">
+                      <div
+                        className="logo py-1"
+                        style={{
+                          backgroundColor: isSticky ? "#1e293b" : "transparent",
+                          borderRadius: isSticky ? "8px" : undefined,
+                          padding: isSticky ? "4px 8px" : undefined,
+                          width: "fit-content",
+                        }}
+                      >
                         <AgencyLogo isLight={!isSticky} />
                       </div>
                     </div>
@@ -101,7 +109,7 @@ export default function Navbar() {
                                         <div className="mega-menu-col" key={group.category}>
                                           <div className="mega-menu-col-head">
                                             <span className="mega-menu-badge">
-                                              {group.category.charAt(0)}
+                                              <i className={group.items[0].icon} aria-hidden="true"></i>
                                             </span>
                                             <h4>{group.category}</h4>
                                           </div>

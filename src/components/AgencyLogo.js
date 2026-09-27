@@ -25,5 +25,3 @@ export default function AgencyLogo({ isLight = false, light = false, className =
     </Link>
   );
 }
-
-

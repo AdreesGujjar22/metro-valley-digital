@@ -16,9 +16,6 @@ export default function ServiceDetailView({ service }) {
     .map((slug) => SERVICES_CATALOG.find((s) => s.slug === slug))
     .filter(Boolean);
 
-  const whatsappUrl = `https://wa.me/17786080909?text=${encodeURIComponent(
-    `Hi Metro Valley Digital, I am interested in your ${service.title} services. Could we schedule a consultation?`
-  )}`;
 
   return (
     <>
@@ -276,23 +273,7 @@ export default function ServiceDetailView({ service }) {
                     >
                       {service.ctaText || "Get Started Today →"}
                     </a>
-                    <a
-                      href={whatsappUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn"
-                      style={{
-                        backgroundColor: "#ffffff",
-                        color: "#0f172a",
-                        border: "1px solid #cbd5e1",
-                        fontWeight: "600",
-                        fontSize: "15px",
-                        padding: "12px 22px",
-                        borderRadius: "8px",
-                      }}
-                    >
-                      <i className="fa fa-whatsapp text-success me-2"></i> Fast WhatsApp Inquiry
-                    </a>
+
                   </div>
                 </div>
 
@@ -509,22 +490,7 @@ export default function ServiceDetailView({ service }) {
                 >
                   Book Consultation
                 </a>
-                <a
-                  href={whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn"
-                  style={{
-                    backgroundColor: "#25D366",
-                    color: "#ffffff",
-                    fontWeight: "700",
-                    fontSize: "15px",
-                    padding: "14px 24px",
-                    borderRadius: "8px",
-                  }}
-                >
-                  <i className="fa fa-whatsapp me-1"></i> WhatsApp
-                </a>
+
               </div>
             </div>
           </div>

@@ -60,10 +60,10 @@
   .menu-right {
     display: none;
   }
-  .header .nav-item .navigation li {
+  .header .nav-item > .navigation > li {
     margin-right: 20px;
   }
-  .header .nav-item .navigation li:last-child {
+  .header .nav-item > .navigation > li:last-child {
     margin: 0;
   }
   .header .nav-menu li .sub-menu {

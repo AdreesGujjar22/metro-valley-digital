@@ -2,24 +2,26 @@
 
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import {
-  MessageCircle,
-  X,
-  Target,
-  TrendingUp,
-  Sparkles,
-  Code2,
-  MapPin,
-  Phone,
-  Send,
-  Check,
-} from "lucide-react";
+import { X } from "lucide-react";
+
+function WhatsAppIcon({ size = 20 }) {
+  return (
+    <svg
+      aria-hidden="true"
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="currentColor"
+    >
+      <path d="M12.04 2a9.88 9.88 0 0 0-8.48 14.96L2 22l5.22-1.37A9.9 9.9 0 1 0 12.04 2Zm0 18.1h-.01a8.17 8.17 0 0 1-4.16-1.14l-.3-.18-3.1.82.83-3.02-.2-.31a8.15 8.15 0 1 1 6.94 3.83Zm4.48-6.1c-.25-.13-1.47-.73-1.7-.81-.23-.08-.4-.13-.56.13-.17.25-.65.81-.8.98-.15.17-.3.19-.55.06-.25-.13-1.05-.39-2-1.23-.74-.65-1.24-1.47-1.39-1.72-.15-.25-.02-.39.11-.52.11-.11.25-.3.38-.45.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.56-1.36-.77-1.86-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.45.06-.68.32-.23.25-.88.87-.88 2.11s.9 2.45 1.03 2.62c.13.17 1.78 2.72 4.31 3.81.6.26 1.08.42 1.45.53.61.19 1.15.16 1.58.1.49-.07 1.47-.6 1.68-1.19.21-.59.21-1.09.15-1.2-.06-.1-.23-.17-.48-.3Z" />
+    </svg>
+  );
+}
 
 export default function WhatsAppFloating() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [hasPrompted, setHasPrompted] = useState(false);
-  const [selectedTopic, setSelectedTopic] = useState(null);
   const [customMsg, setCustomMsg] = useState("");
 
   // Auto-open chat bot after 2 seconds on home page once
@@ -53,44 +55,7 @@ export default function WhatsAppFloating() {
     }
   };
 
-  const phoneNumber = "17786080909"; // Vancouver Canadian HQ (+1 778-608-0909)
-
-  const quickOptions = [
-    {
-      id: "seo",
-      title: "Local SEO & 3-Pack",
-      icon: Target,
-      text: "Hi Metro Valley! I'd like to rank #1 on Google Maps for my business in Vancouver.",
-    },
-    {
-      id: "ads",
-      title: "Meta & Google Ads",
-      icon: TrendingUp,
-      text: "Hi Metro Valley! I want to scale my paid advertising with your 4x+ ROAS framework.",
-    },
-    {
-      id: "geo",
-      title: "AI Search & GEO",
-      icon: Sparkles,
-      text: "Hi Metro Valley! I'm looking for AI Search Optimization (ChatGPT, Perplexity, Gemini).",
-    },
-    {
-      id: "web",
-      title: "Next.js Web & Apps",
-      icon: Code2,
-      text: "Hi Metro Valley! I need a fast, custom Next.js web application built.",
-    },
-  ];
-
-  const handleSelectOption = (opt) => {
-    if (selectedTopic?.id === opt.id) {
-      setSelectedTopic(null);
-      setCustomMsg("");
-    } else {
-      setSelectedTopic(opt);
-      setCustomMsg(opt.text);
-    }
-  };
+  const phoneNumber = "17786080909";
 
   const activeMessage =
     customMsg.trim() !== ""
@@ -104,45 +69,15 @@ export default function WhatsAppFloating() {
   return (
     <>
       <style>{`
-        .wa-no-scrollbar::-webkit-scrollbar {
-          display: none !important;
-          width: 0 !important;
-          height: 0 !important;
-        }
-        .wa-no-scrollbar {
-          -ms-overflow-style: none !important;
-          scrollbar-width: none !important;
-        }
-        .wa-topic-btn {
-          display: flex;
-          align-items: center;
-          gap: 6px;
-          padding: 8px 10px;
-          border-radius: 9px;
-          font-size: 11.5px;
-          font-weight: 600;
-          cursor: pointer;
-          transition: all 0.15s ease;
-          border: 1px solid #e2e8f0;
-          background: #ffffff;
-          color: #334155;
-          text-align: left;
-          width: 100%;
-          line-height: 1.25;
-        }
-        .wa-topic-btn:hover {
-          background: #f8fafc;
-          border-color: #cbd5e1;
-          color: #0f172a;
-        }
-        .wa-topic-btn.selected {
-          background: #ecfdf5;
-          border-color: #10b981;
-          color: #065f46;
-          box-shadow: 0 1px 3px rgba(16, 185, 129, 0.15);
+        .wa-start-chat-button,
+        .wa-start-chat-button:hover,
+        .wa-start-chat-button:focus,
+        .wa-start-chat-button:visited {
+          background: #25d366 !important;
+          background-color: #25d366 !important;
+          color: #ffffff !important;
         }
       `}</style>
-
       <div
         style={{
           position: "fixed",
@@ -155,7 +90,6 @@ export default function WhatsAppFloating() {
         {/* Compact WhatsApp Chat Card Modal */}
         {isOpen && (
           <div
-            className="wa-no-scrollbar"
             style={{
               position: "absolute",
               bottom: "66px",
@@ -198,7 +132,7 @@ export default function WhatsAppFloating() {
                     position: "relative",
                   }}
                 >
-                  <MessageCircle size={18} color="#ffffff" strokeWidth={2.4} />
+                  <WhatsAppIcon size={19} />
                   <span
                     style={{
                       position: "absolute",
@@ -232,7 +166,7 @@ export default function WhatsAppFloating() {
                       lineHeight: "1",
                     }}
                   >
-                    Online • Vancouver HQ
+                    WhatsApp Support
                   </p>
                 </div>
               </div>
@@ -267,100 +201,6 @@ export default function WhatsAppFloating() {
               </button>
             </div>
 
-            {/* Content Body - Compact & No Scroll Bar */}
-            <div
-              className="wa-no-scrollbar"
-              style={{
-                backgroundColor: "#f8fafc",
-                padding: "12px 12px 8px",
-                display: "flex",
-                flexDirection: "column",
-                gap: "8px",
-              }}
-            >
-              {/* Short Greeting */}
-              <div
-                style={{
-                  backgroundColor: "#ffffff",
-                  borderRadius: "10px",
-                  borderTopLeftRadius: "2px",
-                  padding: "8px 10px",
-                  boxShadow: "0 1px 3px rgba(0, 0, 0, 0.04)",
-                  border: "1px solid #e2e8f0",
-                }}
-              >
-                <p
-                  style={{
-                    margin: 0,
-                    fontSize: "12px",
-                    lineHeight: "1.4",
-                    color: "#1e293b",
-                  }}
-                >
-                  👋 Hi! How can our Vancouver growth team assist you today?
-                </p>
-              </div>
-
-              {/* Topic Options (2x2 Compact Grid) */}
-              <div>
-                <span
-                  style={{
-                    fontSize: "10.5px",
-                    fontWeight: "700",
-                    color: "#64748b",
-                    textTransform: "uppercase",
-                    letterSpacing: "0.4px",
-                    display: "block",
-                    marginBottom: "5px",
-                  }}
-                >
-                  Select a topic:
-                </span>
-                <div
-                  style={{
-                    display: "grid",
-                    gridTemplateColumns: "1fr 1fr",
-                    gap: "6px",
-                  }}
-                >
-                  {quickOptions.map((opt) => {
-                    const IconComponent = opt.icon;
-                    const isSelected = selectedTopic?.id === opt.id;
-                    return (
-                      <button
-                        key={opt.id}
-                        type="button"
-                        onClick={() => handleSelectOption(opt)}
-                        className={`wa-topic-btn ${isSelected ? "selected" : ""}`}
-                      >
-                        <span
-                          style={{
-                            color: isSelected ? "#059669" : "#475569",
-                            display: "inline-flex",
-                            flexShrink: 0,
-                          }}
-                        >
-                          {isSelected ? (
-                            <Check size={13} strokeWidth={2.6} />
-                          ) : (
-                            <IconComponent size={13} strokeWidth={2.2} />
-                          )}
-                        </span>
-                        <span
-                          style={{
-                            overflow: "hidden",
-                            textOverflow: "ellipsis",
-                            whiteSpace: "nowrap",
-                          }}
-                        >
-                          {opt.title}
-                        </span>
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
 
             {/* Action Area */}
             <div
@@ -373,18 +213,29 @@ export default function WhatsAppFloating() {
                 gap: "8px",
               }}
             >
-              {/* Optional Custom Input */}
+              <p
+                style={{
+                  margin: "0 2px 2px",
+                  color: "#075e54",
+                  fontSize: "13px",
+                  fontWeight: "700",
+                }}
+              >
+                Want to get more info?
+              </p>
+
+              {/* Message Input */}
               <input
                 type="text"
                 value={customMsg}
                 onChange={(e) => setCustomMsg(e.target.value)}
-                placeholder="Or type a question..."
+                placeholder="Write a message..."
                 style={{
                   width: "100%",
-                  padding: "6px 10px",
-                  fontSize: "11.5px",
-                  border: "1px solid #cbd5e1",
-                  borderRadius: "7px",
+                  padding: "10px 12px",
+                  fontSize: "13px",
+                  border: "1px solid #d1d5db",
+                  borderRadius: "10px",
                   outline: "none",
                   boxSizing: "border-box",
                   color: "#0f172a",
@@ -393,6 +244,7 @@ export default function WhatsAppFloating() {
 
               {/* Start WhatsApp Chat Button */}
               <a
+                className="wa-start-chat-button"
                 href={waUrl}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -414,60 +266,12 @@ export default function WhatsAppFloating() {
                   transition: "background-color 0.15s ease",
                   border: "none",
                 }}
-                onMouseEnter={(e) =>
-                  (e.currentTarget.style.backgroundColor = "#20ba5a")
-                }
-                onMouseLeave={(e) =>
-                  (e.currentTarget.style.backgroundColor = "#25D366")
-                }
               >
-                <Send size={14} strokeWidth={2.4} />
+                <WhatsAppIcon size={15} />
                 <span>Start WhatsApp Chat</span>
               </a>
 
-              {/* Responsive Footer Info with Lucide Icons */}
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                  fontSize: "10.5px",
-                  color: "#64748b",
-                  paddingTop: "2px",
-                }}
-              >
-                <a
-                  href="https://maps.app.goo.gl/opsWCpAwBhZ5H18w6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    color: "#0284c7",
-                    textDecoration: "none",
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "3px",
-                    fontWeight: "600",
-                  }}
-                >
-                  <MapPin size={11} strokeWidth={2.2} />
-                  <span>Vancouver HQ</span>
-                </a>
 
-                <a
-                  href="tel:+17786080909"
-                  style={{
-                    color: "#166534",
-                    textDecoration: "none",
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "3px",
-                    fontWeight: "700",
-                  }}
-                >
-                  <Phone size={10} strokeWidth={2.4} />
-                  <span>+1 778-608-0909</span>
-                </a>
-              </div>
             </div>
           </div>
         )}
@@ -520,11 +324,10 @@ export default function WhatsAppFloating() {
           {isOpen ? (
             <X size={22} strokeWidth={2.6} />
           ) : (
-            <MessageCircle size={26} strokeWidth={2.3} />
+            <WhatsAppIcon size={27} />
           )}
         </button>
       </div>
     </>
   );
 }
-
