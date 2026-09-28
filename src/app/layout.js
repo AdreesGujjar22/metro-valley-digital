@@ -61,6 +61,9 @@ export const metadata = {
   authors: [{ name: "Metro Valley Digital", url: "https://www.metrovalleydigital.com" }],
   creator: "Metro Valley Digital",
   publisher: "Metro Valley Digital",
+  verification: {
+    google: "_At_6MDjlkDHLYek5wW5kwfFeJEm9nkHBUyzgNfIAMc",
+  },
   formatDetection: {
     email: true,
     address: true,
