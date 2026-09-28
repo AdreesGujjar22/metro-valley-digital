@@ -23,7 +23,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg",
+        url: "https://www.metrovalleydigital.com/images/office-team-collaboration-contact.jpg",
         width: 1200,
         height: 630,
         alt: "Contact Metro Valley Digital Vancouver",
@@ -35,7 +35,7 @@ export const metadata = {
     title: "Contact Our Vancouver Marketing Team | Metro Valley Digital",
     description:
       "Get in touch with Metro Valley Digital today for a free growth audit. Our friendly Vancouver team replies fast and is ready to help your business grow faster.",
-    images: ["https://www.metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/office-team-collaboration-contact.jpg"],
   },
 };
 

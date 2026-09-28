@@ -1,5 +1,5 @@
 import Link from "next/link";
-import bgImg from "../../../../public/images/metro_agency_hero_1788191381646.jpg";
+import bgImg from "../../../../public/images/digital-growth-analytics-city-hero.jpg";
 
 export default function CallAction() {
   return (

@@ -139,7 +139,7 @@ export default function ServiceDetailView({ service }) {
                   >
                     <Image
                       src={service.image}
-                      alt={`${service.title} - Professional Digital Agency Solutions in Vancouver & Global`}
+                      alt={service.imageAlt || service.title}
                       width={900}
                       height={500}
                       priority
@@ -397,7 +397,7 @@ export default function ServiceDetailView({ service }) {
                           >
                             <Image
                               src={rel.image}
-                              alt={rel.title}
+                              alt={rel.imageAlt || rel.title}
                               width={75}
                               height={75}
                               style={{ width: "100%", height: "100%", objectFit: "cover" }}

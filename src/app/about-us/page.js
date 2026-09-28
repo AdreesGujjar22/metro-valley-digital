@@ -21,7 +21,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg",
+        url: "https://www.metrovalleydigital.com/images/agency-team-workspace-city-office.jpg",
         width: 1200,
         height: 630,
         alt: "About Metro Valley Digital",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "About Metro Valley Digital Agency | Metro Valley Digital",
     description:
       "Meet the Vancouver team behind Metro Valley Digital. Learn our story, growth philosophy, and how we help local businesses rank higher and earn more customers.",
-    images: ["https://www.metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/agency-team-workspace-city-office.jpg"],
   },
 };
 

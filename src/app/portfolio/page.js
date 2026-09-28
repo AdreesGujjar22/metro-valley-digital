@@ -21,7 +21,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg",
+        url: "https://www.metrovalleydigital.com/images/portfolio-case-study-results-kpi-dashboard.jpg",
         width: 1200,
         height: 630,
         alt: "Metro Valley Digital Case Studies",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Case Studies & Client Growth Results | Metro Valley Digital",
     description:
       "See real client results from Metro Valley Digital: ranking growth, paid ad returns, and revenue wins for Vancouver and North American businesses like yours.",
-    images: ["https://www.metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/portfolio-case-study-results-kpi-dashboard.jpg"],
   },
 };
 

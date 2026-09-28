@@ -10,9 +10,9 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import "react-modal-video/css/modal-video.min.css";
 
-import HeroBg1 from "../../../../public/images/metro_agency_hero_1788191381646.jpg";
-import HeroBg2 from "../../../../public/images/local_seo_growth_1788191403673.jpg";
-import HeroBg3 from "../../../../public/images/paid_ads_roas_1788191423627.jpg";
+import HeroBg1 from "../../../../public/images/digital-growth-analytics-city-hero.jpg";
+import HeroBg2 from "../../../../public/images/local-seo-map-pins-growth-chart.jpg";
+import HeroBg3 from "../../../../public/images/paid-ads-roas-performance-dashboard.jpg";
 import ModalVideo from "react-modal-video";
 
 export default function Sliders() {

@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import BlogImg from "../../public/images/local_seo_maps_1788193488227.jpg";
-import AdminImg from "../../public/images/team_toronto_lead_1788194135436.jpg";
+import BlogImg from "../../public/images/local-seo-google-maps-3-pack-dashboard.jpg";
+import AdminImg from "../../public/images/tariq-vance-head-of-local-seo-gmb.jpg";
 
 export default function SingleBlog(props) {
   const { image, date, title, adminImg, adminTitle, comments, reviews, slug } = props;
@@ -32,7 +32,7 @@ export default function SingleBlog(props) {
               <div style={{ width: "30px", height: "30px", borderRadius: "50%", overflow: "hidden", flexShrink: 0 }}>
                 <Image
                   src={adminImg ? adminImg : AdminImg}
-                  alt={adminTitle || "Author"}
+                  alt={adminTitle ? `${adminTitle}, Metro Valley Digital` : "Blog author"}
                   width={30}
                   height={30}
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}

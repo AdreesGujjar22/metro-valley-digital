@@ -1,4 +1,4 @@
-import NewseletterBg from "../../public/images/agency_workspace_1788191445921.jpg";
+import NewseletterBg from "../../public/images/agency-team-workspace-city-office.jpg";
 
 export default function Newsletter() {
   return (

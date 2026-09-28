@@ -19,7 +19,7 @@ export const metadata = {
     siteName: "Metro Valley Digital",
     images: [
       {
-        url: "https://www.metrovalleydigital.com/images/local_seo_growth_1788191403673.jpg",
+        url: "https://www.metrovalleydigital.com/images/website-seo-core-web-vitals-page-speed-report.jpg",
         width: 1200,
         height: 630,
         alt: "Website SEO Technical Optimization - Metro Valley Digital",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Website SEO Optimization Services | Metro Valley Digital",
     description:
       "Metro Valley Digital improves your Core Web Vitals, fixes technical errors, and aligns on-page SEO so your website ranks higher and converts more visitors.",
-    images: ["https://www.metrovalleydigital.com/images/local_seo_growth_1788191403673.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/website-seo-core-web-vitals-page-speed-report.jpg"],
   },
 };
 

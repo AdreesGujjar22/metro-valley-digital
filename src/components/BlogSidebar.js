@@ -32,7 +32,7 @@ export default function BlogSidebar() {
                 <div className="feed-img" style={{ width: "75px", height: "75px", overflow: "hidden", borderRadius: "8px", flexShrink: 0, position: "relative" }}>
                   <Image
                     src={post.image}
-                    alt={post.title}
+                    alt={post.imageAlt || post.title}
                     width={75}
                     height={75}
                     style={{ width: "100%", height: "100%", objectFit: "cover" }}

@@ -22,7 +22,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg",
+        url: "https://www.metrovalleydigital.com/images/local-seo-google-maps-3-pack-dashboard.jpg",
         width: 1200,
         height: 630,
         alt: "Metro Valley Digital Service Areas",
@@ -34,25 +34,25 @@ export const metadata = {
     title: "Vancouver Area SEO Service Locations | Metro Valley Digital",
     description:
       "Metro Valley Digital provides local SEO, paid ads, and web development across Vancouver neighbourhoods, Metro Vancouver cities, and select nearby markets too.",
-    images: ["https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/local-seo-google-maps-3-pack-dashboard.jpg"],
   },
 };
 
 const AREA_CARD_IMAGES = {
   neighbourhood: [
-    "/images/service-areas/alex_agrico-vancouver-7450141_1920.jpg",
-    "/images/service-areas/arttower-vancouver-56623_1920.jpg",
+    "/images/service-areas/vancouver-false-creek-granville-island-skyline.jpg",
+    "/images/service-areas/vancouver-coal-harbour-marina-and-towers.jpg",
   ],
   metro: [
-    "/images/service-areas/geraldfriedrich2-canada-3290310_1920.jpg",
-    "/images/service-areas/jameswheeler-buildings-2297210_1920.jpg",
-    "/images/service-areas/chris1007-city-948984_1920.jpg",
-    "/images/service-areas/w10496z-canada-3860167_1920.jpg",
+    "/images/service-areas/toronto-skyline-cn-tower-lake-reflection.jpg",
+    "/images/service-areas/toronto-skyline-at-night-waterfront-reflection.jpg",
+    "/images/service-areas/downtown-highrise-towers-aerial-view.jpg",
+    "/images/service-areas/vancouver-harbour-seaplane-and-north-shore.jpg",
   ],
   extended: [
-    "/images/service-areas/12019-toronto-123058_1920.jpg",
-    "/images/service-areas/12019-edmonton-77798_1920.jpg",
-    "/images/service-areas/chris1007-city-948984_1920.jpg",
+    "/images/service-areas/toronto-harbourfront-marina-cn-tower.jpg",
+    "/images/service-areas/edmonton-skyline-river-valley-view.jpg",
+    "/images/service-areas/downtown-highrise-towers-aerial-view.jpg",
   ],
 };
 

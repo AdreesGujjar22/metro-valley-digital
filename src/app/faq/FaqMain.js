@@ -4,7 +4,7 @@ import Image from "next/image";
 import FaqAccordion from "@/components/FaqAccordion";
 import SectionTitle from "@/components/SectionTitle";
 
-import FaqImg from "../../../public/images/agency_workspace_1788191445921.jpg";
+import FaqImg from "../../../public/images/agency-team-workspace-city-office.jpg";
 
 const faqItems = [
   {
@@ -58,7 +58,7 @@ export default function FaqMain() {
               <div className="faq-image" style={{ borderRadius: "16px", overflow: "hidden", boxShadow: "0 15px 35px rgba(0,0,0,0.1)" }}>
                 <Image
                   src={FaqImg}
-                  alt="Metro Valley Digital Team and Workspace"
+                  alt="Metro Valley Digital team at work in the agency office, ready to answer client questions"
                   width={480}
                   height={520}
                   style={{ width: "100%", height: "auto", objectFit: "cover" }}

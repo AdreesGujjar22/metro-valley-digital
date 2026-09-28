@@ -10,9 +10,9 @@ import { Autoplay, Pagination } from "swiper/modules";
 import Link from "next/link";
 import Image from "next/image";
 
-import TestimonialImg1 from "../../../../public/images/testi_marcus_1788194200341.jpg";
-import TestimonialImg2 from "../../../../public/images/testi_sarah_1788194216686.jpg";
-import TestimonialImg3 from "../../../../public/images/testi_dr_farhan_1788194231553.jpg";
+import TestimonialImg1 from "../../../../public/images/marcus-sterling-client-managing-director.jpg";
+import TestimonialImg2 from "../../../../public/images/sarah-lindqvist-client-founder-ceo.jpg";
+import TestimonialImg3 from "../../../../public/images/dr-ryan-vance-client-clinical-director.jpg";
 
 export default function Sliders() {
   const [testimonialSliders, settestimonialSliders] = useState([
@@ -61,7 +61,7 @@ export default function Sliders() {
                   <div className="testimonial-head" style={{ width: "130px", height: "130px", margin: "0 auto 15px", borderRadius: "50%", overflow: "hidden", border: "4px solid #ffffff", boxShadow: "0 8px 20px rgba(0,0,0,0.15)" }}>
                     <Image
                       src={singleSlider.image}
-                      alt={singleSlider.name}
+                      alt={`${singleSlider.name}, ${singleSlider.designation}`}
                       width={130}
                       height={130}
                       style={{ width: "100%", height: "100%", objectFit: "cover" }}

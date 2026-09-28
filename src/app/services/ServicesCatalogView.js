@@ -85,7 +85,7 @@ export default function ServicesCatalogView() {
                 >
                   <Image
                     src={service.image}
-                    alt={`${service.title} - Metro Valley Digital`}
+                    alt={service.imageAlt || service.title}
                     width={120}
                     height={120}
                     style={{ objectFit: "cover", width: "100%", height: "100%" }}

@@ -152,7 +152,7 @@ export default function BlogListing() {
                   <Link href={`/blog/${post.slug}`}>
                     <Image
                       src={post.image}
-                      alt={post.title}
+                      alt={post.imageAlt || post.title}
                       fill
                       sizes="(max-width: 768px) 100vw, 33vw"
                       style={{ objectFit: "cover" }}
@@ -243,7 +243,7 @@ export default function BlogListing() {
                       <div style={{ width: "32px", height: "32px", borderRadius: "50%", overflow: "hidden", position: "relative" }}>
                         <Image
                           src={post.author.avatar}
-                          alt={post.author.name}
+                          alt={`${post.author.name}, ${post.author.role}`}
                           fill
                           sizes="32px"
                           style={{ objectFit: "cover" }}

@@ -21,7 +21,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg",
+        url: "https://www.metrovalleydigital.com/images/agency-team-workspace-city-office.jpg",
         width: 1200,
         height: 630,
         alt: "Metro Valley Digital FAQ",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "SEO & Marketing FAQs for Clients | Metro Valley Digital",
     description:
       "Find clear answers about Local SEO timelines, Google Maps rankings, paid ad management, and website builds from the Metro Valley Digital team in Vancouver.",
-    images: ["https://www.metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/agency-team-workspace-city-office.jpg"],
   },
 };
 

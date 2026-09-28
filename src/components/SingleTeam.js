@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import TeamImg from "../../public/images/team_toronto_lead_1788194135436.jpg";
+import TeamImg from "../../public/images/tariq-vance-head-of-local-seo-gmb.jpg";
 import Link from "next/link";
 
 export default function SingleTeam(props) {
@@ -12,7 +12,7 @@ export default function SingleTeam(props) {
         <div className="team-img" style={{ height: "300px", width: "100%", position: "relative", overflow: "hidden" }}>
           <Image
             src={image ? image : TeamImg}
-            alt={name || "Team Member"}
+            alt={name ? `${name}${designation ? ", " + designation : ""} at Metro Valley Digital` : "Metro Valley Digital team member"}
             width={280}
             height={300}
             style={{ width: "100%", height: "100%", objectFit: "cover" }}

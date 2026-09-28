@@ -28,7 +28,7 @@ export default function SinglePortfolio(props) {
             {imageUrl && (
               <Image
                 src={imageUrl}
-                alt={title || "Portfolio Project"}
+                alt={title ? `${title}${category ? " — " + category : ""}` : "Metro Valley Digital portfolio project"}
                 width={400}
                 height={280}
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}

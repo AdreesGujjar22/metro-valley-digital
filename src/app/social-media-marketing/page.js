@@ -19,7 +19,7 @@ export const metadata = {
     siteName: "Metro Valley Digital",
     images: [
       {
-        url: "https://www.metrovalleydigital.com/images/smm_video_growth_1788193518995.jpg",
+        url: "https://www.metrovalleydigital.com/images/social-media-marketing-content-on-devices.jpg",
         width: 1200,
         height: 630,
         alt: "Social Media Marketing Services - Metro Valley Digital",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Social Media Marketing Vancouver | Metro Valley Digital",
     description:
       "Metro Valley Digital grows your brand with strategy-led content calendars, short-form video, and community management across Instagram, TikTok, and Facebook.",
-    images: ["https://www.metrovalleydigital.com/images/smm_video_growth_1788193518995.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/social-media-marketing-content-on-devices.jpg"],
   },
 };
 

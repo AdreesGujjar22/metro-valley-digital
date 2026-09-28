@@ -21,7 +21,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg",
+        url: "https://www.metrovalleydigital.com/images/local-seo-google-maps-3-pack-dashboard.jpg",
         width: 1200,
         height: 630,
         alt: "Metro Valley Digital Services Catalog",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Digital Marketing & SEO Services | Metro Valley Digital",
     description:
       "Browse 12 growth services from Metro Valley Digital: Local SEO, AI search optimization, paid ads, Shopify builds, custom software, and chatbots for growth.",
-    images: ["https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/local-seo-google-maps-3-pack-dashboard.jpg"],
   },
 };
 

@@ -1,10 +1,10 @@
 import SectionTitle from "@/components/SectionTitle";
 import SingleTeam from "@/components/SingleTeam";
 
-import TeamImg1 from "../../../../public/images/team_toronto_lead_1788194135436.jpg";
-import TeamImg2 from "../../../../public/images/team_paid_media_lead_1788194149805.jpg";
-import TeamImg3 from "../../../../public/images/team_ai_architect_1788194166603.jpg";
-import TeamImg4 from "../../../../public/images/team_growth_strategist_1788194183743.jpg";
+import TeamImg1 from "../../../../public/images/tariq-vance-head-of-local-seo-gmb.jpg";
+import TeamImg2 from "../../../../public/images/hamza-malik-director-of-paid-media.jpg";
+import TeamImg3 from "../../../../public/images/zayn-alexander-lead-fullstack-ai-architect.jpg";
+import TeamImg4 from "../../../../public/images/sarah-jenkins-vp-client-growth-success.jpg";
 
 export default function Team() {
   return (
@@ -61,8 +61,8 @@ export default function Team() {
             >
               <SingleTeam
                 image={TeamImg4}
-                name="Ayla Campbell"
-                designation="Senior Growth Strategist (Toronto)"
+                name="Sarah Jenkins"
+                designation="VP of Client Growth & Success"
               />
             </div>
           </div>

@@ -23,7 +23,7 @@ export const metadata = {
     siteName: "Metro Valley Digital",
     images: [
       {
-        url: "https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg",
+        url: "https://www.metrovalleydigital.com/images/local-seo-google-maps-3-pack-dashboard.jpg",
         width: 1200,
         height: 630,
         alt: "Local SEO & Google Business Profile Optimization Vancouver - Metro Valley Digital",
@@ -37,7 +37,7 @@ export const metadata = {
     title: "Local SEO & Google Business Profile | Metro Valley Digital",
     description:
       "Metro Valley Digital helps you reach the top 3 Google Maps results with Google Business Profile optimization, citation cleanup, and review growth in Vancouver.",
-    images: ["https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/local-seo-google-maps-3-pack-dashboard.jpg"],
   },
 };
 

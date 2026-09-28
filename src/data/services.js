@@ -14,7 +14,8 @@ export const SERVICES_CATALOG = [
     bodyCopy:
       "Search Engine Optimization (SEO) is the foundation of sustainable online growth. At Metro Valley Digital, we help businesses climb Google rankings, attract high-intent organic traffic, and convert visitors into paying customers — without relying on paid ads.",
     icon: "fa fa-line-chart",
-    image: "/images/seo_audit_screen_1788193501910.jpg",
+    image: "/images/seo-audit-analytics-dashboard.jpg",
+    imageAlt: "Technical SEO audit dashboard on a monitor showing site health score, organic traffic growth and keyword rankings",
     processTitle: "Our SEO Process Includes:",
     processItems: [
       {
@@ -89,7 +90,8 @@ export const SERVICES_CATALOG = [
     bodyCopy:
       "Search is evolving beyond the traditional '10 blue links.' Tools like ChatGPT, Google AI Overviews, Gemini, and Perplexity are now answering user queries directly — and only citing select sources. GEO (Generative Engine Optimization) ensures your brand is one of them.",
     icon: "fa fa-magic",
-    image: "/images/ai_code_agents_1788193536610.jpg",
+    image: "/images/geo-generative-engine-optimization-ai-answer-citations.jpg",
+    imageAlt: "AI search answer citing Metro Valley Digital as a source, illustrating generative engine optimization for ChatGPT, Perplexity and Gemini",
     processTitle: "What We Do:",
     processItems: [
       {
@@ -160,7 +162,8 @@ export const SERVICES_CATALOG = [
     bodyCopy:
       "If you run a local business, showing up in the top 3 local results on Google Maps is critical. We optimize your Google Business Profile and local listings so nearby customers find and choose you first.",
     icon: "fa fa-map-marker",
-    image: "/images/local_seo_maps_1788193488227.jpg",
+    image: "/images/local-seo-google-maps-3-pack-dashboard.jpg",
+    imageAlt: "Google Maps 3-pack local search rankings dashboard with business listings and review metrics",
     processTitle: "Our Local SEO Services Include:",
     processItems: [
       {
@@ -235,7 +238,8 @@ export const SERVICES_CATALOG = [
     bodyCopy:
       "Your website is your digital storefront. If it's slow, poorly structured, or not optimized, you're losing both rankings and customers. We optimize every technical and on-page element of your site for maximum search performance.",
     icon: "fa fa-wrench",
-    image: "/images/local_seo_growth_1788191403673.jpg",
+    image: "/images/website-seo-core-web-vitals-page-speed-report.jpg",
+    imageAlt: "Core Web Vitals and page speed report with LCP, INP and CLS scores plus a load-time waterfall",
     processTitle: "What's Included:",
     processItems: [
       {
@@ -314,7 +318,8 @@ export const SERVICES_CATALOG = [
     bodyCopy:
       "We help brands grow their presence across Instagram, Facebook, TikTok, LinkedIn, and X (Twitter) with strategic content, consistent posting, and community engagement that turns followers into customers.",
     icon: "fa fa-share-alt",
-    image: "/images/smm_video_growth_1788193518995.jpg",
+    image: "/images/social-media-marketing-content-on-devices.jpg",
+    imageAlt: "Social media content and analytics displayed across a laptop, tablet and phones",
     processTitle: "Our Social Media Services:",
     processItems: [
       {
@@ -389,7 +394,8 @@ export const SERVICES_CATALOG = [
     bodyCopy:
       "Running ads without expertise wastes budget fast. Our certified media buyers create, manage, and optimize high-converting ad campaigns across every major platform to maximize your return on ad spend (ROAS).",
     icon: "fa fa-bullseye",
-    image: "/images/paid_ads_roas_1788191423627.jpg",
+    image: "/images/paid-ads-roas-performance-dashboard.jpg",
+    imageAlt: "Paid advertising dashboard tracking ROAS, ad spend and conversions across Meta, TikTok and Google Ads",
     processTitle: "Platforms We Manage & Our Process:",
     processItems: [
       {
@@ -460,7 +466,8 @@ export const SERVICES_CATALOG = [
     bodyCopy:
       "We design, build, and optimize Shopify and e-commerce stores that look professional, load fast, and are engineered to turn visitors into paying customers.",
     icon: "fa fa-shopping-cart",
-    image: "/images/agency_workspace_1788191445921.jpg",
+    image: "/images/shopify-ecommerce-store-product-grid-and-checkout.jpg",
+    imageAlt: "Shopify storefront product grid next to a streamlined checkout page with payment options",
     processTitle: "Our E-Commerce Services:",
     processItems: [
       {
@@ -539,7 +546,8 @@ export const SERVICES_CATALOG = [
     bodyCopy:
       "Finding the right product is the single biggest factor in e-commerce success. Our product research specialists use data-driven tools and market analysis to identify high-demand, low-competition, profitable products for Amazon FBA and eBay sellers.",
     icon: "fa fa-tags",
-    image: "/images/service/service-img-1.jpg",
+    image: "/images/amazon-ebay-product-research-and-listing-analytics.jpg",
+    imageAlt: "Amazon and eBay product research tool showing sales estimates, margins and listing optimization scores",
     processTitle: "Our Services Include:",
     processItems: [
       {
@@ -618,7 +626,8 @@ export const SERVICES_CATALOG = [
     bodyCopy:
       "We design and develop custom websites tailored to your brand and business goals — combining clean design, fast performance, and SEO-ready structure from day one.",
     icon: "fa fa-laptop",
-    image: "/images/metro_agency_hero_1788191381646.jpg",
+    image: "/images/website-development-nextjs-code-and-browser-preview.jpg",
+    imageAlt: "Next.js source code, terminal build output and a live website preview with perfect Lighthouse scores",
     processTitle: "Our Development Services:",
     processItems: [
       {
@@ -693,7 +702,8 @@ export const SERVICES_CATALOG = [
     bodyCopy:
       "We integrate intelligent AI chatbots into your website to instantly answer customer questions, capture leads, and guide visitors toward conversion — around the clock, without human intervention.",
     icon: "fa fa-comments-o",
-    image: "/images/office_contact_hero_1788194259077.jpg",
+    image: "/images/ai-chatbot-integration-lead-chat-interface.jpg",
+    imageAlt: "AI chatbot conversation booking a strategy call, with lead capture and response-time widgets",
     processTitle: "What We Offer:",
     processItems: [
       {
@@ -768,7 +778,8 @@ export const SERVICES_CATALOG = [
     bodyCopy:
       "We leverage cutting-edge AI website-building tools combined with expert human design and SEO strategy to launch stunning, functional websites in a fraction of the traditional time — without sacrificing quality.",
     icon: "fa fa-bolt",
-    image: "/images/service/service-img-2.jpg",
+    image: "/images/ai-website-builder-prompt-and-generated-site.jpg",
+    imageAlt: "AI website builder turning a text prompt into a complete generated clinic website",
     processTitle: "Our AI Website Building Process:",
     processItems: [
       {
@@ -839,7 +850,8 @@ export const SERVICES_CATALOG = [
     bodyCopy:
       "We design and develop custom mobile applications for iOS and Android that are intuitive, scalable, and built to solve real business problems — from MVPs to full-featured apps.",
     icon: "fa fa-mobile",
-    image: "/images/service/service-img-3.jpg",
+    image: "/images/mobile-app-development-ios-android-app-screens.jpg",
+    imageAlt: "Four mobile app screens for iOS and Android including a dashboard, live tracking map, profile and shop",
     processTitle: "Our App Development Services:",
     processItems: [
       {

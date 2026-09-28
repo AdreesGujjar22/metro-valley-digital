@@ -19,7 +19,7 @@ export const metadata = {
     siteName: "Metro Valley Digital",
     images: [
       {
-        url: "https://www.metrovalleydigital.com/images/service/service-img-1.jpg",
+        url: "https://www.metrovalleydigital.com/images/amazon-ebay-product-research-and-listing-analytics.jpg",
         width: 1200,
         height: 630,
         alt: "Amazon & eBay Product Research - Metro Valley Digital",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Amazon & eBay Product Research Help | Metro Valley Digital",
     description:
       "Metro Valley Digital offers data-driven product hunting, supplier sourcing, and A9/A10 listing optimization to help your Amazon and eBay stores find winners.",
-    images: ["https://www.metrovalleydigital.com/images/service/service-img-1.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/amazon-ebay-product-research-and-listing-analytics.jpg"],
   },
 };
 

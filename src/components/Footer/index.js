@@ -3,7 +3,7 @@ import Links from "./Links";
 import Contact from "./Contact";
 import Copyright from "./Copyright";
 
-import FooterBg from "../../../public/images/metro_agency_hero_1788191381646.jpg";
+import FooterBg from "../../../public/images/digital-growth-analytics-city-hero.jpg";
 
 export default function Footer() {
   return (

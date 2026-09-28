@@ -3,14 +3,14 @@ import SectionTitle from "@/components/SectionTitle";
 import SingleTeam from "@/components/SingleTeam";
 import { BreadcrumbSchema } from "@/components/SeoSchemas";
 
-import TeamImg1 from "../../../public/images/team_toronto_lead_1788194135436.jpg";
-import TeamImg2 from "../../../public/images/team_paid_media_lead_1788194149805.jpg";
-import TeamImg3 from "../../../public/images/team_ai_architect_1788194166603.jpg";
-import TeamImg4 from "../../../public/images/team_growth_strategist_1788194183743.jpg";
-import TeamImg5 from "../../../public/images/team_paid_media_lead_1788194149805.jpg";
-import TeamImg6 from "../../../public/images/testi_sarah_1788194216686.jpg";
-import TeamImg7 from "../../../public/images/team_ai_architect_1788194166603.jpg";
-import TeamImg8 from "../../../public/images/testi_marcus_1788194200341.jpg";
+import TeamImg1 from "../../../public/images/agency-team-workspace-city-office.jpg";
+import TeamImg2 from "../../../public/images/hamza-malik-director-of-paid-media.jpg";
+import TeamImg3 from "../../../public/images/zayn-alexander-lead-fullstack-ai-architect.jpg";
+import TeamImg4 from "../../../public/images/sarah-jenkins-vp-client-growth-success.jpg";
+import TeamImg5 from "../../../public/images/bilal-ahmed-senior-technical-seo-lead.jpg";
+import TeamImg6 from "../../../public/images/elena-rostova-performance-creative-director.jpg";
+import TeamImg7 from "../../../public/images/usman-qureshi-lead-nextjs-cloud-engineer.jpg";
+import TeamImg8 from "../../../public/images/david-chen-data-conversion-analyst.jpg";
 
 export const metadata = {
   title: { absolute: "Meet Our Vancouver Growth Team Today | Metro Valley Digital" },
@@ -29,7 +29,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.metrovalleydigital.com/images/team_toronto_lead_1788194135436.jpg",
+        url: "https://www.metrovalleydigital.com/images/agency-team-workspace-city-office.jpg",
         width: 1200,
         height: 630,
         alt: "Metro Valley Digital Team Leadership",
@@ -41,7 +41,7 @@ export const metadata = {
     title: "Meet Our Vancouver Growth Team Today | Metro Valley Digital",
     description:
       "Meet the strategists, engineers, and marketers at Metro Valley Digital who plan and run every SEO, paid ad, and web development campaign for our clients here.",
-    images: ["https://www.metrovalleydigital.com/images/team_toronto_lead_1788194135436.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/agency-team-workspace-city-office.jpg"],
   },
 };
 

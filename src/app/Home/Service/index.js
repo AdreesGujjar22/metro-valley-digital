@@ -2,9 +2,9 @@ import SectionTitle from "@/components/SectionTitle";
 import SingleService from "@/components/SingleService";
 import Link from "next/link";
 
-import ServiceImg1 from "../../../../public/images/local_seo_growth_1788191403673.jpg";
-import ServiceImg2 from "../../../../public/images/paid_ads_roas_1788191423627.jpg";
-import ServiceImg3 from "../../../../public/images/metro_agency_hero_1788191381646.jpg";
+import ServiceImg1 from "../../../../public/images/local-seo-map-pins-growth-chart.jpg";
+import ServiceImg2 from "../../../../public/images/paid-ads-roas-performance-dashboard.jpg";
+import ServiceImg3 from "../../../../public/images/website-development-nextjs-code-and-browser-preview.jpg";
 
 export default function Service() {
   return (

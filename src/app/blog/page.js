@@ -21,7 +21,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg",
+        url: "https://www.metrovalleydigital.com/images/blog-growth-insights-articles-overview.jpg",
         width: 1200,
         height: 630,
         alt: "Metro Valley Digital Blog Insights",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Vancouver SEO & Marketing Blog Hub | Metro Valley Digital",
     description:
       "Read practical SEO, paid ads, and web development guides from Metro Valley Digital. Real case studies and tactics our Vancouver growth team uses for clients.",
-    images: ["https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/blog-growth-insights-articles-overview.jpg"],
   },
 };
 

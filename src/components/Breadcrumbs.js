@@ -1,5 +1,5 @@
 import Link from "next/link";
-import BreadcrumbBg from "../../public/images/metro_agency_hero_1788191381646.jpg";
+import BreadcrumbBg from "../../public/images/digital-growth-analytics-city-hero.jpg";
 
 export default function Breadcrumbs(props) {
   const { title, description, menuLink, menuText, isH1 = true } = props;

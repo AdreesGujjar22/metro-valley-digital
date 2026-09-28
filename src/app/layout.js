@@ -76,7 +76,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg",
+        url: "https://www.metrovalleydigital.com/images/digital-growth-analytics-city-hero.jpg",
         width: 1200,
         height: 630,
         alt: "Metro Valley Digital - Growth Agency & Software House",
@@ -88,7 +88,7 @@ export const metadata = {
     title: "Metro Valley Digital | SEO & Growth Marketing Agency",
     description:
       "Vancouver-based SEO and growth marketing agency helping local businesses rank #1 on Google, scale paid ads, and build custom web and AI software.",
-    images: ["https://www.metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/digital-growth-analytics-city-hero.jpg"],
     creator: "@metrovalleydig",
   },
   robots: {

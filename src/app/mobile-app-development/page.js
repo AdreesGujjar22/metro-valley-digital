@@ -19,7 +19,7 @@ export const metadata = {
     siteName: "Metro Valley Digital",
     images: [
       {
-        url: "https://www.metrovalleydigital.com/images/service/service-img-3.jpg",
+        url: "https://www.metrovalleydigital.com/images/mobile-app-development-ios-android-app-screens.jpg",
         width: 1200,
         height: 630,
         alt: "Mobile App Development Services - Metro Valley Digital",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Mobile App Development Vancouver | Metro Valley Digital",
     description:
       "Metro Valley Digital builds iOS and Android apps with React Native and Flutter, from UI/UX design through app store submission and post-launch support today.",
-    images: ["https://www.metrovalleydigital.com/images/service/service-img-3.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/mobile-app-development-ios-android-app-screens.jpg"],
   },
 };
 

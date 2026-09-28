@@ -19,7 +19,7 @@ export const metadata = {
     siteName: "Metro Valley Digital",
     images: [
       {
-        url: "https://www.metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg",
+        url: "https://www.metrovalleydigital.com/images/seo-audit-analytics-dashboard.jpg",
         width: 1200,
         height: 630,
         alt: "SEO Services in Vancouver - Metro Valley Digital",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Vancouver SEO Services & Strategy | Metro Valley Digital",
     description:
       "Metro Valley Digital delivers technical, on-page, and off-page SEO built for Vancouver businesses, helping you rank higher, earn organic traffic, and convert.",
-    images: ["https://www.metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/seo-audit-analytics-dashboard.jpg"],
   },
 };
 

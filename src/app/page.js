@@ -30,7 +30,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg",
+        url: "https://www.metrovalleydigital.com/images/digital-growth-analytics-city-hero.jpg",
         width: 1200,
         height: 630,
         alt: "Metro Valley Digital Growth Agency Vancouver",
@@ -42,7 +42,7 @@ export const metadata = {
     title: "Vancouver SEO & Digital Marketing | Metro Valley Digital",
     description:
       "Metro Valley Digital is a Vancouver SEO agency helping local businesses rank higher, run profitable ads, and grow with new websites, mobile apps, and AI tools.",
-    images: ["https://www.metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/digital-growth-analytics-city-hero.jpg"],
   },
 };
 

@@ -19,7 +19,7 @@ export const metadata = {
     siteName: "Metro Valley Digital",
     images: [
       {
-        url: "https://www.metrovalleydigital.com/images/office_contact_hero_1788194259077.jpg",
+        url: "https://www.metrovalleydigital.com/images/ai-chatbot-integration-lead-chat-interface.jpg",
         width: 1200,
         height: 630,
         alt: "AI Chatbot Integration Services - Metro Valley Digital",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "AI Chatbot Integration Solutions | Metro Valley Digital",
     description:
       "Metro Valley Digital builds custom AI chatbots that capture leads, answer FAQs, and qualify customers 24/7, all integrated with your CRM, WhatsApp, and inbox.",
-    images: ["https://www.metrovalleydigital.com/images/office_contact_hero_1788194259077.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/ai-chatbot-integration-lead-chat-interface.jpg"],
   },
 };
 

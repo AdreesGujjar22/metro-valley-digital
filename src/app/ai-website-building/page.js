@@ -19,7 +19,7 @@ export const metadata = {
     siteName: "Metro Valley Digital",
     images: [
       {
-        url: "https://www.metrovalleydigital.com/images/service/service-img-2.jpg",
+        url: "https://www.metrovalleydigital.com/images/ai-website-builder-prompt-and-generated-site.jpg",
         width: 1200,
         height: 630,
         alt: "AI Website Builder Services - Metro Valley Digital",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "AI Website Building Company Today | Metro Valley Digital",
     description:
       "Metro Valley Digital launches polished, SEO-structured websites faster with AI-assisted design and human-refined branding, copy, and UX for growing brands.",
-    images: ["https://www.metrovalleydigital.com/images/service/service-img-2.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/ai-website-builder-prompt-and-generated-site.jpg"],
   },
 };
 

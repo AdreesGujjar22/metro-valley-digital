@@ -19,7 +19,7 @@ export const metadata = {
     siteName: "Metro Valley Digital",
     images: [
       {
-        url: "https://www.metrovalleydigital.com/images/paid_ads_roas_1788191423627.jpg",
+        url: "https://www.metrovalleydigital.com/images/paid-ads-roas-performance-dashboard.jpg",
         width: 1200,
         height: 630,
         alt: "Paid Advertising PPC Management - Metro Valley Digital",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Paid Advertising & PPC Management | Metro Valley Digital",
     description:
       "Metro Valley Digital runs high-ROAS Meta, TikTok, Google, and LinkedIn ad campaigns with server-side tracking and creative testing for Vancouver businesses.",
-    images: ["https://www.metrovalleydigital.com/images/paid_ads_roas_1788191423627.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/paid-ads-roas-performance-dashboard.jpg"],
   },
 };
 

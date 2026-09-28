@@ -83,7 +83,7 @@ export default async function CaseStudyPage({ params }) {
               <div style={{ position: "relative", height: "360px", borderRadius: "14px", overflow: "hidden", marginBottom: "26px" }}>
                 <Image
                   src={project.image}
-                  alt={`${project.title} - ${project.subtitle}`}
+                  alt={project.imageAlt || `${project.title} - ${project.subtitle}`}
                   fill
                   sizes="(max-width: 992px) 100vw, 66vw"
                   style={{ objectFit: "cover" }}
@@ -202,7 +202,7 @@ export default async function CaseStudyPage({ params }) {
                   {project.gallery.map((img, idx) => (
                     <div key={idx} className="col-md-6">
                       <div style={{ position: "relative", height: "200px", borderRadius: "10px", overflow: "hidden" }}>
-                        <Image src={img} alt={`${project.title} screenshot ${idx + 1}`} fill sizes="400px" style={{ objectFit: "cover" }} />
+                        <Image src={img} alt={(project.galleryAlt && project.galleryAlt[idx]) || `${project.title} screenshot ${idx + 1}`} fill sizes="400px" style={{ objectFit: "cover" }} />
                       </div>
                     </div>
                   ))}
@@ -255,7 +255,7 @@ export default async function CaseStudyPage({ params }) {
                     style={{ textDecoration: "none", borderBottom: "1px solid #e2e8f0" }}
                   >
                     <div style={{ position: "relative", width: "70px", height: "60px", borderRadius: "8px", overflow: "hidden", flexShrink: 0 }}>
-                      <Image src={rp.image} alt={rp.title} fill sizes="70px" style={{ objectFit: "cover" }} />
+                      <Image src={rp.image} alt={rp.imageAlt || rp.title} fill sizes="70px" style={{ objectFit: "cover" }} />
                     </div>
                     <div>
                       <div style={{ fontSize: "13.5px", fontWeight: "700", color: "#0f172a", lineHeight: "1.3" }}>{rp.title}</div>

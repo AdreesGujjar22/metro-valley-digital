@@ -99,7 +99,7 @@ export default async function BlogDetailPage({ params }) {
                   <div style={{ position: "relative", height: "420px", borderRadius: "14px", overflow: "hidden", marginBottom: "24px" }}>
                     <Image
                       src={post.image}
-                      alt={post.title}
+                      alt={post.imageAlt || post.title}
                       fill
                       priority
                       sizes="(max-width: 992px) 100vw, 66vw"
@@ -247,7 +247,7 @@ export default async function BlogDetailPage({ params }) {
                     <div style={{ width: "80px", height: "80px", borderRadius: "50%", overflow: "hidden", position: "relative", flexShrink: 0 }}>
                       <Image
                         src={post.author.avatar}
-                        alt={post.author.name}
+                        alt={`${post.author.name}, ${post.author.role}`}
                         fill
                         sizes="80px"
                         style={{ objectFit: "cover" }}

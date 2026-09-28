@@ -19,7 +19,7 @@ export const metadata = {
     siteName: "Metro Valley Digital",
     images: [
       {
-        url: "https://www.metrovalleydigital.com/images/ai_code_agents_1788193536610.jpg",
+        url: "https://www.metrovalleydigital.com/images/geo-generative-engine-optimization-ai-answer-citations.jpg",
         width: 1200,
         height: 630,
         alt: "GEO Generative Engine Optimization - Metro Valley Digital",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Generative Engine Optimization GEO | Metro Valley Digital",
     description:
       "Metro Valley Digital helps your brand get cited by ChatGPT, Gemini, and Perplexity with AI search entity optimization, structured data, and fact-dense content.",
-    images: ["https://www.metrovalleydigital.com/images/ai_code_agents_1788193536610.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/geo-generative-engine-optimization-ai-answer-citations.jpg"],
   },
 };
 

@@ -41,7 +41,7 @@ export async function generateMetadata({ params }) {
       type: "website",
       images: [
         {
-          url: "https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg",
+          url: "https://www.metrovalleydigital.com/images/local-seo-google-maps-3-pack-dashboard.jpg",
           width: 1200,
           height: 630,
           alt: `Digital Marketing Services in ${area.name} - Metro Valley Digital`,
@@ -52,7 +52,7 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title,
       description,
-      images: ["https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
+      images: ["https://www.metrovalleydigital.com/images/local-seo-google-maps-3-pack-dashboard.jpg"],
     },
   };
 }

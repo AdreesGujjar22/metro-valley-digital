@@ -19,7 +19,7 @@ export const metadata = {
     siteName: "Metro Valley Digital",
     images: [
       {
-        url: "https://www.metrovalleydigital.com/images/agency_workspace_1788191445921.jpg",
+        url: "https://www.metrovalleydigital.com/images/shopify-ecommerce-store-product-grid-and-checkout.jpg",
         width: 1200,
         height: 630,
         alt: "Shopify & E-Commerce Store Development - Metro Valley Digital",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Shopify & E-Commerce Development | Metro Valley Digital",
     description:
       "Metro Valley Digital builds custom Shopify stores for speed, conversion, and scale, from theme design to checkout optimization and ongoing store support today.",
-    images: ["https://www.metrovalleydigital.com/images/agency_workspace_1788191445921.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/shopify-ecommerce-store-product-grid-and-checkout.jpg"],
   },
 };
 

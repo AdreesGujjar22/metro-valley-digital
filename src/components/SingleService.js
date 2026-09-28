@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import ServiceImg1 from "../../public/images/local_seo_maps_1788193488227.jpg";
+import ServiceImg1 from "../../public/images/local-seo-google-maps-3-pack-dashboard.jpg";
 
 export default function SingleService(props) {
   const {

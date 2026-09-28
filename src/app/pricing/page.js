@@ -19,7 +19,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.metrovalleydigital.com/images/paid_ads_roas_1788191423627.jpg",
+        url: "https://www.metrovalleydigital.com/images/pricing-plans-growth-packages-comparison.jpg",
         width: 1200,
         height: 630,
         alt: "Metro Valley Digital Pricing",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "SEO & Marketing Pricing Plans List | Metro Valley Digital",
     description:
       "See transparent pricing for Local SEO, Google Maps ranking, paid ads, and custom web development from Metro Valley Digital. No hidden fees, no long contracts.",
-    images: ["https://www.metrovalleydigital.com/images/paid_ads_roas_1788191423627.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/pricing-plans-growth-packages-comparison.jpg"],
   },
 };
 

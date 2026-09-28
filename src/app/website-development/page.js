@@ -19,7 +19,7 @@ export const metadata = {
     siteName: "Metro Valley Digital",
     images: [
       {
-        url: "https://www.metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg",
+        url: "https://www.metrovalleydigital.com/images/website-development-nextjs-code-and-browser-preview.jpg",
         width: 1200,
         height: 630,
         alt: "Custom Website Development Services - Metro Valley Digital",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Website Development Services Built | Metro Valley Digital",
     description:
       "Metro Valley Digital builds fast, responsive, SEO-ready websites on modern Next.js architecture, designed to load quickly, rank well, and convert visitors.",
-    images: ["https://www.metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/website-development-nextjs-code-and-browser-preview.jpg"],
   },
 };
 

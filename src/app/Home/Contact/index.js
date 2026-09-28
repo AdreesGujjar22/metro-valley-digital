@@ -1,5 +1,5 @@
 import Form from "./Form";
-import ContactBg from "../../../../public/images/office_contact_hero_1788194259077.jpg";
+import ContactBg from "../../../../public/images/office-team-collaboration-contact.jpg";
 
 export default function Contact() {
   return (

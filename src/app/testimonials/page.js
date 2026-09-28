@@ -20,7 +20,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.metrovalleydigital.com/images/testi_marcus_1788194200341.jpg",
+        url: "https://www.metrovalleydigital.com/images/marcus-sterling-client-managing-director.jpg",
         width: 1200,
         height: 630,
         alt: "Metro Valley Digital Testimonials",
@@ -32,7 +32,7 @@ export const metadata = {
     title: "Client Reviews & Growth Testimonials | Metro Valley Digital",
     description:
       "Read verified reviews from Metro Valley Digital clients across Vancouver and North America about our SEO, paid ads, and web development results and service.",
-    images: ["https://www.metrovalleydigital.com/images/testi_marcus_1788194200341.jpg"],
+    images: ["https://www.metrovalleydigital.com/images/marcus-sterling-client-managing-director.jpg"],
   },
 };
 

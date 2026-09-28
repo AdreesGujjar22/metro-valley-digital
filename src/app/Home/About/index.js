@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import AboutImg from "../../../../public/images/agency_workspace_1788191445921.jpg";
+import AboutImg from "../../../../public/images/agency-team-workspace-city-office.jpg";
 
 export default function About() {
   return (
@@ -18,7 +18,7 @@ export default function About() {
               <div className="about-img position-relative" style={{ overflow: "hidden", borderRadius: "16px", boxShadow: "0 20px 40px rgba(0,0,0,0.12)" }}>
                 <Image
                   src={AboutImg}
-                  alt="Metro Valley Digital Agency Team & Workspace"
+                  alt="Metro Valley Digital team collaborating in a bright office with a city skyline view"
                   width={600}
                   height={500}
                   style={{ objectFit: "cover", width: "100%", height: "auto", borderRadius: "16px" }}

@@ -8,14 +8,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import SingleBlog from "@/components/SingleBlog";
 
-import BlogImg1 from "../../../../public/images/local_seo_maps_1788193488227.jpg";
-import BlogImg2 from "../../../../public/images/paid_ads_roas_1788191423627.jpg";
-import BlogImg3 from "../../../../public/images/ai_code_agents_1788193536610.jpg";
-import BlogImg4 from "../../../../public/images/seo_audit_screen_1788193501910.jpg";
-import AdminImg1 from "../../../../public/images/team_toronto_lead_1788194135436.jpg";
-import AdminImg2 from "../../../../public/images/team_paid_media_lead_1788194149805.jpg";
-import AdminImg3 from "../../../../public/images/team_ai_architect_1788194166603.jpg";
-import AdminImg4 from "../../../../public/images/team_growth_strategist_1788194183743.jpg";
+import BlogImg1 from "../../../../public/images/local-seo-google-maps-3-pack-dashboard.jpg";
+import BlogImg2 from "../../../../public/images/paid-ads-roas-performance-dashboard.jpg";
+import BlogImg3 from "../../../../public/images/nextjs-app-router-vs-legacy-cms-web-vitals-comparison.jpg";
+import BlogImg4 from "../../../../public/images/ai-chatbot-integration-lead-chat-interface.jpg";
+import AdminImg1 from "../../../../public/images/tariq-vance-head-of-local-seo-gmb.jpg";
+import AdminImg2 from "../../../../public/images/hamza-malik-director-of-paid-media.jpg";
+import AdminImg3 from "../../../../public/images/zayn-alexander-lead-fullstack-ai-architect.jpg";
+import AdminImg4 from "../../../../public/images/sarah-jenkins-vp-client-growth-success.jpg";
 
 export default function Sliders() {
   return (

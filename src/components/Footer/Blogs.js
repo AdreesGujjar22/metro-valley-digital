@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import Feed1 from "../../../public/images/local_seo_maps_1788193488227.jpg";
-import Feed2 from "../../../public/images/paid_ads_roas_1788191423627.jpg";
+import Feed1 from "../../../public/images/local-seo-google-maps-3-pack-dashboard.jpg";
+import Feed2 from "../../../public/images/paid-ads-roas-performance-dashboard.jpg";
 
 export default function Blogs() {
   return (

@@ -2,12 +2,12 @@
 
 import SinglePortfolio from "@/components/SinglePortfolio";
 
-import PortfolioImg1 from "../../../../public/images/local_seo_maps_1788193488227.jpg";
-import PortfolioImg2 from "../../../../public/images/paid_ads_roas_1788191423627.jpg";
-import PortfolioImg3 from "../../../../public/images/seo_audit_screen_1788193501910.jpg";
-import PortfolioImg4 from "../../../../public/images/ai_code_agents_1788193536610.jpg";
-import PortfolioImg5 from "../../../../public/images/smm_video_growth_1788193518995.jpg";
-import PortfolioImg6 from "../../../../public/images/local_seo_growth_1788191403673.jpg";
+import PortfolioImg1 from "../../../../public/images/local-seo-google-maps-3-pack-dashboard.jpg";
+import PortfolioImg2 from "../../../../public/images/paid-ads-roas-performance-dashboard.jpg";
+import PortfolioImg3 from "../../../../public/images/dental-clinic-local-seo-google-maps-listings.jpg";
+import PortfolioImg4 from "../../../../public/images/fintech-b2b-enterprise-portal-dashboard.jpg";
+import PortfolioImg5 from "../../../../public/images/law-firm-google-search-ads-lead-generation.jpg";
+import PortfolioImg6 from "../../../../public/images/auto-repair-multi-location-gmb-map-rankings.jpg";
 
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 

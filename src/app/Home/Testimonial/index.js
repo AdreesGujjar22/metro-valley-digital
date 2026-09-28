@@ -1,4 +1,4 @@
-import bgImg from "../../../../public/images/agency_workspace_1788191445921.jpg";
+import bgImg from "../../../../public/images/agency-team-workspace-city-office.jpg";
 import Sliders from "./Sliders";
 
 export default function Testimonial() {
