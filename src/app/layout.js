@@ -33,7 +33,10 @@ export const metadata = {
   metadataBase: new URL("https://www.metrovalleydigital.com"),
   applicationName: "Metro Valley Digital",
   icons: {
-    icon: "/images/favicon.png",
+    icon: {
+      url: "/images/favicon.png",
+      type: "image/png",
+    },
   },
   title: {
     default: "Digital Growth Agency | Metro Valley Digital",
