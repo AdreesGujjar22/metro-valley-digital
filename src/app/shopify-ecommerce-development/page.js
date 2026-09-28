@@ -5,16 +5,16 @@ import { notFound } from "next/navigation";
 const service = getServiceBySlug("shopify-ecommerce-development");
 
 export const metadata = {
-  title: "Shopify & E-Commerce Development",
+  title: { absolute: "Shopify & E-Commerce Development | Metro Valley Digital" },
   description:
-    "Custom Shopify stores built for speed, conversion, and scale, from theme design to checkout optimization and ongoing store support.",
+    "Metro Valley Digital builds custom Shopify stores for speed, conversion, and scale, from theme design to checkout optimization and ongoing store support today.",
   alternates: {
     canonical: "https://www.metrovalleydigital.com/service/shopify-ecommerce-development",
   },
   openGraph: {
-    title: "Shopify & E-Commerce Development",
+    title: "Shopify & E-Commerce Development | Metro Valley Digital",
     description:
-      "Custom Shopify stores built for speed, conversion, and scale, from theme design to checkout optimization and ongoing store support.",
+      "Metro Valley Digital builds custom Shopify stores for speed, conversion, and scale, from theme design to checkout optimization and ongoing store support today.",
     url: "https://www.metrovalleydigital.com/service/shopify-ecommerce-development",
     siteName: "Metro Valley Digital",
     images: [
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shopify & E-Commerce Development",
+    title: "Shopify & E-Commerce Development | Metro Valley Digital",
     description:
-      "Custom Shopify stores built for speed, conversion, and scale, from theme design to checkout optimization and ongoing store support.",
+      "Metro Valley Digital builds custom Shopify stores for speed, conversion, and scale, from theme design to checkout optimization and ongoing store support today.",
     images: ["https://www.metrovalleydigital.com/images/agency_workspace_1788191445921.jpg"],
   },
 };

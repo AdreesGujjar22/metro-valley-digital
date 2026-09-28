@@ -5,16 +5,16 @@ import { notFound } from "next/navigation";
 const service = getServiceBySlug("ai-chatbot-integration");
 
 export const metadata = {
-  title: "AI Chatbot Integration",
+  title: { absolute: "AI Chatbot Integration Solutions | Metro Valley Digital" },
   description:
-    "Custom AI chatbots that capture leads, answer FAQs, and qualify customers 24/7, integrated with your CRM, WhatsApp, and email.",
+    "Metro Valley Digital builds custom AI chatbots that capture leads, answer FAQs, and qualify customers 24/7, all integrated with your CRM, WhatsApp, and inbox.",
   alternates: {
     canonical: "https://www.metrovalleydigital.com/service/ai-chatbot-integration",
   },
   openGraph: {
-    title: "AI Chatbot Integration",
+    title: "AI Chatbot Integration Solutions | Metro Valley Digital",
     description:
-      "Custom AI chatbots that capture leads, answer FAQs, and qualify customers 24/7, integrated with your CRM, WhatsApp, and email.",
+      "Metro Valley Digital builds custom AI chatbots that capture leads, answer FAQs, and qualify customers 24/7, all integrated with your CRM, WhatsApp, and inbox.",
     url: "https://www.metrovalleydigital.com/service/ai-chatbot-integration",
     siteName: "Metro Valley Digital",
     images: [
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Chatbot Integration",
+    title: "AI Chatbot Integration Solutions | Metro Valley Digital",
     description:
-      "Custom AI chatbots that capture leads, answer FAQs, and qualify customers 24/7, integrated with your CRM, WhatsApp, and email.",
+      "Metro Valley Digital builds custom AI chatbots that capture leads, answer FAQs, and qualify customers 24/7, all integrated with your CRM, WhatsApp, and inbox.",
     images: ["https://www.metrovalleydigital.com/images/office_contact_hero_1788194259077.jpg"],
   },
 };

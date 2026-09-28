@@ -11,6 +11,9 @@ export const SERVICE_AREAS = [
   {
     slug: "kitsilano",
     name: "Kitsilano",
+    metaTitle: "Kitsilano SEO & Digital Marketing",
+    metaDescription:
+      "Metro Valley Digital delivers local SEO, paid ads, and web development for boutique fitness studios, yoga and wellness brands in Kitsilano. Get a free audit.",
     shortName: "Kits",
     type: "neighbourhood",
     region: "Vancouver, BC",
@@ -27,6 +30,9 @@ export const SERVICE_AREAS = [
   {
     slug: "mount-pleasant",
     name: "Mount Pleasant",
+    metaTitle: "Mount Pleasant SEO, Ads & Web Design",
+    metaDescription:
+      "Metro Valley Digital delivers local SEO, paid ads, and web development for craft breweries, design agencies, tech startups in Mount Pleasant. Get a free audit.",
     shortName: "Mount Pleasant",
     type: "neighbourhood",
     region: "Vancouver, BC",
@@ -43,6 +49,9 @@ export const SERVICE_AREAS = [
   {
     slug: "fairview",
     name: "Fairview",
+    metaTitle: "Fairview SEO & Digital Marketing",
+    metaDescription:
+      "Metro Valley Digital delivers local SEO, paid ads, and web design for Fairview's medical clinics and the South Granville design district. Get a free audit.",
     shortName: "Fairview",
     type: "neighbourhood",
     region: "Vancouver, BC",
@@ -59,6 +68,9 @@ export const SERVICE_AREAS = [
   {
     slug: "downtown-vancouver",
     name: "Downtown Vancouver",
+    metaTitle: "SEO Services in Downtown Vancouver",
+    metaDescription:
+      "Metro Valley Digital delivers local SEO, paid ads, and web design for Downtown Vancouver's financial firms, hotels, and corporate offices. Get a free audit.",
     shortName: "Downtown",
     type: "neighbourhood",
     region: "Vancouver, BC",
@@ -75,6 +87,9 @@ export const SERVICE_AREAS = [
   {
     slug: "yaletown",
     name: "Yaletown",
+    metaTitle: "Yaletown SEO & Digital Marketing",
+    metaDescription:
+      "Metro Valley Digital delivers local SEO, paid ads, and web design for Yaletown's upscale restaurants, boutique retail, and tech startups. Get your free audit.",
     shortName: "Yaletown",
     type: "neighbourhood",
     region: "Vancouver, BC",
@@ -91,6 +106,9 @@ export const SERVICE_AREAS = [
   {
     slug: "commercial-drive",
     name: "Commercial Drive",
+    metaTitle: "SEO Services in Commercial Drive",
+    metaDescription:
+      "Metro Valley Digital delivers local SEO, paid ads, and web development for independent coffee shops, family-run Italian in Commercial Drive. Get a free audit.",
     shortName: "The Drive",
     type: "neighbourhood",
     region: "Vancouver, BC",
@@ -107,6 +125,9 @@ export const SERVICE_AREAS = [
   {
     slug: "kerrisdale",
     name: "Kerrisdale",
+    metaTitle: "Kerrisdale SEO & Digital Marketing",
+    metaDescription:
+      "Metro Valley Digital delivers local SEO, paid ads, and web development for boutique retail, dental and medical in Kerrisdale. Get a free growth audit today.",
     shortName: "Kerrisdale",
     type: "neighbourhood",
     region: "Vancouver, BC",
@@ -123,6 +144,9 @@ export const SERVICE_AREAS = [
   {
     slug: "dunbar-southlands",
     name: "Dunbar-Southlands",
+    metaTitle: "SEO Services in Dunbar-Southlands",
+    metaDescription:
+      "Metro Valley Digital delivers local SEO, paid ads, and web development for family-oriented services, private schools in Dunbar-Southlands. Get a free audit.",
     shortName: "Dunbar",
     type: "neighbourhood",
     region: "Vancouver, BC",
@@ -130,7 +154,7 @@ export const SERVICE_AREAS = [
     businessMix:
       "family-oriented services, private schools and tutoring centres, and independent shops along Dunbar Street",
     localInsight:
-      "Search competition in Dunbar-Southlands is lighter than the downtown core, which means well-executed local SEO can capture the #1 Map Pack position faster here than in denser neighbourhoods — a real advantage for family-focused service businesses trying to build a first-page presence quickly.",
+      "Search competition in Dunbar-Southlands is lighter than the downtown core, which means well-executed local SEO can capture the #1 local map position faster here than in denser neighbourhoods — a real advantage for family-focused service businesses trying to build a first-page presence quickly.",
     recommendedService: "local-seo-google-business-profile",
     secondaryService: "seo-services",
     landmarks: ["Dunbar Street", "Pacific Spirit Regional Park", "Memorial Park West"],
@@ -139,6 +163,9 @@ export const SERVICE_AREAS = [
   {
     slug: "marpole",
     name: "Marpole",
+    metaTitle: "Marpole SEO & Marketing Services",
+    metaDescription:
+      "Metro Valley Digital delivers local SEO, paid ads, and web development for logistics and import/export operators near YVR in Marpole. Get a free growth audit.",
     shortName: "Marpole",
     type: "neighbourhood",
     region: "Vancouver, BC",
@@ -155,6 +182,9 @@ export const SERVICE_AREAS = [
   {
     slug: "renfrew-collingwood",
     name: "Renfrew-Collingwood",
+    metaTitle: "SEO Services in Renfrew-Collingwood",
+    metaDescription:
+      "Metro Valley Digital delivers local SEO, paid ads, and web development for multicultural family businesses in Renfrew-Collingwood. Get a free growth audit.",
     shortName: "Renfrew-Collingwood",
     type: "neighbourhood",
     region: "Vancouver, BC",
@@ -171,6 +201,9 @@ export const SERVICE_AREAS = [
   {
     slug: "grandview-woodland",
     name: "Grandview-Woodland",
+    metaTitle: "SEO Services in Grandview-Woodland",
+    metaDescription:
+      "Metro Valley Digital delivers local SEO, paid ads, and web design for Grandview-Woodland's breweries, artist studios, and retail shops. Get your free audit.",
     shortName: "Grandview-Woodland",
     type: "neighbourhood",
     region: "Vancouver, BC",
@@ -178,7 +211,7 @@ export const SERVICE_AREAS = [
     businessMix:
       "independent breweries, artist studios, and gentrifying retail along Commercial Drive and East Broadway",
     localInsight:
-      "Grandview-Woodland's East Van identity draws a brand-loyal, socially engaged audience. Businesses here see stronger returns from Instagram and TikTok-driven discovery paired with local SEO than from paid search alone, so we typically blend social media marketing with Map Pack optimization.",
+      "Grandview-Woodland's East Van identity draws a brand-loyal, socially engaged audience. Businesses here see stronger returns from Instagram and TikTok-driven discovery paired with local SEO than from paid search alone, so we typically blend social media marketing with local Google Maps optimization.",
     recommendedService: "social-media-marketing",
     secondaryService: "local-seo-google-business-profile",
     landmarks: ["Commercial Drive", "Trout Lake Park", "The Cultch"],
@@ -187,6 +220,9 @@ export const SERVICE_AREAS = [
   {
     slug: "west-point-grey",
     name: "West Point Grey",
+    metaTitle: "West Point Grey SEO & Web Design",
+    metaDescription:
+      "Metro Valley Digital delivers local SEO, paid ads, and web development for university-adjacent services near UBC in West Point Grey. Get a free growth audit.",
     shortName: "West Point Grey",
     type: "neighbourhood",
     region: "Vancouver, BC",
@@ -205,6 +241,9 @@ export const SERVICE_AREAS = [
   {
     slug: "burnaby",
     name: "Burnaby",
+    metaTitle: "Burnaby SEO & Marketing Services",
+    metaDescription:
+      "Metro Valley Digital delivers local SEO, paid ads, and web development for Metrotown-area retail, SFU-linked education in Burnaby. Get a free growth audit.",
     shortName: "Burnaby",
     type: "metro",
     region: "British Columbia, Canada",
@@ -221,6 +260,9 @@ export const SERVICE_AREAS = [
   {
     slug: "richmond",
     name: "Richmond",
+    metaTitle: "Richmond SEO & Digital Marketing",
+    metaDescription:
+      "Metro Valley Digital delivers local SEO, paid ads, and web development for import/export and e-commerce operators in Richmond. Get a free growth audit today.",
     shortName: "Richmond",
     type: "metro",
     region: "British Columbia, Canada",
@@ -237,6 +279,9 @@ export const SERVICE_AREAS = [
   {
     slug: "surrey",
     name: "Surrey",
+    metaTitle: "SEO & Marketing Services in Surrey",
+    metaDescription:
+      "Metro Valley Digital delivers local SEO, paid ads, and web development for home services and trades (roofing, HVAC, landscaping) in Surrey. Get a free audit.",
     shortName: "Surrey",
     type: "metro",
     region: "British Columbia, Canada",
@@ -253,6 +298,9 @@ export const SERVICE_AREAS = [
   {
     slug: "coquitlam",
     name: "Coquitlam",
+    metaTitle: "Coquitlam SEO & Digital Marketing",
+    metaDescription:
+      "Metro Valley Digital delivers local SEO, paid ads, and web design for Coquitlam's family service businesses and retail near Coquitlam Centre. Get a free audit.",
     shortName: "Coquitlam",
     type: "metro",
     region: "British Columbia, Canada",
@@ -269,6 +317,9 @@ export const SERVICE_AREAS = [
   {
     slug: "north-vancouver",
     name: "North Vancouver",
+    metaTitle: "North Vancouver SEO & Web Design",
+    metaDescription:
+      "Metro Valley Digital delivers local SEO, paid ads, and web design for North Vancouver's outdoor recreation, tourism, and home trades. Free growth audit today.",
     shortName: "North Van",
     type: "metro",
     region: "British Columbia, Canada",
@@ -285,6 +336,9 @@ export const SERVICE_AREAS = [
   {
     slug: "west-vancouver",
     name: "West Vancouver",
+    metaTitle: "West Vancouver SEO, Ads & Web Design",
+    metaDescription:
+      "Metro Valley Digital delivers local SEO, paid ads, and web design for West Vancouver's luxury real estate and high-end home services. Free growth audit today.",
     shortName: "West Van",
     type: "metro",
     region: "British Columbia, Canada",
@@ -301,6 +355,9 @@ export const SERVICE_AREAS = [
   {
     slug: "new-westminster",
     name: "New Westminster",
+    metaTitle: "New Westminster SEO & Web Design",
+    metaDescription:
+      "Metro Valley Digital delivers local SEO, paid ads, and web development for small businesses revitalizing the historic in New Westminster. Get a free audit.",
     shortName: "New West",
     type: "metro",
     region: "British Columbia, Canada",
@@ -308,7 +365,7 @@ export const SERVICE_AREAS = [
     businessMix:
       "small businesses revitalizing the historic downtown core, riverfront restaurants, and a growing base of independent retailers",
     localInsight:
-      "New Westminster's compact, walkable downtown means Map Pack visibility and foot-traffic-driven searches (\"near me,\" \"open now\") carry outsized weight compared to broader city-wide SEO plays, making Google Business Profile optimization the highest-leverage first step for most local businesses.",
+      "New Westminster's compact, walkable downtown means local map visibility and foot-traffic-driven searches (\"near me,\" \"open now\") carry outsized weight compared to broader city-wide SEO plays, making Google Business Profile optimization the highest-leverage first step for most local businesses.",
     recommendedService: "local-seo-google-business-profile",
     secondaryService: "social-media-marketing",
     landmarks: ["New Westminster Quay", "Columbia Street", "Queen's Park"],
@@ -317,6 +374,9 @@ export const SERVICE_AREAS = [
   {
     slug: "delta",
     name: "Delta",
+    metaTitle: "SEO & Marketing Services in Delta",
+    metaDescription:
+      "Metro Valley Digital delivers local SEO, paid ads, and web development for logistics and industrial operators near the Tsawwassen in Delta. Get a free audit.",
     shortName: "Delta",
     type: "metro",
     region: "British Columbia, Canada",
@@ -333,6 +393,9 @@ export const SERVICE_AREAS = [
   {
     slug: "langley",
     name: "Langley",
+    metaTitle: "Langley SEO & Marketing Services",
+    metaDescription:
+      "Metro Valley Digital delivers local SEO, paid ads, and web development for agriculture and agri-tourism, trades and home services in Langley. Get a free audit.",
     shortName: "Langley",
     type: "metro",
     region: "British Columbia, Canada",
@@ -349,6 +412,9 @@ export const SERVICE_AREAS = [
   {
     slug: "port-moody",
     name: "Port Moody",
+    metaTitle: "Port Moody SEO & Digital Marketing",
+    metaDescription:
+      "Metro Valley Digital delivers local SEO, paid ads, and web development for waterfront breweries, family-run cafes in Port Moody. Get a free growth audit today.",
     shortName: "Port Moody",
     type: "metro",
     region: "British Columbia, Canada",
@@ -356,7 +422,7 @@ export const SERVICE_AREAS = [
     businessMix:
       "waterfront breweries, family-run cafes, and boutique services along Port Moody's compact downtown and Rocky Point waterfront",
     localInsight:
-      "Port Moody's small population and tight-knit business community mean local search competition is comparatively low, so businesses that claim and fully optimize their Google Business Profile can often reach the top of the Map Pack faster than in larger neighbouring cities.",
+      "Port Moody's small population and tight-knit business community mean local search competition is comparatively low, so businesses that claim and fully optimize their Google Business Profile can often reach the top of Google Maps faster than in larger neighbouring cities.",
     recommendedService: "local-seo-google-business-profile",
     secondaryService: "social-media-marketing",
     landmarks: ["Rocky Point Park", "Brewers Row", "Port Moody Station Museum"],
@@ -365,6 +431,9 @@ export const SERVICE_AREAS = [
   {
     slug: "port-coquitlam",
     name: "Port Coquitlam",
+    metaTitle: "Port Coquitlam SEO, Ads & Web Design",
+    metaDescription:
+      "Metro Valley Digital delivers local SEO, paid ads, and web development for trades, home services, and family-owned retail in Port Coquitlam. Get a free audit.",
     shortName: "PoCo",
     type: "metro",
     region: "British Columbia, Canada",
@@ -372,7 +441,7 @@ export const SERVICE_AREAS = [
     businessMix:
       "trades, home services, and family-owned retail serving a growing residential population along the Traboulay PoCo Trail corridor",
     localInsight:
-      "Port Coquitlam's population growth has outpaced its digital competition, giving trades and home-service businesses a meaningful window to lock in strong Map Pack rankings before larger regional and franchise competitors expand into the area.",
+      "Port Coquitlam's population growth has outpaced its digital competition, giving trades and home-service businesses a meaningful window to lock in strong local Google Maps rankings before larger regional and franchise competitors expand into the area.",
     recommendedService: "local-seo-google-business-profile",
     secondaryService: "website-development",
     landmarks: ["Traboulay PoCo Trail", "Gates Park", "Port Coquitlam Community Centre"],
@@ -383,6 +452,9 @@ export const SERVICE_AREAS = [
   {
     slug: "toronto",
     name: "Toronto",
+    metaTitle: "Toronto SEO & Marketing Services",
+    metaDescription:
+      "Metro Valley Digital delivers local SEO, paid ads, and web development for financial services, national e-commerce brands in Toronto. Get a free growth audit.",
     shortName: "Toronto",
     type: "extended",
     region: "Ontario, Canada",
@@ -390,7 +462,7 @@ export const SERVICE_AREAS = [
     businessMix:
       "financial services, national e-commerce brands, and a highly competitive professional-services market in Canada's largest city",
     localInsight:
-      "Toronto's search market is Canada's most competitive, dominated by national brands and agencies. Our Toronto engagements typically focus on paid advertising and website SEO where budget efficiency and conversion tracking matter more than local Map Pack rankings alone, delivered remotely with the same reporting cadence as our Vancouver clients.",
+      "Toronto's search market is Canada's most competitive, dominated by national brands and agencies. Our Toronto engagements typically focus on paid advertising and website SEO where budget efficiency and conversion tracking matter more than local map rankings alone, delivered remotely with the same reporting cadence as our Vancouver clients.",
     recommendedService: "seo-services",
     secondaryService: "paid-advertising-ppc",
     landmarks: ["Financial District", "CN Tower", "King Street West"],
@@ -399,6 +471,9 @@ export const SERVICE_AREAS = [
   {
     slug: "calgary",
     name: "Calgary",
+    metaTitle: "Calgary SEO & Marketing Services",
+    metaDescription:
+      "Metro Valley Digital delivers local SEO, paid ads, and web design for Calgary's energy-sector suppliers and growing tech startup community. Get a free audit.",
     shortName: "Calgary",
     type: "extended",
     region: "Alberta, Canada",
@@ -415,6 +490,9 @@ export const SERVICE_AREAS = [
   {
     slug: "seattle",
     name: "Seattle",
+    metaTitle: "Seattle SEO & Marketing Services",
+    metaDescription:
+      "Metro Valley Digital delivers local SEO, paid ads, and web design for Seattle's tech companies, SaaS brands, and fast-growing e-commerce stores. Free audit.",
     shortName: "Seattle",
     type: "extended",
     region: "Washington, USA",

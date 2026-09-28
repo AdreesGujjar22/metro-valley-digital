@@ -6,16 +6,16 @@ import { BreadcrumbSchema, ServiceAreaListSchema } from "@/components/SeoSchemas
 import { SERVICE_AREAS, getServiceAreasByType, SERVICE_AREA_TYPE_LABELS } from "@/data/serviceAreas";
 
 export const metadata = {
-  title: "Vancouver Service Areas",
+  title: { absolute: "Vancouver Area SEO Service Locations | Metro Valley Digital" },
   description:
-    "Metro Valley Digital delivers local SEO, paid ads, and web development across every Vancouver neighbourhood, Metro Vancouver city, and select remote markets. Find your area.",
+    "Metro Valley Digital provides local SEO, paid ads, and web development across Vancouver neighbourhoods, Metro Vancouver cities, and select nearby markets too.",
   alternates: {
     canonical: "https://www.metrovalleydigital.com/service-areas",
   },
   openGraph: {
-    title: "Vancouver Service Areas",
+    title: "Vancouver Area SEO Service Locations | Metro Valley Digital",
     description:
-      "Local SEO, paid ads, and web development across every Vancouver neighbourhood, Metro Vancouver city, and select remote markets.",
+      "Metro Valley Digital provides local SEO, paid ads, and web development across Vancouver neighbourhoods, Metro Vancouver cities, and select nearby markets too.",
     url: "https://www.metrovalleydigital.com/service-areas",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
@@ -31,9 +31,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vancouver Service Areas",
+    title: "Vancouver Area SEO Service Locations | Metro Valley Digital",
     description:
-      "Local SEO, paid ads, and web development across every Vancouver neighbourhood, Metro Vancouver city, and select remote markets.",
+      "Metro Valley Digital provides local SEO, paid ads, and web development across Vancouver neighbourhoods, Metro Vancouver cities, and select nearby markets too.",
     images: ["https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
   },
 };

@@ -2,6 +2,9 @@ export const PROJECTS_DATA = [
   {
     id: "vancouver-hvac-local-seo",
     title: "Vancouver Climate Solutions",
+    metaTitle: "Vancouver HVAC Local SEO Case Study",
+    metaDescription:
+      "Propelled an emergency HVAC repair business from page 4 to the #1 local listing on Google Maps across Metro Vancouver, generating over $480,000 in revenue.",
     subtitle: "Local HVAC & Heat Pump Contractor",
     category: "Local SEO & GMB",
     categorySlug: "local-seo",
@@ -15,19 +18,19 @@ export const PROJECTS_DATA = [
     location: "Vancouver, BC, Canada",
     timeline: "90-Day Campaign",
     deliverables: [
-      "Google 3-Pack #1 Rankings",
+      "#1 Google Maps Rankings",
       "Localized Citation Network (60+ Directories)",
       "Automated SMS Review Velocity Engine",
       "Next.js Hyper-Speed Landing Page",
     ],
     results: [
       { label: "Inbound Calls Growth", value: "+340%" },
-      { label: "Google Map Pack", value: "#1 Rank" },
+      { label: "Google Maps Top Spot", value: "#1 Rank" },
       { label: "Attributed Revenue", value: "$480K+" },
       { label: "Review Rating", value: "4.9 ★ (180+)" },
     ],
     summary:
-      "Propelled an emergency HVAC repair business from page 4 to the #1 spot in the Google Maps 3-Pack across Metro Vancouver, generating over $480,000 in tracked seasonal booked revenue.",
+      "Propelled an emergency HVAC repair business from page 4 to the #1 local listing on Google Maps across Metro Vancouver, generating over $480,000 in tracked seasonal booked revenue.",
     challenge:
       "The client was virtually invisible on Google Maps outside their immediate 2km neighborhood, losing emergency heating and cooling service calls to franchise competitors with larger advertising budgets.",
     solution:
@@ -38,6 +41,9 @@ export const PROJECTS_DATA = [
   {
     id: "nordic-coast-apparel",
     title: "Nordic & Coast Apparel",
+    metaTitle: "Nordic Coast Apparel Ad Case Study",
+    metaDescription:
+      "Engineered multi-channel paid acquisition funnels across Meta and TikTok with server-side tracking, scaling monthly revenue past $400,000 with a 6.4x ROAS.",
     subtitle: "Direct-To-Consumer Sustainable Outerwear",
     category: "Paid Ads (ROAS)",
     categorySlug: "paid-ads",
@@ -73,6 +79,9 @@ export const PROJECTS_DATA = [
   {
     id: "apex-dental-clinics",
     title: "Apex Dental & Health Network",
+    metaTitle: "Apex Dental Local SEO Case Study",
+    metaDescription:
+      "Automated new patient acquisition across 3 dental locations through synchronized Google Business Profiles and a smart 24/7 AI scheduling assistant for staff.",
     subtitle: "Multi-Clinic Patient Acquisition",
     category: "Local SEO & GMB",
     categorySlug: "local-seo",
@@ -108,6 +117,9 @@ export const PROJECTS_DATA = [
   {
     id: "finpulse-banking-portal",
     title: "FinPulse B2B Enterprise Portal",
+    metaTitle: "FinPulse Enterprise Web Case Study",
+    metaDescription:
+      "Engineered a high-performance Next.js web application with server components, responsive data visualization, and sub-second load speed for enterprise trials.",
     subtitle: "Fintech Web Application & API Pipeline",
     category: "Next.js & Web",
     categorySlug: "web-dev",
@@ -143,6 +155,9 @@ export const PROJECTS_DATA = [
   {
     id: "vanguard-legal-advocates",
     title: "Vanguard Legal Advocates",
+    metaTitle: "Vanguard Legal Paid Ads Case Study",
+    metaDescription:
+      "Lowered customer acquisition costs in the hyper-competitive legal sector by 38 percent through exact-match bidding and direct-response funnels built right.",
     subtitle: "Personal Injury & Corporate Counsel",
     category: "Paid Ads (ROAS)",
     categorySlug: "paid-ads",
@@ -178,6 +193,9 @@ export const PROJECTS_DATA = [
   {
     id: "autocare-express-network",
     title: "AutoCare Express Network",
+    metaTitle: "AutoCare Express Maps Case Study",
+    metaDescription:
+      "Executed multi-location local search optimization across 8 automotive service centers, capturing top Google Maps rankings and 1.4 million search impressions.",
     subtitle: "Automotive Repair & Tire Service Franchise",
     category: "Local SEO & GMB",
     categorySlug: "local-seo",
@@ -202,7 +220,7 @@ export const PROJECTS_DATA = [
       { label: "Organic Revenue Lift", value: "+62%" },
     ],
     summary:
-      "Executed multi-location local search optimization across 8 automotive service centers, capturing dominant Google 3-Pack rankings and driving 1.4M+ local search impressions.",
+      "Executed multi-location local search optimization across 8 automotive service centers, capturing top local Google Maps rankings and driving 1.4M+ local search impressions.",
     challenge:
       "Different branches had conflicting NAP data, duplicate map pins, and inconsistent review collection processes that diluted regional authority.",
     solution:
@@ -213,6 +231,9 @@ export const PROJECTS_DATA = [
   {
     id: "lumina-lighting-shopify",
     title: "Lumina Modern Lighting",
+    metaTitle: "Lumina Lighting AI Case Study Now",
+    metaDescription:
+      "Integrated an AI conversational interior design advisor into a Shopify store, helping customers select lighting fixtures based on room size and interior style.",
     subtitle: "Architectural Home Fixtures E-Commerce",
     category: "AI & Chatbots",
     categorySlug: "ai-chatbots",
@@ -248,6 +269,9 @@ export const PROJECTS_DATA = [
   {
     id: "nexus-logistics-saas",
     title: "Nexus Logistics Cloud Platform",
+    metaTitle: "Nexus Logistics Web Case Study Now",
+    metaDescription:
+      "Designed and developed an enterprise dispatch and logistics web application that unified carrier onboarding, rate confirmations, and live GPS fleet tracking.",
     subtitle: "Fleet Management & Freight Automation",
     category: "Next.js & Web",
     categorySlug: "web-dev",

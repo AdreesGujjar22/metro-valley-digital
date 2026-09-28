@@ -34,7 +34,7 @@ export default function Pricing() {
                     </div>
                   </div>
                   <ul className="price-list">
-                    <li>Google 3-Pack Optimization</li>
+                    <li>Google Maps Ranking Optimization</li>
                     <li>Geo-Grid Proximity Signals</li>
                     <li>30+ Local Citations & Sync</li>
                     <li>GMB Review Velocity System</li>

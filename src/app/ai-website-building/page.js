@@ -5,16 +5,16 @@ import { notFound } from "next/navigation";
 const service = getServiceBySlug("ai-website-building");
 
 export const metadata = {
-  title: "AI Website Building",
+  title: { absolute: "AI Website Building Company Today | Metro Valley Digital" },
   description:
-    "Launch a polished, SEO-structured website faster with AI-assisted design and human-refined branding, copy, and UX from our Vancouver team.",
+    "Metro Valley Digital launches polished, SEO-structured websites faster with AI-assisted design and human-refined branding, copy, and UX for growing brands.",
   alternates: {
     canonical: "https://www.metrovalleydigital.com/service/ai-website-building",
   },
   openGraph: {
-    title: "AI Website Building",
+    title: "AI Website Building Company Today | Metro Valley Digital",
     description:
-      "Launch a polished, SEO-structured website faster with AI-assisted design and human-refined branding, copy, and UX from our Vancouver team.",
+      "Metro Valley Digital launches polished, SEO-structured websites faster with AI-assisted design and human-refined branding, copy, and UX for growing brands.",
     url: "https://www.metrovalleydigital.com/service/ai-website-building",
     siteName: "Metro Valley Digital",
     images: [
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Website Building",
+    title: "AI Website Building Company Today | Metro Valley Digital",
     description:
-      "Launch a polished, SEO-structured website faster with AI-assisted design and human-refined branding, copy, and UX from our Vancouver team.",
+      "Metro Valley Digital launches polished, SEO-structured websites faster with AI-assisted design and human-refined branding, copy, and UX for growing brands.",
     images: ["https://www.metrovalleydigital.com/images/service/service-img-2.jpg"],
   },
 };

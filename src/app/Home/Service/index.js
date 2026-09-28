@@ -31,7 +31,7 @@ export default function Service() {
                 cardNumber="1"
                 image={ServiceImg1}
                 icon="fa fa-map-marker"
-                title="Local SEO & Google 3-Pack"
+                title="Local SEO & Google Maps"
                 description="Rank #1 in Google Maps and local search grids across Vancouver and Canada. Geo-relevance citation networks, GMB review velocity, and on-page optimization."
                 btnURL="/service/local-seo-google-business-profile"
               />

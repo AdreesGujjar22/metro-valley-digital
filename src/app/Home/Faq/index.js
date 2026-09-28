@@ -6,7 +6,7 @@ import SectionTitle from "@/components/SectionTitle";
 
 const homeFaqs = [
   {
-    q: "How fast can we see results for Google 3-Pack & Local SEO?",
+    q: "How fast can we see results from Local SEO?",
     a: "Most local service businesses in Vancouver and across Canada see notable map ranking improvements and proximity expansion within 45 to 90 days following our citation cleanup, geo-grid optimization, and review velocity funnels.",
   },
   {

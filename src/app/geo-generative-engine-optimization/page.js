@@ -5,16 +5,16 @@ import { notFound } from "next/navigation";
 const service = getServiceBySlug("geo-generative-engine-optimization");
 
 export const metadata = {
-  title: "Generative Engine Optimization",
+  title: { absolute: "Generative Engine Optimization GEO | Metro Valley Digital" },
   description:
-    "Get cited by ChatGPT, Gemini, and Perplexity with AI search entity optimization, structured data, and fact-dense content from our Vancouver GEO team.",
+    "Metro Valley Digital helps your brand get cited by ChatGPT, Gemini, and Perplexity with AI search entity optimization, structured data, and fact-dense content.",
   alternates: {
     canonical: "https://www.metrovalleydigital.com/service/geo-generative-engine-optimization",
   },
   openGraph: {
-    title: "Generative Engine Optimization",
+    title: "Generative Engine Optimization GEO | Metro Valley Digital",
     description:
-      "Get cited by ChatGPT, Gemini, and Perplexity with AI search entity optimization, structured data, and fact-dense content from our Vancouver GEO team.",
+      "Metro Valley Digital helps your brand get cited by ChatGPT, Gemini, and Perplexity with AI search entity optimization, structured data, and fact-dense content.",
     url: "https://www.metrovalleydigital.com/service/geo-generative-engine-optimization",
     siteName: "Metro Valley Digital",
     images: [
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Generative Engine Optimization",
+    title: "Generative Engine Optimization GEO | Metro Valley Digital",
     description:
-      "Get cited by ChatGPT, Gemini, and Perplexity with AI search entity optimization, structured data, and fact-dense content from our Vancouver GEO team.",
+      "Metro Valley Digital helps your brand get cited by ChatGPT, Gemini, and Perplexity with AI search entity optimization, structured data, and fact-dense content.",
     images: ["https://www.metrovalleydigital.com/images/ai_code_agents_1788193536610.jpg"],
   },
 };

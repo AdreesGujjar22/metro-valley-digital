@@ -24,15 +24,12 @@ export async function generateMetadata({ params }) {
     return { title: "Service Area Not Found" };
   }
 
-  const title = `SEO Services in ${area.name}`;
-  const description = `Local SEO, paid ads, and web development for ${area.name} businesses — ${area.businessMix.slice(
-    0,
-    120
-  )}... Get a free growth audit from Metro Valley Digital.`;
+  const title = `${area.metaTitle} | Metro Valley Digital`;
+  const description = area.metaDescription;
   const url = `https://www.metrovalleydigital.com/service-areas/${area.slug}`;
 
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: { canonical: url },
     openGraph: {

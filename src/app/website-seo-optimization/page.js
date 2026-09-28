@@ -5,16 +5,16 @@ import { notFound } from "next/navigation";
 const service = getServiceBySlug("website-seo-optimization");
 
 export const metadata = {
-  title: "Website SEO Optimization",
+  title: { absolute: "Website SEO Optimization Services | Metro Valley Digital" },
   description:
-    "Improve Core Web Vitals, fix technical errors, and align on-page SEO so your site ranks and converts. Vancouver-based technical SEO specialists.",
+    "Metro Valley Digital improves your Core Web Vitals, fixes technical errors, and aligns on-page SEO so your website ranks higher and converts more visitors.",
   alternates: {
     canonical: "https://www.metrovalleydigital.com/service/website-seo-optimization",
   },
   openGraph: {
-    title: "Website SEO Optimization",
+    title: "Website SEO Optimization Services | Metro Valley Digital",
     description:
-      "Improve Core Web Vitals, fix technical errors, and align on-page SEO so your site ranks and converts. Vancouver-based technical SEO specialists.",
+      "Metro Valley Digital improves your Core Web Vitals, fixes technical errors, and aligns on-page SEO so your website ranks higher and converts more visitors.",
     url: "https://www.metrovalleydigital.com/service/website-seo-optimization",
     siteName: "Metro Valley Digital",
     images: [
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Website SEO Optimization",
+    title: "Website SEO Optimization Services | Metro Valley Digital",
     description:
-      "Improve Core Web Vitals, fix technical errors, and align on-page SEO so your site ranks and converts. Vancouver-based technical SEO specialists.",
+      "Metro Valley Digital improves your Core Web Vitals, fixes technical errors, and aligns on-page SEO so your website ranks higher and converts more visitors.",
     images: ["https://www.metrovalleydigital.com/images/local_seo_growth_1788191403673.jpg"],
   },
 };

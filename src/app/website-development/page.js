@@ -5,16 +5,16 @@ import { notFound } from "next/navigation";
 const service = getServiceBySlug("website-development");
 
 export const metadata = {
-  title: "Website Development",
+  title: { absolute: "Website Development Services Built | Metro Valley Digital" },
   description:
-    "Fast, responsive, SEO-ready websites built on modern Next.js architecture, designed to load quickly, rank well, and convert visitors.",
+    "Metro Valley Digital builds fast, responsive, SEO-ready websites on modern Next.js architecture, designed to load quickly, rank well, and convert visitors.",
   alternates: {
     canonical: "https://www.metrovalleydigital.com/service/website-development",
   },
   openGraph: {
-    title: "Website Development",
+    title: "Website Development Services Built | Metro Valley Digital",
     description:
-      "Fast, responsive, SEO-ready websites built on modern Next.js architecture, designed to load quickly, rank well, and convert visitors.",
+      "Metro Valley Digital builds fast, responsive, SEO-ready websites on modern Next.js architecture, designed to load quickly, rank well, and convert visitors.",
     url: "https://www.metrovalleydigital.com/service/website-development",
     siteName: "Metro Valley Digital",
     images: [
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Website Development",
+    title: "Website Development Services Built | Metro Valley Digital",
     description:
-      "Fast, responsive, SEO-ready websites built on modern Next.js architecture, designed to load quickly, rank well, and convert visitors.",
+      "Metro Valley Digital builds fast, responsive, SEO-ready websites on modern Next.js architecture, designed to load quickly, rank well, and convert visitors.",
     images: ["https://www.metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
   },
 };

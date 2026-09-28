@@ -15,13 +15,14 @@ export async function generateMetadata({ params }) {
   }
 
   const url = `https://www.metrovalleydigital.com/service/${service.slug}`;
+  const fullTitle = `${service.metaTitle} | Metro Valley Digital`;
 
   return {
-    title: service.metaTitle,
+    title: { absolute: fullTitle },
     description: service.metaDescription,
     alternates: { canonical: url },
     openGraph: {
-      title: service.metaTitle,
+      title: fullTitle,
       description: service.metaDescription,
       url,
       siteName: "Metro Valley Digital",
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       card: "summary_large_image",
-      title: service.metaTitle,
+      title: fullTitle,
       description: service.metaDescription,
       images: [`https://www.metrovalleydigital.com${service.image}`],
     },

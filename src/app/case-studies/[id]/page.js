@@ -17,12 +17,12 @@ export async function generateMetadata({ params }) {
     return { title: "Case Study Not Found" };
   }
 
-  const title = project.title;
-  const description = project.summary;
+  const title = `${project.metaTitle} | Metro Valley Digital`;
+  const description = project.metaDescription;
   const url = `https://www.metrovalleydigital.com/case-studies/${project.id}`;
 
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: { canonical: url },
     openGraph: {

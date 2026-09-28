@@ -5,16 +5,16 @@ import { notFound } from "next/navigation";
 const service = getServiceBySlug("seo-services");
 
 export const metadata = {
-  title: "SEO Services in Vancouver",
+  title: { absolute: "Vancouver SEO Services & Strategy | Metro Valley Digital" },
   description:
-    "Rank higher, drive organic traffic, and convert more visitors with technical, on-page, and off-page SEO built for Vancouver and Canada-wide businesses.",
+    "Metro Valley Digital delivers technical, on-page, and off-page SEO built for Vancouver businesses, helping you rank higher, earn organic traffic, and convert.",
   alternates: {
     canonical: "https://www.metrovalleydigital.com/service/seo-services",
   },
   openGraph: {
-    title: "SEO Services in Vancouver",
+    title: "Vancouver SEO Services & Strategy | Metro Valley Digital",
     description:
-      "Rank higher, drive organic traffic, and convert more visitors with technical, on-page, and off-page SEO built for Vancouver and Canada-wide businesses.",
+      "Metro Valley Digital delivers technical, on-page, and off-page SEO built for Vancouver businesses, helping you rank higher, earn organic traffic, and convert.",
     url: "https://www.metrovalleydigital.com/service/seo-services",
     siteName: "Metro Valley Digital",
     images: [
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO Services in Vancouver",
+    title: "Vancouver SEO Services & Strategy | Metro Valley Digital",
     description:
-      "Rank higher, drive organic traffic, and convert more visitors with technical, on-page, and off-page SEO built for Vancouver and Canada-wide businesses.",
+      "Metro Valley Digital delivers technical, on-page, and off-page SEO built for Vancouver businesses, helping you rank higher, earn organic traffic, and convert.",
     images: ["https://www.metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg"],
   },
 };

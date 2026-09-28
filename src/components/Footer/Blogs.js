@@ -13,13 +13,13 @@ export default function Blogs() {
           <div className="widget-post">
             <div className="post-img" style={{ width: "70px", height: "70px", overflow: "hidden", borderRadius: "6px", flexShrink: 0 }}>
               <Link href="/blog">
-                <Image src={Feed1} alt="Google 3-pack SEO" width={70} height={70} style={{ objectFit: "cover", width: "100%", height: "100%" }} />
+                <Image src={Feed1} alt="Local Google Maps SEO" width={70} height={70} style={{ objectFit: "cover", width: "100%", height: "100%" }} />
               </Link>
             </div>
             <div className="post-content">
               <h4>
                 <Link href="/blog">
-                  How We Rank #1 on Google 3-Pack in Competitive Metro Areas
+                  How We Rank #1 on Google Maps in Competitive Metro Areas
                 </Link>
               </h4>
               <span className="post-date">

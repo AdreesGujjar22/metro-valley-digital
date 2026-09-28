@@ -43,7 +43,7 @@ export const metadata = {
     "Vancouver-based SEO and growth marketing agency helping local businesses rank #1 on Google, scale paid ads, and build custom web and AI software.",
   keywords: [
     "Local SEO Agency",
-    "Google 3-Pack Optimization",
+    "Google Maps Ranking Optimization",
     "Vancouver Digital Marketing Agency",
     "Paid Ads Management",
     "Meta Ads Agency",

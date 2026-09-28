@@ -5,16 +5,16 @@ import { notFound } from "next/navigation";
 const service = getServiceBySlug("amazon-ebay-product-research");
 
 export const metadata = {
-  title: "Amazon & eBay Research",
+  title: { absolute: "Amazon & eBay Product Research Help | Metro Valley Digital" },
   description:
-    "Data-driven product hunting, supplier sourcing, and A9/A10 listing optimization to help your Amazon and eBay stores find profitable winners.",
+    "Metro Valley Digital offers data-driven product hunting, supplier sourcing, and A9/A10 listing optimization to help your Amazon and eBay stores find winners.",
   alternates: {
     canonical: "https://www.metrovalleydigital.com/service/amazon-ebay-product-research",
   },
   openGraph: {
-    title: "Amazon & eBay Research",
+    title: "Amazon & eBay Product Research Help | Metro Valley Digital",
     description:
-      "Data-driven product hunting, supplier sourcing, and A9/A10 listing optimization to help your Amazon and eBay stores find profitable winners.",
+      "Metro Valley Digital offers data-driven product hunting, supplier sourcing, and A9/A10 listing optimization to help your Amazon and eBay stores find winners.",
     url: "https://www.metrovalleydigital.com/service/amazon-ebay-product-research",
     siteName: "Metro Valley Digital",
     images: [
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Amazon & eBay Research",
+    title: "Amazon & eBay Product Research Help | Metro Valley Digital",
     description:
-      "Data-driven product hunting, supplier sourcing, and A9/A10 listing optimization to help your Amazon and eBay stores find profitable winners.",
+      "Metro Valley Digital offers data-driven product hunting, supplier sourcing, and A9/A10 listing optimization to help your Amazon and eBay stores find winners.",
     images: ["https://www.metrovalleydigital.com/images/service/service-img-1.jpg"],
   },
 };

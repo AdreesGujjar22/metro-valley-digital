@@ -5,16 +5,16 @@ import About from "../Home/About";
 import { BreadcrumbSchema, AboutPageSchema } from "@/components/SeoSchemas";
 
 export const metadata = {
-  title: "About Metro Valley",
+  title: { absolute: "About Metro Valley Digital Agency | Metro Valley Digital" },
   description:
-    "Meet the Vancouver team behind Metro Valley Digital's Local SEO, paid ads, and custom software results for businesses across BC and North America.",
+    "Meet the Vancouver team behind Metro Valley Digital. Learn our story, growth philosophy, and how we help local businesses rank higher and earn more customers.",
   alternates: {
     canonical: "https://www.metrovalleydigital.com/about-us",
   },
   openGraph: {
-    title: "About Metro Valley",
+    title: "About Metro Valley Digital Agency | Metro Valley Digital",
     description:
-      "Meet the Vancouver team behind Metro Valley Digital's Local SEO, paid ads, and custom software results for businesses across BC and North America.",
+      "Meet the Vancouver team behind Metro Valley Digital. Learn our story, growth philosophy, and how we help local businesses rank higher and earn more customers.",
     url: "https://www.metrovalleydigital.com/about-us",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Metro Valley",
+    title: "About Metro Valley Digital Agency | Metro Valley Digital",
     description:
-      "Meet the Vancouver team behind Metro Valley Digital's Local SEO, paid ads, and custom software results for businesses across BC and North America.",
+      "Meet the Vancouver team behind Metro Valley Digital. Learn our story, growth philosophy, and how we help local businesses rank higher and earn more customers.",
     images: ["https://www.metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
   },
 };

@@ -22,14 +22,16 @@ export async function generateMetadata({ params }) {
     };
   }
 
+  const fullTitle = `${post.metaTitle} | Metro Valley Digital`;
+
   return {
-    title: `${post.metaTitle}`,
+    title: { absolute: fullTitle },
     description: post.metaDescription,
     alternates: {
       canonical: `https://www.metrovalleydigital.com/blog/${post.slug}`,
     },
     openGraph: {
-      title: post.metaTitle,
+      title: fullTitle,
       description: post.metaDescription,
       url: `https://www.metrovalleydigital.com/blog/${post.slug}`,
       siteName: "Metro Valley Digital",
@@ -46,7 +48,7 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       card: "summary_large_image",
-      title: post.metaTitle,
+      title: fullTitle,
       description: post.metaDescription,
       images: [`https://www.metrovalleydigital.com${post.image}`],
     },

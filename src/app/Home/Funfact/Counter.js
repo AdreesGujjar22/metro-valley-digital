@@ -9,7 +9,7 @@ export default function Counter() {
       id: "counter1",
       cardClass: "single-count",
       iconClass: "fa fa-map-marker",
-      title: "#1 Google 3-Pack Rankings",
+      title: "#1 Google Maps Rankings",
       number: "185",
     },
     {

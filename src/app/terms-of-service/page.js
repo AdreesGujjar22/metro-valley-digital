@@ -2,16 +2,16 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { BreadcrumbSchema } from "@/components/SeoSchemas";
 
 export const metadata = {
-  title: "Terms of Service",
+  title: { absolute: "Terms of Service & Website Usage | Metro Valley Digital" },
   description:
-    "Review the terms for accessing and using the Metro Valley Digital website and its information.",
+    "Review the terms that govern your use of the Metro Valley Digital website, our services, and all information and content we publish here for site visitors.",
   alternates: {
     canonical: "https://www.metrovalleydigital.com/terms-of-service",
   },
   openGraph: {
-    title: "Terms of Service | Metro Valley Digital",
+    title: "Terms of Service & Website Usage | Metro Valley Digital",
     description:
-      "Review the terms for accessing and using the Metro Valley Digital website and its information.",
+      "Review the terms that govern your use of the Metro Valley Digital website, our services, and all information and content we publish here for site visitors.",
     url: "https://www.metrovalleydigital.com/terms-of-service",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
@@ -19,9 +19,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Terms of Service | Metro Valley Digital",
+    title: "Terms of Service & Website Usage | Metro Valley Digital",
     description:
-      "Review the terms for accessing and using the Metro Valley Digital website and its information.",
+      "Review the terms that govern your use of the Metro Valley Digital website, our services, and all information and content we publish here for site visitors.",
   },
 };
 

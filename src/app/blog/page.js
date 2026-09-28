@@ -5,16 +5,16 @@ import { BreadcrumbSchema } from "@/components/SeoSchemas";
 import Link from "next/link";
 
 export const metadata = {
-  title: "SEO & Growth Marketing Blog",
+  title: { absolute: "Vancouver SEO & Marketing Blog Hub | Metro Valley Digital" },
   description:
-    "Guides and case studies on Local SEO, Google 3-Pack rankings, performance ads, Next.js development, and AI tools from our Vancouver growth team.",
+    "Read practical SEO, paid ads, and web development guides from Metro Valley Digital. Real case studies and tactics our Vancouver growth team uses for clients.",
   alternates: {
     canonical: "https://www.metrovalleydigital.com/blog",
   },
   openGraph: {
-    title: "SEO & Growth Marketing Blog",
+    title: "Vancouver SEO & Marketing Blog Hub | Metro Valley Digital",
     description:
-      "Guides and case studies on Local SEO, Google 3-Pack rankings, performance ads, Next.js development, and AI tools from our Vancouver growth team.",
+      "Read practical SEO, paid ads, and web development guides from Metro Valley Digital. Real case studies and tactics our Vancouver growth team uses for clients.",
     url: "https://www.metrovalleydigital.com/blog",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO & Growth Marketing Blog",
+    title: "Vancouver SEO & Marketing Blog Hub | Metro Valley Digital",
     description:
-      "Guides and case studies on Local SEO, Google 3-Pack rankings, performance ads, Next.js development, and AI tools from our Vancouver growth team.",
+      "Read practical SEO, paid ads, and web development guides from Metro Valley Digital. Real case studies and tactics our Vancouver growth team uses for clients.",
     images: ["https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
   },
 };
@@ -43,7 +43,7 @@ export default function BlogPage() {
       <BreadcrumbSchema items={[{ name: "Blog", url: "/blog" }]} />
       <Breadcrumbs
         title="Growth & Engineering Insights"
-        description="Tactical guides, case studies, and engineering breakdowns on Local SEO, Google 3-Pack rankings, high-ROAS paid ads, and Next.js software architecture."
+        description="Tactical guides, case studies, and engineering breakdowns on local SEO, Google Maps rankings, high-ROAS paid ads, and Next.js software architecture."
         menuLink="blog"
         menuText="Blog"
       />

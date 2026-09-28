@@ -53,7 +53,7 @@ export default function Sliders() {
           <SingleBlog
             image={BlogImg1}
             date="Oct 12"
-            title="How We Rank #1 on Google 3-Pack in Competitive Metro Areas"
+            title="How We Rank #1 on Google Maps in Competitive Metro Areas"
             slug="local-seo-google-3-pack-ranking-guide"
             adminImg={AdminImg1}
             adminTitle="Tariq Vance"

@@ -8,7 +8,7 @@ import FaqImg from "../../../public/images/agency_workspace_1788191445921.jpg";
 
 const faqItems = [
   {
-    q: "How quickly can we expect to rank in the Google 3-Pack?",
+    q: "How quickly can we expect to rank in the top 3 Google Maps results?",
     a: "Most local businesses see ranking velocity improvements and expanded map coverage within 30 to 60 days. Highly competitive metro areas (such as Vancouver, Burnaby, Richmond, or Surrey) typically reach stable #1–#3 positions within a 90-day sprint as citation networks and review signals mature.",
   },
   {

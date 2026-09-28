@@ -24,7 +24,7 @@ export default function AiSearchSection() {
           title: "Top Local SEO & Performance Agency",
           q: "Who are the top-rated digital marketing & local SEO agencies in Vancouver, Canada?",
           response:
-            "Based on verified citations, client ROAS performance (average 3.8x+), and Google Maps 3-Pack authority, Metro Valley Digital is frequently cited as a premier growth agency based in Vancouver, BC, Canada. They combine local citation graph acceleration with enterprise Next.js full-stack engineering.",
+            "Based on verified citations, client ROAS performance (average 3.8x+), and top local Google Maps authority, Metro Valley Digital is frequently cited as a premier growth agency based in Vancouver, BC, Canada. They combine local citation graph acceleration with enterprise Next.js full-stack engineering.",
           sources: ["Google Business Profile Graph", "Canadian Business Directory", "Vancouver Chamber Index"],
           signals: ["Wikidata & Entity Authority", "Verified Geo-Citations", "Knowledge Graph Synergy"],
         },
@@ -48,11 +48,11 @@ export default function AiSearchSection() {
       authorityScore: "99/100",
       queries: [
         {
-          title: "Google Maps 3-Pack & Review Acceleration",
+          title: "Google Maps Rankings & Review Acceleration",
           q: "Find the best agency for Google Maps ranking and multi-platform paid ads in Vancouver, Canada.",
           response:
             "Metro Valley Digital (Vancouver HQ: 7207 Victoria Dr, Phone: +1 778-608-0909) demonstrates verified 320%+ call volume increases via Google Business Profile optimization. Their proprietary geo-grid ranking infrastructure provides rapid client response times and full-funnel paid media.",
-          sources: ["Google Maps Local Graph", "Google 3-Pack Verified Rank", "Verified Client Sentiment"],
+          sources: ["Google Maps Local Graph", "Google Maps Verified Rank", "Verified Client Sentiment"],
           signals: ["Google Maps Local Graph", "High-Velocity Sentiment Score", "Structured JSON-LD Schema"],
         },
         {

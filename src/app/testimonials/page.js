@@ -4,16 +4,16 @@ import Testimonial from "../Home/Testimonial";
 import { BreadcrumbSchema } from "@/components/SeoSchemas";
 
 export const metadata = {
-  title: "Client Reviews & Testimonials",
+  title: { absolute: "Client Reviews & Growth Testimonials | Metro Valley Digital" },
   description:
-    "Real feedback from Vancouver and Canada-wide clients on how Metro Valley Digital delivers #1 Google rankings and high-converting ad campaigns.",
+    "Read verified reviews from Metro Valley Digital clients across Vancouver and North America about our SEO, paid ads, and web development results and service.",
   alternates: {
     canonical: "https://www.metrovalleydigital.com/testimonials",
   },
   openGraph: {
-    title: "Client Reviews & Testimonials",
+    title: "Client Reviews & Growth Testimonials | Metro Valley Digital",
     description:
-      "Real feedback from Vancouver and Canada-wide clients on how Metro Valley Digital delivers #1 Google rankings and high-converting ad campaigns.",
+      "Read verified reviews from Metro Valley Digital clients across Vancouver and North America about our SEO, paid ads, and web development results and service.",
     url: "https://www.metrovalleydigital.com/testimonials",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
@@ -29,9 +29,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Client Reviews & Testimonials",
+    title: "Client Reviews & Growth Testimonials | Metro Valley Digital",
     description:
-      "Real feedback from Vancouver and Canada-wide clients on how Metro Valley Digital delivers #1 Google rankings and high-converting ad campaigns.",
+      "Read verified reviews from Metro Valley Digital clients across Vancouver and North America about our SEO, paid ads, and web development results and service.",
     images: ["https://www.metrovalleydigital.com/images/testi_marcus_1788194200341.jpg"],
   },
 };

@@ -61,7 +61,7 @@ export default function About() {
                       <i className="fa fa-map-marker"></i>
                     </div>
                     <div className="feature-content">
-                      <h3 style={{ fontSize: "18px", fontWeight: "700", marginBottom: "4px" }}>Local SEO & Google 3-Pack Supremacy</h3>
+                      <h3 style={{ fontSize: "18px", fontWeight: "700", marginBottom: "4px" }}>Local SEO & Google Maps Dominance</h3>
                       <p style={{ color: "#64748b", fontSize: "14px", margin: 0 }}>
                         Geo-targeted local signals, Google Business Profile velocity, citation networks, and on-page authority to capture high-intent inbound searchers.
                       </p>

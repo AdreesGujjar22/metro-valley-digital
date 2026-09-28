@@ -24,7 +24,7 @@ export default function SingleBlog(props) {
         <div className="blog-body">
           <h3>
             <Link href={postUrl}>
-              {title ? title : "How To Dominate Google 3-Pack and Paid Media in 2026"}
+              {title ? title : "How to Dominate Local Search and Paid Media in 2026"}
             </Link>
           </h3>
           <div className="blog-meta">

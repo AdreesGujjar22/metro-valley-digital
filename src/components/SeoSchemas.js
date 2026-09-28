@@ -249,7 +249,7 @@ export function BreadcrumbSchema({ items = [] }) {
 export function FaqSchema({ faqs = [] }) {
   const defaultFaqs = [
     {
-      q: "How fast can we see results for Google 3-Pack & Local SEO?",
+      q: "How fast can we see results from Local SEO?",
       a: "Most local service businesses in Vancouver and across Canada see notable map ranking improvements and proximity expansion within 45 to 90 days following our citation cleanup, geo-grid optimization, and review velocity funnels.",
     },
     {
@@ -502,7 +502,7 @@ export function AboutPageSchema() {
     "@id": "https://www.metrovalleydigital.com/about-us#webpage",
     url: "https://www.metrovalleydigital.com/about-us",
     name: "About Metro Valley Digital | Vancouver Digital Marketing & Software Agency",
-    description: "Learn how Metro Valley Digital engineers #1 Google 3-Pack rankings, 4x+ ROAS paid advertising, and bespoke Next.js web applications from Vancouver, BC, Canada.",
+    description: "Learn how Metro Valley Digital engineers top local Google Maps rankings, 4x+ ROAS paid advertising, and custom Next.js web applications from Vancouver, BC, Canada.",
     mainEntity: {
       "@type": "Organization",
       name: "Metro Valley Digital",

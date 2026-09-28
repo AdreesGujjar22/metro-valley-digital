@@ -5,16 +5,16 @@ import FaqMain from "./FaqMain";
 import { BreadcrumbSchema, FaqSchema } from "@/components/SeoSchemas";
 
 export const metadata = {
-  title: "SEO & Marketing FAQs",
+  title: { absolute: "SEO & Marketing FAQs for Clients | Metro Valley Digital" },
   description:
-    "Straight answers on Local SEO timelines, Google 3-Pack rankings, PPC management, Next.js builds, and contract terms from our Vancouver growth team.",
+    "Find clear answers about Local SEO timelines, Google Maps rankings, paid ad management, and website builds from the Metro Valley Digital team in Vancouver.",
   alternates: {
     canonical: "https://www.metrovalleydigital.com/faq",
   },
   openGraph: {
-    title: "SEO & Marketing FAQs",
+    title: "SEO & Marketing FAQs for Clients | Metro Valley Digital",
     description:
-      "Straight answers on Local SEO timelines, Google 3-Pack rankings, PPC management, Next.js builds, and contract terms from our Vancouver growth team.",
+      "Find clear answers about Local SEO timelines, Google Maps rankings, paid ad management, and website builds from the Metro Valley Digital team in Vancouver.",
     url: "https://www.metrovalleydigital.com/faq",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO & Marketing FAQs",
+    title: "SEO & Marketing FAQs for Clients | Metro Valley Digital",
     description:
-      "Straight answers on Local SEO timelines, Google 3-Pack rankings, PPC management, Next.js builds, and contract terms from our Vancouver growth team.",
+      "Find clear answers about Local SEO timelines, Google Maps rankings, paid ad management, and website builds from the Metro Valley Digital team in Vancouver.",
     images: ["https://www.metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg"],
   },
 };
@@ -44,7 +44,7 @@ export default function Faq() {
       <FaqSchema />
       <Breadcrumbs
         title="Frequently Asked Questions"
-        description="Clear answers on our Local SEO processes, Google 3-Pack optimization, Paid Ad campaigns, and custom Next.js engineering."
+        description="Clear answers on our local SEO process, Google Maps ranking optimization, paid ad campaigns, and custom Next.js engineering."
         menuLink="faq"
         menuText="FAQ"
       />

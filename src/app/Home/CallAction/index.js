@@ -25,7 +25,7 @@ export default function CallAction() {
                   Get Your Free 30-Minute Growth Audit & Competitor Gap Analysis
                 </h3>
                 <p style={{ color: "#cbd5e1", fontSize: "17px", lineHeight: "1.7", margin: "16px 0 24px 0" }}>
-                  We will analyze your local Google Map Pack rankings, paid ad funnels, and conversion bottlenecks across Vancouver, Canada — completely free.
+                  We will analyze your local Google Maps rankings, paid ad funnels, and conversion bottlenecks across Vancouver, Canada — completely free.
                 </p>
                 <div className="cta-button d-flex flex-wrap gap-3">
                   <Link href="/contact" className="theme-btn" style={{ boxShadow: "0 4px 15px rgba(13, 110, 253, 0.4)" }}>

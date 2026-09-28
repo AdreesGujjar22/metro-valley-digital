@@ -2,16 +2,16 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { BreadcrumbSchema } from "@/components/SeoSchemas";
 
 export const metadata = {
-  title: "Privacy Policy",
+  title: { absolute: "Privacy Policy & Data Protection | Metro Valley Digital" },
   description:
-    "Learn how Metro Valley Digital handles information entered on this website, browser storage, and third-party services.",
+    "Read how Metro Valley Digital collects, stores, and protects the information you share on our website, including forms, browser data, and third-party tools.",
   alternates: {
     canonical: "https://www.metrovalleydigital.com/privacy-policy",
   },
   openGraph: {
-    title: "Privacy Policy | Metro Valley Digital",
+    title: "Privacy Policy & Data Protection | Metro Valley Digital",
     description:
-      "Learn how Metro Valley Digital handles information entered on this website, browser storage, and third-party services.",
+      "Read how Metro Valley Digital collects, stores, and protects the information you share on our website, including forms, browser data, and third-party tools.",
     url: "https://www.metrovalleydigital.com/privacy-policy",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
@@ -19,9 +19,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Privacy Policy | Metro Valley Digital",
+    title: "Privacy Policy & Data Protection | Metro Valley Digital",
     description:
-      "Learn how Metro Valley Digital handles information entered on this website, browser storage, and third-party services.",
+      "Read how Metro Valley Digital collects, stores, and protects the information you share on our website, including forms, browser data, and third-party tools.",
   },
 };
 

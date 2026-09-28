@@ -5,16 +5,16 @@ import Sliders from "../Home/Testimonial/Sliders";
 import { BreadcrumbSchema, ServiceCatalogSchema } from "@/components/SeoSchemas";
 
 export const metadata = {
-  title: "Digital Marketing & SEO Services",
+  title: { absolute: "Digital Marketing & SEO Services | Metro Valley Digital" },
   description:
-    "Browse 12 growth services: Local SEO, GEO, paid ads, Shopify builds, custom software, and AI chatbots for Vancouver and Canada-wide businesses.",
+    "Browse 12 growth services from Metro Valley Digital: Local SEO, AI search optimization, paid ads, Shopify builds, custom software, and chatbots for growth.",
   alternates: {
     canonical: "https://www.metrovalleydigital.com/service",
   },
   openGraph: {
-    title: "Digital Marketing & SEO Services",
+    title: "Digital Marketing & SEO Services | Metro Valley Digital",
     description:
-      "Browse 12 growth services: Local SEO, GEO, paid ads, Shopify builds, custom software, and AI chatbots for Vancouver and Canada-wide businesses.",
+      "Browse 12 growth services from Metro Valley Digital: Local SEO, AI search optimization, paid ads, Shopify builds, custom software, and chatbots for growth.",
     url: "https://www.metrovalleydigital.com/service",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Digital Marketing & SEO Services",
+    title: "Digital Marketing & SEO Services | Metro Valley Digital",
     description:
-      "Browse 12 growth services: Local SEO, GEO, paid ads, Shopify builds, custom software, and AI chatbots for Vancouver and Canada-wide businesses.",
+      "Browse 12 growth services from Metro Valley Digital: Local SEO, AI search optimization, paid ads, Shopify builds, custom software, and chatbots for growth.",
     images: ["https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
   },
 };

@@ -2,10 +2,10 @@ export const BLOG_POSTS = [
   {
     id: "local-seo-google-3-pack-ranking-guide",
     slug: "local-seo-google-3-pack-ranking-guide",
-    title: "How We Rank #1 on Google 3-Pack in Competitive Metro Areas (Vancouver Case Study)",
-    metaTitle: "Local SEO 3-Pack Ranking Guide",
+    title: "Local SEO & Google Maps Rank Guide Now",
+    metaTitle: "Local SEO & Maps Rank Guide 2026",
     metaDescription:
-      "How we took a Vancouver service business from page 4 to #1 on Google Maps with geo-signals, review velocity, and localized citation building.",
+      "See how we took a Vancouver service business from page 4 to the #1 Google Maps spot using geo-signals, review velocity, and localized citations built right.",
     date: "Oct 12, 2026",
     readTime: "6 min read",
     category: "Local SEO & GMB",
@@ -18,12 +18,12 @@ export const BLOG_POSTS = [
     },
     commentsCount: "18 comments",
     reviews: "4.9",
-    tags: ["Local SEO", "Google Maps", "Vancouver", "GMB Optimization", "3-Pack"],
+    tags: ["Local SEO", "Google Maps", "Vancouver", "GMB Optimization", "Google Maps Rankings"],
     summary:
-      "In modern local search, over 70% of inbound calls originate directly from the Google Maps 3-Pack. Here is the exact repeatable blueprint we use to conquer competitive local markets.",
+      "In modern local search, over 70% of inbound calls originate directly from the top 3 results on Google Maps. Here is the exact, repeatable blueprint we use to win competitive local markets.",
     content: [
       {
-        heading: "The Anatomy of Modern Google Map Pack Algorithms",
+        heading: "How Google’s Local Map Rankings Actually Work",
         paragraphs: [
           "When local consumers need an urgent solution — whether it is an emergency HVAC technician in Vancouver or a commercial lawyer in Downtown — they rarely scroll past the top three map listings. Google's local algorithm has evolved beyond basic keyword presence on a website.",
           "Today, Google evaluates three primary pillars: Proximity (where the searcher is located relative to your registered centroid), Prominence (offline reputation mirrored online through review velocity and directory citations), and Relevance (how tightly your category taxonomy matches intent).",
@@ -58,7 +58,7 @@ export const BLOG_POSTS = [
     relatedProject: {
       title: "Vancouver Climate Solutions Case Study",
       link: "/portfolio",
-      result: "+340% Inbound Calls, #1 Google Map Pack",
+      result: "+340% Inbound Calls, #1 on Google Maps",
     },
   },
   {
@@ -67,7 +67,7 @@ export const BLOG_POSTS = [
     title: "The 2026 Meta & TikTok Ad Creative Framework for 5x+ ROAS",
     metaTitle: "Meta & TikTok Ads ROAS Framework",
     metaDescription:
-      "The direct-response creative frameworks, server-side CAPI setups, and testing structures that consistently drive 5x+ ROAS for e-commerce brands.",
+      "Discover the direct-response creative frameworks, server-side tracking setups, and testing structures that consistently drive 5x+ ROAS for e-commerce brands.",
     date: "Oct 08, 2026",
     readTime: "8 min read",
     category: "Paid Media (PPC)",
@@ -120,9 +120,9 @@ export const BLOG_POSTS = [
     id: "nextjs-app-router-vs-legacy-cms-seo",
     slug: "nextjs-app-router-vs-legacy-cms-seo",
     title: "Why Next.js App Router Outranks Legacy CMS in Core Web Vitals and Conversion",
-    metaTitle: "Next.js SEO & Speed Gains",
+    metaTitle: "Next.js SEO & Core Web Vitals Guide",
     metaDescription:
-      "How the Next.js App Router delivers sub-second load times, strong Core Web Vitals, and better crawl budgets than a bloated WordPress site.",
+      "Learn how the Next.js App Router delivers sub-second load times, strong Core Web Vitals, and much better crawl budgets than a bloated legacy WordPress site.",
     date: "Sep 29, 2026",
     readTime: "7 min read",
     category: "Web Engineering",
@@ -168,9 +168,9 @@ export const BLOG_POSTS = [
     id: "ai-chatbot-lead-conversion-playbook",
     slug: "ai-chatbot-lead-conversion-playbook",
     title: "Integrating 24/7 AI Chat Agents to Double Inbound Lead Velocity",
-    metaTitle: "AI Chatbots for Lead Capture",
+    metaTitle: "AI Chatbots for Lead Capture Guide",
     metaDescription:
-      "How conversational AI assistants triage inquiries, qualify prospects, and sync with your CRM to stop after-hours leads from slipping away.",
+      "See how conversational AI assistants triage inquiries, qualify prospects, and sync with your CRM so after-hours leads never quietly slip away again for good.",
     date: "Sep 15, 2026",
     readTime: "5 min read",
     category: "AI & Automation",
@@ -216,9 +216,9 @@ export const BLOG_POSTS = [
     id: "generative-engine-optimization-geo-guide",
     slug: "generative-engine-optimization-geo-guide",
     title: "Generative Engine Optimization (GEO): Getting Cited by ChatGPT & Perplexity",
-    metaTitle: "GEO Optimization Guide",
+    metaTitle: "GEO Optimization Guide for AI Search",
     metaDescription:
-      "How entity schema and citation building get your brand recommended by ChatGPT, Google Gemini, and Perplexity when people ask AI for suggestions.",
+      "Learn how entity schema and citation building get your brand recommended by ChatGPT, Gemini, and Perplexity whenever people ask AI for suggestions right now.",
     date: "Sep 02, 2026",
     readTime: "9 min read",
     category: "AI Search & SEO",
@@ -263,9 +263,9 @@ export const BLOG_POSTS = [
     id: "shopify-ecommerce-conversion-rate-optimization",
     slug: "shopify-ecommerce-conversion-rate-optimization",
     title: "E-Commerce CRO: 7 Checkout Optimizations That Boosted Revenue by 38%",
-    metaTitle: "E-Commerce CRO Playbook",
+    metaTitle: "Shopify CRO & Conversion Playbook",
     metaDescription:
-      "Actionable Shopify CRO tactics — one-page checkout, trust badges, payment installments, and speed fixes that reduce cart abandonment.",
+      "Get actionable Shopify CRO tactics, including one-page checkout, trust badges, payment installments, and speed fixes that reduce cart abandonment fast today.",
     date: "Aug 20, 2026",
     readTime: "6 min read",
     category: "E-Commerce & Shopify",
@@ -304,9 +304,9 @@ export const BLOG_POSTS = [
     id: "multi-location-seo-rank-multiple-cities",
     slug: "multi-location-seo-rank-multiple-cities",
     title: "Multi-Location Local SEO: How to Dominate Multiple Cities Without Penalties",
-    metaTitle: "Multi-Location Local SEO Guide",
+    metaTitle: "Multi-Location Local SEO Rank Guide",
     metaDescription:
-      "How to scale a local service business across multiple cities with city landing pages, separate Google Business Profiles, and localized schema.",
+      "Learn how to scale a local service business across multiple cities with landing pages, separate Google Business Profiles, and localized schema built right.",
     date: "Aug 10, 2026",
     readTime: "7 min read",
     category: "Local SEO & GMB",
@@ -345,9 +345,9 @@ export const BLOG_POSTS = [
     id: "b2b-google-search-ads-pipeline-growth",
     slug: "b2b-google-search-ads-pipeline-growth",
     title: "High-Intent B2B Google Ads: Slashing Cost-Per-SQL by 42%",
-    metaTitle: "B2B Google Ads Optimization",
+    metaTitle: "B2B Google Search Ads Optimization",
     metaDescription:
-      "A practical guide to B2B Google Search Ads — exact-match keyword structures, negative keyword mining, and offline conversion tracking.",
+      "Get a practical guide to B2B Google Search Ads, covering exact-match keyword structures, negative keyword mining, and offline conversion tracking setups today.",
     date: "Jul 28, 2026",
     readTime: "8 min read",
     category: "Paid Media (PPC)",

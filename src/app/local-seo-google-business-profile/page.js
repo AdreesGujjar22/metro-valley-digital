@@ -9,16 +9,16 @@ import Link from "next/link";
 const service = getServiceBySlug("local-seo-google-business-profile");
 
 export const metadata = {
-  title: "Local SEO & Google Business Profile",
+  title: { absolute: "Local SEO & Google Business Profile | Metro Valley Digital" },
   description:
-    "Climb the Google Map 3-Pack with GBP optimization, citation cleanup, and review growth built for Vancouver, Burnaby, Surrey & Lower Mainland businesses.",
+    "Metro Valley Digital helps you reach the top 3 Google Maps results with Google Business Profile optimization, citation cleanup, and review growth in Vancouver.",
   alternates: {
     canonical: "https://www.metrovalleydigital.com/service/local-seo-google-business-profile",
   },
   openGraph: {
-    title: "Local SEO & Google Business Profile",
+    title: "Local SEO & Google Business Profile | Metro Valley Digital",
     description:
-      "Climb the Google Map 3-Pack with GBP optimization, citation cleanup, and review growth built for Vancouver, Burnaby, Surrey & Lower Mainland businesses.",
+      "Metro Valley Digital helps you reach the top 3 Google Maps results with Google Business Profile optimization, citation cleanup, and review growth in Vancouver.",
     url: "https://www.metrovalleydigital.com/service/local-seo-google-business-profile",
     siteName: "Metro Valley Digital",
     images: [
@@ -34,9 +34,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Local SEO & Google Business Profile",
+    title: "Local SEO & Google Business Profile | Metro Valley Digital",
     description:
-      "Climb the Google Map 3-Pack with GBP optimization, citation cleanup, and review growth built for Vancouver, Burnaby, Surrey & Lower Mainland businesses.",
+      "Metro Valley Digital helps you reach the top 3 Google Maps results with Google Business Profile optimization, citation cleanup, and review growth in Vancouver.",
     images: ["https://www.metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
   },
 };
@@ -53,7 +53,7 @@ export default function LocalSeoPage() {
             Local SEO & Google Business Profile Coverage Across Metro Vancouver
           </h2>
           <p style={{ color: "#475569", maxWidth: "760px", marginBottom: "18px" }}>
-            We build Google Business Profile and Map Pack strategies for neighbourhoods including{" "}
+            We build Google Business Profile and local Google Maps strategies for neighbourhoods including{" "}
             {COMPANY_INFO.serviceAreas.neighbourhoods.slice(0, 6).map((n, i, arr) => {
               const area = getServiceAreaByName(n);
               return (

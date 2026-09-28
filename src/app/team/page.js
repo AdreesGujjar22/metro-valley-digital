@@ -13,16 +13,16 @@ import TeamImg7 from "../../../public/images/team_ai_architect_1788194166603.jpg
 import TeamImg8 from "../../../public/images/testi_marcus_1788194200341.jpg";
 
 export const metadata = {
-  title: "Our Team",
+  title: { absolute: "Meet Our Vancouver Growth Team Today | Metro Valley Digital" },
   description:
-    "Meet the search strategists, paid media buyers, and software engineers behind Metro Valley Digital's results across Vancouver and North America.",
+    "Meet the strategists, engineers, and marketers at Metro Valley Digital who plan and run every SEO, paid ad, and web development campaign for our clients here.",
   alternates: {
     canonical: "https://www.metrovalleydigital.com/team",
   },
   openGraph: {
-    title: "Our Team",
+    title: "Meet Our Vancouver Growth Team Today | Metro Valley Digital",
     description:
-      "Meet the search strategists, paid media buyers, and software engineers behind Metro Valley Digital's results across Vancouver and North America.",
+      "Meet the strategists, engineers, and marketers at Metro Valley Digital who plan and run every SEO, paid ad, and web development campaign for our clients here.",
     url: "https://www.metrovalleydigital.com/team",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
@@ -38,9 +38,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Our Team",
+    title: "Meet Our Vancouver Growth Team Today | Metro Valley Digital",
     description:
-      "Meet the search strategists, paid media buyers, and software engineers behind Metro Valley Digital's results across Vancouver and North America.",
+      "Meet the strategists, engineers, and marketers at Metro Valley Digital who plan and run every SEO, paid ad, and web development campaign for our clients here.",
     images: ["https://www.metrovalleydigital.com/images/team_toronto_lead_1788194135436.jpg"],
   },
 };

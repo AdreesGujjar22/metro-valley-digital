@@ -37,8 +37,8 @@ export default function Sliders() {
     {
       id: "slider2",
       bgImg: HeroBg2,
-      tag: "📍 Google My Business & Map Pack Optimization",
-      title: "Rank #1 in Google 3-Pack & Local Search",
+      tag: "📍 Google Business Profile & Local Map Optimization",
+      title: "Rank #1 in Local Search & Google Maps",
       subTitle:
         "Capture ready-to-buy customers in your city. Proprietary geo-grid proximity ranking, citation authority, review velocity, and AI search engine optimization (ChatGPT & Gemini Search).",
       button: {
@@ -56,7 +56,7 @@ export default function Sliders() {
       tag: "⚡ High-Performance Digital Growth Agency",
       title: "Dominate Local Search & Accelerate Revenue",
       subTitle:
-        "Vancouver's premier growth agency based in BC, Canada. We engineer #1 Google 3-Pack rankings, high-converting Next.js web applications, and multi-channel marketing campaigns that consistently 3x your inbound pipeline.",
+        "Vancouver's premier growth agency based in BC, Canada. We engineer #1 local Google Maps rankings, high-converting Next.js web applications, and multi-channel marketing campaigns that consistently 3x your inbound pipeline.",
       button: {
         text: "Scale Your Revenue",
         link: "/contact",

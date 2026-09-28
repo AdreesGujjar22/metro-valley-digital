@@ -12,7 +12,7 @@ export default function Sliders() {
     {
       id: "partner-google",
       name: "Google Premier Partner",
-      subtext: "Search, Maps 3-Pack & Local Ads",
+      subtext: "Search, Google Maps & Local Ads",
       icon: (
         <svg width="40" height="40" viewBox="0 0 24 24">
           <path

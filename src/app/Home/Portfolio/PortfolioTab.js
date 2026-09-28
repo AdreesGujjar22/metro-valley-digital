@@ -38,7 +38,7 @@ export default function PortfolioTab() {
                   <SinglePortfolio
                     image={PortfolioImg1}
                     title="Toronto HVAC & Home Services"
-                    category="Local SEO, Google 3-Pack #1 (+340% Inbound Calls)"
+                    category="Local SEO, #1 on Google Maps (+340% Inbound Calls)"
                   />
                   <SinglePortfolio
                     image={PortfolioImg2}
@@ -73,7 +73,7 @@ export default function PortfolioTab() {
                   <SinglePortfolio
                     image={PortfolioImg1}
                     title="Toronto HVAC & Home Services"
-                    category="Local SEO, Google 3-Pack #1 (+340% Inbound Calls)"
+                    category="Local SEO, #1 on Google Maps (+340% Inbound Calls)"
                   />
                   <SinglePortfolio
                     image={PortfolioImg5}

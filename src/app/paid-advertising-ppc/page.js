@@ -5,16 +5,16 @@ import { notFound } from "next/navigation";
 const service = getServiceBySlug("paid-advertising-ppc");
 
 export const metadata = {
-  title: "Paid Ads Management",
+  title: { absolute: "Paid Advertising & PPC Management | Metro Valley Digital" },
   description:
-    "High-ROAS Meta, TikTok, Google, and LinkedIn ad campaigns with server-side tracking and creative testing, managed by our Vancouver performance team.",
+    "Metro Valley Digital runs high-ROAS Meta, TikTok, Google, and LinkedIn ad campaigns with server-side tracking and creative testing for Vancouver businesses.",
   alternates: {
     canonical: "https://www.metrovalleydigital.com/service/paid-advertising-ppc",
   },
   openGraph: {
-    title: "Paid Ads Management",
+    title: "Paid Advertising & PPC Management | Metro Valley Digital",
     description:
-      "High-ROAS Meta, TikTok, Google, and LinkedIn ad campaigns with server-side tracking and creative testing, managed by our Vancouver performance team.",
+      "Metro Valley Digital runs high-ROAS Meta, TikTok, Google, and LinkedIn ad campaigns with server-side tracking and creative testing for Vancouver businesses.",
     url: "https://www.metrovalleydigital.com/service/paid-advertising-ppc",
     siteName: "Metro Valley Digital",
     images: [
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Paid Ads Management",
+    title: "Paid Advertising & PPC Management | Metro Valley Digital",
     description:
-      "High-ROAS Meta, TikTok, Google, and LinkedIn ad campaigns with server-side tracking and creative testing, managed by our Vancouver performance team.",
+      "Metro Valley Digital runs high-ROAS Meta, TikTok, Google, and LinkedIn ad campaigns with server-side tracking and creative testing for Vancouver businesses.",
     images: ["https://www.metrovalleydigital.com/images/paid_ads_roas_1788191423627.jpg"],
   },
 };

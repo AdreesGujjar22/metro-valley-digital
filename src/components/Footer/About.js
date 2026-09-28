@@ -12,7 +12,7 @@ export default function About() {
           </div>
           <div className="about-description">
             <p style={{ color: "#94a3b8", fontSize: "14px", lineHeight: "1.6" }}>
-              Metro Valley Digital is a premier growth agency & software house based in Vancouver, BC, Canada. Specializing in Google 3-Pack Local SEO, high-ROAS paid media, and Next.js full-stack engineering.
+              Metro Valley Digital is a premier growth agency & software house based in Vancouver, BC, Canada. Specializing in local Google Maps SEO, high-ROAS paid media, and Next.js full-stack engineering.
             </p>
           </div>
           {/* <!-- Quick Link Box -->	 */}

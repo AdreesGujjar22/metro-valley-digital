@@ -22,7 +22,7 @@ export default function Sliders() {
       name: "Marcus Sterling",
       designation: "Managing Director, Apex Climate Systems (Toronto, ON)",
       description:
-        "Metro Valley Digital took our HVAC company from page 4 to #1 on the Google 3-Pack across the Greater Toronto Area within 90 days. Our inbound phone calls skyrocketed by 340%, and our cost per qualified lead dropped by more than half!",
+        "Metro Valley Digital took our HVAC company from page 4 to the #1 local Google Maps listing across the Greater Toronto Area within 90 days. Our inbound phone calls skyrocketed by 340%, and our cost per qualified lead dropped by more than half!",
     },
     {
       id: "slider2",

@@ -5,16 +5,16 @@ import { BreadcrumbSchema, PortfolioSchema } from "@/components/SeoSchemas";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Case Studies & Client Results",
+  title: { absolute: "Case Studies & Client Growth Results | Metro Valley Digital" },
   description:
-    "Verified case studies: local call surges up to 340%, 6.4x paid ad ROAS, and custom Next.js builds delivered for clients across Vancouver and Canada.",
+    "See real client results from Metro Valley Digital: ranking growth, paid ad returns, and revenue wins for Vancouver and North American businesses like yours.",
   alternates: {
     canonical: "https://www.metrovalleydigital.com/portfolio",
   },
   openGraph: {
-    title: "Case Studies & Client Results",
+    title: "Case Studies & Client Growth Results | Metro Valley Digital",
     description:
-      "Verified case studies: local call surges up to 340%, 6.4x paid ad ROAS, and custom Next.js builds delivered for clients across Vancouver and Canada.",
+      "See real client results from Metro Valley Digital: ranking growth, paid ad returns, and revenue wins for Vancouver and North American businesses like yours.",
     url: "https://www.metrovalleydigital.com/portfolio",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Case Studies & Client Results",
+    title: "Case Studies & Client Growth Results | Metro Valley Digital",
     description:
-      "Verified case studies: local call surges up to 340%, 6.4x paid ad ROAS, and custom Next.js builds delivered for clients across Vancouver and Canada.",
+      "See real client results from Metro Valley Digital: ranking growth, paid ad returns, and revenue wins for Vancouver and North American businesses like yours.",
     images: ["https://www.metrovalleydigital.com/images/seo_audit_screen_1788193501910.jpg"],
   },
 };
@@ -44,7 +44,7 @@ export default function PortfolioPage() {
       <BreadcrumbSchema items={[{ name: "Portfolio", url: "/portfolio" }]} />
       <Breadcrumbs
         title="Client Case Studies & Portfolio"
-        description="Explore how Metro Valley Digital scaled organic traffic, Google 3-Pack rankings, and paid ads revenue for our clients in Vancouver and North America."
+        description="Explore how Metro Valley Digital scaled organic traffic, Google Maps rankings, and paid ad revenue for clients across Vancouver and North America."
         menuLink="portfolio"
         menuText="Portfolio"
       />

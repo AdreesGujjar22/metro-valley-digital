@@ -78,7 +78,7 @@ export default function Form() {
                 defaultValue="local_seo"
                 required
               >
-                <option value="local_seo">Local SEO & Google 3-Pack</option>
+                <option value="local_seo">Local SEO & Google Maps</option>
                 <option value="paid_ads">Paid Ads (Meta, TikTok, Google)</option>
                 <option value="web_dev">Next.js Web / App Engineering</option>
                 <option value="ai_bots">AI Chatbots & CRM Automation</option>

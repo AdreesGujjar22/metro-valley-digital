@@ -7,16 +7,16 @@ import { COMPANY_INFO } from "@/data/company";
 import { getServiceAreaByName } from "@/data/serviceAreas";
 
 export const metadata = {
-  title: "Contact Vancouver Office",
+  title: { absolute: "Contact Our Vancouver Marketing Team | Metro Valley Digital" },
   description:
-    "Reach our Vancouver office at 7207 Victoria Dr for a free 30-minute SEO and growth audit. Call, email, or message us on WhatsApp today.",
+    "Get in touch with Metro Valley Digital today for a free growth audit. Our friendly Vancouver team replies fast and is ready to help your business grow faster.",
   alternates: {
     canonical: "https://www.metrovalleydigital.com/contact",
   },
   openGraph: {
-    title: "Contact Vancouver Office",
+    title: "Contact Our Vancouver Marketing Team | Metro Valley Digital",
     description:
-      "Reach our Vancouver office at 7207 Victoria Dr for a free 30-minute SEO and growth audit. Call, email, or message us on WhatsApp today.",
+      "Get in touch with Metro Valley Digital today for a free growth audit. Our friendly Vancouver team replies fast and is ready to help your business grow faster.",
     url: "https://www.metrovalleydigital.com/contact",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
@@ -32,9 +32,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Vancouver Office",
+    title: "Contact Our Vancouver Marketing Team | Metro Valley Digital",
     description:
-      "Reach our Vancouver office at 7207 Victoria Dr for a free 30-minute SEO and growth audit. Call, email, or message us on WhatsApp today.",
+      "Get in touch with Metro Valley Digital today for a free growth audit. Our friendly Vancouver team replies fast and is ready to help your business grow faster.",
     images: ["https://www.metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
   },
 };

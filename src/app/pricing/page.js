@@ -3,16 +3,16 @@ import Pricing from "../Home/Pricing";
 import { BreadcrumbSchema } from "@/components/SeoSchemas";
 
 export const metadata = {
-  title: "SEO & Growth Marketing Pricing",
+  title: { absolute: "SEO & Marketing Pricing Plans List | Metro Valley Digital" },
   description:
-    "Transparent, ROI-focused pricing for Local SEO, Google 3-Pack optimization, paid ads, and custom Next.js development. No hidden fees, no long contracts.",
+    "See transparent pricing for Local SEO, Google Maps ranking, paid ads, and custom web development from Metro Valley Digital. No hidden fees, no long contracts.",
   alternates: {
     canonical: "https://www.metrovalleydigital.com/pricing",
   },
   openGraph: {
-    title: "SEO & Growth Marketing Pricing",
+    title: "SEO & Marketing Pricing Plans List | Metro Valley Digital",
     description:
-      "Transparent, ROI-focused pricing for Local SEO, Google 3-Pack optimization, paid ads, and custom Next.js development. No hidden fees, no long contracts.",
+      "See transparent pricing for Local SEO, Google Maps ranking, paid ads, and custom web development from Metro Valley Digital. No hidden fees, no long contracts.",
     url: "https://www.metrovalleydigital.com/pricing",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
@@ -28,9 +28,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO & Growth Marketing Pricing",
+    title: "SEO & Marketing Pricing Plans List | Metro Valley Digital",
     description:
-      "Transparent, ROI-focused pricing for Local SEO, Google 3-Pack optimization, paid ads, and custom Next.js development. No hidden fees, no long contracts.",
+      "See transparent pricing for Local SEO, Google Maps ranking, paid ads, and custom web development from Metro Valley Digital. No hidden fees, no long contracts.",
     images: ["https://www.metrovalleydigital.com/images/paid_ads_roas_1788191423627.jpg"],
   },
 };
