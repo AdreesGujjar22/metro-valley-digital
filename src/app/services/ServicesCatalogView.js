@@ -38,7 +38,7 @@ export default function ServicesCatalogView() {
       </div>
 
       {/* Services Grid */}
-      <div className="row g-4">
+      <div className="row g-4 services-catalog-grid">
         {filteredServices.map((service) => (
           <div
             key={service.id}
@@ -55,22 +55,12 @@ export default function ServicesCatalogView() {
                 border: "1px solid #e2e8f0",
                 boxShadow: "0 6px 20px rgba(0,0,0,0.03)",
                 transition: "all 0.3s ease",
-                padding: "30px 24px",
+                padding: "60px 24px 30px",
                 position: "relative",
               }}
             >
-              <div
-                className="number"
-                style={{
-                  position: "absolute",
-                  top: "20px",
-                  right: "24px",
-                  color: "#e2e8f0",
-                  fontWeight: "800",
-                  fontSize: "20px",
-                }}
-              >
-                <span className="card-number">{service.number}</span>
+              <div className="services-catalog-card-number">
+                <span className="card-number">{service.number.replace(/^0/, "")}</span>
               </div>
 
               <div
@@ -84,20 +74,20 @@ export default function ServicesCatalogView() {
                 <div
                   className="service-img"
                   style={{
-                    width: "100px",
-                    height: "100px",
+                    width: "120px",
+                    height: "120px",
                     overflow: "hidden",
                     position: "relative",
                     borderRadius: "50%",
-                    border: "3px solid #f1f5f9",
-                    boxShadow: "0 4px 14px rgba(0,0,0,0.06)",
+                    border: "4px solid #f1f5f9",
+                    boxShadow: "0 8px 20px rgba(0,0,0,0.08)",
                   }}
                 >
                   <Image
                     src={service.image}
                     alt={`${service.title} - Metro Valley Digital`}
-                    width={100}
-                    height={100}
+                    width={120}
+                    height={120}
                     style={{ objectFit: "cover", width: "100%", height: "100%" }}
                   />
                 </div>
@@ -121,7 +111,7 @@ export default function ServicesCatalogView() {
                 >
                   {service.category}
                 </span>
-                <h3 style={{ fontSize: "19px", fontWeight: "700", marginBottom: "12px" }}>
+                <h3>
                   <Link
                     href={service.url}
                     style={{ color: "#0f172a", textDecoration: "none" }}
@@ -132,8 +122,8 @@ export default function ServicesCatalogView() {
                 <p
                   style={{
                     color: "#64748b",
-                    fontSize: "14px",
-                    lineHeight: "1.65",
+                    fontSize: "15px",
+                    lineHeight: "22px",
                     marginBottom: "18px",
                   }}
                 >
@@ -144,11 +134,8 @@ export default function ServicesCatalogView() {
               </div>
 
               <div className="service-bottom services-catalog-card-bottom">
-                <Link
-                  href={service.url}
-                  className="service-explore-btn"
-                >
-                  Explore Service <i className="fa fa-arrow-right"></i>
+                <Link href={service.url} aria-label={`Explore ${service.title}`}>
+                  <i className="fa fa-chevron-right" aria-hidden="true"></i>
                 </Link>
               </div>
             </div>
