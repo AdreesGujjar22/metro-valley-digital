@@ -64,7 +64,8 @@ Version: 1.0.0
 .topbar .topbar-address ul li:last-child {
   margin-right: 0px;
 }
-.topbar .topbar-address ul li a {
+.topbar .topbar-address ul li a,
+.topbar .topbar-address ul li .topbar-location {
   color: rgba(255, 255, 255, 0.9);
   font-size: 13px;
   text-decoration: none !important;
@@ -73,7 +74,8 @@ Version: 1.0.0
 .topbar .topbar-address ul li a:hover {
   color: var(--primary-color);
 }
-.topbar .topbar-address ul li a i {
+.topbar .topbar-address ul li a i,
+.topbar .topbar-address ul li .topbar-location i {
   margin-right: 8px;
   font-size: 14px;
   color: var(--primary-color);

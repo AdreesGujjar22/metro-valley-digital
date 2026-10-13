@@ -92,7 +92,7 @@ export default function PrivacyPolicyPage() {
               </section>
             ))}
             <p className="legal-contact">
-              Metro Valley Digital · 7207 Victoria Dr, Vancouver, BC V5P 3Z2, Canada ·{" "}
+              Metro Valley Digital · Vancouver, BC, Canada ·{" "}
               <a href="mailto:info@metrovalleydigital.com">info@metrovalleydigital.com</a>
             </p>
           </article>

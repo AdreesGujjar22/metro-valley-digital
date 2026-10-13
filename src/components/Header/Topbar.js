@@ -17,15 +17,10 @@ export default function Topbar() {
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="https://maps.app.goo.gl/opsWCpAwBhZ5H18w6"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      title="Google Maps (GMB) - 7207 Victoria Dr, Vancouver, BC"
-                    >
+                    <span className="topbar-location">
                       <i className="fa fa-map-marker" style={{ color: "var(--primary-color)" }}></i>
-                      <span>7207 Victoria Dr, Vancouver, BC</span>
-                    </a>
+                      Vancouver, BC, Canada
+                    </span>
                   </li>
                   <li className="d-none d-sm-inline-block">
                     <a href="mailto:info@metrovalleydigital.com">

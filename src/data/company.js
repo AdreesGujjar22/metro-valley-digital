@@ -7,20 +7,17 @@ export const COMPANY_INFO = {
   phone: "+1 778-608-0909",
   phoneFormatted: "+1 778-608-0909",
   phoneTel: "+17786080909",
-  address: "7207 Victoria Dr, Vancouver, BC V5P 3Z2, Canada",
-  mapUrl: "https://maps.app.goo.gl/opsWCpAwBhZ5H18w6",
+  address: "Vancouver, BC, Canada",
   locations: {
     canada: {
       country: "Canada",
       city: "Vancouver",
       region: "British Columbia",
-      postalCode: "V5P 3Z2",
+
       phone: "+1 778-608-0909",
       phoneFormatted: "+1 778-608-0909",
       phoneTel: "+17786080909",
-      address: "7207 Victoria Dr, Vancouver, BC V5P 3Z2, Canada",
-      streetAddress: "7207 Victoria Dr",
-      mapUrl: "https://maps.app.goo.gl/opsWCpAwBhZ5H18w6",
+      address: "Vancouver, BC, Canada",
       timezone: "PST (Pacific Standard Time)",
       hours: "Mon - Fri: 8:00 AM - 6:00 PM PST",
       badge: "Headquarters",

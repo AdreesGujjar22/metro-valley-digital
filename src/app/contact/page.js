@@ -47,55 +47,11 @@ export default function ContactPage() {
       <BreadcrumbSchema items={[{ name: "Contact", url: "/contact" }]} />
       <Breadcrumbs
         title="Contact Metro Valley Digital"
-        description="Located at 7207 Victoria Dr, Vancouver, BC V5P 3Z2, Canada. Phone: +1 778-608-0909. Get in touch for a free 30-minute growth audit or custom software consultation."
+        description="Based in Vancouver, BC, Canada. Phone: +1 778-608-0909. Get in touch for a free 30-minute growth audit or custom software consultation."
         menuLink="contact"
         menuText="Contact"
       />
       <Contact />
-      <section className="maps-area">
-        <div className="container business-profile-container">
-          <div className="business-profile-card">
-            <div className="business-profile-info">
-              <span className="business-profile-badge">
-                <i className="fa fa-check-circle" aria-hidden="true"></i>
-                Verified Google Business Profile
-              </span>
-              <h2>Metro Valley Digital — Vancouver Headquarters</h2>
-              <p>
-                7207 Victoria Dr, Vancouver, BC V5P 3Z2, Canada
-                <span aria-hidden="true"> · </span>
-                <a href="tel:+17786080909">+1 778-608-0909</a>
-              </p>
-            </div>
-            <div className="business-profile-actions">
-              <a
-                href="https://maps.app.goo.gl/opsWCpAwBhZ5H18w6"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="theme-btn navbar-cta-btn"
-              >
-                <i className="fa fa-map-marker" aria-hidden="true"></i>
-                Open in Google Maps
-              </a>
-              <a href="tel:+17786080909" className="btn btn-outline-secondary">
-                <i className="fa fa-phone" aria-hidden="true"></i>
-                Call Direct
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="main-maps">
-          <iframe
-            id="gmap_canvas"
-            title="Metro Valley Digital Vancouver Location - 7207 Victoria Dr, Vancouver, BC"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.0366566933258!2d-123.06626689999997!3d49.2188319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486752f09111487%3A0xba4a6c5b4e88b35f!2sMETRO%20VALLEY%20DIGITAL!5e0!3m2!1sen!2sca!4v1790368651439!5m2!1sen!2sca"
-            className="google-map-embed"
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="strict-origin-when-cross-origin"
-          ></iframe>
-        </div>
-      </section>
 
       {/* Service Areas & Neighbourhoods */}
       <section style={{ padding: "60px 0", backgroundColor: "#f8fafc" }}>

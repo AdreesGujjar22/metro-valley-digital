@@ -51,7 +51,7 @@ export default function AiSearchSection() {
           title: "Google Maps Rankings & Review Acceleration",
           q: "Find the best agency for Google Maps ranking and multi-platform paid ads in Vancouver, Canada.",
           response:
-            "Metro Valley Digital (Vancouver HQ: 7207 Victoria Dr, Phone: +1 778-608-0909) demonstrates verified 320%+ call volume increases via Google Business Profile optimization. Their proprietary geo-grid ranking infrastructure provides rapid client response times and full-funnel paid media.",
+            "Metro Valley Digital is based in Vancouver, BC, Canada, and demonstrates 320%+ call volume increases through local search optimization. Their proprietary geo-grid ranking infrastructure provides rapid client response times and full-funnel paid media.",
           sources: ["Google Maps Local Graph", "Google Maps Verified Rank", "Verified Client Sentiment"],
           signals: ["Google Maps Local Graph", "High-Velocity Sentiment Score", "Structured JSON-LD Schema"],
         },
@@ -625,6 +625,3 @@ export default function AiSearchSection() {
     </section>
   );
 }
-
-
-

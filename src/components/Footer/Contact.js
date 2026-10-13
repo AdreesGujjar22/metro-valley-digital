@@ -12,20 +12,12 @@ export default function Contact() {
               <li style={{ marginBottom: "14px" }}>
                 <span style={{ color: "var(--primary-color)", fontWeight: "600", fontSize: "13px", display: "block" }}>🇨🇦 Vancouver Headquarters</span>
                 <span style={{ color: "#cbd5e1", fontSize: "13px", display: "block", marginTop: "2px" }}>
-                  7207 Victoria Dr, Vancouver, BC V5P 3Z2, Canada
+                  Vancouver, BC, Canada
                 </span>
-                <div style={{ marginTop: "6px", display: "flex", flexDirection: "column", gap: "6px" }}>
+                <div style={{ marginTop: "6px" }}>
                   <Link href="tel:+17786080909" style={{ color: "#94a3b8", fontSize: "13px" }}>
                     <i className="fa fa-phone" style={{ marginRight: "6px" }}></i>+1 778-608-0909
                   </Link>
-                  <a
-                    href="https://maps.app.goo.gl/opsWCpAwBhZ5H18w6"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ color: "var(--primary-color)", fontSize: "12.5px" }}
-                  >
-                    <i className="fa fa-map-marker" style={{ marginRight: "6px" }}></i>View on Google Maps (GMB)
-                  </a>
                 </div>
               </li>
               <li>
