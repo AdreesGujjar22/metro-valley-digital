@@ -4,7 +4,7 @@ import Contact from "../Home/Contact";
 import Client from "../Home/Client";
 import { BreadcrumbSchema, ContactPageSchema, ServiceAreaSchema } from "@/components/SeoSchemas";
 import { COMPANY_INFO } from "@/data/company";
-import { getServiceAreaByName } from "@/data/serviceAreas";
+import { getServiceAreaByName, getAreaUrlSlug } from "@/data/serviceAreas";
 
 export const metadata = {
   title: { absolute: "Contact Our Vancouver Marketing Team | Metro Valley Digital" },
@@ -53,6 +53,31 @@ export default function ContactPage() {
       />
       <Contact />
 
+      {/* Google Business Profile Map */}
+      <section style={{ padding: "0 0 60px", backgroundColor: "#ffffff" }}>
+        <div className="container">
+          <div
+            style={{
+              borderRadius: "12px",
+              overflow: "hidden",
+              border: "1px solid #e2e8f0",
+            }}
+          >
+            <iframe
+              id="gmap_canvas"
+              title="Metro Valley Digital Vancouver Location - 7207 Victoria Dr, Vancouver, BC"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.0366566933258!2d-123.06626689999997!3d49.2188319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486752f09111487%3A0xba4a6c5b4e88b35f!2sMETRO%20VALLEY%20DIGITAL!5e0!3m2!1sen!2sca!4v1790368651439!5m2!1sen!2sca"
+              width="100%"
+              height="420"
+              style={{ border: 0, display: "block" }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
       {/* Service Areas & Neighbourhoods */}
       <section style={{ padding: "60px 0", backgroundColor: "#f8fafc" }}>
         <div className="container">
@@ -78,7 +103,7 @@ export default function ContactPage() {
                   return (
                     <Link
                       key={n}
-                      href={area ? `/service-areas/${area.slug}` : "/service-areas"}
+                      href={area ? `/${getAreaUrlSlug(area)}` : "/service-areas"}
                       style={{
                         backgroundColor: "#ffffff",
                         border: "1px solid #e2e8f0",
@@ -105,7 +130,7 @@ export default function ContactPage() {
                   return (
                     <Link
                       key={c}
-                      href={area ? `/service-areas/${area.slug}` : "/service-areas"}
+                      href={area ? `/${getAreaUrlSlug(area)}` : "/service-areas"}
                       style={{
                         backgroundColor: "#ffffff",
                         border: "1px solid #e2e8f0",
@@ -127,12 +152,12 @@ export default function ContactPage() {
                   const area = getServiceAreaByName(city);
                   return (
                     <span key={city}>
-                      {area ? <Link href={`/service-areas/${area.slug}`}>{city}</Link> : city}
+                      {area ? <Link href={`/${getAreaUrlSlug(area)}`}>{city}</Link> : city}
                       {i < COMPANY_INFO.serviceAreas.extendedCities.length - 1 ? ", " : ""}
                     </span>
                   );
                 })}{" "}
-                and across Canada and the U.S. See our full{" "}
+                and across Canada. See our full{" "}
                 <Link href="/service">service catalog</Link>,{" "}
                 <Link href="/service-areas">all service areas</Link>, or read client results on
                 the <Link href="/portfolio">portfolio</Link> page.

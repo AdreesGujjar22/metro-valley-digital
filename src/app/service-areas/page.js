@@ -3,7 +3,7 @@ import Image from "next/image";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SectionTitle from "@/components/SectionTitle";
 import { BreadcrumbSchema, ServiceAreaListSchema } from "@/components/SeoSchemas";
-import { SERVICE_AREAS, getServiceAreasByType, SERVICE_AREA_TYPE_LABELS } from "@/data/serviceAreas";
+import { SERVICE_AREAS, getServiceAreasByType, SERVICE_AREA_TYPE_LABELS, getAreaUrlSlug } from "@/data/serviceAreas";
 
 export const metadata = {
   title: { absolute: "Vancouver Area SEO Service Locations | Metro Valley Digital" },
@@ -60,7 +60,7 @@ function AreaCard({ area, image }) {
   return (
     <div className="col-lg-4 col-md-6 col-12">
       <Link
-        href={`/service-areas/${area.slug}`}
+        href={`/${getAreaUrlSlug(area)}`}
         className="portfolio-single service-area-portfolio-card"
         aria-label={`${area.name}, ${area.region} — view coverage`}
       >
@@ -100,7 +100,7 @@ export default function ServiceAreasIndexPage() {
 
       <Breadcrumbs
         title="Where We Work: Vancouver & Beyond"
-        description="From Kitsilano to Kerrisdale, Burnaby to Langley, and remote clients in Toronto, Calgary, and Seattle — explore local SEO and growth marketing coverage in your area."
+        description="From Kitsilano to Kerrisdale, Burnaby to Langley, and remote clients from Victoria to Halifax — explore local SEO and growth marketing coverage across Canada."
         menuLink="service-areas"
         menuText="Service Areas"
       />
@@ -144,7 +144,7 @@ export default function ServiceAreasIndexPage() {
           </div>
 
           <h2 style={{ fontSize: "22px", fontWeight: "800", color: "#0f172a", marginBottom: "18px" }}>
-            Remote & Cross-Border Markets
+            Remote Markets Across Canada
           </h2>
           <div className="row g-3">
             {extended.map((area, index) => (

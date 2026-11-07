@@ -1,6 +1,6 @@
 import { SERVICES_CATALOG } from "@/data/services";
 import { BLOG_POSTS } from "@/data/blogs";
-import { SERVICE_AREAS } from "@/data/serviceAreas";
+import { SERVICE_AREAS, getAreaUrlSlug } from "@/data/serviceAreas";
 import { PROJECTS_DATA } from "@/data/projects";
 
 export default function sitemap() {
@@ -22,7 +22,7 @@ export default function sitemap() {
   }));
 
   const serviceAreaUrls = SERVICE_AREAS.map((area) => ({
-    url: `${baseUrl}/service-areas/${area.slug}`,
+    url: `${baseUrl}/${getAreaUrlSlug(area)}`,
     lastModified: now,
     changeFrequency: "monthly",
     priority: area.type === "neighbourhood" || area.type === "metro" ? 0.8 : 0.6,
@@ -101,6 +101,18 @@ export default function sitemap() {
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/privacy-policy`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/terms-of-service`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.3,
     },
   ];
 

@@ -1,5 +1,6 @@
 import { COMPANY_INFO } from "@/data/company";
 import { ALL_SERVICES } from "@/data/services";
+import { getAreaUrlSlug } from "@/data/serviceAreas";
 
 export function SitewideSchemas() {
   const organizationSchema = {
@@ -79,9 +80,8 @@ export function SitewideSchemas() {
       { "@type": "City", name: "Vancouver" },
       ...COMPANY_INFO.serviceAreas.neighbourhoods.map((n) => ({ "@type": "Place", name: n })),
       ...COMPANY_INFO.serviceAreas.metroCities.map((c) => ({ "@type": "City", name: c })),
-      { "@type": "City", name: "Toronto" },
+      ...COMPANY_INFO.serviceAreas.extendedCities.map((c) => ({ "@type": "City", name: c })),
       { "@type": "Country", name: "Canada" },
-      { "@type": "Country", name: "United States" },
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
@@ -299,6 +299,11 @@ export function ServiceAreaSchema() {
         containedInPlace: { "@type": "City", name: "Vancouver" },
       })),
       ...COMPANY_INFO.serviceAreas.metroCities.map((c) => ({ "@type": "City", name: c })),
+      ...COMPANY_INFO.serviceAreas.extendedCities.map((c) => ({
+        "@type": "City",
+        name: c,
+        containedInPlace: { "@type": "Country", name: "Canada" },
+      })),
     ],
   };
 
@@ -548,7 +553,7 @@ export function ContactPageSchema() {
 export function ServiceAreaDetailSchema({ area }) {
   if (!area) return null;
 
-  const areaUrl = `https://www.metrovalleydigital.com/service-areas/${area.slug}`;
+  const areaUrl = `https://www.metrovalleydigital.com/${getAreaUrlSlug(area)}`;
   const placeType = area.type === "neighbourhood" ? "Place" : "City";
 
   const schema = {
@@ -619,7 +624,7 @@ export function ServiceAreaListSchema({ areas = [] }) {
       item: {
         "@type": "Service",
         name: `Digital Marketing Services in ${area.name}`,
-        url: `https://www.metrovalleydigital.com/service-areas/${area.slug}`,
+        url: `https://www.metrovalleydigital.com/${getAreaUrlSlug(area)}`,
       },
     })),
   };

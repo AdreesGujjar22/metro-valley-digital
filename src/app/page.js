@@ -1,5 +1,6 @@
 import Hero from "./Home/Hero";
 import About from "./Home/About";
+import GmbProfile from "./Home/GmbProfile";
 import Service from "./Home/Service";
 import Portfolio from "./Home/Portfolio";
 import Team from "./Home/Team";
@@ -14,16 +15,16 @@ import HomeFaq from "./Home/Faq";
 import { ServiceCatalogSchema, FaqSchema } from "@/components/SeoSchemas";
 
 export const metadata = {
-  title: { absolute: "Vancouver SEO & Digital Marketing | Metro Valley Digital" },
+  title: { absolute: "Google Business Profile & SEO Agency in Vancouver, Canada" },
   description:
-    "Metro Valley Digital is a Vancouver SEO agency helping local businesses rank higher, run profitable ads, and grow with new websites, mobile apps, and AI tools.",
+    "Metro Valley Digital optimizes Google Business Profiles and local SEO for Vancouver businesses, driving Google Map Pack rankings, calls, and 5-star reviews.",
   alternates: {
     canonical: "https://www.metrovalleydigital.com",
   },
   openGraph: {
-    title: "Vancouver SEO & Digital Marketing | Metro Valley Digital",
+    title: "Google Business Profile & SEO Agency in Vancouver, Canada",
     description:
-      "Metro Valley Digital is a Vancouver SEO agency helping local businesses rank higher, run profitable ads, and grow with new websites, mobile apps, and AI tools.",
+      "Metro Valley Digital optimizes Google Business Profiles and local SEO for Vancouver businesses, driving Google Map Pack rankings, calls, and 5-star reviews.",
     url: "https://www.metrovalleydigital.com",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
@@ -39,9 +40,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vancouver SEO & Digital Marketing | Metro Valley Digital",
+    title: "Google Business Profile & SEO Agency in Vancouver, Canada",
     description:
-      "Metro Valley Digital is a Vancouver SEO agency helping local businesses rank higher, run profitable ads, and grow with new websites, mobile apps, and AI tools.",
+      "Metro Valley Digital optimizes Google Business Profiles and local SEO for Vancouver businesses, driving Google Map Pack rankings, calls, and 5-star reviews.",
     images: ["https://www.metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
   },
 };
@@ -53,6 +54,7 @@ export default function Home() {
       <FaqSchema />
       <Hero />
       <About />
+      <GmbProfile />
       <Service />
       <Portfolio />
       <Team />

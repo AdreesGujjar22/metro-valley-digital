@@ -23,7 +23,7 @@ export default function Sliders() {
       id: "slider1",
       bgImg: HeroBg3,
       tag: "📈 Meta, TikTok & Google Ads Performance",
-      title: "Vancouver SEO & AI-Powered Digital Marketing",
+      title: "Google Business Profile & SEO Agency in Vancouver",
       subTitle: "SEO AEO GEO And Social Media All In One Place",
       button: {
         text: "Claim Free 30-Min Growth Audit",

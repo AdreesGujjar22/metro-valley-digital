@@ -3,7 +3,7 @@ import { getServiceBySlug } from "@/data/services";
 import { notFound } from "next/navigation";
 import { ServiceAreaSchema } from "@/components/SeoSchemas";
 import { COMPANY_INFO } from "@/data/company";
-import { getServiceAreaByName } from "@/data/serviceAreas";
+import { getServiceAreaByName, getAreaUrlSlug } from "@/data/serviceAreas";
 import Link from "next/link";
 
 const service = getServiceBySlug("local-seo-google-business-profile");
@@ -58,7 +58,7 @@ export default function LocalSeoPage() {
               const area = getServiceAreaByName(n);
               return (
                 <span key={n}>
-                  {area ? <Link href={`/service-areas/${area.slug}`}>{n}</Link> : n}
+                  {area ? <Link href={`/${getAreaUrlSlug(area)}`}>{n}</Link> : n}
                   {i < arr.length - 1 ? ", " : ""}
                 </span>
               );
@@ -68,7 +68,7 @@ export default function LocalSeoPage() {
               const area = getServiceAreaByName(c);
               return (
                 <span key={c}>
-                  {area ? <Link href={`/service-areas/${area.slug}`}>{c}</Link> : c}
+                  {area ? <Link href={`/${getAreaUrlSlug(area)}`}>{c}</Link> : c}
                   {i < arr.length - 1 ? ", " : ""}
                 </span>
               );
